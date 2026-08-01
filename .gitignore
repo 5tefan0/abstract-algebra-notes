@@ -27,3 +27,6 @@ __pycache__/
 .venv/
 venv/
 node_modules/
+
+# Source lecture transcripts (kept locally, not versioned)
+/youtube_transcripts/
