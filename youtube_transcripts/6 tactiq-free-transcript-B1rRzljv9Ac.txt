@@ -1,0 +1,901 @@
+# tactiq.io free youtube transcript
+# Lec 6 | Abstract Algebra
+# https://www.youtube.com/watch/B1rRzljv9Ac
+
+00:00:13.000 okay let's get started
+00:00:14.920 now so what do we want to do in today's
+00:00:18.560 lecture there are two main goals for
+00:00:21.199 today's lecture
+00:00:33.640 the first goal for today's
+00:00:35.520 lecture is
+00:00:40.239 um excuse me could you stop talking in
+00:00:42.600 the back please thank
+00:00:46.800 you uh is to generalize
+00:00:49.800 the
+00:00:53.800 arithmetic of what I'll call evens and
+00:00:57.000 odds
+00:01:02.559 so what do I mean by that well I mean
+00:01:05.920 something that you sort of discover when
+00:01:07.240 you're really really young is that
+00:01:09.000 there's sort of a nice way of computing
+00:01:11.720 with evens and odds independently of you
+00:01:14.360 know the the whole arithmetic of all of
+00:01:16.840 the integers so what I mean by that is
+00:01:19.720 if I denote by Zero Bar all the even
+00:01:24.640 numbers and by one bar all the odd
+00:01:28.920 numbers I there's a sort of natural
+00:01:31.320 addition operation if I
+00:01:36.640 add an even to an even then I get an
+00:01:39.439 even if I add an odd to an odd I get an
+00:01:42.840 even but if I add an odd to an even or
+00:01:45.079 an even to an odd then I get something
+00:01:48.920 odd likewise there's a sort of
+00:01:51.680 multiplication table for even and odds
+00:01:54.280 evens and odds If I
+00:01:58.320 multiply something that even by
+00:02:00.719 something that's odd or even then I
+00:02:02.960 certainly get something that's even but
+00:02:05.119 if I multiply something odd by something
+00:02:07.479 odd then I get something odd so there's
+00:02:10.959 this whole sort of simple arithmetic
+00:02:13.160 that goes on with evens and odds but you
+00:02:14.920 have to ask the question what's so
+00:02:16.400 special about the number two well the
+00:02:18.519 answer is there's nothing special about
+00:02:20.160 the number two and so one of the things
+00:02:22.440 that we're going to talk about today is
+00:02:24.560 how to go from two to any n
+00:02:30.160 the second thing I'd like to do is make
+00:02:38.319 concrete what we did last
+00:02:43.760 time with uh
+00:02:46.519 coets and equivalence
+00:02:52.800 relations and it's going to turn
+00:02:55.879 out that these are really sort of one in
+00:02:58.519 the same goal EX at least when it comes
+00:03:01.840 to studying uh subgroups of the
+00:03:05.560 integers um so let's get started on that
+00:03:09.640 so the main
+00:03:12.519 concept that is going to be new in
+00:03:16.319 lecture and which was on the reading
+00:03:18.280 from last lecture is that
+00:03:22.400 of
+00:03:25.159 congruence mod
+00:03:27.920 n and it's arithmetic
+00:03:38.760 so let's fix some n a positive
+00:03:46.400 integer and
+00:03:50.640 Define on the integers a relation so the
+00:03:54.680 relation is going to be a is related to
+00:03:57.760 B if and only if n divides a minus b or
+00:04:04.360 put another
+00:04:06.079 way a minus
+00:04:09.040 B is in NZ in the subgroup NZ of the
+00:04:15.280 integers which is just the set of
+00:04:17.160 multiples of
+00:04:21.800 n so well it's not hard to see that this
+00:04:25.520 is an equivalence relation
+00:04:35.000 why well first of all
+00:04:37.039 it's certainly reflexive I mean that
+00:04:39.840 just follows from the fact that a minus
+00:04:41.800 a is z which is certainly a multiple of
+00:04:46.199 n if a is related to B then certainly B
+00:04:50.160 is related to a because what does this
+00:04:52.680 mean well a minus B is a multiple of n
+00:04:55.639 but then B minus a is certainly also a
+00:04:57.759 multiple of n so B is related to a and
+00:05:02.120 finally if a is related to B and B is
+00:05:05.639 related to
+00:05:07.199 C then well what do these mean this
+00:05:10.400 means a minus B and B minus C are in uh
+00:05:14.240 NZ are a multiple of n in other words
+00:05:17.160 and so is there some then and if you add
+00:05:21.120 a minus B and B minus C you get a minus
+00:05:23.240 C so a is related to
+00:05:27.240 C so this is definitely an equival
+00:05:31.000 relation now for notational purposes
+00:05:35.280 it's often not sufficient just to write
+00:05:37.199 this relator symbol twiddle so we have
+00:05:40.880 another piece of
+00:05:49.160 notation and that
+00:05:51.199 is a is congruent to be mod
+00:05:56.840 n so this is a synonym for
+00:06:02.600 synonym for a twiddle
+00:06:07.120 B with n made
+00:06:11.800 explicit and the way we say this is a is
+00:06:17.720 congruent to B mod M so this is just a
+00:06:21.759 linguistic
+00:06:24.639 issue so well what are the equivalents
+00:06:29.720 classes I mean whenever you have an
+00:06:31.440 equivalence relation one of the first
+00:06:33.400 questions you ask is what is the
+00:06:35.560 structure of the equivalence classes I
+00:06:38.160 mean this is a sort of thing that we
+00:06:39.280 started talking about last time well so
+00:06:42.199 let's write them
+00:06:52.039 down so if I have an integer a
+00:06:57.639 then at least for today
+00:07:00.199 we're going to
+00:07:01.840 write a overline a bar to
+00:07:08.919 denote the equivalence
+00:07:13.080 class of
+00:07:15.360 a and um well what does a bar look like
+00:07:20.360 what's a way of my writing a bar down
+00:07:22.560 just as a sort of explicit
+00:07:24.520 set go
+00:07:26.520 ahead yes yes um set of all numbers n z
+00:07:32.440 z
+00:07:34.120 z a
+00:07:38.720 exactly a bar looks like a plus NZ or as
+00:07:43.440 you put it all things of the form a plus
+00:07:48.000 k n as K ranges over Z these are the
+00:07:52.280 same
+00:07:53.800 thing now does this look familiar from
+00:07:57.120 last time did we have another sort of
+00:07:59.039 piece of terminology for things of this
+00:08:02.159 form Co exactly this is an example of a
+00:08:13.120 coet
+00:08:16.720 so in the language from last
+00:08:21.080 time where we had some
+00:08:25.159 subgroup h of some group z we had these
+00:08:29.159 things
+00:08:30.319 that look like ah
+00:08:32.958 or perhaps better written a operation
+00:08:38.719 H but we're working with NZ the subgroup
+00:08:44.440 of Z where the group operation is noted
+00:08:48.160 plus so this sort of multiplicative
+00:08:50.320 notation is not really
+00:08:52.240 appropriate so what we're really working
+00:08:55.560 with is a + H or what is the same name a
+00:09:00.000 plus
+00:09:01.040 NZ as the set of coets of NZ the coets
+00:09:05.640 are things of this form so these
+00:09:07.519 equivalence classes are just
+00:09:10.519 coets
+00:09:16.040 so one of the important themes here is
+00:09:20.200 that you lose a lot of information when
+00:09:23.320 you pass from all of the integers to the
+00:09:25.640 c-ets just as you lose a lot of
+00:09:27.240 information when you pass from all of
+00:09:29.600 the integers to evens and odds so for
+00:09:33.040 instance
+00:09:35.079 if n = 12 I mean bear in mind that from
+00:09:39.720 the point of view of of just the coets
+00:09:43.200 of 12 z um
+00:09:47.279 two and 26 are
+00:09:52.839 indistinguishable or put another way 2
+00:09:55.320 bar
+00:09:56.760 equals 26 bar
+00:10:00.640 now here's an
+00:10:04.279 observation we can very explicitly write
+00:10:06.839 down all of the
+00:10:15.560 coets there are n
+00:10:20.079 distinct
+00:10:23.079 coets of NZ and we can write them down
+00:10:26.760 completely
+00:10:28.320 explicitly so we'll put in another way
+00:10:31.839 equivalence
+00:10:33.959 classes modulo n so these are all sort
+00:10:37.800 of redundant ways of of saying the same
+00:10:40.360 thing but you'll hear them all so it's
+00:10:42.560 good to sort of just practice hearing
+00:10:44.680 them uh each so what are they well can
+00:10:48.160 somebody list them go ahead
+00:10:53.399 Z
+00:10:55.560 right or in a sort of shorter notation
+00:11:00.279 0 1
+00:11:03.279 2 up to n minus one why is
+00:11:07.920 this can anybody give me a quick proof
+00:11:10.639 at least that every coet or every
+00:11:14.600 equivalence class is of this form yeah
+00:11:17.320 go
+00:11:21.240 ahead exactly so this is a matter of
+00:11:24.200 taking advantage of the division
+00:11:28.040 algorithm so
+00:11:31.800 why well at least in one part it's the
+00:11:35.040 division
+00:11:39.279 algorithm if I have some a then I can
+00:11:42.880 write
+00:11:44.720 it in the
+00:11:47.120 form NQ + r where q and R are both
+00:11:53.320 integers but
+00:11:55.040 moreover Z is less than or equal to R is
+00:11:58.200 less than n
+00:12:00.399 and then this is just
+00:12:01.800 saying that a bar equals R
+00:12:07.360 Bar so we certainly have a
+00:12:09.279 representative in this range
+00:12:11.920 moreover these are all
+00:12:14.040 distinct because if a bar is the same as
+00:12:17.920 B bar and we both have the these things
+00:12:21.720 in the
+00:12:23.079 range 0 to nus1 so things that look like
+00:12:27.800 this well
+00:12:31.760 then the magnitude of the the uh
+00:12:34.959 difference between these things is
+00:12:36.959 also bounded by 0er and n +
+00:12:41.720 one and moreover We Know by hypothesis
+00:12:46.360 these are in the same equivalence class
+00:12:48.600 so B minus a and a minus B are both
+00:12:51.440 divisible by n so this thing is in NZ
+00:12:55.839 but the only thing in this range in NZ
+00:12:58.040 is zero so this
+00:13:02.120 thing is just
+00:13:05.000 zero or what is the same a equals B so
+00:13:08.920 these things are each
+00:13:13.560 distinct
+00:13:16.000 now how do we describe this thing well
+00:13:19.279 following the notation from last time
+00:13:22.079 you might think well we're going to
+00:13:23.800 notate uh the equivalence classes of z
+00:13:26.880 modulo n or modulo NZ
+00:13:29.800 by Zar because we had this sort of
+00:13:32.160 notation s goes to the set of
+00:13:33.720 equivalence classes SAR this is not such
+00:13:36.600 a great notation because you lose which
+00:13:39.839 n you're working with so the usual
+00:13:42.120 notation is Z mod
+00:13:52.880 NZ
+00:13:54.600 for sets of
+00:14:02.240 classes is
+00:14:09.040 um Z mod
+00:14:12.759 NZ or sometimes just shorten to Zod n
+00:14:16.800 where sometimes brackets are put around
+00:14:18.560 the N these are all
+00:14:25.040 synonymous so what
+00:14:27.519 next well
+00:14:29.959 again sort of following what we saw last
+00:14:32.120 time Vis equivalence
+00:14:34.600 relations there is a natural
+00:14:38.079 map from Z to Z mod NZ that takes a to
+00:14:42.680 its equivalence class and that the
+00:14:45.279 fibers are the equivalence classes
+00:14:48.639 themselves
+00:14:50.440 but what we're about to do is put some
+00:14:54.320 additional structure on Z mod NZ we're
+00:14:57.240 going to make this a group and this
+00:14:59.720 thing is actually going to become a
+00:15:03.279 homomorphism
+00:15:05.399 so let's start studying how this thing
+00:15:09.519 inherits an arithmetic from
+00:15:13.279 Z so can
+00:15:17.160 do
+00:15:20.839 arithmetic in
+00:15:22.920 zmod n
+00:15:26.279 z um so how do we Define for instance a
+00:15:32.079 sum of two things well we're going to
+00:15:36.240 Define it although we should verify that
+00:15:38.480 this is well defined
+00:15:41.880 by um the equivalence class of a plus
+00:15:46.240 b and likewise we're going to define a
+00:15:49.639 multiplication or we Define a
+00:15:51.319 multiplication
+00:15:53.720 by a bar Time bar bar being AB bar now
+00:15:59.680 why is this well- defined well it's it's
+00:16:01.079 just sort of simple
+00:16:04.480 verification but it's certainly
+00:16:06.160 important to check because we do off
+00:16:08.839 hand have a lot of different ways of
+00:16:11.000 writing AAR so for instance mod 12 we
+00:16:15.319 could write that either you know we
+00:16:16.600 could write two bar as 26 bar and there
+00:16:19.399 is some sort of verification necessary
+00:16:22.120 to ensure that uh if we change the
+00:16:26.720 representative we aren't changing the
+00:16:29.399 outcome on the right hand
+00:16:35.880 side
+00:16:37.600 so is
+00:16:39.480 this well
+00:16:42.800 defined answer is of course a resounding
+00:16:47.040 yes and so I mean well just to make this
+00:16:51.639 completely
+00:16:53.319 explicit if I have A1 bar equaling B1
+00:16:57.639 bar and and A2 bar equaling B2 bar then
+00:17:02.880 A1 +
+00:17:04.520 B2 bar is
+00:17:07.439 A1
+00:17:09.000 uh is uh sorry A1 Plus B1 uh A1 well I
+00:17:15.359 could write this several different ways
+00:17:16.799 but say a1+ A2 bar is B1 + B2 bar and
+00:17:21.880 likewise
+00:17:22.959 A1 A2 bar is B1 B2 bar and it's a very
+00:17:29.320 very easy verification I'll just let you
+00:17:31.280 do that yourself very
+00:17:35.640 easy
+00:17:44.200 verification but the critical
+00:17:45.919 observation here or the first critical
+00:17:48.120 observation here is that this addition
+00:17:53.440 law makes Z mod NZ into a group
+00:18:04.559 so the observation
+00:18:08.640 is that this thing is a
+00:18:12.600 group well
+00:18:15.520 why why is the thing associative why is
+00:18:18.880 this plus operation
+00:18:25.480 associative go ahead because the the uh
+00:18:29.799 the inte exactly it inherits it from the
+00:18:33.039 integers um this is going to be a sort
+00:18:35.280 of repeated theme we're going to look at
+00:18:36.600 a generalization of this idea and always
+00:18:39.960 the things that look similar to this are
+00:18:41.960 going to be associative because the
+00:18:44.200 thing that we constructed them out of
+00:18:46.039 was associative so
+00:18:49.480 associative because z+
+00:18:53.360 was in other words if I write a plus bar
+00:18:56.120 bar a bar plus bar bar plus c bar
+00:18:59.720 or a bar plus bar plus c bar both of
+00:19:04.400 these things equal a plus b plus C all
+00:19:14.600 bar the thing has uh um an identity
+00:19:19.600 element what is
+00:19:22.320 it the class of
+00:19:25.320 zero um it has
+00:19:27.720 inverses
+00:19:29.600 n sorry
+00:19:32.360 nus
+00:19:33.960 absolutely um there a couple of
+00:19:35.679 different ways of writing it so the
+00:19:37.640 inverse
+00:19:40.400 of a bar now previously we' used a sort
+00:19:44.360 of notation which was a power notation
+00:19:46.679 because we'd written our groups very
+00:19:48.400 multiplicatively we'd written it as if
+00:19:49.960 the operation was multiplication here
+00:19:52.159 we're writing our group with a plus sign
+00:19:55.880 so it's very natural to write as the in
+00:19:59.039 of an element minus that thing and so as
+00:20:03.120 someone pointed out this is well either
+00:20:06.679 there are many many ways of writing this
+00:20:08.120 but one can write it as n minus a bar or
+00:20:11.320 just minus a
+00:20:14.880 bar
+00:20:16.880 um
+00:20:18.640 and
+00:20:20.440 so in the language from last
+00:20:24.240 time again just sort of returning to
+00:20:35.559 what we did before so in the language
+00:20:38.080 from last
+00:20:39.880 time the set of
+00:20:45.400 coets of the subgroup NZ of
+00:20:48.840 Z form a
+00:20:54.520 group is NZ a normal subgroup of Z
+00:21:00.480 go
+00:21:01.520 ahead yes yes it is it is because Z is
+00:21:05.559 an aelan
+00:21:07.559 group and it's going to turn out that
+00:21:10.480 this isn't going to be true for
+00:21:12.440 arbitrary subgroups of a group it's not
+00:21:14.240 going to be true that if I just have any
+00:21:15.679 subgroup then the set of coets are going
+00:21:18.600 to form a group but it is going to be
+00:21:20.520 true in the case of normal subgroups but
+00:21:22.840 here that's just a trivial thing because
+00:21:24.960 Z is Aon so every subgroup is a normal
+00:21:27.640 subgroup is that clear are there any
+00:21:31.320 questions great oh go ahead you just the
+00:21:34.960 long thing that you said just before any
+00:21:37.120 questions could you repeat that oh I was
+00:21:39.360 just saying that um so it's not true
+00:21:43.080 that if I have some arbitrary subgroup
+00:21:45.760 it's not going to be true we're going to
+00:21:47.039 see this later on but it's not going to
+00:21:48.400 be true that if I have an arbitrary
+00:21:49.960 subgroup of a group then the set of
+00:21:52.159 coets of that subgroup form a group but
+00:21:54.960 it will be true under the hypothesis
+00:21:58.080 that a is normal in the case of Z this
+00:22:01.279 is a trivial hypothesis because all of
+00:22:02.919 its subgroups are
+00:22:12.760 normal um
+00:22:18.039 so another
+00:22:24.520 observation so a week ago somebody asked
+00:22:28.080 the question
+00:22:29.320 is there a cyclic group of order n for
+00:22:32.159 every
+00:22:33.320 n and we gave an example of a subgroup
+00:22:37.480 of SN the symmetric group on N letters
+00:22:40.679 which was cyclic of order n so it's just
+00:22:43.279 this sort of cycle that goes 1 to 2 2 to
+00:22:45.919 3 up to n which goes back to
+00:22:49.400 one well here's another nice
+00:22:52.159 construction of such a
+00:22:55.760 group Z mod NZ
+00:22:59.279 is also
+00:23:01.720 cyclic of order n and it's a nice sort
+00:23:05.240 of model for a cyclic group of order n
+00:23:07.679 remember we saw that all cyclic groups
+00:23:09.240 of order n are isomorphic so here is a
+00:23:12.000 very simple sort of way of studying
+00:23:14.200 cyclic groups of order
+00:23:19.840 n of course this is just generated by
+00:23:22.840 one bar because if I add one bar to
+00:23:26.640 itself K *
+00:23:29.960 then this thing is just
+00:23:32.559 Kar so I get all
+00:23:38.120 of one bar two bar up to n minus one bar
+00:23:43.039 and N bar which is just Zero
+00:23:53.480 Bar excuse me I hate to say I'm not
+00:23:56.640 exactly sure why one
+00:24:04.039 so why is the the question is why is the
+00:24:06.880 cylic group generated by one bar Z mod
+00:24:10.480 NZ well what is the cyclic group it's
+00:24:14.720 the set of well in one notation the
+00:24:21.240 powers but in our notation this is sort
+00:24:24.600 of inappropriate we don't want Powers we
+00:24:26.399 want multiples so these are things that
+00:24:30.600 look like G + g n times or when there're
+00:24:36.840 negative Powers putting in the inverses
+00:24:39.600 so as n ranges over Z in particular the
+00:24:43.279 cyclic subgroup generated by one bar
+00:24:46.000 contains well one bar one bar plus one
+00:24:49.000 bar one bar plus one bar plus one bar so
+00:24:51.399 it certainly contains one bar added to
+00:24:53.679 itself K
+00:24:55.080 times Well if I add one bar to itself k
+00:24:58.600 times then I get K Bar because of
+00:25:01.600 associativity one bar plus dot dot do
+00:25:04.039 one bar just looks like 1 + K
+00:25:07.320 * all
+00:25:09.960 bar so that's K bar so in particular I
+00:25:13.559 have in the cyclic subgroup generated by
+00:25:15.360 one bar one bar two bar all the way up
+00:25:18.120 to n minus one bar and N bar which is
+00:25:21.240 zero but we saw before that's all of the
+00:25:24.960 elements that exhausts all the elements
+00:25:27.640 of Z and
+00:25:30.880 Z so if everything that's in here is in
+00:25:33.760 here then these must be equal is that
+00:25:37.039 clear
+00:25:43.399 great so
+00:25:46.760 um I just I maybe I'll just make
+00:25:49.840 something that I wrote over there even
+00:25:51.840 more
+00:25:53.039 explicit
+00:25:56.159 notation when we use Plus
+00:26:02.520 for our group
+00:26:09.240 operation we
+00:26:12.320 write n *
+00:26:15.279 G4
+00:26:18.760 G added to itself n times not the more
+00:26:22.880 multiplicative notation G to the N
+00:26:26.559 so be careful because for
+00:26:29.559 instance there are certainly two
+00:26:31.520 operations that we've defined on Zod n z
+00:26:35.279 there're different operations and they
+00:26:36.559 have different notations for
+00:26:46.360 them okay so let's just make a further
+00:26:50.440 observation about just these two uh
+00:26:53.679 things so here's a
+00:26:56.679 further observation
+00:27:05.440 the
+00:27:07.480 addition and
+00:27:12.520 multiplication on Zod
+00:27:15.159 NZ
+00:27:17.600 distribute in the precise sense that if
+00:27:20.919 I
+00:27:22.960 multiply a bar * B plus c bar then this
+00:27:27.200 thing is the same as as a bar bar bar
+00:27:30.480 plus a bar C now of course this seems
+00:27:34.559 like an utterly obvious thing because
+00:27:36.760 it's just inheriting what's going on
+00:27:38.840 from the integers so this is
+00:27:42.130 [Music]
+00:27:45.279 inherited from Z and so it's a very very
+00:27:48.399 simple verification nonetheless it's a
+00:27:51.039 very important point it becomes a sort
+00:27:52.760 of repeated theme because we're going to
+00:27:54.559 have a lot of things that work very very
+00:27:56.840 similarly to this
+00:28:00.039 and this is going to be a major theme
+00:28:01.360 when we get to the second part of the
+00:28:03.159 course on ring
+00:28:08.440 Theory okay
+00:28:12.320 so here's an
+00:28:14.559 example of the
+00:28:17.880 usefulness of modular arithmetic
+00:28:30.600 so somebody telling me how to compute
+00:28:34.200 the last two
+00:28:39.360 digits in the decimal expansion of 2 to
+00:28:43.360 the 1000 go
+00:28:48.960 ahead exactly so the answer is well all
+00:28:53.760 we have to compute
+00:28:55.960 is Sor the
+00:28:59.720 all we have to
+00:29:03.320 compute is 2 to the th modul 100 which
+00:29:09.960 makes the whole problem extremely
+00:29:15.559 manageable so completely explicitly just
+00:29:18.360 to show you how easy this is and also
+00:29:22.919 uh an essential technique used by
+00:29:26.039 computers so I mean it's it's of in the
+00:29:28.399 case that you need to do things which
+00:29:29.919 are analogous to Computing the last
+00:29:32.080 couple digits in 2 to the 1000 for
+00:29:34.240 instance this is how computers do it
+00:29:36.640 they don't you know crank out all of two
+00:29:38.720 to the 1000 because that's rather large
+00:29:41.200 number uh and convert it to decimal
+00:29:43.679 notation that would be not so efficient
+00:29:46.519 so here's a very very simple short way
+00:29:49.440 of computing the thing well this 2 to 10
+00:29:52.519 is24 which is congruent to 24 modul
+00:29:57.039 100 so I I do this in part because it's
+00:29:59.760 just useful you have to get used to
+00:30:01.399 writing things in this kind of notation
+00:30:04.559 um if I Square this so 2 20 well that's
+00:30:08.159 2 10
+00:30:11.000 squared um and that means this is 24 SAR
+00:30:16.840 modul 100 which is
+00:30:20.159 576 which is congruent to 76 modulo 100
+00:30:25.679 are there any questions about the
+00:30:27.399 computation so far is this clear to
+00:30:34.640 everyone now if I Square 76 this is
+00:30:39.320 5776 which is just
+00:30:41.960 76 mod
+00:30:44.799 100 what is 76 to the N modulo
+00:30:49.919 100
+00:30:52.279 76 this implies that 76 to the N is
+00:30:55.480 congruent to 76 modul 1 100 by
+00:31:01.000 induction and so well this thing is two
+00:31:06.679 the 20 which is uh you know s the 50th
+00:31:10.039 root of this thing or in other words
+00:31:12.679 this thing is this to the power 50 which
+00:31:15.080 is this to the^ 50 so 2 the
+00:31:18.960 1000 is just congruent to 76 modul 100
+00:31:23.720 so the question is answered very very
+00:31:25.639 simple
+00:31:39.080 so so
+00:31:41.200 far
+00:31:44.120 modular
+00:31:47.360 arithmetic
+00:31:49.080 has given us one
+00:31:54.960 group is Z mod NZ
+00:31:59.320 with the
+00:32:02.399 multiplication a
+00:32:06.559 group
+00:32:09.120 somebody yeah somebody go
+00:32:14.000 ahead right so this is definitely not a
+00:32:18.399 group
+00:32:20.120 no because for instance Zero
+00:32:26.480 Bar cannot
+00:32:30.840 possibly have an
+00:32:35.399 inverse because anything that you
+00:32:37.159 multiply by gives you
+00:32:42.159 zero but can somebody
+00:32:44.600 see a
+00:32:47.039 subgroup or can somebody see a subset of
+00:32:49.840 Z mod NZ which gives a group go
+00:32:55.880 ahead exactly you you just do the
+00:32:58.480 simplest thing the problem here is that
+00:33:01.360 there are things which don't have
+00:33:02.519 inverses so you just take the ones that
+00:33:05.320 have
+00:33:11.679 inverses so we
+00:33:14.639 Define so we also we do
+00:33:19.279 have a subset
+00:33:22.639 though of Z mod
+00:33:25.679 NZ which gives
+00:33:28.880 gives a
+00:33:31.880 group under
+00:33:38.080 multiplication explicitly the set of
+00:33:40.760 things that have
+00:33:45.399 inverses so the a bar
+00:33:49.039 in Zod
+00:33:52.240 NZ such
+00:33:54.639 that
+00:33:56.399 there is
+00:33:58.480 C in ZM
+00:34:01.120 NZ such that a bar * C
+00:34:07.159 is one
+00:34:11.399 bar and the notation for this
+00:34:14.599 thing
+00:34:17.320 is Zod n z cross this should be a
+00:34:21.879 familiar notation to you because when we
+00:34:24.000 talked about the real numbers and the
+00:34:25.480 complex numbers we added across to
+00:34:28.079 denote the nonzero elements well those
+00:34:31.000 are exactly the elements which have
+00:34:32.800 inverses so this is an entirely
+00:34:34.960 consistent
+00:34:41.040 notation okay so well just to make sure
+00:34:45.480 that this is entirely clear well the
+00:34:51.320 associativity again is inherited from
+00:34:54.199 the
+00:34:55.000 integers the identity well I've already
+00:34:57.280 said what it is it's one
+00:35:01.680 bar one bar has a natural inverse namely
+00:35:05.240 itself um so it's certainly in there um
+00:35:09.359 and the inverses well that's by
+00:35:11.480 definition inverses by
+00:35:15.280 construction so let's have a brief
+00:35:17.960 recall on
+00:35:21.680 gcds because we're going to want
+00:35:24.119 to discover the structure of this thing
+00:35:27.720 you want to know what this thing looks
+00:35:29.200 like and it turns out that this is tied
+00:35:31.400 up with some very very Elementary
+00:35:37.119 arithmetic
+00:35:40.160 so um to
+00:35:45.599 understand zmod n z
+00:35:49.920 star
+00:35:52.160 review of greatest common divisors
+00:35:57.839 so if I have M and N integers and I'm
+00:36:02.200 going to assume not they're not both
+00:36:06.440 zero it's a just a hypothesis that's
+00:36:09.359 going to make theorems easier to write
+00:36:11.680 down so what is the
+00:36:15.640 gcd well you were probably taught this
+00:36:18.960 in elementary school as the largest
+00:36:22.319 positive
+00:36:26.400 integer where this is a sort of
+00:36:28.400 redundant uh part of the uh definition
+00:36:30.960 the largest
+00:36:35.640 integer um that divides both of these
+00:36:39.079 things
+00:36:41.359 dividing M and N but for the purposes of
+00:36:45.560 sort of understanding the gcd there's of
+00:36:48.680 course a better way of writing this down
+00:36:51.400 because it doesn't make reference to the
+00:36:55.040 order structure on the integers uh
+00:36:58.040 um inherited from the real numbers in
+00:37:00.079 other words it doesn't it doesn't talk
+00:37:01.960 about positive and negatives there's
+00:37:03.440 another order structure that that is
+00:37:06.480 induced by just multiplication or in
+00:37:09.079 other words the division relationship
+00:37:11.040 between things so this is the
+00:37:14.960 unique positive
+00:37:20.079 integer um such that D divides m and n
+00:37:25.880 and
+00:37:27.640 if e divides M and N then e divides
+00:37:34.760 D and it's very very easy to verify of
+00:37:38.599 course you've done this surely in
+00:37:40.200 another course that this number has this
+00:37:47.280 property
+00:37:53.280 now the major
+00:37:55.960 fact the main fact that that um I want
+00:38:00.200 to
+00:38:01.319 prove about
+00:38:04.200 gcds is
+00:38:06.400 that they have a relationship to the
+00:38:08.800 group structure or subgroup structure on
+00:38:11.800 Z that we've studied so far yes
+00:38:19.359 question sorry what's the
+00:38:25.119 question oh unique POS integer D such
+00:38:29.520 that D divides MN and if e if you have
+00:38:34.280 another common divisor then it divides
+00:38:37.599 the greatest common divisor so it's just
+00:38:40.400 it's just talking about the division
+00:38:41.839 structure of the
+00:38:44.280 thing
+00:38:46.160 so MZ plus
+00:38:49.040 NZ first question these These are both
+00:38:52.920 subgroups of Z is MZ plus NZ is subgroup
+00:38:56.920 of Z
+00:39:00.160 the answer is yes and it's not hard to
+00:39:01.800 see I mean zero is certainly in here
+00:39:05.160 it's certainly closed under addition and
+00:39:09.359 the uh uh negative of something in here
+00:39:12.400 is certainly again in here because these
+00:39:13.839 are just things of the form Mr plus NS
+00:39:17.359 and just negate those Etc so this is
+00:39:19.800 certainly a subgroup but we know what
+00:39:21.720 all the subgroups of Z look like they
+00:39:23.960 look like some number some positive in
+00:39:27.839 fact time Z so any guesses as to what
+00:39:31.880 this
+00:39:33.240 is go ahead d
+00:39:36.160 z exactly the answer
+00:39:39.200 is gcd of MN Z that was a hard
+00:39:44.119 one um to
+00:39:47.000 guess proof well this is this is a
+00:39:50.240 fairly easy verification but I'll just
+00:39:52.040 go through it very quickly so as I said
+00:39:54.800 this thing is a subgroup so this is
+00:39:58.920 subgroup of Z so it looks like something
+00:40:02.440 so
+00:40:04.000 equals DZ for some Z for some D rather
+00:40:08.839 and we can assume D is a positive
+00:40:13.240 integer um now since
+00:40:16.520 m is in MZ plus
+00:40:19.800 NZ
+00:40:21.760 um which is exactly DZ D certainly
+00:40:26.079 divides m
+00:40:29.119 same
+00:40:31.160 argument D divides n so the first part
+00:40:35.319 of this is
+00:40:37.160 verified the first part of this
+00:40:39.040 characterizing property is
+00:40:41.640 verified second part well suppose I have
+00:40:46.920 e dividing M and
+00:40:50.079 N well because D is in
+00:40:55.800 DZ I can write this as
+00:40:59.440 Mr can write d as Mr R plus NS and if e
+00:41:06.400 divides M and E divides n then e divides
+00:41:09.680 m r plus NS and hence e divides D is
+00:41:14.760 that
+00:41:17.920 clear so this is exactly the
+00:41:20.599 characterizing property this D divides m
+00:41:23.839 and n and if something divides M and N
+00:41:26.680 then it divides D so we verified the
+00:41:29.839 properties and we've proved Lemma
+00:41:32.720 so there you
+00:41:39.000 go now let's use this
+00:41:47.079 fact use this
+00:41:50.119 fact to
+00:41:53.480 prove proposition
+00:42:03.119 Z mod NZ
+00:42:06.240 star looks like exactly the set of a bar
+00:42:10.079 in Z mod NZ such that any guesses
+00:42:15.640 yes exactly the gcd of A and N is one or
+00:42:22.280 to use uh a more abbreviated terminology
+00:42:24.880 A and N are relatively prime
+00:42:28.280 so this is very easy to prove now that
+00:42:30.079 we've established these sorts of basic
+00:42:31.680 arithmetic facts about the subgroups of
+00:42:37.200 z
+00:42:41.079 um well I mean there is one subtle Point
+00:42:44.960 here what what would be a sort of subtle
+00:42:47.200 point in just writing down this
+00:42:52.079 set yes well the first is that um we
+00:42:56.440 don't know
+00:43:01.800 well yeah is is there another sort of
+00:43:03.839 there's a bit of an issue with writing
+00:43:05.280 this down because you'll notice that I
+00:43:07.480 I'm taking the a bar and Z mod NZ and
+00:43:10.000 you know on the left part of this and on
+00:43:11.520 the right part I'm removing the bar now
+00:43:15.040 there's no unique lift if I have some
+00:43:18.200 equivalence Class A Bar there are many
+00:43:20.319 many possible Representatives so there's
+00:43:22.480 a slightly subtle Point here namely that
+00:43:25.800 if I have one element of an equivalence
+00:43:28.520 class which is relatively prime to n
+00:43:30.720 then every element of that equivalence
+00:43:32.599 class is also relatively prime to n now
+00:43:35.160 this isn't difficult to show but it's
+00:43:36.960 certainly a bit of a subtlety in writing
+00:43:38.839 down this
+00:43:42.440 thing but anyway I'll go on and prove
+00:43:45.559 this
+00:43:50.839 proposition so
+00:43:55.559 first the right hand side is included in
+00:43:58.240 the left hand side well if I have gcd a
+00:44:03.079 Nal 1 then by the
+00:44:06.640 Lemma so the Lemma implies that I can
+00:44:10.520 write well AZ plus NZ equals z or put
+00:44:15.839 another way
+00:44:18.319 one or uh uh yeah put another way it's
+00:44:22.119 equivalent but it's also just something
+00:44:23.920 that follows immediately because one is
+00:44:25.920 in here I can write 1 as a r plus NS for
+00:44:31.280 some R and
+00:44:33.440 S so why is this significant well this
+00:44:37.040 tells
+00:44:38.640 us
+00:44:45.760 that a r minus one is an NZ or put
+00:44:49.920 another way a bar R
+00:44:53.160 Bar is one
+00:44:55.559 bar so
+00:44:58.559 a bar is certainly
+00:45:01.680 in um Z mod n
+00:45:04.920 z
+00:45:07.160 cross
+00:45:10.520 now the
+00:45:12.280 converse is very very similar
+00:45:15.160 so left hand side contained in right
+00:45:18.319 hand
+00:45:19.839 side well do the same sort of thing if I
+00:45:23.000 have a bar * c bar equaling 1 bar
+00:45:27.599 then I can write
+00:45:29.760 acus 1 = NB for some integer B so 1
+00:45:35.599 which is AC plus NB is in a z+
+00:45:41.319 NZ but this thing is
+00:45:43.960 just
+00:45:45.640 gcd a
+00:45:47.839 n
+00:45:49.920 z and if one is in this subgroup of the
+00:45:53.960 form
+00:45:55.319 DZ then that D must be plus or minus one
+00:45:59.240 it must be
+00:46:00.559 one because if this were like two or
+00:46:02.960 three or four or something one couldn't
+00:46:05.040 possibly be in there one uh two does not
+00:46:09.760 have a multiplicative inverse in Z for
+00:46:11.520 instance so this proves the
+00:46:14.520 result this gives a sort of structure so
+00:46:20.200 example
+00:46:22.440 um what does Zod pz
+00:46:27.920 cross look
+00:46:29.720 like yeah go ahead everything except
+00:46:32.760 zero everything except for
+00:46:35.680 zero all of 1 2 3 up to P minus one are
+00:46:40.160 certainly relatively prime to P so this
+00:46:42.720 is one
+00:46:47.359 two so another example
+00:47:04.359 more
+00:47:08.200 generally what is the order of Zod P to
+00:47:13.240 the e
+00:47:15.839 z
+00:47:17.839 star any takers yes p e p e why so the
+00:47:26.040 answer he gave is p the eus P the eus 1
+00:47:30.599 basically
+00:47:32.839 that's well that's okay so the answer he
+00:47:35.400 gave makes a sort of reference to some
+00:47:37.400 number theoretic background but there's
+00:47:39.200 a very simple combinatorial way of
+00:47:41.000 seeing why that's true yes go
+00:47:44.280 ahead
+00:47:47.520 exactly this is everything except the
+00:47:49.960 multiples of P what are the multiples of
+00:47:52.839 P the multiples of P are 1 * p 2 * p 3 *
+00:47:57.960 P up to p e minus1 * P these are exactly
+00:48:03.240 the
+00:48:04.800 things the things not relatively
+00:48:16.880 prime to P so we started out with the
+00:48:20.599 set of P to the E things we took away P
+00:48:23.240 to the E minus one things which were not
+00:48:25.160 relatively prime and we're left over
+00:48:26.839 with P to the E minus P the E minus1
+00:48:30.200 things which are relatively
+00:48:35.160 prime okay so this is a first sort of
+00:48:37.880 introduction to modular arithmetic but
+00:48:40.520 what we're going to be doing in the next
+00:48:42.240 class is sort of riffing further on the
+00:48:44.800 theme from the first part which is just
+00:48:46.880 this sort of additive structure um this
+00:48:50.920 multiplicative structure is something
+00:48:53.079 that we're going to get to only later in
+00:48:55.240 the course in greater detail but it's
+00:48:57.520 certainly useful to have seen now
+00:48:59.079 because you need it as a tool but what
+00:49:01.119 we're going to start discussing later on
+00:49:03.920 is that as I said uh alluded to before
+00:49:07.799 if I have some normal subgroup
+00:49:11.079 h of
+00:49:15.079 G we're going to be able to look at the
+00:49:18.040 coet space which we're going to denote G
+00:49:22.319 mod H so this is the
+00:49:25.000 set of coet
+00:49:29.240 of
+00:49:30.200 H in
+00:49:32.520 G and we're going to see that there's a
+00:49:34.799 natural
+00:49:40.640 homomorphism there is a
+00:49:45.319 natural
+00:49:51.240 homomorphism from g to g mod h
+00:50:00.040 with full
+00:50:04.880 image and
+00:50:08.160 kernel exactly H and this will answer a
+00:50:11.680 question that one of you had in the last
+00:50:15.000 class if one has a normal subgroup is
+00:50:18.119 there always a
+00:50:19.599 homomorphism which has that normal
+00:50:22.160 subgroup as its kernel we've answered
+00:50:25.079 that in the special case of the group z
+00:50:28.200 today why well
+00:50:31.640 because the set of normal subgroups of Z
+00:50:34.839 are exactly the set of subgroups of Z
+00:50:36.559 which are the things of the form n z and
+00:50:40.400 we saw that there's a natural
+00:50:45.599 map which I called red short for
+00:50:48.599 reduction because this is the
+00:50:49.760 terminology
+00:50:51.000 used from Z to Z mod n
+00:50:55.480 z and and I didn't verify this but it's
+00:50:58.319 a very easy verification that this map
+00:51:00.520 is a
+00:51:03.000 homomorphism well I did do it in some
+00:51:05.359 sense um I mean that was just sort of
+00:51:08.319 the idea that if I could write a bar
+00:51:13.079 plus c bar then that was the same thing
+00:51:14.839 as a plus c bar because this map is just
+00:51:17.680 taking some a to a bar so this is a
+00:51:22.040 verification of the fact that this is a
+00:51:25.559 homomorphism
+00:51:27.400 moreover it's
+00:51:29.599 surjective by construction and
+00:51:33.720 finally this is a good verification the
+00:51:37.000 kernel is
+00:51:39.240 exactly
+00:51:41.760 NZ so what we're going to do next time
+00:51:45.280 is see why this continues to work for
+00:51:48.400 any normal
+00:51:50.359 subgroup of a
+00:51:52.880 group great thanks

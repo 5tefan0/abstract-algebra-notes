@@ -1,0 +1,1044 @@
+# tactiq.io free youtube transcript
+# Lec 10 | Abstract Algebra
+# https://www.youtube.com/watch/IRObwkPA0tI
+
+00:00:13.639 so
+00:00:15.320 recall what we did last time where we
+00:00:18.279 sort of left off so we
+00:00:24.439 showed that um
+00:00:33.480 if we start
+00:00:35.600 with a f dimensional Vector
+00:00:46.520 space and a literally independent subset
+00:00:50.920 of that Vector space so I'll call that
+00:00:53.559 set V sorry s and I'll contain vectors
+00:00:57.160 V1 through VN and assume that
+00:01:00.559 this is a linearly independent
+00:01:03.239 set
+00:01:05.080 um then s can
+00:01:08.799 be
+00:01:11.680 extended to a
+00:01:16.479 basis
+00:01:18.720 V1 VN VN +
+00:01:21.960 1 up to
+00:01:24.759 VM of V now this looks at first like
+00:01:28.280 some sort of simple obvious result and
+00:01:30.640 the proof wasn't very hard in some sense
+00:01:33.479 but
+00:01:34.560 nonetheless this is a very very
+00:01:36.479 important result in so far as it
+00:01:38.040 completely informs the way we think
+00:01:40.840 about manipulating Vector spaces and
+00:01:43.439 it's going to have a major impact on our
+00:01:45.520 ability to analyze the sort of group
+00:01:47.880 theoretic properties of vector spaces so
+00:01:51.759 just to reinforce that idea I'm going to
+00:01:54.119 look at some
+00:01:55.280 consequences uh of this particular
+00:01:57.600 result some of which we saw last time in
+00:02:00.719 some form others which are somewhat new
+00:02:06.200 so let me just
+00:02:08.639 start by listing some consequences and
+00:02:12.480 we'll just run through briefly why those
+00:02:15.519 things are true
+00:02:17.959 so let's just start with the following
+00:02:22.519 so let W be the
+00:02:26.920 Subspace so I'm just going to retain
+00:02:29.000 notation from the recall here and I'm
+00:02:31.800 going let W be the Subspace of the
+00:02:37.879 span by the set V1 through VN now recall
+00:02:43.200 we saw last time the word span means the
+00:02:45.640 set of things which are linear
+00:02:48.080 combinations of a particular set of
+00:02:50.040 vectors so w is all things of the form
+00:02:53.080 C1 V1 plus dot dot dot CN VN is C1
+00:02:57.440 through CN range over the implicit field
+00:03:00.480 here F so running behind the scenes here
+00:03:03.519 is that V is over f f being some
+00:03:08.680 field um and in general it suffices to
+00:03:11.920 think of this field as being R but
+00:03:13.959 that's not always true finite Fields
+00:03:15.799 have weird properties so you should bear
+00:03:17.519 that in mind especially when you're
+00:03:19.360 adding finite sets of vectors but for
+00:03:22.640 now we're just concerned with these
+00:03:24.040 sorts of General results okay so and let
+00:03:29.239 w
+00:03:30.360 Prime be
+00:03:33.000 the
+00:03:36.280 Subspace spanned by the remaining
+00:03:40.040 vectors VN +
+00:03:41.720 one through
+00:03:44.200 VM well then here are two
+00:03:48.000 consequences then first of
+00:03:50.439 all the intersection of these things is
+00:03:54.000 zero but that's not really a major
+00:03:55.599 result the the point is more the thing
+00:03:57.599 that I'm about to write down which sort
+00:03:58.959 of takes advantage of that
+00:04:03.319 fact which
+00:04:05.799 is and we
+00:04:09.000 have a linear
+00:04:14.200 isomorphism between the products of w
+00:04:16.798 and W Prime what's the product well this
+00:04:19.440 was part of the reading for one of the
+00:04:21.560 uh sections in the last chapter but just
+00:04:24.960 to refresh your memories this is the set
+00:04:26.960 of ordered pairs ww Prime
+00:04:30.720 uh where W ranges over W Little W ranges
+00:04:33.720 over Big W and Little W Prime ranges
+00:04:36.600 over Big W
+00:04:39.120 Prime there's a linear isomorphism
+00:04:41.520 between this product
+00:04:43.639 thing and
+00:04:46.479 V where we just take a pair ww Prime and
+00:04:52.000 we map it to its
+00:04:55.800 sum so using a term introduced last time
+00:05:01.360 can somebody give me a way of seeing
+00:05:04.280 fairly immediately that the intersection
+00:05:06.600 of w and W Prime is just the zero Vector
+00:05:13.919 space
+00:05:18.199 yes yes so
+00:05:21.639 um that would be sort of yeah it's it
+00:05:24.960 has to do with spanning but there's a
+00:05:26.240 much more critical thing the thing that
+00:05:28.039 you really use immediately
+00:05:30.199 is linear Independence so it follows
+00:05:33.120 immediately from a sort of generalized
+00:05:35.160 notion of linear linear Independence
+00:05:37.080 between these two things specifically
+00:05:38.840 the the fact that the cumulation of
+00:05:41.319 these two sets is linearly independent
+00:05:44.880 well why I mean suppose I have
+00:05:49.240 something which is in W well I can
+00:05:51.960 certainly write it by definition of span
+00:05:57.240 as A1 W1 through a and w n and if I have
+00:06:01.520 W Prime I can write that as n +1 w n +
+00:06:07.440 1 uh up to a m WM so these are just sort
+00:06:11.319 of General elements of w and W Prime and
+00:06:15.280 if these things are equal
+00:06:18.880 so if I have these things being equal
+00:06:22.479 well then I can subtract them so wus w
+00:06:26.599 Prime is
+00:06:28.160 zero but that's this sort of non-trivial
+00:06:31.039 linear combination of A1 W1 up to a n WN
+00:06:37.199 plus minus a n +1 w n +1 up through a m
+00:06:43.759 WN so just negate that this thing equals
+00:06:48.000 zero and since W sorry these should be
+00:06:52.440 V's over here V1 to VN VN + one VM V1
+00:06:59.879 VN VN + one
+00:07:03.360 VM well since these things are all
+00:07:06.560 linearly Independent by hypothesis these
+00:07:09.440 things form a basis all of these AIS are
+00:07:14.199 zero so each AI must be zero so the
+00:07:18.879 things that we started
+00:07:21.919 with must have been
+00:07:24.280 zero so it's the linear Independence
+00:07:26.680 which is telling us in like a completely
+00:07:29.520 essential way that the intersection of
+00:07:31.919 these sorts of linearly independent
+00:07:34.000 spans must be
+00:07:37.400 zero now let's move on to the fact that
+00:07:41.199 this thing is a linear isomorphism well
+00:07:44.199 the fact that it's just a homomorphism
+00:07:45.919 follows pretty much immediately from the
+00:07:48.639 definition of vector space structure on
+00:07:51.560 the
+00:07:53.560 product so how do you add things in here
+00:07:56.960 well you add them component wise so
+00:08:00.520 if I have W1 W1 Prime and W2 W2 Prime
+00:08:05.560 you just add these things W1
+00:08:08.120 W2 W1 prime plus W2 Prime and If I
+00:08:12.520 multiply by a scalar C * ww Prime that's
+00:08:16.120 just CW CW Prime so it's pretty apparent
+00:08:21.199 that this map here must at the very
+00:08:23.960 least be a linear transformation so
+00:08:35.799 is that pretty clear to
+00:08:38.200 everyone
+00:08:40.360 okay the surjectivity
+00:08:42.760 in a word where is the surjectivity come
+00:08:50.320 from spans exactly the fact that
+00:08:56.000 V1 up through VM spans
+00:09:01.240 because you know every everything in V
+00:09:03.920 is by definition some linear combination
+00:09:06.120 of V1 through VM and so I take you know
+00:09:09.240 the first part of the linear combination
+00:09:10.800 from W and the second part of the linear
+00:09:12.640 combination from W Prime I add those up
+00:09:16.040 and I get whatever Vector I wanted in V
+00:09:19.120 so the surjectivity follows from
+00:09:22.040 spanning and then
+00:09:24.600 finally
+00:09:26.240 injectivity where does that come from
+00:09:28.240 yes linear Independence exactly in fact
+00:09:32.320 we've already shown the critical thing
+00:09:34.240 about linear Independence which is
+00:09:35.680 specifically that the intersection of w
+00:09:37.800 and W Prime is zero because if I have um
+00:09:42.760 you know suppose I have uh W1 + W1 Prime
+00:09:46.760 equaling W2 + W2 Prime right well this
+00:09:51.079 implies that W1 minus W2 is equal to W2
+00:09:55.720 primeus W1 Prime this thing is in
+00:10:00.000 W this thing is in W Prime
+00:10:04.680 so whatever this common Vector is it's
+00:10:08.040 in the
+00:10:09.040 intersection of w and W Prime which is
+00:10:12.360 zero but if this thing is zero and this
+00:10:15.440 thing is zero that implies that W1 equal
+00:10:17.440 W2 and W2 Prime equals W1 Prime so the
+00:10:21.200 way we wrote these things as sums to
+00:10:23.519 start with was unique
+00:10:29.720 is that prettyy clear are there any
+00:10:30.959 questions about
+00:10:32.560 this
+00:10:41.240 great second
+00:10:45.600 consequence so now let's sort of forget
+00:10:48.399 about the sort of notation we introduced
+00:10:50.079 before so we're just going to start with
+00:10:52.480 you know uh maybe the same Vector space
+00:10:54.519 V but we're not going to have W defined
+00:10:56.480 as before we're just going to let W be
+00:10:58.200 some Subspace so if
+00:11:00.959 W uh is a Subspace of
+00:11:09.200 V
+00:11:10.880 then there
+00:11:13.360 is another
+00:11:22.120 Subspace and there's another Subspace W
+00:11:24.720 Prime of v such
+00:11:28.040 that the
+00:11:30.560 composite
+00:11:34.360 map so I can
+00:11:37.279 certainly just inject W Prime into V by
+00:11:42.959 just letting W Prime map to W Prime I
+00:11:48.040 mean it's this is just sort of uh the
+00:11:50.959 the embedding map this is sort of the
+00:11:52.480 identity map on W Prime
+00:11:55.760 and recall also that there is a
+00:11:59.200 canonical map and it's a
+00:12:05.120 surjection there's a canonical quotient
+00:12:07.480 map so
+00:12:10.120 canonical quotient
+00:12:13.519 map which just takes this W Prime and
+00:12:17.160 Maps it to the
+00:12:20.639 coet of w
+00:12:23.240 Prime The W coet of w
+00:12:26.600 Prime such that this composite map
+00:12:30.680 is an
+00:12:38.760 isomorphism so this is a great result
+00:12:41.360 it's this is this is the result that was
+00:12:44.000 uh referred to at the very end of last
+00:12:46.120 lecture and for which there was a sort
+00:12:47.399 of counter example given or part of
+00:12:50.680 which there was a counter example given
+00:12:52.120 to by uh a group theoretic uh General
+00:12:56.399 group theoretic example involving uh
+00:13:00.079 the cylic groups that we saw last week
+00:13:03.040 um but it turns out that Vector spaces
+00:13:06.079 are nice enough that things sort of
+00:13:07.800 always break up in this great way and I
+00:13:10.240 I'll I'll elucidate that further with a
+00:13:11.880 third consequence but can anybody just
+00:13:14.600 give me very briefly the argument for
+00:13:19.079 this yeah Emily
+00:13:31.040 exactly so paraphrasing um the point is
+00:13:34.360 that we take a
+00:13:37.480 basis well V1 through
+00:13:40.040 VN of w
+00:13:43.560 extend to
+00:13:45.880 basis VN + 1 up through VM of
+00:13:52.199 V we can we're allowed to do
+00:13:55.399 this then we just let W Prime be as
+00:13:58.639 before the
+00:14:00.360 span
+00:14:02.199 of sorry this should be V1 up through VM
+00:14:06.720 span of v n +
+00:14:10.839 one up through
+00:14:14.360 VM and then it's not so hard to verify
+00:14:19.839 that this has exactly the right property
+00:14:22.959 um the thing is well certainly a
+00:14:27.160 homomorphism I mean that it's a
+00:14:30.279 transformation follows just immediately
+00:14:32.399 by the definition we chose these things
+00:14:34.600 to be linear Transformations and the
+00:14:36.639 composite of a linear transformation is
+00:14:38.120 a linear
+00:14:41.560 transformation the surjectivity follows
+00:14:44.720 from the fact that we saw
+00:14:47.360 before that everything in V can be
+00:14:49.959 written as a sum of something in W Prime
+00:14:53.160 in something in W
+00:14:56.160 so if we take some element
+00:14:59.600 uh uh of VOD W then I can lift it to
+00:15:03.839 Something in V write it as something of
+00:15:06.360 the form W plus W Prime where W's in W
+00:15:10.120 and W Prime is in W Prime and then
+00:15:12.639 certainly the coet W prime plus Big W
+00:15:15.880 must be the coet we started out with is
+00:15:18.320 that pretty
+00:15:20.399 clear so Sur
+00:15:22.800 activity straightforward from definition
+00:15:25.160 of coets
+00:15:32.639 and the
+00:15:33.639 spanning so in general in these sorts of
+00:15:36.000 results whenever you see something that
+00:15:37.920 you need to be subjective think about
+00:15:41.360 spanning whenever you need something to
+00:15:43.399 be injective think about linear
+00:15:44.959 Independence these are just sort of
+00:15:46.519 General tips and tricks and this is
+00:15:49.160 certainly going to be the basic argument
+00:15:51.160 in all the consequences of the result
+00:15:53.519 from last time that we started with
+00:16:02.120 and so injectivity well again this is a
+00:16:05.000 sort of linear Independence type result
+00:16:07.360 so if I have I mean I can certainly we
+00:16:10.440 just saw I can certainly write any coets
+00:16:13.399 um in the form W prime plus W where W
+00:16:16.440 Prime is in Big W
+00:16:18.319 Prime and so suppose I have two things
+00:16:21.319 which have the same image well then
+00:16:24.199 we've seen that W1 Prime minus W2 Prime
+00:16:27.920 must be
+00:16:29.480 in
+00:16:30.279 W so we have this thing which is in W
+00:16:34.120 but it's also in W Prime and then again
+00:16:37.279 by the same linear Independence argument
+00:16:39.199 we saw before this thing must be uh zero
+00:16:43.600 so these must be the same uh
+00:16:48.000 coet great so let's look at a third
+00:16:50.959 consequence that brings together the
+00:16:53.160 first two consequences I've listed
+00:16:56.560 here yes go ahead the
+00:17:00.160 is
+00:17:01.480 thatal so these are both Capital
+00:17:18.559 W's so the third thing is that if we put
+00:17:21.679 one and two together put the
+00:17:26.559 arguments for one and two
+00:17:32.200 together we
+00:17:35.160 get that for any Subspace w v so suppose
+00:17:38.760 we have W Subspace of
+00:17:42.039 V there's an isomorphism between V and W
+00:17:48.080 with its product with the quotient so V
+00:17:53.360 is isomorphic to W cross VOD w
+00:17:59.760 and it's just a sort of exercise I mean
+00:18:02.200 don't hand this in or anything but think
+00:18:04.440 about when you're reading over your
+00:18:06.520 notes why these two things come together
+00:18:09.440 to give this
+00:18:11.760 result but it's just a very sort of cute
+00:18:14.000 result it tells you exactly how to think
+00:18:15.799 about quotients and so on in uh in the
+00:18:19.400 case of vector spaces don't be fooled I
+00:18:22.400 mean in general in groups quotient
+00:18:24.400 structures can be very very complicated
+00:18:26.480 very very difficult but in the case of
+00:18:29.480 vector spaces it's very very easy to
+00:18:32.440 understand quotients as being sort of
+00:18:37.600 complements and a fourth
+00:18:40.760 result um well actually before I move on
+00:18:44.000 to a fourth
+00:18:45.080 result can somebody tell me something as
+00:18:49.159 a result of this about the
+00:18:51.240 dimensions of VW and VOD W
+00:18:56.159 yes dimension of
+00:19:03.120 yes exactly the dimension of V must be
+00:19:06.200 equal to the dimension of W plus the
+00:19:09.240 dimension of V mod W now let's use this
+00:19:13.559 result on a general linear
+00:19:24.520 map so on a general linear map so if f
+00:19:29.120 VT U is a
+00:19:32.840 linear
+00:19:38.039 transformation
+00:19:39.640 then well
+00:19:43.000 um two things are true first of all
+00:19:48.520 um V is
+00:19:51.720 isomorphic to the product of the kernel
+00:19:58.840 of
+00:19:59.919 f with the
+00:20:02.440 image of F and consequently Again by the
+00:20:07.320 same argument as here the dimension of V
+00:20:12.440 is equal to the dimension of the
+00:20:16.640 kernel of f plus the
+00:20:20.760 dimension of the image of
+00:20:24.559 f what group theoretic
+00:20:27.640 result implies
+00:20:34.960 this
+00:20:49.080 yes true so um that that would be true
+00:20:53.080 if you had like finite groups like say
+00:20:55.400 if this were over a finite field we had
+00:20:56.840 a finite dimensional Vector space so
+00:20:58.200 what you were saying you referring to
+00:20:59.559 the counting formula that we looked at
+00:21:01.360 but how did we prove that particular
+00:21:03.320 counting formula there was a particular
+00:21:05.159 theorem that we saw yeah there was the
+00:21:07.640 isomorphism theorem so the key result
+00:21:11.000 that we previously saw and this is it
+00:21:13.200 can't be emphasized how important this
+00:21:14.760 result is because it in much the same
+00:21:17.080 way that our discussion here is
+00:21:18.480 completely informing the way we
+00:21:20.200 understand Vector spaces the isomorphism
+00:21:22.720 theorem we saw a few lectures ago
+00:21:25.480 completely informs the way we sort of
+00:21:27.320 decompose groups and understand their
+00:21:33.400 structure so we
+00:21:37.559 saw a very significant isomorphism theem
+00:21:41.400 so why
+00:21:45.360 well the
+00:21:48.039 isomorphism
+00:21:51.559 theorem for
+00:21:53.679 groups implies another sort of
+00:21:56.120 isomorphism theorem for Vector spaces
+00:21:58.120 where you just sort of add in the linear
+00:22:00.559 structure which is something that's
+00:22:01.960 lacking in general groups but here's a
+00:22:04.960 way of putting it if I
+00:22:09.559 have a homomorphism in fact in our case
+00:22:13.039 a linear transformation because we want
+00:22:15.000 to preserve linear structure here we're
+00:22:17.279 dealing with Vector spaces so given a
+00:22:19.279 linear transformation from some Vector
+00:22:21.640 spaces V to
+00:22:23.520 U the
+00:22:26.600 map FB bar remember we talked about the
+00:22:29.520 induced map the induced map from V
+00:22:34.000 modulo the kernel of
+00:22:37.039 f going
+00:22:39.039 to the
+00:22:42.320 image of
+00:22:45.200 f where we take V plus the kernel of f a
+00:22:51.440 typical element of V modulo Su group is
+00:22:54.640 V plus that subgroup so we take this and
+00:22:58.760 we map it to F of V which is a
+00:23:02.720 well-defined element of the image
+00:23:05.000 subgroup or in our case
+00:23:08.919 Subspace is this familiar to everyone
+00:23:12.120 does everybody remember the isomorphism
+00:23:14.240 theorem it's very important
+00:23:16.880 result in fact if you don't remember it
+00:23:20.039 it's it's I mean I can't emphasize
+00:23:21.720 enough it's a really great idea to go
+00:23:23.919 home and try to figure out how to prove
+00:23:26.520 it without looking at the book
+00:23:29.159 is very
+00:23:32.480 important so the point is that this
+00:23:35.080 thing is a well
+00:23:39.080 defined linear isomorphism I mean we saw
+00:23:42.480 this in the case of groups we saw that
+00:23:43.919 this thing is a well defined
+00:23:45.440 homomorphism and uh that if this yeah
+00:23:49.480 and that it's injective and surjective
+00:23:51.240 by sort of basic properties of
+00:23:53.919 coets and so the only thing that's sort
+00:23:56.159 of being added here is the linear part
+00:23:59.360 and that just involves multiplication by
+00:24:01.200 scalars you just have to see that this
+00:24:03.039 map preserves multiplication by scalers
+00:24:05.039 and this isn't
+00:24:07.400 hard so given this result all we have to
+00:24:11.240 do is take
+00:24:13.720 W to be the
+00:24:16.760 kernel of
+00:24:19.320 F and then just put it in this result
+00:24:22.960 because this is saying that V is
+00:24:25.360 isomorphic to Kernel of f time image of
+00:24:27.360 f and this is saying that well W Times
+00:24:31.159 VOD W but W is the kernel here VOD W is
+00:24:35.360 V module of the kernel but that is we've
+00:24:38.000 just seen the image so kernel times
+00:24:52.200 image any questions so far so really
+00:24:55.520 just
+00:24:56.919 compition exactly we're taking just a
+00:24:59.600 composition of the two isomorphisms
+00:25:01.799 we're putting together all the things we
+00:25:03.520 know we're accumulating them we're
+00:25:05.200 putting together the isomorphisms and
+00:25:07.200 we're seeing what we can find about the
+00:25:09.399 structure uh of the group now in general
+00:25:11.760 it's it's a very good idea if you're
+00:25:13.159 trying to understand the structure of a
+00:25:14.679 general group and this is especially
+00:25:16.320 true of vector spaces to try out various
+00:25:19.480 maps maps are giving you the structure
+00:25:22.520 the these sorts of theorems are telling
+00:25:24.039 you that you can take advantage of
+00:25:27.039 homomorphisms that you can def by
+00:25:28.960 various means to determine a lot about
+00:25:31.399 the structure of the vector spaces you
+00:25:33.240 started off with they allow you to
+00:25:35.520 decompose maps and so on uh decompose
+00:25:37.880 the vector spaces and so on um this is
+00:25:40.360 very very true in the case of groups uh
+00:25:43.080 you often can find some sort of
+00:25:45.159 homomorphism between groups and allow
+00:25:47.360 this to help you decompose the group
+00:25:49.120 into simpler
+00:25:51.960 structure okay let's move on to
+00:25:53.760 something a little different
+00:26:03.799 so here's another sort of General
+00:26:06.279 problem for
+00:26:14.679 groups
+00:26:16.200 well if I have a
+00:26:21.600 homomorphism uh between groups G and G
+00:26:24.080 Prime
+00:26:25.360 say we want to find the kernel
+00:26:30.159 and the image of this homomorphism sort
+00:26:32.799 of a general problem it's a sort of
+00:26:34.080 obvious thing that you want to be able
+00:26:35.279 to do now this is in general very
+00:26:38.399 difficult I mean in fact this is a sort
+00:26:40.520 of prerequisite for being able to take
+00:26:42.080 advantage of the kind of result that
+00:26:43.440 we're talking about here but this can be
+00:26:46.919 very very difficult in the case of
+00:26:48.080 General groups this is
+00:26:54.159 generally difficult
+00:26:58.440 but with Vector spaces it's easy yeah
+00:27:07.000 okay and the main reason it's
+00:27:10.840 easy is because we have bases and hence
+00:27:15.559 we can write things in Matrix form and
+00:27:18.120 we have all these great algorithms like
+00:27:20.880 uh row reduction to help us find things
+00:27:23.880 like column spaces so what I'm going to
+00:27:26.200 talk about for the rest of the lecture
+00:27:28.480 is how we make a translation between
+00:27:31.159 these sorts of abstract Vector spaces
+00:27:34.159 and the language of
+00:27:36.240 matrices and then use all those Matrix
+00:27:39.440 algorithms that you learned in basic
+00:27:40.880 linear algebra to then lift back to
+00:27:43.159 these abstract Vector spaces that you so
+00:27:45.640 that you can solve problems like this so
+00:27:48.480 here's the point but we can
+00:27:53.039 solve in the
+00:27:56.399 case of
+00:27:59.159 Vector
+00:28:01.159 spaces the main
+00:28:04.159 tool are main tools are bases
+00:28:10.519 matrices and Matrix
+00:28:17.039 algorithms that you've all practiced at
+00:28:19.200 nauseum yes they are actually useful for
+00:28:21.919 something so
+00:28:29.600 let's start looking at what I mean by
+00:28:32.600 that in order to do that I want to set
+00:28:34.960 up some correspondences I want to set up
+00:28:37.399 some dictionaries
+00:28:39.399 here so here are some
+00:28:48.720 correspondences the first correspondence
+00:28:50.840 I want to set up is one that we saw in
+00:28:53.159 some form in last lecture although it
+00:28:55.799 wasn't necessarily made completely
+00:28:57.600 explicit
+00:28:59.240 so at least it was only made explicit in
+00:29:02.000 One Direction but let's review it
+00:29:03.559 because it's so important so we
+00:29:07.919 saw last
+00:29:10.240 lecture that if V is an N
+00:29:14.960 dimensional Vector space over a field
+00:29:19.840 F then bases correspond to something
+00:29:24.360 bases correspond to linear
+00:29:27.039 isomorphisms between the sort of
+00:29:28.919 canonical n dimensional Vector space
+00:29:32.399 FN and
+00:29:38.000 v um there
+00:29:40.720 is a
+00:29:43.159 correspondence a one:
+00:29:45.559 one onto correspondence between
+00:29:51.200 bases of
+00:29:54.279 v and linear isomorphisms
+00:30:00.200 from FN to
+00:30:06.399 V so suppose I have a
+00:30:11.159 basis and we're going to assume that our
+00:30:13.240 bases are ordered so maybe I'll just put
+00:30:16.720 parenthetically that these are ordered
+00:30:19.320 bases so suppose I have my basis B which
+00:30:22.919 consists of vectors V1 through
+00:30:26.000 VN we defined last time in isomorphism
+00:30:29.240 how did we Define it does anybody
+00:30:33.799 remember
+00:30:42.880 yes exactly paraphrasing and introducing
+00:30:46.159 a bit of notation which isn't standard
+00:30:47.880 it's not in the book or anything but
+00:30:49.480 it's going to be a useful notation for
+00:30:51.240 the purposes of this
+00:30:53.200 lecture we're going to
+00:30:55.360 define something I'm going to call row b
+00:30:58.559 Associated to this basis B going be
+00:31:01.799 going from FN to V and what will it do
+00:31:04.159 well it'll take the column Vector I'll
+00:31:06.840 write for the most part elements of FN
+00:31:09.279 as column
+00:31:11.639 vectors you take the column Vector A1
+00:31:15.279 through a n and you map it to the sum A1
+00:31:20.519 V1 plus a n
+00:31:24.600 VN how do we go in the other direction
+00:31:27.399 suppose we
+00:31:28.600 have a linear isomorphism from FN to V
+00:31:33.000 what's the basis that corresponds to it
+00:31:36.159 yes go
+00:31:45.559 ahead
+00:31:47.799 call yeah that's one way of putting it
+00:31:50.720 so another way of putting it so that we
+00:31:53.440 one doesn't make direct reference to B
+00:31:55.519 as being a matrix why don't we think
+00:31:58.000 this is just being some sort of ordered
+00:32:00.080 set another way of putting exactly what
+00:32:02.399 you just said is that if we have some
+00:32:05.480 row we take it
+00:32:08.039 to the ordered set row of 1 0 0 0 and
+00:32:14.080 then row 0 1 0
+00:32:17.240 0 and then onwards to 0 0 1 so there's
+00:32:22.720 this standard basis of FN and we just
+00:32:27.960 evaluate row on that standard basis so
+00:32:31.480 this is just a way of sort of
+00:32:33.120 translating everything into standard
+00:32:35.519 basis language the whole point of this
+00:32:38.320 the whole point of why this works is
+00:32:41.279 precisely that FN comes equipped with a
+00:32:44.159 sort of easy to work with
+00:32:46.480 basis and a given abstract Vector space
+00:32:50.559 doesn't necessarily but by translating
+00:32:53.200 between the sort of canonical basis and
+00:32:56.120 whatever bases you might be able to find
+00:32:58.039 for your vector space you're able to
+00:32:59.840 actually get work done okay
+00:33:03.720 so in a word why is all of this true
+00:33:07.159 well this just follows from the fact
+00:33:09.840 that the interpretation we gave to a
+00:33:11.760 basis last time is that every Vector in
+00:33:15.120 the given Vector space can be written
+00:33:17.679 uniquely as a linear combination of
+00:33:20.440 those basis elements this is simply a
+00:33:22.760 reinterpretation of that so anyway I
+00:33:25.279 refer you to your notes from last time
+00:33:26.960 to review exact what's going on but this
+00:33:29.480 follows from what we saw last time okay
+00:33:33.120 the second correspondence I want to look
+00:33:34.919 at is something that you saw in basic
+00:33:37.559 linear
+00:33:40.360 algebra and that is
+00:33:42.799 that linear
+00:33:46.039 Transformations between our sort of
+00:33:48.360 standard Vector spaces FN and
+00:33:51.960 FM these correspond to matrices these
+00:33:55.399 correspond to m by n matrices over the
+00:34:00.039 field
+00:34:08.879 F so another piece of notation just to
+00:34:11.480 make sure that we're
+00:34:14.040 all clear on what's going on
+00:34:17.719 here I will denote The Matrix Associated
+00:34:21.879 to a linear transformation from FN to FM
+00:34:24.719 as square brackets F what does square
+00:34:27.440 bracket f look like
+00:34:31.159 well maybe in the language you saw
+00:34:33.320 before this is the Matrix Associated to
+00:34:36.199 this with respect to the standard bases
+00:34:38.359 on these things well that's just the
+00:34:41.679 Matrix that looks like f of one Zer dot
+00:34:45.440 dot dot and so this is an entire column
+00:34:47.839 here so you have to think of this as
+00:34:49.918 being a matrix so this isn't a one this
+00:34:52.079 is just saying that this is an entire
+00:34:54.399 column
+00:34:57.760 and then I just evaluate on all of the
+00:35:01.200 standard basis elements all the way to
+00:35:03.880 the
+00:35:05.839 end and uh I mean this should be pretty
+00:35:09.359 familiar that this works going in the
+00:35:11.480 other
+00:35:15.119 direction I take a matrix a and from it
+00:35:19.000 I get a linear transformation from FN to
+00:35:23.119 FM by mapping a vector v in FN to its
+00:35:28.440 Matrix multiple by a so this is just the
+00:35:32.520 standard thing we saw
+00:35:34.280 before now one of the most important
+00:35:36.640 things about this correspondence is that
+00:35:40.040 it preserves the sorts of natural
+00:35:41.920 operations that you learned on both
+00:35:44.320 sides of that
+00:35:47.680 so on the side of the linear
+00:35:49.720 Transformations here you know that you
+00:35:51.800 can add linear Transformations and you
+00:35:54.119 can scale or multiply and you can
+00:35:55.880 compose and the point is is that that's
+00:35:59.520 preserved by this taking of brackets so
+00:36:02.640 in brief C1 F1 plus C2 F2 equal C1 braet
+00:36:09.280 fub1 + C2 braet F2 if I take the
+00:36:13.119 matrices Associated to these things it
+00:36:15.119 preserves all this sort of structure and
+00:36:17.240 moreover if I compose F1 and FS2 well
+00:36:20.200 that just corresponds to matrix
+00:36:22.760 multiplication this is very important
+00:36:24.880 because we know exactly how to do matrix
+00:36:26.839 multiplication we know how to do all
+00:36:28.440 these things in a very simple efficient
+00:36:29.920 algorithmic
+00:36:31.200 way so this is a way of just translating
+00:36:34.680 into the language of matrices so let's
+00:36:36.800 sort of put these things together put
+00:36:38.880 these two correspondences
+00:36:46.560 together so if I take
+00:36:49.440 correspondence is
+00:36:52.560 one and two and I put them together what
+00:36:57.680 I get well
+00:37:01.839 given some linear transformation from
+00:37:04.599 say V to v v Prime this is just some
+00:37:08.680 linear transformation and let's assume
+00:37:11.280 that this thing has Dimension
+00:37:15.079 n and M and let's just equip these
+00:37:18.560 things with bases
+00:37:20.960 B and B Prime so these are these finite
+00:37:23.920 dimensional Vector spaces of Dimension n
+00:37:25.440 and M and I equip them with these bases
+00:37:27.000 B and B Prime we know we can always
+00:37:29.079 equip some a vector space with a
+00:37:31.160 basis
+00:37:32.720 um at least we showed that in the F
+00:37:34.960 dimensional case there is a proof that's
+00:37:38.520 more General that works in sort of the
+00:37:40.880 most General uh uh version of the theory
+00:37:43.599 of vector spaces where you allow
+00:37:45.240 infinite dimensional Vector spaces but
+00:37:47.480 that requires a little set theory
+00:37:50.680 so and the controversial axium of choice
+00:37:54.319 so um given this thing what do we do
+00:37:58.680 well we have the
+00:38:03.440 Matrix Matrix of f with respect to B and
+00:38:10.240 B Prime how do we Define this well let's
+00:38:14.400 just give it a notation fbb Prime this
+00:38:17.520 thing
+00:38:19.960 is row b Prime sorry row b Prime inverse
+00:38:25.079 F row b why does this make sense well we
+00:38:29.240 defined row b so that it takes this you
+00:38:32.240 know standard Vector space these things
+00:38:35.040 of the form FN to the vector space we're
+00:38:38.440 working in then F takes the thing that
+00:38:42.800 uh the vector space we working in V to
+00:38:45.040 Something in the vector space V Prime
+00:38:47.160 then row b Prime translates back out of
+00:38:50.880 the abstract language of these Vector
+00:38:53.040 spaces V Prime and gives you something
+00:38:55.760 in this sort of canonical uh Vector
+00:38:58.040 space FM using this basis B Prime so
+00:39:02.119 it's the Matrix of f with respect to B
+00:39:05.520 and B Prime another sort of explicit way
+00:39:08.079 of looking at this is um
+00:39:16.280 explicitly if B is V1 through
+00:39:20.160 VN and V Prime is say V1 or maybe make
+00:39:27.400 it's easier W1 through
+00:39:31.200 WM then
+00:39:37.319 well given any of
+00:39:40.400 these VJs we know that we can write its
+00:39:45.079 image uniquely as a linear combination
+00:39:47.800 of things in this basis B Prime that was
+00:39:50.640 this defining characteristic of bases so
+00:39:53.800 this thing looks like just the sum uh um
+00:39:56.880 for each of these JS J is just ranging
+00:39:59.760 over 1 through n this looks like the sum
+00:40:03.079 I = 1 to m a i j uh w i for some scalers
+00:40:10.640 AI J so what is this thing f b b Prime
+00:40:19.200 well it's just this Matrix made up of
+00:40:22.560 these numbers and it's a very easy
+00:40:24.640 verification from this definition this
+00:40:26.880 is just this definition is just a sort
+00:40:29.599 of fancy and easy to work with way of
+00:40:33.480 introducing this more computational way
+00:40:36.359 of referring to the Matrix with respect
+00:40:39.319 to B and B
+00:40:47.000 Prime and again this sort of thing so
+00:40:51.000 let's just actually just summarize this
+00:40:52.640 first of all this thing sets up a very
+00:40:54.760 very nice correspondence this thing
+00:40:57.640 allows us to say that h v v Prime by
+00:41:01.079 which I mean the set
+00:41:03.839 of linear
+00:41:06.599 Transformations from V to V
+00:41:10.680 Prime this thing in fact has a vector
+00:41:13.000 space structure on it and that's
+00:41:14.760 something we're going to sort of see in
+00:41:16.160 a minute this thing is actually given a
+00:41:21.560 choice of
+00:41:23.560 bases essentially the same thing or
+00:41:25.800 exactly isomorphic to but in light of
+00:41:28.800 this particular
+00:41:30.040 choice to the m byn
+00:41:33.520 matrices over F this is just restating
+00:41:36.880 what we stated over here but what I was
+00:41:39.520 just saying is that this thing has this
+00:41:41.160 nice sort of additional structure on it
+00:41:43.560 I can add things in uh the set of linear
+00:41:47.119 Transformations from V to V Prime I can
+00:41:49.400 scale or multiply them and I can compose
+00:41:51.280 them and the point is that the fact that
+00:41:54.680 um the correspondence that we saw the
+00:41:56.839 second correspondence we saw the Roman
+00:41:58.520 numeral 2 correspondence preserve that
+00:42:00.880 structure implies that this Roman
+00:42:03.000 numeral 3 correspondence also preserves
+00:42:06.119 that structure
+00:42:08.480 so put explicitly C1 F1 plus C2
+00:42:14.920 F2 um um with respect to some B and B
+00:42:20.400 Prime is equal to C1 F1 with respect to
+00:42:23.920 B and B prime plus C2 F2 to b b Prime
+00:42:29.680 now moreover if I have again FV to V
+00:42:33.960 Prime and G from V Prime to vble Prime
+00:42:38.640 and you know again I sort of equip these
+00:42:40.280 things with
+00:42:41.240 bases b b Prime and bble
+00:42:46.960 Prime then exactly the sort of
+00:42:49.040 composition structure that you expect to
+00:42:51.160 be preserved is preserved again this
+00:42:53.520 just sort of follows from what we saw
+00:42:55.079 before so G compose
+00:42:58.480 F so G compose F goes from V to V Prime
+00:43:03.160 so I better take this with respect to
+00:43:04.760 Bases B and B Double Prime so B and B
+00:43:10.119 Prime well this thing just looks like
+00:43:12.839 the Matrix multiple of G with respect to
+00:43:17.160 B Prime and bble Prime with f with
+00:43:21.319 respect to B and B Prime it's just
+00:43:24.280 exactly the sort of composition that you
+00:43:25.960 expect
+00:43:29.640 is that pretty clear are there any
+00:43:32.240 questions yes
+00:43:34.720 the box that you've written around G I
+00:43:37.760 should read that to myself as the linear
+00:43:40.520 as the Matrix that does what G does yeah
+00:43:43.880 so what you should do is think of this
+00:43:46.800 alternatively as being the thing defined
+00:43:50.079 the Matrix defined by exactly this set
+00:43:52.440 of formulas but replacing f with G and
+00:43:55.640 replacing these scalers with the ones
+00:43:57.880 that work for G or just the thing that
+00:44:01.160 we we you know we we uh defined before
+00:44:04.079 this is row b Prime inverse G row b
+00:44:09.119 Prime this thing goes
+00:44:11.960 from the canonical Vector space of
+00:44:15.880 Dimension the dimension of V Prime to
+00:44:18.720 the canonical Vector space of Dimension
+00:44:20.680 the dimension of v double Prime and we
+00:44:23.280 know how to write matrices for that is
+00:44:27.440 that
+00:44:28.200 clear cool
+00:44:31.920 okay so we preserve the structure we
+00:44:34.920 have all these great
+00:44:44.160 properties what if we want to change
+00:44:46.280 bases I mean there's nothing canonical
+00:44:48.640 about a basis there lots and lots of
+00:44:50.760 bases for a given Vector space sometimes
+00:44:53.480 you need to work in different Vector in
+00:44:55.720 different bases uh according to the
+00:44:58.160 applications sometimes there are more
+00:45:00.200 convenient uh uh bases than the one that
+00:45:02.800 you started working with so suppose in
+00:45:05.000 the middle of your calculations you need
+00:45:06.520 to start changing bases how do you do
+00:45:09.680 this well again this is just a souped up
+00:45:12.359 version of exactly what you saw in basic
+00:45:15.559 linear algebra this is just putting all
+00:45:17.720 the trappings of this theory of abstract
+00:45:20.160 Vector spaces over an arbitrary field on
+00:45:22.839 a theory that you've already seen so
+00:45:27.400 change of
+00:45:31.359 bases so
+00:45:36.520 suppose we have
+00:45:38.640 v um and it has
+00:45:41.520 bases B1 and
+00:45:44.680 B2 and we have Vector Spa Vector space V
+00:45:47.960 Prime over F and it has
+00:45:50.200 bases B1 Prime and B2 Prime
+00:45:57.160 well let's just sort of write out
+00:46:00.839 explicitly
+00:46:02.720 what f is in terms of the second Vector
+00:46:07.119 space so suppose you write this in terms
+00:46:08.720 of B2 B2 Prime
+00:46:12.720 well we Define this as being row B2
+00:46:16.680 Prime inverse F row
+00:46:21.280 B2
+00:46:23.839 right but I can always just sort of
+00:46:26.200 insert here say uh row B1 Prime row B1
+00:46:33.559 Prime inverse that's just the identity
+00:46:35.839 map so I'm certainly allowed to insert
+00:46:37.240 it here and I can do the same sort of
+00:46:39.200 thing over here so let me just write
+00:46:40.920 that out completely explicitly I can
+00:46:42.880 rewrite this as row B2 Prime uh inverse
+00:46:47.920 row B1 Prime Time row
+00:46:53.040 B1 Prime inverse F row
+00:46:58.160 B1 uh row B1 inverse this thing again is
+00:47:02.200 the identity so I'm just allowed to
+00:47:03.440 insert it wherever I
+00:47:04.839 want as long as the the identity on the
+00:47:07.440 right Vector space um and it certainly
+00:47:10.760 is um row
+00:47:15.599 B2 so I can because of the sort of
+00:47:18.960 composition property of this taking
+00:47:21.800 matrices this sort of bracketing
+00:47:24.040 operation so this bracketing operation
+00:47:26.280 you you know this is
+00:47:27.720 you just have to think okay that means
+00:47:29.359 take the Matrix well we saw before that
+00:47:31.480 it preserves composition so I could
+00:47:33.839 rewrite this as row
+00:47:37.000 B2
+00:47:38.720 Prime inverse row B1 Prime Time row B1
+00:47:45.160 Prime inverse F row B1 time row B1
+00:47:51.359 inverse row B2 why did I do this
+00:48:00.240 well stuck in the middle
+00:48:02.240 here is f with respect to the bases B1
+00:48:06.720 Prime and B1 this
+00:48:09.839 thing is exactly equal
+00:48:14.440 to row B1 uh sorry B2 inverse row
+00:48:20.839 B1 times f with respect to B1 Prime and
+00:48:25.280 B1
+00:48:29.160 time row B1 inverse row
+00:48:33.079 B2 and notice the things on either side
+00:48:36.880 of this look very very
+00:48:42.240 similar um yeah I mean the primes should
+00:48:45.000 certainly be on the left thank
+00:48:48.319 you
+00:48:52.280 absolutely so things that look like this
+00:48:55.640 it makes sense to call change of basis
+00:48:58.680 matrices so let's just give it that
+00:49:01.400 moniker so
+00:49:05.200 call
+00:49:08.480 something of the
+00:49:12.280 form row B1 inverse row
+00:49:16.359 B2 the change of basis
+00:49:24.440 Matrix for a a change of basis Matrix in
+00:49:28.880 fact it's Unique given the B2 and the B1
+00:49:37.119 but now this is a bit General you've
+00:49:41.640 probably seen this Construction in a
+00:49:45.200 essentially identical form but in the
+00:49:47.839 special case where V and V Prime are the
+00:49:52.280 same
+00:49:53.920 so um if V equals V
+00:49:58.559 Prime then well I can just rewrite this
+00:50:02.160 as B2 B2 so I again I just have B1 B2
+00:50:07.520 and so now these are bases for both V
+00:50:09.319 and V Prime this thing just looks like
+00:50:13.040 uh row B1 inverse row B2 all inverse
+00:50:20.000 because that looks like row B2 inverse
+00:50:23.000 row B1 and I could remove the primes
+00:50:25.559 here because I'm just taking this same
+00:50:27.000 Vector space time f with respect to B1
+00:50:31.680 and B1 time row B1 inverse row B2 so
+00:50:38.280 this is just the the idea of similar
+00:50:40.640 matrices this is something of the form p
+00:50:43.440 f B1
+00:50:46.079 B1 P inverse rather fb1 B1 P where p is
+00:50:51.599 exactly this change of basic basis
+00:50:55.640 Matrix now stepping back to the general
+00:50:59.240 construction for just a second let's
+00:51:02.359 just explicitly write down for sort of
+00:51:04.400 calculation
+00:51:06.480 purposes what that thing is
+00:51:09.640 well if I have B1 and I can write it as
+00:51:14.319 V1 through VN and I have B2 and I write
+00:51:19.280 it as
+00:51:20.240 W1 through WN then row B1 inverse row
+00:51:28.000 B2 is just the Matrix CI
+00:51:31.640 J
+00:51:33.200 where I again use this sort of defining
+00:51:36.160 property of bases to write each element
+00:51:40.599 WJ as a linear combination
+00:51:45.359 of the uh the which I can certainly do
+00:51:49.160 so this is uh I ranging over 1 to n
+00:51:57.559 to
+00:52:00.319 calculate this is what you
+00:52:04.440 do
+00:52:06.480 so if I just sort of think about this
+00:52:10.400 kind of thing that we've written down
+00:52:12.920 here we've actually given this sort of
+00:52:14.599 thing a name I mean in basic linear
+00:52:16.720 algebra you call this like the theory of
+00:52:18.720 similar matrices but so far in group
+00:52:21.040 Theory we've given this a different name
+00:52:22.520 that's conjugation of matrices so what
+00:52:24.920 you have to start doing is in the you
+00:52:27.200 know in this sort of course you want to
+00:52:29.040 start moving away from that language of
+00:52:30.520 like similar matrices and to the
+00:52:32.359 language of group Theory so you would
+00:52:34.480 talk about this as being conjugacy and
+00:52:37.359 in fact this totally makes sense because
+00:52:39.599 we actually have a group in which we're
+00:52:41.520 doing this conjugation let me make that
+00:52:51.839 explicit so again let's just start with
+00:52:54.119 some Vector space V
+00:52:57.559 so V is just some Vector
+00:53:01.880 space well then we Define glv to be the
+00:53:07.680 set of linear
+00:53:10.960 isomorphisms from V to
+00:53:14.280 V so this is sort of the analog of the
+00:53:17.920 automorphism group of a
+00:53:20.079 group except that we demand something
+00:53:23.160 additional we demand not only that this
+00:53:25.400 thing be a group isomorph but that it
+00:53:27.240 preserve the scal multiplication so
+00:53:29.559 these are linear isomorphisms but in
+00:53:32.520 particular you can think of this as
+00:53:34.920 being some subgroup of the automorphism
+00:53:38.799 group of V just viewed as a
+00:53:43.640 group so put another way these are just
+00:53:47.319 the
+00:53:48.559 invertible linear
+00:53:51.359 Transformations from V to
+00:53:55.160 V or or using a language that we've seen
+00:53:58.760 several
+00:54:00.400 times what did we call the invertible
+00:54:03.200 elements of Zod
+00:54:07.799 NZ exactly Z mod NZ star so it actually
+00:54:11.559 makes sense given the notation we've
+00:54:13.240 introduced so far to call this h v to V
+00:54:19.079 Star now remember the whole point of
+00:54:22.000 what we were just showing is that h v to
+00:54:24.520 V we can sort of translate into a new
+00:54:27.319 language the language of
+00:54:29.240 matrices given a choice of basis
+00:54:37.119 so given a basis e of
+00:54:43.200 V we just
+00:54:45.920 saw we
+00:54:47.920 can rewrite
+00:54:51.040 this
+00:54:53.400 isomorphically as the set of
+00:54:58.400 invertible
+00:55:01.559 matrices
+00:55:03.240 in uh uh in MN
+00:55:07.440 byn F where n is the dimension of
+00:55:12.400 V what is this thing
+00:55:15.839 called what is the set of invertible
+00:55:18.920 matrices
+00:55:22.680 gnf so the idea is that we have this
+00:55:26.640 abstract thing
+00:55:28.559 glv but when we need to work with it
+00:55:32.119 it's much more convenient to work with
+00:55:33.680 matrices because you can actually do
+00:55:35.440 calculation with
+00:55:36.839 matrices and given a choice of basis
+00:55:40.440 you're you know you can easily do this
+00:55:41.960 you have an induced isomorph isomorphism
+00:55:45.119 rather with gnf and so it now becomes
+00:55:48.559 very easy to to do whatever you
+00:55:51.280 want okay um the general Point here is
+00:55:55.960 that you can set up this sort of
+00:55:57.200 dictionary just one last question to to
+00:56:00.200 to sort of feed your thought in this
+00:56:04.960 language in this sort of translation
+00:56:07.960 what is the image of a homore of a
+00:56:10.079 linear
+00:56:11.839 transformation in terms of
+00:56:14.160 matrices
+00:56:16.799 yes the column space exactly the image
+00:56:21.319 under this sort of dictionary is the
+00:56:23.559 same thing as the column space we know
+00:56:26.039 how to find the column space of a matrix
+00:56:28.960 so given an abstract Vector space we now
+00:56:31.119 have an algorithm for finding the image
+00:56:34.000 of a given linear
+00:56:35.319 transformation the same thing applies to
+00:56:37.440 the kernel because you can find the uh
+00:56:41.200 um the null space of a matrix and that
+00:56:43.960 thing under this dictionary is precisely
+00:56:46.880 the kernel so that's just food for
+00:56:48.760 thought

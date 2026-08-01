@@ -1,0 +1,1134 @@
+# tactiq.io free youtube transcript
+# Lec 1 | Abstract Algebra
+# https://www.youtube.com/watch/VdLhQs_y_E8
+
+00:00:12.400 for this course we may have others he
+00:00:14.960 did it last year as a pro at this you're
+00:00:17.359 a senior this year P okay he knows
+00:00:19.720 everything about it now I want to
+00:00:21.640 explain how the course is going to be
+00:00:23.080 given because uh I have too many
+00:00:26.800 responsibilities this year uh Beyond
+00:00:29.359 just teaching in the math department so
+00:00:30.960 I have to frequently go out on the road
+00:00:33.280 uh and so at those times Peter Green
+00:00:36.280 will substitute for me as a lecturer and
+00:00:38.160 in fact he'll lecture for you on Friday
+00:00:40.680 so you get an idea of his penetrating
+00:00:42.600 and Lucid style of presentation before
+00:00:45.960 you have to decide whether you want to
+00:00:47.079 choose the course I would imagine that
+00:00:49.000 Peter will be lecturing for me one out
+00:00:51.280 of every four or five lectures but I
+00:00:53.600 don't know exactly when they're going to
+00:00:55.160 be now because I don't have my exact
+00:00:57.960 schedule the way we're going to organiz
+00:01:00.239 the course is that the textbook is going
+00:01:02.680 to be this nice Algebra text by Mike
+00:01:05.560 arton so this is quite an advanced
+00:01:08.000 Algebra text I think it can be used
+00:01:10.040 profitably by students here and by
+00:01:12.240 students at MIT For Whom It Was Written
+00:01:15.240 Mike arton is a senior uh guy in the MIT
+00:01:19.200 math department one of the leading
+00:01:21.320 algebras and algebraic geometers of the
+00:01:23.759 last 50 years when you get further on
+00:01:26.400 you'll learn about his work in the art
+00:01:27.920 and representability Theorem and you'll
+00:01:30.280 learn about his work with Gro and de and
+00:01:32.119 settling the uh the foundations of of
+00:01:35.040 modern algebraic geometry in any case he
+00:01:38.240 wrote this book in mind to show really
+00:01:40.640 how algebra interacts with a lot of
+00:01:42.520 other subjects and uh that's really the
+00:01:44.880 way it it does later in mathematics and
+00:01:46.960 I think it's a great Viewpoint here I
+00:01:48.439 think you'll find it a challenging text
+00:01:50.640 by the way Mike's father was Amel arton
+00:01:53.560 who was the greatest number theorist of
+00:01:55.640 the 20th century invented the subject
+00:01:57.560 called class field Theory so he comes
+00:01:59.680 from from a distinguished uh
+00:02:01.399 distinguished mathematical tradition um
+00:02:05.280 I think we're going to do homework
+00:02:06.560 assignments every class now I know most
+00:02:09.280 of you are coming out what what is the
+00:02:10.758 background on you have for this everyone
+00:02:12.360 wants to know that so if you've come out
+00:02:14.080 of 23 or 25 or 55 you're fine that you
+00:02:19.840 you clearly have the background to take
+00:02:21.440 this course if you've been through 21
+00:02:24.879 and you felt comfortable with the linear
+00:02:26.480 algebra in 21b because I'm going to need
+00:02:29.239 some of that
+00:02:30.800 and you you are willing to move to a
+00:02:32.920 slightly more abstract level of
+00:02:34.760 knowledge this is good otherwise I would
+00:02:37.800 suggest taking a course like a 121 or a
+00:02:40.720 101 to get to that level of abstraction
+00:02:43.319 but if you're coming out of 23 25 or 55
+00:02:46.280 it's fine I know that those courses had
+00:02:48.640 weekly assignments and big long weekly
+00:02:50.680 assignments where everyone would devote
+00:02:52.319 all of Thursday night or all of Sunday
+00:02:54.760 night to finishing the assignment I want
+00:02:56.760 to do it more on
+00:02:58.319 a every every lecture there'll be some
+00:03:01.280 assignments to keep people up to date
+00:03:03.120 and the reason is that unlike 25 or 55
+00:03:06.879 or or 23 taking an algebra course is
+00:03:09.440 like learning a new language algebra is
+00:03:12.080 really more of a language of modern
+00:03:13.840 mathematics the way mathematics
+00:03:15.239 organizes itself and speaks to itself
+00:03:18.040 and so when you learn a new language you
+00:03:19.959 have to go to language lab a lot you
+00:03:21.640 have to do a lot of keeping up and
+00:03:24.040 practicing that's the way I've got it
+00:03:25.599 organized now Peter is even going to
+00:03:27.959 arrange for some assignments do
+00:03:30.080 Wednesday and Friday those are optional
+00:03:32.640 assignments right are they available now
+00:03:34.560 on the web page not yet they will be
+00:03:36.519 available on the web page those are
+00:03:38.519 optional assignments highly recommended
+00:03:40.640 so you can check whether you understood
+00:03:42.000 what I said today but also to give you
+00:03:44.760 an idea of what the level of homework is
+00:03:46.920 going to be so you can assess how much
+00:03:48.599 work there's going to be for the course
+00:03:49.879 before you decide to take it or not and
+00:03:52.159 then once we get to Friday we'll just
+00:03:53.840 start doing regular assignments do
+00:03:55.439 Monday and Wednesday and Friday we'll
+00:03:57.079 also organize problem sessions probably
+00:03:59.640 probably on Tuesday and Thursday once we
+00:04:01.519 get our CA situation straightened out
+00:04:03.360 and find out how many people are in the
+00:04:04.720 course and when they're free but we're
+00:04:06.799 not going to do that um right now
+00:04:09.840 there'll be two hour exams in the course
+00:04:12.200 those weeks are marked on the web page
+00:04:14.239 we're going to get a full syllabus up on
+00:04:15.920 the web page so you see exactly what
+00:04:18.160 date you're going to have the hour exam
+00:04:19.639 and there'll be a three-hour Final in
+00:04:22.360 January questions in general before I
+00:04:24.639 start actually talking about the math in
+00:04:26.360 the
+00:04:27.880 course that was easy okay so what are we
+00:04:30.800 going to use from linear algebra well if
+00:04:33.320 you want to review your linear algebra
+00:04:35.880 in a nice way it's done in chapter one
+00:04:38.560 of this book and I'm going to go through
+00:04:40.320 it and just tell you what we need from
+00:04:42.240 it so you can go back and find out what
+00:04:44.120 you remember and what you don't remember
+00:04:46.039 Etc um because we need some linear
+00:04:48.919 algebra initially to generate examples
+00:04:51.080 of groups which are the first topic of
+00:04:52.880 the course and the linear algebra we're
+00:04:55.160 going to need all concerns the set of
+00:04:57.759 all n byn matrices where n and n is the
+00:05:01.199 same number so Square
+00:05:05.680 matrices now the entries of the Matrix
+00:05:08.560 if you're if you're in the I row and
+00:05:10.199 you're in the jth column the entry would
+00:05:12.639 be a i j that that'll be the notation
+00:05:14.880 I'll use so the first row looks like a11
+00:05:19.080 a12 up to
+00:05:21.199 a1n and then we have a N1 down here all
+00:05:24.840 the way over to a
+00:05:26.639 NN the entries of a matrix are numbers
+00:05:30.039 that's all arton says in the beginning
+00:05:31.680 and they can be numbers in various
+00:05:33.400 different places but before we get into
+00:05:35.720 the theory of Rings or vector spaces or
+00:05:38.199 abstract Fields I'm going to take the
+00:05:40.000 entries all just to be real
+00:05:44.120 numbers and the set of all n byn
+00:05:46.919 matrices I'm going to denote
+00:05:50.479 MNR so that's all collections of n byn
+00:05:53.520 matrices so those of you who've studied
+00:05:55.639 linear algebra know that that's a vector
+00:05:57.360 space over the real numbers it has
+00:05:58.880 Dimension n squ because you have you
+00:06:01.039 have a basis for that Vector space of
+00:06:02.800 the matrices that have zeros everywhere
+00:06:04.639 but a one in the i j
+00:06:07.039 place so in particular as a vector space
+00:06:10.120 you can do a number of things in this in
+00:06:12.880 this uh set for example you can add
+00:06:15.960 matrices a plus b so if you have a m
+00:06:18.960 Matrix where the entries are a i j and
+00:06:21.639 you have a matrix where the entries are
+00:06:23.080 B IJ then the sum of these two matrices
+00:06:26.240 has entries AIG J plus b j
+00:06:30.160 so you just add the elements in the IJ
+00:06:32.560 place that's the addition law in the
+00:06:34.919 vector space of n byn matrices and you
+00:06:38.039 can also multiply matrices by a real
+00:06:40.120 scalar if you have a a real number Alpha
+00:06:43.199 and you have an M byn Matrix a i j then
+00:06:46.280 you can multiply Alpha time a and get
+00:06:49.160 the Matrix where the entries are alpha
+00:06:50.880 time a i j and only multiply every
+00:06:52.880 member by Alpha that's the scalar
+00:06:55.360 multiplication in the vector space so
+00:06:57.800 that's what makes this a real vector
+00:07:01.720 space of
+00:07:03.960 Dimension n^ S as I say you have to
+00:07:07.039 write down a basis that's not difficult
+00:07:08.960 now what's unusual that would be true
+00:07:10.919 for n bym matrices too you can add them
+00:07:14.319 you can multiply them by scalers and the
+00:07:16.919 dimension is M * n what's unusual about
+00:07:20.800 n byn matrices is not just that you can
+00:07:23.639 add them or multiply them by scalars but
+00:07:26.240 that you can multiply them so that's
+00:07:28.840 another thing I'm going to ask you to
+00:07:30.240 remember from linear algebra is okay if
+00:07:32.800 I erase this because of the video setup
+00:07:35.199 today which didn't know whether I was
+00:07:36.879 going to be using this or the Blackboard
+00:07:38.960 I have to stay somewhat on the left side
+00:07:40.479 of the board with your apologies so all
+00:07:42.759 that wonderful space I'm aware of it but
+00:07:45.199 I'm not going to use it okay is this
+00:07:47.759 okay the way I am
+00:07:50.080 good okay so that's a a big thing about
+00:07:53.560 n byn matrices is that there's a
+00:07:58.319 multiplication
+00:08:01.220 [Applause]
+00:08:08.960 which is a fairly complicated operation
+00:08:11.000 namely if you have two matrices A and B
+00:08:13.440 you can define a new Matrix a * B so uh
+00:08:17.120 those of you who've studied this since
+00:08:19.400 uh 10th grade know that the uh if this
+00:08:22.840 has
+00:08:23.759 entries CI
+00:08:25.960 J then you get the J entry of CI J in
+00:08:30.479 the following matter you go across the E
+00:08:32.640 column of a i row of a you go down the
+00:08:36.039 jth column of B you multiply this
+00:08:38.719 element by this element then you
+00:08:40.159 multiply this element by this element
+00:08:41.679 and add those you multiply and you add
+00:08:43.760 up so the formula in mathematics
+00:08:45.920 although it's not that useful is the sum
+00:08:48.680 over K of uh what a i k * B
+00:08:54.640 KJ and you might wonder what the heck is
+00:08:57.320 that mean but it certainly defin lines
+00:08:59.920 given two n byn matrices a
+00:09:03.200 thir the matrix multiplication now when
+00:09:06.480 you study linear
+00:09:08.160 algebra right and we will review linear
+00:09:11.120 algebra done right you get a little bit
+00:09:13.839 away you step back from the theory of
+00:09:15.720 matrices and you see what matrices
+00:09:18.120 represent and what matrices represent
+00:09:20.760 are linear operators so in particular
+00:09:23.800 this is the set of linear operators from
+00:09:26.800 an n-dimensional real Vector space to
+00:09:30.959 itself every Matrix is some a way of
+00:09:34.120 writing down a specific linear
+00:09:36.399 transformation we'll do that later on
+00:09:38.680 but it's a good thing to bear in mind
+00:09:41.000 because if you understand that a matrix
+00:09:43.920 represents a linear transformation then
+00:09:46.399 what multiplication of matrices
+00:09:48.200 represents is the composition of
+00:09:53.180 [Applause]
+00:09:58.120 transformations
+00:10:00.920 that's not obvious from this formula at
+00:10:02.839 all you have to you have to unwind a
+00:10:04.800 million things to see that so if a
+00:10:07.640 represents the transformation that of T
+00:10:11.320 from RN to
+00:10:14.079 RN and B represents the transm let's see
+00:10:17.959 I'll do uh B first and a second and B
+00:10:21.240 represents a transformation s from RN to
+00:10:23.880 RN represented by B and remind yourself
+00:10:27.240 how this works and that's done in art
+00:10:29.959 and
+00:10:32.839 two then the product first do B then do
+00:10:36.720 a represents the composition of the
+00:10:39.480 Transformations first take the
+00:10:41.240 transformation s and compose it with the
+00:10:43.279 transformation
+00:10:44.959 T now one thing that we emphasize a lot
+00:10:48.839 when you study linear algebra is that
+00:10:51.040 that may not be equal to First doing the
+00:10:52.920 transformation T and then doing the
+00:10:54.920 transformation s so remember and this is
+00:10:58.720 really
+00:11:00.720 important that it is true that if you
+00:11:03.399 add a to B it's the same as B to a
+00:11:06.480 that's just the contivity of the laws of
+00:11:08.279 addition because Matrix addition just
+00:11:11.000 play takes place coordinate by
+00:11:12.360 coordinate but it is not necessarily
+00:11:18.480 true that a * B is equal to B * a there
+00:11:25.000 are examples where this is not equal so
+00:11:28.600 the only way to really convince you of
+00:11:30.480 that is to write down a specific example
+00:11:33.440 so I will write down a specific example
+00:11:35.440 for you which arton uses if you multiply
+00:11:38.200 this Matrix you have to go to 2 by two
+00:11:40.360 matrices because multiplication of one
+00:11:42.720 by one matrices is just multiplication
+00:11:45.079 of real numbers right I mean if if n is
+00:11:47.880 this is K goes from 1 to n so if n is
+00:11:50.720 equal to one this is just you get this
+00:11:52.560 matrix by taking the product of the
+00:11:54.040 entry in a by the product of the entry
+00:11:55.720 in B and multiplication of real numbers
+00:11:57.880 is commutative but if you go to two by
+00:12:00.079 two matrices it's no longer the case so
+00:12:02.720 for example if you multiply this matrix
+00:12:05.320 by this
+00:12:06.500 [Applause]
+00:12:08.519 Matrix you'll find that the only nonzero
+00:12:11.160 entry you get is when you go across this
+00:12:14.320 row and down this column right so that
+00:12:17.079 would be an entry up here and all the
+00:12:19.399 other entries you find to be
+00:12:21.399 zero on the other hand whoops did I just
+00:12:23.920 do that wrong uh yeah it should be sorry
+00:12:27.240 the last row that top row and the
+00:12:32.360 yeah Z they're all zero no zero one so
+00:12:37.959 if I go across this row and that column
+00:12:40.639 I get a one but in all the other cases
+00:12:42.720 the one is multiplied by zero and I get
+00:12:44.360 zero let's try it in the other direction
+00:12:46.160 see if I got this right this would be
+00:12:48.600 typical where I worked this example out
+00:12:50.440 wrong so that's this Matrix here then
+00:12:53.560 this one goes up
+00:12:55.079 here are there any places where we get a
+00:12:57.560 non-zero entry here this is Z this is
+00:13:00.079 zero this is zero and this is zero so
+00:13:03.079 this turns out to be the zero
+00:13:05.800 Matrix so this is the product of A and B
+00:13:08.560 this is the product of b and a these
+00:13:10.079 matrices are clearly different by the
+00:13:12.519 way this Matrix I'll just call the zero
+00:13:14.480 matrix it's the zero element of the
+00:13:17.040 vector space it's whatever it's the
+00:13:18.959 element of the vector space such that
+00:13:20.399 when you add it to an arbitrary Vector
+00:13:22.000 you get the vector back CU you're not
+00:13:23.920 changing anything The Matrix that looks
+00:13:26.320 like this 1 one one one one all the down
+00:13:30.440 the diagonal and zero elsewhere I'll
+00:13:32.959 call that the the identity Matrix that's
+00:13:35.760 a distinguished Matrix and that has the
+00:13:38.720 property if you work out this addition
+00:13:40.680 this multiplication law that if you
+00:13:42.560 multiply anything by the identity Matrix
+00:13:44.800 you get it back so um I'm running out of
+00:13:47.440 room here let's go
+00:13:52.040 here so 0 + a is equal to a + 0 is equal
+00:13:58.040 to a and no matter which side you
+00:14:00.320 multiply by the identity Matrix sorry is
+00:14:03.320 I * a sorry this is yeah this is a if
+00:14:07.920 you add zero and if you multiply by I
+00:14:10.440 you get a so you have a multiplicative
+00:14:13.639 identity and an additive
+00:14:16.959 identity okay some other laws of matrix
+00:14:20.920 multiplication uh and addition for
+00:14:23.639 example you have the distributive law
+00:14:25.720 and you have the associative law so the
+00:14:27.600 distributive law says if you multiply a
+00:14:29.519 * b + C it's the same as multiplying a
+00:14:33.079 by B and then adding the product of a by
+00:14:37.519 C and the associative law which is the
+00:14:39.320 most important is that if you multiply a
+00:14:41.600 * B * C and you first multiply B * C and
+00:14:44.279 then times a that's the same thing as
+00:14:46.399 multiplying a by B and then multiplying
+00:14:49.519 by C so the normal laws of arithmetic
+00:14:53.800 addition and multiplication all hold
+00:14:56.320 except for the contivity of
+00:14:57.839 multiplication
+00:14:59.759 now you might ask how do I prove
+00:15:01.480 something like this well it's truly
+00:15:03.519 hideous if you try to do it with this
+00:15:05.680 formula for the matrix product you know
+00:15:08.519 but if you think of it in terms of
+00:15:09.920 composition of Transformations these are
+00:15:12.199 three different Transformations there's
+00:15:13.759 an st and maybe an
+00:15:16.720 r or U let's call it U for a
+00:15:20.880 transformation and to do a composed with
+00:15:24.560 b and c would be first compose s with u
+00:15:28.680 and then compose with t and to do this
+00:15:32.560 would be first compose U with s sorry s
+00:15:35.040 with t and then compose with u but all
+00:15:37.759 all two ways of doing it are just giving
+00:15:39.759 you the composed trans transformation
+00:15:42.360 where you take U and then you take s and
+00:15:44.240 you take T namely the the effect of this
+00:15:46.600 on any given Vector in RN is to
+00:15:49.399 calculate T of s of U of v no matter
+00:15:54.839 which way you do it so if you think of
+00:15:56.519 it in terms of composition and
+00:15:57.800 transformations this associative law is
+00:16:00.040 more or less clear same thing you can
+00:16:02.360 think of the distributive law if you
+00:16:04.240 want to uh in any case the way this was
+00:16:08.759 proved in the original World of linear
+00:16:10.600 algebra before people understood linear
+00:16:12.319 Al uh linear Transformations was just by
+00:16:14.639 Computing with this formula which as I
+00:16:16.399 say is not the most Pleasant thing to
+00:16:20.120 do okay so these are what I want you to
+00:16:23.440 remember about multiplication and
+00:16:25.800 addition of M bym matrices and as I say
+00:16:28.279 it's all reviewed in chapter one but I'm
+00:16:30.519 not going to go over that I'm going to
+00:16:31.800 assume you've seen this have most of you
+00:16:33.279 seen this
+00:16:35.639 material no how many have not seen
+00:16:38.040 anything about n byn matrices I'm just
+00:16:39.720 amused don't be embarrassed I got to
+00:16:41.199 know
+00:16:43.759 okay now a much trickier thing about n
+00:16:46.839 byn matrices is the question of
+00:16:49.480 inversion so we
+00:16:53.199 say a is invertible an N byn
+00:16:57.480 Matrix
+00:16:59.360 if and only if there exists a
+00:17:04.000 matrix B with the property that when you
+00:17:07.839 multiply on either side by
+00:17:10.039 B you get to the identity
+00:17:19.599 Matrix so the it requires the existence
+00:17:22.119 of a second Matrix now invertibility is
+00:17:25.839 a tricky business in tricky business
+00:17:28.559 this in Matrix Theory not every Matrix
+00:17:30.360 is invertible for example the zero
+00:17:32.240 Matrix is never invertible because if
+00:17:34.559 you multiply any matrix by
+00:17:38.600 zero you get
+00:17:41.240 zero if you have zeros in all entries no
+00:17:43.840 matter what the entries of AR are when
+00:17:45.120 you compute the matrix product you get
+00:17:46.720 zero so there's no way I could find
+00:17:49.120 another Matrix to multiply by zero to
+00:17:51.120 get the identity because any product
+00:17:53.520 with zero is zero so example zero I is
+00:17:57.400 invertible there's a good case you
+00:18:01.600 take B is equal to I and zero is not
+00:18:11.000 invertible but between those two it's
+00:18:13.320 it's a tricky business for example for
+00:18:15.440 one by one matrices it's an easy answer
+00:18:17.640 but already for 2 by two it's quite
+00:18:19.440 complicated so for 1 by one
+00:18:24.720 [Applause]
+00:18:26.640 matrices so the Matrix just looks like
+00:18:29.840 a uh is
+00:18:34.039 invertible if and only if a is not equal
+00:18:37.000 to zero and then the inverse Matrix is
+00:18:40.159 just given
+00:18:41.760 by the entry 1 over a that's the only
+00:18:44.559 thing you could multiply a by and get to
+00:18:46.480 the identity Matrix which is just the
+00:18:48.360 the the thing one so a real number is
+00:18:50.919 invertible if and only if it's non
+00:18:53.559 zero for 2x two
+00:18:57.320 matrices
+00:19:03.360 turns out to be as
+00:19:05.159 invertible I'll just give you the answer
+00:19:08.000 if and only if a certain quantity is non
+00:19:10.480 zero namely if you take the product of a
+00:19:13.000 by D and you subtract off the quantity
+00:19:15.600 BC is not equal to
+00:19:18.480 zero and in fact if that's the case I'll
+00:19:22.559 write down the inverse Matrix for you
+00:19:25.000 usually if you don't want to just know
+00:19:27.760 if a mat is invertible or not you want
+00:19:30.120 to know what its inverse is so if this
+00:19:32.559 is
+00:19:33.640 a then a
+00:19:36.440 inverse is equal to 1 over a D minus BC
+00:19:40.480 and you can write that real number down
+00:19:42.720 because this number was nonzero so it
+00:19:45.400 has an inverse times The Matrix D minus
+00:19:48.440 B minus C
+00:19:52.080 A and this means you take the scalar
+00:19:54.600 product of this matrix by that real
+00:19:56.760 number so we can check that we ought to
+00:19:59.760 do at least one matrix multiplication in
+00:20:01.840 class to see that I can do it so let's
+00:20:04.360 multiply The Matrix a b c d by The
+00:20:07.600 Matrix D minus B minus C and
+00:20:14.280 A okay the entry here I go across this
+00:20:17.600 row and down this column I get a D minus
+00:20:23.159 BC the entry here minus AB plus AB so
+00:20:28.360 the entry here is
+00:20:29.880 zero the entry here I go across this row
+00:20:33.000 and down this column CD minus CD zero
+00:20:37.360 and the entry here I go across this row
+00:20:41.320 and here I get minus BC plus a d same
+00:20:44.080 thing a D minus
+00:20:46.240 BC so if I just took this Matrix I can
+00:20:49.600 multiply by my Matrix and get something
+00:20:52.240 which isn't the identity but looks
+00:20:54.400 pretty close to the identity namely it's
+00:20:56.200 a scal or multiple of the identity and
+00:20:58.440 the only problem might be that this
+00:21:00.440 scalar might be zero but if this scalar
+00:21:03.200 is non zero then I could have taken this
+00:21:05.880 Matrix and multiply by one over it and I
+00:21:08.200 would get the
+00:21:09.840 identity okay now in general the answer
+00:21:13.919 to the question of whether a matrix is
+00:21:15.760 in invertible or not is the following
+00:21:18.559 there's a certain function from the set
+00:21:21.200 of n byn matrices to the real numbers
+00:21:23.960 called the
+00:21:27.039 determinant which I'll write just debt
+00:21:30.760 which Maps n byn matrices over the reals
+00:21:34.840 to the real
+00:21:36.279 numbers and the determinant of a matrix
+00:21:39.279 is a polinomial in its entries it's a
+00:21:41.720 polinomial of degree n in its
+00:21:45.320 entries so for example this is the
+00:21:47.880 determinant of the 2x2 matrix a and you
+00:21:52.080 probably know the formula for the
+00:21:53.279 determinant of a 3X3 Matrix or even
+00:21:55.400 generally the formula for the
+00:21:56.600 determinant of an N byn Matrix
+00:21:58.720 it's it's given by a formula determinant
+00:22:01.559 to a is sum Over N factorial
+00:22:05.440 terms with a plus or minus one in front
+00:22:08.080 of it and then products
+00:22:12.000 of of n Matrix
+00:22:19.600 entries so n factorial here is just two
+00:22:22.960 terms but if you go to a 3X3 Matrix
+00:22:25.039 there are six terms in the determinant
+00:22:26.640 expression 4x4 they're 20 4 terms in
+00:22:28.960 short it's a useless formula because
+00:22:31.200 once you get to 10 by 10 matrices you
+00:22:33.240 don't want to be dealing with 10
+00:22:34.600 factorial
+00:22:35.919 terms nonetheless there is such a
+00:22:38.159 formula and the the the key fact
+00:22:42.760 is a is
+00:22:46.760 invertible
+00:22:48.559 vertible if and only if the determinant
+00:22:51.440 of
+00:22:52.360 a as a real number is not equal to zero
+00:22:55.960 in which case there's a formula for the
+00:22:58.600 the inverse of
+00:23:01.840 a and the formula looks very much like
+00:23:04.720 this formula the formula then looks like
+00:23:07.799 you get in
+00:23:09.919 fact there's always a matrix there is an
+00:23:13.400 unique Matrix that means there exists a
+00:23:15.960 unique Matrix B such that a is equal to
+00:23:21.600 ba is equal to the determinant of a
+00:23:25.559 times the identity Matrix there's always
+00:23:28.279 such a matrix you can't always multiply
+00:23:30.799 something to get to the identity but you
+00:23:32.240 can always multi find a unique Matrix
+00:23:34.320 where the product is the determinant of
+00:23:36.360 a times the identity Matrix well now I
+00:23:39.159 shouldn't say unique I mean if a were
+00:23:40.919 the zero Matrix then then anything would
+00:23:43.120 work so sorry there exists a m there's
+00:23:45.279 there's a natural Matrix let me just say
+00:23:49.320 that and that b is sometimes called the
+00:23:51.720 Matrix of co-actors and you get its
+00:23:54.120 entries by taking partial determinants
+00:23:56.159 around a have you all seen that once or
+00:23:58.320 twice so this is this is the Matrix for
+00:24:01.039 example of
+00:24:03.080 co-actors of the original 2x2 matrix a
+00:24:07.240 so there's always a matrix you can find
+00:24:08.840 where you multiply to get the
+00:24:09.840 determinant and if this is non zero you
+00:24:12.039 divide B by the determinant and you
+00:24:13.840 found a matrix to multiply through to
+00:24:15.400 get the
+00:24:17.120 identity so please review this kind of
+00:24:20.240 determinant and inverse topics we don't
+00:24:22.240 need the exact formula for the
+00:24:24.279 determinant at this moment although when
+00:24:26.480 we start doing linear algebra more in a
+00:24:28.520 more sophisticated way I'll tell you
+00:24:30.440 what the determinant really is this
+00:24:32.520 formula is about as useful as the
+00:24:34.679 formula for products of matrices where
+00:24:36.720 you sum over K Etc what you really want
+00:24:39.200 to think of them is composition of
+00:24:40.760 Transformations this determinant is
+00:24:42.760 really the action of a linear operator
+00:24:45.320 not on the original Vector space but on
+00:24:47.600 some Vector space which is
+00:24:48.760 one-dimensional that's constructed from
+00:24:50.559 the original Vector space and when you
+00:24:52.440 have an action of a linear operator on a
+00:24:54.000 one-dimensional vector space it gives
+00:24:55.600 you a scalar that's the determinant
+00:24:57.840 we'll get
+00:24:59.440 there okay so now I can make my first
+00:25:02.039 important definition in this course so
+00:25:04.600 this Vector space of n byn matrices is
+00:25:06.840 not what we're really interested in
+00:25:08.720 we're interested in a subset that I'm
+00:25:10.679 going to call gln of
+00:25:12.880 R which is a subset of all n byn
+00:25:15.919 matrices over
+00:25:17.480 R and this subset consists of all
+00:25:20.120 matrices a such that the determinant of
+00:25:23.080 a is not equal to zero or equivalently
+00:25:28.279 a such that there is an
+00:25:34.320 inverse
+00:25:37.960 Matrix a
+00:25:40.520 inverse so for one by one matrices the
+00:25:44.640 the set is everything but the zero
+00:25:46.760 Matrix but for 2x two matrices you have
+00:25:49.720 to throw away other matrices for example
+00:25:52.200 you have to throw away that Matrix that
+00:25:53.720 we wrote down before like this this is
+00:25:56.480 not in GL2
+00:25:58.799 because its determinant is 0 * 0 - 1 * 0
+00:26:02.240 which is
+00:26:03.320 0 so this is a large set of n byn
+00:26:07.480 matrices it's defined by the
+00:26:09.799 nonvanishing of a certain polinomial on
+00:26:12.279 this set so almost everything's in it
+00:26:15.559 but we just want to look at that set of
+00:26:17.640 matrices the invertible ones by the way
+00:26:20.360 if an inverse exists it's
+00:26:22.679 Unique let's write that let's prove that
+00:26:24.960 for
+00:26:26.600 ourselves this again is all in arttin
+00:26:29.320 chapter
+00:26:38.360 1 exists it is unique so one can talk
+00:26:42.799 about the inverse of a matrix there
+00:26:44.600 can't be two different matrices that
+00:26:46.159 serve as an inverse for a matrix and the
+00:26:48.720 reason is the following suppose we had
+00:26:50.760 two inverses so suppose I could say AB
+00:26:53.760 is equal to a * C it's also equal to I
+00:26:57.880 suppose that were the
+00:26:59.919 case and I want to show B is equal to C
+00:27:02.919 well remember that what an inverse is
+00:27:04.760 defined to be is not just a right
+00:27:06.720 inverse under multiplication but a left
+00:27:08.840 inverse under multiplication so if I
+00:27:10.960 took this thing and I Multiplied on the
+00:27:13.159 left by any Matrix that inverts a for
+00:27:16.320 example B I could say well this implies
+00:27:20.159 that
+00:27:21.960 bab is equal to B *
+00:27:25.279 a and then I use the associate law to
+00:27:28.200 reassociate things this on the other
+00:27:30.799 hand is ba * B and this is
+00:27:35.360 ba time C and since B was assumed to be
+00:27:38.799 an inverse for a this is equal to the
+00:27:41.960 identity time B and this is equal to the
+00:27:44.799 identity time C and the identity times
+00:27:47.360 any Matrix is itself and therefore B has
+00:27:49.880 to equal C so even though this Matrix
+00:27:52.720 here doesn't have to be unique as I said
+00:27:55.279 if a were the zero Matrix any Matrix B
+00:27:58.360 would work here however if you use the
+00:28:01.360 canonical one The Matrix of co-actors
+00:28:03.880 and the determinant turns out to be non
+00:28:05.640 zero so that you can divide by it then
+00:28:08.200 that inverse is in fact
+00:28:10.840 unique and so I should add that there is
+00:28:13.480 an inverse Matrix a inverse which is
+00:28:19.360 unique all right now let's look at the
+00:28:21.519 properties of this subset of uh the N
+00:28:24.600 byn matrices because we gain things and
+00:28:27.279 we lose
+00:28:31.399 things one thing that we lose right
+00:28:35.559 away is addition there is no addition
+00:28:40.000 defined on the set glnr if you I mean
+00:28:43.440 you even know that for one by one
+00:28:46.000 matrices you could take the Matrix one
+00:28:49.000 and you can add it to the Matrix minus
+00:28:50.880 one and both of those are invertible and
+00:28:53.200 their sum is the Matrix zero which isn't
+00:28:55.919 invertible so there's no addition
+00:29:03.760 law so we lose the vector space Plus or
+00:29:08.159 scalar
+00:29:10.840 multiplication by
+00:29:12.720 zero if you took a nice invertible
+00:29:15.240 Matrix and you multiplied it by the zero
+00:29:16.880 scalar you'd get down to zero which is
+00:29:18.600 not invertible so forget about addition
+00:29:22.080 however the beautiful thing is that it's
+00:29:24.799 closed under
+00:29:26.320 multiplication
+00:29:38.679 closed under multiplication so I'll give
+00:29:40.240 you two proofs of that yeah Peter did
+00:29:42.960 you have a question you're just
+00:29:44.480 stretching anyone else need to
+00:29:46.960 stretch here's a here's a principle I
+00:29:49.200 like to do in my lectures so uh since
+00:29:51.519 it's a principle um it'll apply um I go
+00:29:56.320 pretty fast and and when no one is
+00:29:58.320 stopping me my tendency is to go
+00:30:01.080 faster so if you find yourself getting a
+00:30:05.000 minute behind and then two minutes
+00:30:06.760 behind and then three minutes behind in
+00:30:08.519 your notes it's not a profitable
+00:30:10.600 experience because all you're doing is
+00:30:12.159 writing down gibberish which you're
+00:30:13.760 going to have to decipher later on much
+00:30:15.720 better that you're with me when I'm
+00:30:16.840 talking about it so the principle is
+00:30:19.120 that anyone can ask for a minute or two
+00:30:21.440 of Silence this may not be repeated 30
+00:30:24.080 times in the course of a lecture but if
+00:30:26.399 you feel that you need two minutes to
+00:30:28.320 just catch up to what I've said on the
+00:30:29.880 board and digest it so that you can even
+00:30:31.960 ask me a meaningful question you may
+00:30:34.679 just raise your hand and ask for some
+00:30:36.399 silence believe me the other people in
+00:30:38.440 the class will appreciate it and if
+00:30:40.399 you're confused undoubtedly someone else
+00:30:42.399 is confused so I've said something
+00:30:44.240 either too fast or incorrect and I will
+00:30:47.120 make mistakes that's why Peter's
+00:30:49.320 here but he may miss it too okay it's
+00:30:53.120 closed under multiplication I'll give
+00:30:54.720 you two proofs here's the first proof
+00:30:57.240 suppose A and B are
+00:31:07.519 invertible I have to prove that the
+00:31:09.480 product a * B is
+00:31:16.320 invertible well to to prove something's
+00:31:19.159 invertible I just have to find an
+00:31:20.480 inverse for it can someone suggest what
+00:31:23.720 would be a nice left inverse for it go
+00:31:26.679 ahead
+00:31:32.360 so yeah B minus one a inverse
+00:31:35.919 exists so call this
+00:31:40.600 consider this
+00:31:44.880 product and let's multiply it on the
+00:31:47.000 left times a so I have B inverse a
+00:31:49.360 inverse this is the way it's
+00:31:51.399 Associated time a now once you have the
+00:31:54.880 associative law for three par for three
+00:31:57.159 products you can reassociate for any
+00:31:58.880 number of products that's a nice fact
+00:32:00.760 about the associative law so this can be
+00:32:02.960 written as B inverse time a inverse a *
+00:32:09.639 B which is B inverse * the identity
+00:32:13.880 Matrix times
+00:32:16.600 B because a a inverse a was invertible
+00:32:20.159 so there's identity Matrix and then the
+00:32:22.760 identity commutes with any Matrix and so
+00:32:25.039 this B inverse I is i b inverse so this
+00:32:27.320 is I * B inverse B and then I associate
+00:32:31.600 these two together to get I *
+00:32:34.519 I which is the identity so namely this
+00:32:38.120 is the
+00:32:42.519 inverse notice that I had to take them
+00:32:44.559 in the opposite order the inverse is not
+00:32:46.639 a inverse time B inverse but B and then
+00:32:49.159 similarly if you multiply on the right
+00:32:50.720 by this first you multiply the B * B
+00:32:53.000 inverse that cancels then you multiply
+00:32:54.919 the a * a inverse so that's the first
+00:32:58.159 proof suppose we took this definition of
+00:33:02.159 invertible so we'd have to say that if
+00:33:04.720 we had two matrices Each of which had a
+00:33:06.679 non-zero determinant their product had a
+00:33:09.360 non-zero determinant that's what we're
+00:33:11.080 saying right if that previous condition
+00:33:13.279 for invertibility really worked just
+00:33:15.080 being a non-zero determinant how would
+00:33:17.000 we check that that if two matrices had a
+00:33:18.760 non-zero determinant their product had a
+00:33:20.440 nonzero
+00:33:21.720 determinant someone
+00:33:24.120 else yeah we know from the algeb that de
+00:33:27.639 a Time B is a exactly so if you another
+00:33:31.559 this is the first proof and the second
+00:33:33.279 proof is there's a famous identity for
+00:33:35.039 determinants that the determinant of a
+00:33:36.720 product of two matrices is the product
+00:33:39.240 of the
+00:33:40.919 determinants again you can never prove
+00:33:43.159 that using the definition of
+00:33:44.840 determinants as the sum of N factorial
+00:33:46.760 terms but we'll see how to prove that
+00:33:48.159 intelligently in a while now if you know
+00:33:50.440 this and each of these numbers are
+00:33:52.159 nonzero the product of two nonzero real
+00:33:54.279 numbers is a nonzero real number so so
+00:33:57.080 then for this set is closed under
+00:33:59.399 multiplication
+00:34:01.399 exactly what can we say about the
+00:34:03.760 multiplication on this
+00:34:06.559 set well it has the following
+00:34:11.440 properties can I erase this now guys
+00:34:13.760 normally I'll be using more board we be
+00:34:15.440 set up a little bit better next
+00:34:18.239 time it's closed under
+00:34:21.800 multiplication has a multiplicative
+00:34:25.879 identity
+00:34:28.239 which is the Matrix I I * anything is
+00:34:31.359 the the something time I is
+00:34:34.119 itself uh has multiplicative
+00:34:39.120 [Applause]
+00:34:41.918 inverses a inverse because that's how
+00:34:44.440 the set was defined it's exactly the set
+00:34:46.399 of matrices that have a multiplicative
+00:34:48.199 inverse so anything in this set you can
+00:34:50.440 take products there's a multiplicative
+00:34:52.679 identity on the set anything has an
+00:34:54.520 inverse and finally the product is
+00:35:00.220 [Applause]
+00:35:02.480 associative because that was true of the
+00:35:04.520 product on the larger set of matrices a
+00:35:07.240 b * C is a * b c so we have four
+00:35:13.400 properties of this subset of the set of
+00:35:16.839 matrices it has a multiplication law the
+00:35:20.079 multiplication law is associative
+00:35:22.240 there's an identity element and there's
+00:35:23.920 an inverse for every
+00:35:25.640 element and and those properties make up
+00:35:28.920 the properties of what we call a group
+00:35:31.920 so this is the first and most important
+00:35:34.920 example of a group so I'll now tell you
+00:35:36.960 what a group
+00:35:38.839 is and that's why we need the linear
+00:35:41.240 algebra to generate for us immediately
+00:35:43.800 some good examples of groups I'll give
+00:35:45.720 you some more examples but that's our
+00:35:47.720 first example so a
+00:35:53.800 group G is a set
+00:35:58.440 with a product
+00:36:05.480 operation so if you have two elements in
+00:36:07.640 the set you can take their product not
+00:36:09.720 necessarily commutative so G *
+00:36:13.160 H which
+00:36:16.079 is one
+00:36:20.960 associative two has an identity
+00:36:25.720 element
+00:36:28.560 which is sometimes denoted e or
+00:36:30.480 sometimes denoted
+00:36:32.880 one has inverses namely every element in
+00:36:36.920 the
+00:36:37.800 group there's another element called G
+00:36:40.319 inverse whose product with G is the
+00:36:42.319 identity
+00:36:43.570 [Applause]
+00:36:50.680 element that's it those are the
+00:36:53.359 properties of a group a product it has
+00:36:55.560 to be associative there has to be a
+00:36:57.480 distinguished identity element there and
+00:37:00.000 there have to be inverses for every
+00:37:02.000 element there does not have to be
+00:37:04.880 commutative if
+00:37:07.520 if GH is equal to
+00:37:11.160 HG for all
+00:37:14.000 pairs you either say the group say G is
+00:37:22.640 commutative or sometimes a
+00:37:25.599 billion
+00:37:28.079 a bilion comes from the great Norwegian
+00:37:30.359 mathematician
+00:37:31.760 abble who was one of the invent Neil's
+00:37:34.160 abble early 19th century Norwegian
+00:37:36.960 mathematician who uh was one of The
+00:37:39.319 Originators of group Theory the great
+00:37:41.040 originator of group theory was the
+00:37:42.720 famous young French mathematician aist
+00:37:45.960 galwa both Abel and gawa lived in the
+00:37:48.920 early Decades of the 19th century both
+00:37:51.200 died in their 20s gawa died as a result
+00:37:54.200 of a duel abble died basically because
+00:37:56.800 he was too poor and couldn't find
+00:37:58.200 employment for a Norwegian it was very
+00:38:00.119 hard to find employment in mathematical
+00:38:02.560 Europe at the time but together they
+00:38:04.680 really put together the foundations of
+00:38:06.240 group Theory ga's work wasn't
+00:38:08.359 appreciated for about 50 years so he
+00:38:10.880 sent his work to the great
+00:38:12.000 mathematicians of the time gaus Koshi
+00:38:15.000 Etc and they all put it aside it was
+00:38:17.480 only at the end of the 19th century when
+00:38:19.839 French mathematician Jordan realized how
+00:38:22.400 fundamental gawa discoveries were many
+00:38:24.760 of which were written up in a letter
+00:38:26.640 sent to a friend the night before he
+00:38:28.440 died in this duel if any of you have
+00:38:30.920 been to Paris and take the lean d uh you
+00:38:35.280 pass through a beautiful or I shouldn't
+00:38:37.760 say beautiful a disgusting Parisian
+00:38:40.200 suburb called Buren where gaa's father
+00:38:43.880 was mayor and gawa Bor was born and
+00:38:45.920 lived much of his life and there's a
+00:38:47.680 plaque in the most disgusting uh
+00:38:49.760 intersection in the middle of buen where
+00:38:51.960 the trucks are going by and it says
+00:38:55.520 e
+00:39:00.760 that's the way a country honors its
+00:39:02.560 Heroes um actually many streets in Paris
+00:39:05.240 are named after mathematicians if any of
+00:39:07.440 you have been on the r moans Mo was a
+00:39:09.359 great mathematician who accompanied
+00:39:10.640 Napoleon to Egypt to do surveying and
+00:39:13.400 egyptology but um gawa is undoubtedly
+00:39:16.079 the most famous young mathematician to
+00:39:18.000 Da young but in his head he discovered
+00:39:20.359 not only the theory of finite fields
+00:39:22.319 which we'll cover later on and wrote the
+00:39:24.200 treatment of finite Fields that's the
+00:39:25.520 best treatment in the literature today
+00:39:27.400 but also discovered almost all the
+00:39:29.319 foundations of group Theory and it was
+00:39:31.440 gawa who realized there could be very
+00:39:33.480 interesting groups where GH was not
+00:39:35.440 equal to HG yeah is
+00:39:38.800 iteration is cled that yeah that when I
+00:39:41.839 say a product operation it means that
+00:39:44.240 for any two elements in the set G
+00:39:47.560 there's a product GH which is in
+00:39:50.640 G so Associated to any two elements you
+00:39:53.560 get a third I'm going to get now this
+00:39:55.720 this is a very interesting group The the
+00:39:58.160 group of invertible matrices in that
+00:40:00.160 already when we get to 2x two matrices
+00:40:02.480 we have a lot of non-commutative
+00:40:04.720 groups right you can find two invertible
+00:40:07.079 matrices the ones I wrote down by the
+00:40:08.560 way weren't invertible so that'll be a
+00:40:10.720 challenge for you to find invertible
+00:40:12.760 matrices such that AB is not equal to ba
+00:40:16.160 good homework problem there
+00:40:18.359 Peter it's already there the it's he's
+00:40:22.240 ahead of me damn kids um anyhow uh
+00:40:27.000 so uh but good question yeah that you
+00:40:29.240 must have you you have to stay in your
+00:40:30.720 set for any two elements in the set
+00:40:33.359 sorry the product is defined and in the
+00:40:35.960 set it's associative GH K is the same as
+00:40:41.119 GH *
+00:40:43.760 K there's an identity Element e such
+00:40:46.400 that e g is equal to g e is equal to G
+00:40:50.359 for every element in the set right let
+00:40:52.440 me give you a simpler example of a group
+00:40:54.520 because this seems awfully complicated
+00:40:56.839 uh to go through to get a group so
+00:40:58.720 you've been doing groups all your lives
+00:41:01.079 um it's like speaking Pros so here's an
+00:41:03.440 example of a
+00:41:05.400 group an a bilan group why don't we do
+00:41:07.760 an ailion
+00:41:09.560 group the simplest ailan group is the
+00:41:12.119 integers so that's the you know zero
+00:41:15.119 plus or minus one plus or min-2 plus or
+00:41:18.359 minus 3 positive and negative integers
+00:41:22.280 denoted by a bold Faith Z here so uh the
+00:41:26.560 the the uh product operation in the
+00:41:28.359 integers is
+00:41:34.640 addition you know a plus
+00:41:36.960 b that's the product operation uh that's
+00:41:40.319 clearly associative when you add three
+00:41:42.560 things it doesn't make any difference
+00:41:43.839 which order you do the adding what's the
+00:41:46.200 identity element for addition in the
+00:41:47.720 group z it's kind of stupid zero zero
+00:41:52.000 exactly the identity element is zero if
+00:41:55.200 you add zero to a a you always get a
+00:41:58.800 what's the inverse element what is a
+00:42:01.079 inverse minus a so if you take the
+00:42:03.680 negative that's how that's why we have
+00:42:05.560 negative numbers really to turn counting
+00:42:07.400 numbers into a group if you think of it
+00:42:09.839 well what is minus three it's the thing
+00:42:11.319 you add to three to get
+00:42:14.680 zero okay and um well that does it so
+00:42:19.760 this a very simple Group which has the
+00:42:22.040 property that a plus b is B plus a so
+00:42:24.079 groups like this of course we studied
+00:42:25.680 before there was notion of a
+00:42:27.680 group I I'll tell you a funny story so a
+00:42:30.880 a great um great German mathematician
+00:42:33.359 who I've collaborated with many times
+00:42:35.160 and is an altogether um is is a rare
+00:42:39.079 example of a prodigy who actually worked
+00:42:41.599 out his name is Don zagier uh he's the
+00:42:44.920 director of the MOX plunk Institute uh
+00:42:46.800 for mathematical research in in Bon and
+00:42:49.720 um Don went to uh schools in about seven
+00:42:53.240 different countries when he was young by
+00:42:55.160 the age of 13 He was speaking nine
+00:42:57.000 different languages and applied to get
+00:42:59.760 his uh undergraduate degree at Oxford
+00:43:02.880 and he had taken the a levels in all
+00:43:04.359 levels even though he had never been to
+00:43:05.559 England and uh he was denied admission
+00:43:08.319 on the grounds that no one could attend
+00:43:09.960 Oxford Beyond before the age of 16 so he
+00:43:13.160 got into MIT and finished MIT in two
+00:43:15.760 years and then applied to Oxford as a
+00:43:17.760 graduate student at 15 and there was no
+00:43:20.000 objection at that point because that was
+00:43:21.880 as a graduate student so Don said when
+00:43:24.480 he recalled his algebra course for MIT
+00:43:27.400 he was so confused the whole time he
+00:43:29.079 took the course but he learned how to do
+00:43:30.400 it because he was a very good
+00:43:31.400 mathematician he said that his idea of a
+00:43:34.000 group as he got out of this course was
+00:43:36.680 that a group was the integers all groups
+00:43:38.640 were the integers except that somehow
+00:43:40.680 when you were doing the problems you
+00:43:42.240 weren't allowed to use the fact that a
+00:43:44.000 plus b was B plus a and he thought that
+00:43:46.359 this was very strange it was a strange
+00:43:48.720 way to teach but if those were the rules
+00:43:50.559 of higher mathematics he would go with
+00:43:52.440 it so I want to point out that sometimes
+00:43:54.960 you are allowed to use the ru rules that
+00:43:56.400 a plus b is B plus a when it holds
+00:43:59.240 another example of a group is any Vector
+00:44:08.520 space that's a group because you just
+00:44:10.599 forget about the scalar multiplication
+00:44:12.480 the addition the the binary operation is
+00:44:14.880 addition of vectors the identity element
+00:44:17.400 is the zero
+00:44:18.880 Vector right you add the zero Vector any
+00:44:21.319 Vector you get the vector back the the
+00:44:23.640 the the inverse element is the negative
+00:44:25.720 vector
+00:44:27.280 okay so you just you just forget scalar
+00:44:33.800 multiplication so it turns out that once
+00:44:35.800 you come up with this rather simple
+00:44:37.240 definition there groups all over the
+00:44:38.800 place this is also an a bilon
+00:44:43.960 group in some sense the most General
+00:44:46.319 group you get as
+00:44:47.880 follows uh and this will be the last
+00:44:50.319 thing I'll talk about and then I'll let
+00:44:51.480 you get out of
+00:44:52.559 here uh if you start with any set call
+00:44:57.280 it the set
+00:45:02.200 T and you let G be the set of all
+00:45:09.119 bje G from T to
+00:45:13.280 itself so that means one to one in on
+00:45:15.800 two
+00:45:17.400 [Applause]
+00:45:19.040 maps from a set to
+00:45:21.920 itself all
+00:45:23.960 Bs then that's a group it's sometimes
+00:45:26.520 I'll denote it by the symmetries of t or
+00:45:29.280 the symmetric group of the set
+00:45:32.480 T is a group someone's got a phone call
+00:45:36.480 I hope it's not me mine plays l travata
+00:45:38.880 so occasionally there'll be an emergency
+00:45:40.640 someone's about to jump off a bridge or
+00:45:42.200 something that requires the attention of
+00:45:43.480 the dean so you'll
+00:45:47.640 hear I feel I I wanted a cheerful tune
+00:45:51.760 so to deal with it so this is a group
+00:45:54.079 under composition
+00:45:57.400 composition of BS if you compose one bje
+00:46:01.160 with another you get a third because if
+00:46:03.319 two maps are one to one and you compose
+00:46:05.000 them you get a third one to one map if
+00:46:06.559 two maps are on two and you compose it
+00:46:08.000 you get another onto map so that's the
+00:46:11.359 the composition law of
+00:46:17.160 Transformations the identity
+00:46:19.720 element is the identity
+00:46:23.040 transformation that takes every element
+00:46:25.079 in the set t itself that's certainly one
+00:46:27.520 to one and on two the inverse element is
+00:46:30.480 the inverse transformation if you have a
+00:46:32.440 transformation that's one to one and
+00:46:33.720 onto you can send the transformation
+00:46:35.720 back that's G
+00:46:37.359 inverse and composition of maps is
+00:46:40.319 associative just like we prove
+00:46:41.680 composition of linear Maps is
+00:46:43.480 associative because if you have three
+00:46:45.119 Maps then and you compose them no matter
+00:46:47.240 how which way you do it then it's the
+00:46:49.119 final map that takes an element in t
+00:46:51.200 first to this map then to that map then
+00:46:52.920 to the third thing in
+00:46:54.520 t so this is the most General group in
+00:46:57.559 some sense of the word one second I just
+00:46:58.960 want to finish and all groups all groups
+00:47:03.200 we'll see somehow arise by putting extra
+00:47:06.480 conditions on this
+00:47:08.280 invertible bje so for example this group
+00:47:11.839 glnr how did that come about well I
+00:47:15.119 started out with a set which was RN the
+00:47:19.480 set which was RN and I considered all
+00:47:22.040 invertible maps from RN to RN which
+00:47:25.240 Preserve the
+00:47:27.559 linearity which preserve the structure
+00:47:29.839 of a vector space that's not all maps
+00:47:31.720 but the ones that preserve some
+00:47:33.040 structure and that's how I got
+00:47:34.800 invertible matrices so we're going to
+00:47:37.160 see that this is somehow and this was
+00:47:38.839 ga's big idea that when you studied Maps
+00:47:41.480 or symmetries of a set that was one
+00:47:43.960 group and then you could get very
+00:47:45.079 interesting groups by studying
+00:47:46.680 symmetries that preserve some extra
+00:47:48.319 structure in the set like some linear
+00:47:50.040 structure on the
+00:47:51.520 set and in particular we're going to
+00:47:53.839 have one very famous group where this T
+00:47:56.000 is the set of and a finite set and all
+00:47:58.880 finite sets are determined by the number
+00:48:01.079 of elements in them so the set from 1 to
+00:48:03.520 n then we'll call the Symmetry group of
+00:48:05.720 T the symmetric group s subn we'll just
+00:48:09.400 write it that way and what is this turns
+00:48:12.119 out to be a group with only finitely
+00:48:14.000 many elements in it because there are
+00:48:15.960 only finitely many ways you can permute
+00:48:18.000 n different objects how many ways are
+00:48:20.040 there permuting n different objects yeah
+00:48:22.760 so this is a group where it's a finite
+00:48:25.160 group
+00:48:25.680 [Applause]
+00:48:28.520 of
+00:48:30.000 order n factorial and you'll find that
+00:48:33.079 it's non ail billion and you should
+00:48:34.920 check
+00:48:35.960 that once n is at least three so once
+00:48:41.240 there's a finite group with six elements
+00:48:43.319 in it that's non ailion the permutations
+00:48:46.880 the one to one maps of a set of three
+00:48:49.280 things to itself and you should play
+00:48:51.799 with that a little
+00:48:53.119 bit okay this is our introduction this
+00:48:55.760 gives you an idea of what groups are
+00:48:57.400 Peter has some interesting things you
+00:48:59.160 want to put them on the board why not so
+00:49:02.280 here's the homework recommended optional
+00:49:06.240 and it'll be on the web page for those
+00:49:07.839 of you who have to run now but I'll put
+00:49:09.280 it on the Blackboard too this will give
+00:49:11.000 you an idea of whether you're up to
+00:49:12.400 speed whether this is the right course
+00:49:13.920 for you and if you want to talk to me or
+00:49:15.720 Peter about it please do so
+00:49:19.319 read
+00:49:20.839 1.1 and
+00:49:23.240 Pages 38 to 42
+00:49:26.520 and the exercises
+00:49:29.000 1.1.7
+00:49:32.599 1.1.16 and
+00:49:37.440 1.1.7 do those three exercises if you
+00:49:40.240 want to hand it in Peter or Peter
+00:49:42.359 will'll take a look at them for
+00:49:43.960 you okay thanks Peter see you guys on
+00:49:52.960 Wednesday

@@ -1,0 +1,1091 @@
+# tactiq.io free youtube transcript
+# Lec 2 | Abstract Algebra
+# https://www.youtube.com/watch/e-a8auViFM0
+
+00:00:12.480 reminder the syllabus is posted on the
+00:00:15.160 web and in the course is part of the FAS
+00:00:18.000 web page under math 122 the extension
+00:00:21.480 School syllabus is posted under e 222
+00:00:25.439 yeah the we page ask for a l ah going to
+00:00:28.640 give you now it's described on the web
+00:00:30.439 page how you log in as as you get for
+00:00:32.320 the first two weeks you log in under
+00:00:34.280 guest with no
+00:00:36.440 password okay a eventually we'll get the
+00:00:38.879 student IDs in the course and you'll log
+00:00:41.000 in as yourself but initially guest
+00:00:43.079 password just leave it blank and you get
+00:00:44.719 in so it's essentially an open web page
+00:00:46.800 at the moment okay uh you'll find the
+00:00:50.480 homework posted there you'll find videos
+00:00:52.879 of the lectures posted there you'll find
+00:00:55.840 uh notes for the lecture scanned in
+00:00:58.320 there so a lot of information and the
+00:01:00.480 way you'll find it is it'll open up you
+00:01:02.280 can open up a calendar and in September
+00:01:05.720 you can click on the date of the lecture
+00:01:07.960 and then there are various choices
+00:01:09.880 labeled by letters say h for homework
+00:01:13.280 and V for video and right n for notes
+00:01:18.200 and then you click on those and you see
+00:01:19.600 Peter's notes or you see the video of me
+00:01:21.640 lecturing or you can uh or you can get
+00:01:24.479 the homework assignment we'll also post
+00:01:26.360 answers to the homework assignment there
+00:01:28.040 so the web page should be up and
+00:01:29.320 functional if you're having any problems
+00:01:30.880 with the web page send email to Peter
+00:01:33.680 we're also getting the casa lined up in
+00:01:35.840 the course we hope to have two Casa
+00:01:37.640 lined up for the students taking this
+00:01:40.000 course 122 and 1ca lined up for
+00:01:43.479 e222 and please fill out if you will the
+00:01:47.320 section time preference survey on
+00:01:48.960 Tuesdays and Thursdays so we can find
+00:01:50.799 times to schedule those sections that
+00:01:52.360 agree with most of the people in the
+00:01:53.640 class the homework as I pointed out last
+00:01:56.119 time will be assigned every lecture and
+00:01:58.240 do the next lecture you can hand them in
+00:02:00.759 today to Peter and he'll distribute them
+00:02:02.520 to get them graded the homework for the
+00:02:04.560 extension course will be due weekly and
+00:02:07.799 uh you'll talk to JC gets who is running
+00:02:10.520 the section for uh the extension school
+00:02:13.640 I think I should talk to the camera when
+00:02:15.040 I talk to the extension school students
+00:02:16.760 because they're all out there in the
+00:02:17.879 wild blue yonder
+00:02:19.959 yes Jay Jay excuse me Jace I'm always
+00:02:24.640 pronouncing the last letter of your name
+00:02:26.360 I don't know why I have a friend named
+00:02:27.840 Jai so I I transfer that to you Jay SK
+00:02:31.800 thank you I apologize um we'll introduce
+00:02:35.239 all the we'll introduce all the casa on
+00:02:37.160 Friday once we have things finalized and
+00:02:39.560 the homework due next time since I might
+00:02:41.760 as well put it up while we're talking
+00:02:42.920 about homework which you can find on the
+00:02:44.360 web page is to read sections 2.1 and
+00:02:48.319 2.2 in
+00:02:51.170 [Applause]
+00:02:53.319 arton algebra which is the
+00:02:56.599 book and the problems are
+00:03:00.480 2.1
+00:03:02.720 5.1.5
+00:03:05.159 2.1.7
+00:03:08.280 2.2.1
+00:03:11.120 2.2.15 and
+00:03:13.680 2.2.2 part
+00:03:16.400 a homework so that's what's due on
+00:03:20.400 Friday okay so let's get to the lecture
+00:03:24.159 now so last time I reviewed some
+00:03:27.519 Concepts from linear algebra
+00:03:30.120 and
+00:03:31.000 defined our first
+00:03:33.239 group which was the group I called
+00:03:37.560 gln of
+00:03:39.959 R which is the set of all
+00:03:45.400 invertible n byn
+00:03:49.920 matrices a with
+00:03:55.239 entries AI J in the real
+00:04:00.720 numbers you could also there are other
+00:04:03.239 groups you could do if you didn't want
+00:04:04.560 to work with Vector spaces over the real
+00:04:06.560 numbers you could you could also Define
+00:04:09.239 a group
+00:04:10.439 glnc which would be the same thing where
+00:04:13.360 the entries of the Matrix were complex
+00:04:16.000 numbers or you could Define the group
+00:04:19.680 gln
+00:04:22.520 Q This is complex numbers this are the
+00:04:25.040 field of rational numbers
+00:04:31.800 same thing where the entries are
+00:04:34.039 rational numbers we'll start with the
+00:04:35.800 the real numbers and and at the end I
+00:04:39.800 talked about how this was uh in some
+00:04:43.520 sense contained in a rather natural
+00:04:46.160 group and let's remember first of all
+00:04:48.639 what a group is so having defined this
+00:04:51.000 we we showed that it was a group and a
+00:04:53.440 group is by definition
+00:05:03.479 all our
+00:05:05.960 groups G and Group G is by definition
+00:05:10.039 one a
+00:05:12.120 set with a
+00:05:16.320 product structure so by that means if
+00:05:19.520 you have two elements in the set A and B
+00:05:22.240 are in the group then you get a new
+00:05:24.440 element a do B the product of A and B
+00:05:28.800 which is a new element in the group so
+00:05:30.919 there has to be a
+00:05:32.440 product and the second thing is the
+00:05:35.240 product must be associative that's the
+00:05:37.800 most
+00:05:39.600 important thing to check namely a * B *
+00:05:44.240 C has to always equal a * B * C that's a
+00:05:50.400 tricky
+00:05:51.800 property uh and arton shows and you can
+00:05:54.600 go over his proof it's a it's a somewhat
+00:05:57.000 meaningless proof by induction but you
+00:05:58.759 should at least see it it that once you
+00:06:00.880 have this associativity then the product
+00:06:03.600 of any n elements in the group is well
+00:06:06.400 defined independent of the order that
+00:06:08.199 you take the product once you have
+00:06:09.520 associativity for three elements you
+00:06:11.479 have it for more than three elements and
+00:06:13.919 the second condition is the existance of
+00:06:16.039 an
+00:06:18.000 identity which I'll denote e which has
+00:06:21.039 the property that the product of any
+00:06:22.639 element with the identity the product of
+00:06:25.080 the identity element with is a so every
+00:06:28.720 element no matter how you product it
+00:06:30.160 with the identity gives you itself and
+00:06:32.360 the fourth condition is the existence of
+00:06:35.160 inverses and that means that for every
+00:06:37.240 element there's an
+00:06:39.199 inverse which denoted a inverse in the
+00:06:41.800 group with the property that no matter
+00:06:44.319 how you multiply a by a inverse in
+00:06:46.759 either
+00:06:48.000 order you get back to the
+00:06:51.440 identity those are the properties that
+00:06:53.599 characterize a group rather simple
+00:06:56.039 properties uh and we saw that the
+00:06:58.280 matrices which were invertible formed to
+00:07:01.280 group under matrix
+00:07:13.400 multiplication associativity is rather
+00:07:15.800 difficult to check from the definition
+00:07:17.120 of matrix multiplication but if you
+00:07:19.120 think of matrices as representing linear
+00:07:21.199 operators and multiplication being
+00:07:23.400 composition of linear operators I'll
+00:07:25.400 leave this up as the homework for next
+00:07:27.440 time for those who come late
+00:07:30.479 uh then it's clear that the composition
+00:07:32.479 of three operators is the same no matter
+00:07:34.400 how you compose them the identity
+00:07:36.400 element is the identity Matrix with all
+00:07:38.599 ones on the diagonal and zeros elsewhere
+00:07:41.160 and the inverse element is the inverse
+00:07:42.840 Matrix and that's why we had to assume
+00:07:45.080 that we only took invertible matrices
+00:07:47.400 here and I also ended with the
+00:07:51.000 prototypical example of a group even
+00:07:53.400 more prototypical than this example uh
+00:07:56.520 which is the automorphisms of a set uh
+00:08:00.560 the uh the or group I'll call it or
+00:08:04.919 being the city in which uh which all
+00:08:09.280 started is the um is the
+00:08:13.240 symmetries of a set
+00:08:15.400 T this is just an arbitrary
+00:08:18.280 set and the symmetries of a set are all
+00:08:21.080 Bs of t
+00:08:24.340 [Applause]
+00:08:30.879 objection being a one to one onto map of
+00:08:33.320 the set to itself and the group
+00:08:35.799 operation is composition so a do B of an
+00:08:40.760 element T is by definition a of B of T
+00:08:46.399 that's how we're going to do it so first
+00:08:47.760 apply B to the set that gives you a new
+00:08:50.200 element in the set then apply a to that
+00:08:52.600 element that gives you a third element
+00:08:54.120 to the set that's the that's the mapping
+00:08:56.320 that A.B does to the set and you check
+00:08:59.279 that that the composition of BS is a bje
+00:09:03.720 however it needn't be equal to the
+00:09:05.680 composition in the opposite order as
+00:09:07.560 we're going to
+00:09:08.920 see uh the identity
+00:09:12.040 element is just the the bje that takes
+00:09:15.680 every element in the set to
+00:09:17.640 itself and the inverse element a inverse
+00:09:22.200 is defined as the element that takes the
+00:09:24.760 element a of T back to the element T and
+00:09:28.079 since every element in the set can be
+00:09:29.640 written as a of T uniquely because a was
+00:09:32.519 a bje this defines a bje of the set T
+00:09:36.959 and it clearly has the property that
+00:09:38.880 when you compose it with a you get to e
+00:09:41.800 you have to check in the opposite
+00:09:43.079 direction but it also
+00:09:44.880 works excuse me please you use the term
+00:09:48.560 automorphism uh automorphism is the same
+00:09:50.959 as bje I'm sorry if I use that term but
+00:09:53.560 we might as well get into it so morphism
+00:09:56.160 in mathematics means a map between sets
+00:09:58.920 and automorphism means a bjective map so
+00:10:02.399 sometimes people will refer to this
+00:10:04.839 group as the automorphism group of
+00:10:07.880 T all
+00:10:13.800 automorphisms of the set automorphism is
+00:10:17.040 exactly the same word as
+00:10:20.120 bijection it's a little bit more
+00:10:22.720 Greek okay good please just stop me I'm
+00:10:26.000 gonna sometimes slip into jargon part of
+00:10:28.880 this part of this uh course is so you
+00:10:31.040 can speak enough jargon to sound like a
+00:10:33.040 mathematician and confuse everyone else
+00:10:35.600 one of the things that mathematicians
+00:10:36.920 found out when they started talking to
+00:10:38.440 theoretical physicists over the last 30
+00:10:40.279 years is that we were doing exactly the
+00:10:41.920 same thing but had different words for
+00:10:43.399 it so when physicists said things like
+00:10:46.600 Deb brain mathematicians would say but
+00:10:48.839 that's just the
+00:10:50.160 manifold so a lot of it is learning the
+00:10:52.480 difference the words that are used to
+00:10:54.040 express the same thing okay so this is
+00:10:58.160 this is some sense the or group almost
+00:11:00.399 all groups come in some way from the
+00:11:02.200 symmetries of a set for example this
+00:11:04.880 group is contained in the
+00:11:07.959 automorphisms or the symmetries sorry of
+00:11:11.240 the set R to the
+00:11:13.560 N namely these are certain BS of the set
+00:11:18.079 R to the N they're the BS that preserve
+00:11:20.720 the linear
+00:11:22.120 structure right that's when you get a
+00:11:24.000 matrix when you have a linear
+00:11:25.320 transformation you could have other maps
+00:11:27.440 of the real line to itself that were BS
+00:11:31.120 that weren't necessarily of the form X
+00:11:33.519 goes to
+00:11:34.680 ax right you could have for example the
+00:11:38.320 bje X goes to X cubed that's a bje of
+00:11:42.200 the real line to itself so there are
+00:11:46.079 more symmetries of RN that are contained
+00:11:48.720 in N byn matrices but these are
+00:11:50.680 certainly a subset of this and in fact
+00:11:53.440 they're what we call a subgroup so
+00:11:56.120 that's another definition to uh to learn
+00:11:59.240 learn a
+00:12:02.399 subgroup h of a group G denoted like
+00:12:06.000 that is a
+00:12:07.560 subset that is closed under
+00:12:09.680 multiplication contains the identity and
+00:12:12.160 contains inverses so it should be
+00:12:14.959 closed under it's a
+00:12:19.279 subset which
+00:12:22.160 is closed under multiplication contains
+00:12:26.240 the identity
+00:12:29.480 and closed under
+00:12:31.360 inverses
+00:12:33.519 namely if a is an H A inverse also has
+00:12:36.680 to be an H so let's observe that this is
+00:12:40.320 a subgroup of this I have all the BS of
+00:12:43.800 RN and then they have the ones which are
+00:12:46.279 the linear
+00:12:50.519 BS of RN they the ones that are
+00:12:53.320 represented by n byn invertible matrices
+00:12:57.880 let's see if I have two lar bje and I
+00:13:00.519 compose them I get a third linear map
+00:13:03.800 that's closed under multiplication
+00:13:06.519 because remember multiplication here is
+00:13:08.839 composition of
+00:13:10.560 maps does it contain the identity map
+00:13:13.360 that takes every Vector to itself you
+00:13:15.600 bet that's given by the identity
+00:13:18.600 Matrix right if an element is linear is
+00:13:22.639 its inverse linear
+00:13:25.040 yes consequently this subset is closed
+00:13:28.240 under multiplication
+00:13:29.720 it contains the identity it contains
+00:13:31.800 inverses it's a subgroup of this we're
+00:13:34.240 going to see all kinds of examples of
+00:13:36.040 groups defined as subgroups of the
+00:13:37.800 Symmetry group of a set by putting more
+00:13:40.440 conditions on it it not only takes
+00:13:42.320 elements of the set to itself but it
+00:13:44.079 preserves this structure on the set
+00:13:46.800 that's the usual way you get a
+00:13:48.639 group okay and this is the way they
+00:13:51.600 appear in mathematics because you
+00:13:53.519 whenever you have a mathematical object
+00:13:55.800 or in physics for example the group
+00:13:57.279 Theory exploded in physics in the 20th
+00:13:59.480 century when people started to realize
+00:14:01.519 that the forces operating on an object
+00:14:03.639 might be radially
+00:14:05.720 symmetric see that's an extra symmetry
+00:14:08.320 so you want to exploit the fact that you
+00:14:10.120 have a group acting on the set that
+00:14:12.399 you're studying so this is this is the
+00:14:14.839 way groups really appear not as not as
+00:14:17.160 simple so as I ended last time with the
+00:14:20.240 with the famous
+00:14:21.680 example which is the way courses on
+00:14:23.920 group Theory usually start although
+00:14:25.639 arton very wisely identifies these
+00:14:30.040 these Matrix groups as more fundamental
+00:14:32.759 and they are they come up much more in
+00:14:34.360 mathematics because linear algebra is
+00:14:36.839 the central subject of mathematics you
+00:14:38.759 cannot learn too much linear algebra
+00:14:40.680 that's a basic principle for all of you
+00:14:42.160 going on in mathematics linear algebra's
+00:14:43.639 presented as sort of stupid stuff you
+00:14:45.600 cannot learn too much linear algebra so
+00:14:48.320 here's the here's a nice group called SN
+00:14:51.240 which is the Symmetry group of the set 1
+00:14:54.160 2
+00:14:55.399 3 n minus one n the set a finite set of
+00:14:59.240 n
+00:15:00.160 elements it's sometimes called the
+00:15:02.920 permutation group on N
+00:15:10.480 letters because an automorphism of this
+00:15:13.000 set just reassigns the reassigns the
+00:15:15.480 places in
+00:15:16.800 line and we saw that this is a finite
+00:15:21.759 group because there are only finitely
+00:15:24.040 many permutations of a set of n letters
+00:15:27.920 and the Order of it
+00:15:30.959 that's the size of the the set
+00:15:32.800 underlying the group N factorial I might
+00:15:36.199 write that this way this is the way
+00:15:37.519 arton write that the order of the
+00:15:39.560 Symmetry group of SN is n factorial
+00:15:42.560 because there are n factorial ways to
+00:15:44.759 permute n letters why because there are
+00:15:47.480 n choices for the letter you take first
+00:15:49.959 and then there n minus one choices for
+00:15:51.720 the letter you take second and then
+00:15:53.199 there n minus two choices for the letter
+00:15:54.959 you take
+00:15:56.440 third okay let's take a look at the
+00:15:59.079 symmetric group on a few small letters
+00:16:01.600 to get an idea how we would uh analyze
+00:16:03.839 it so the simplest one is
+00:16:06.319 S1 S1 is a very simple group because the
+00:16:09.240 only permutation of a set of one element
+00:16:11.519 is the identity so there it's a that's a
+00:16:14.959 famous group that's the simplest group
+00:16:16.880 you can have because any group has to
+00:16:19.399 contain an identity element which
+00:16:21.600 happens to be its own inverse and etc
+00:16:23.560 etc
+00:16:24.639 etc so that's an easy group it has one
+00:16:27.279 element in it you can't have you can
+00:16:29.120 have a set with zero elements right the
+00:16:31.880 empty set but you can't have a group
+00:16:33.880 with zero elements simplest group you
+00:16:35.759 have is one Element how about
+00:16:38.319 S2 well there's the identity map that
+00:16:41.000 takes let's let's denote a let's write
+00:16:43.319 our permutation like this this would be
+00:16:45.079 the identity
+00:16:47.079 permutation takes one to one and two to
+00:16:49.240 two but there's another element in this
+00:16:51.000 group that takes 1 to two and takes two
+00:16:54.800 to
+00:16:56.160 one let's call that permutation
+00:17:00.880 to okay so S2 is a set which has two
+00:17:04.240 elements in it e and
+00:17:07.640 to that those are the only possible
+00:17:09.799 permutations of two letters and we want
+00:17:12.240 to know what the multiplication law is
+00:17:14.599 well if we compose any any permutation
+00:17:17.839 with the identity trans permutation we
+00:17:19.760 get itself so obviously you have e to is
+00:17:23.199 equal to to e is equal to e is equal to
+00:17:27.359 to
+00:17:29.360 and what about if I compose to with
+00:17:32.880 to it's e if I if I do this twice so I
+00:17:37.200 take one to two then I take two to one
+00:17:38.840 it goes back to one and then I take two
+00:17:40.360 to one and I do it again one goes to two
+00:17:42.240 so two goes to two so here I have this
+00:17:45.440 law so in other words too in this group
+00:17:47.640 is equal to to inverse because it is the
+00:17:50.480 transformation that multiplies by to to
+00:17:52.400 get
+00:17:53.360 e so that's a pretty simple group it has
+00:17:56.320 two elements in it the identity and a
+00:17:58.080 non-identity element and the
+00:18:00.039 non-identity element when I multiply by
+00:18:02.039 itself I get back to e so the
+00:18:03.799 multiplication table if you really
+00:18:05.240 wanted to write this thing out which I
+00:18:06.799 don't recommend ever doing would look
+00:18:09.200 like
+00:18:13.200 this okay now that's now that's an
+00:18:17.320 example of a group that I called last
+00:18:19.200 time a bilion or commutative so
+00:18:22.240 if
+00:18:23.799 AB is equal to ba for all p
+00:18:30.120 s say G is a
+00:18:36.080 billion or
+00:18:39.880 commutative some people capitalize a
+00:18:42.200 billion in honor of OB some people don't
+00:18:45.080 doesn't make any difference to
+00:18:47.159 me so uh this group is commutative
+00:18:50.280 commutative group just means that the
+00:18:51.840 multiplication table is symmetric AC
+00:18:53.799 around the diagonal and this one is
+00:18:59.559 let's take an example which is a little
+00:19:01.280 bit more interesting where we go to the
+00:19:03.000 permutations of three
+00:19:06.360 elements I'm now going to erase the
+00:19:08.600 homework in fact I'm going to erase the
+00:19:10.679 definition of a group
+00:19:35.480 S3 so of course we have the identity
+00:19:37.880 element that one we already knew about
+00:19:40.280 now we have an element like this tow
+00:19:42.280 namely we can forget about the fact that
+00:19:44.240 we have three
+00:19:45.679 elements leave the third element fixed
+00:19:49.200 and just permute the first two like that
+00:19:52.320 let's call that element to we've already
+00:19:54.080 seen that
+00:19:55.200 element now elements in the symmetric
+00:19:58.240 this is by by the way called the
+00:19:59.440 symmetric group or permutation group on
+00:20:01.600 end
+00:20:02.600 letters symmetric group on end
+00:20:07.600 letters I'm sorry for all these
+00:20:10.520 different terminologies for the same
+00:20:12.360 thing like automorphisms and symmetries
+00:20:14.559 but um it's good to at least know what
+00:20:17.159 they are people only realized how
+00:20:19.440 fundamental a group was at the end of
+00:20:21.720 the 19th century and already they had a
+00:20:23.520 lot of different language for it so we
+00:20:25.360 at least have to know what the words are
+00:20:27.720 um if you're have this this kind of
+00:20:30.280 symmetries where you only exchange two
+00:20:33.159 elements well that was obvious in this
+00:20:35.880 case are called
+00:20:49.679 transpositions so if if you have a a
+00:20:52.159 very simple type of of uh permutation is
+00:20:56.280 to fix everything but two elements and
+00:20:58.000 just Exchange those two those are called
+00:20:59.760 transpositions they're very important as
+00:21:01.559 we'll see later on in the theory of the
+00:21:03.000 symmetric group now in this case we have
+00:21:05.440 this transposition but we also have some
+00:21:07.200 others can someone tell me some other
+00:21:08.679 transpositions in the symmetric group on
+00:21:10.360 three
+00:21:11.520 letters
+00:21:13.360 yeah you
+00:21:18.679 want right so there are three different
+00:21:21.120 elements we could fix right we could fix
+00:21:23.360 three but we could also fix two we could
+00:21:24.960 also fix one so uh there are actually
+00:21:27.400 three transpositions I'll write them
+00:21:30.919 down so we could fix one and switch two
+00:21:33.840 and three let's call that one to prime
+00:21:42.279 or we could exchange one and three and
+00:21:45.679 fix two those are all three different I
+00:21:48.640 could call that to double
+00:21:51.440 Prime so so far we've found four
+00:21:54.080 different permutations of the set of
+00:21:56.279 three elements we ultimately have to
+00:21:58.320 find 3 factorial which is six so there
+00:22:00.480 have to be two more permutations of
+00:22:03.520 three elements so I'll write you down
+00:22:05.600 another one that isn't a transposition
+00:22:08.200 if it's not a
+00:22:10.240 transposition it can't fix anything
+00:22:12.360 because there're only three elements so
+00:22:13.720 once it fixed one element it would have
+00:22:15.760 to either fix them all or or just
+00:22:17.559 exchange the other two we've already
+00:22:19.000 written down all of those so let's write
+00:22:21.480 down something that doesn't fix
+00:22:23.520 anything well we can take one to two and
+00:22:26.360 two to three and three back to one
+00:22:29.320 let's call that one
+00:22:31.120 Sigma or another
+00:22:35.080 possibility instead of taking one to two
+00:22:37.720 we could take one to
+00:22:39.760 three right then we could take
+00:22:42.720 two I guess it would have to go to um to
+00:22:46.760 one and three goes to two let's call
+00:22:49.960 that one Sigma
+00:22:53.159 Prime so we have three transpositions
+00:22:55.760 the identity element and these two
+00:22:57.279 elements that don't fix any but
+00:22:58.960 represent different permutations so
+00:23:01.000 those are the six elements of
+00:23:02.799 S3 e to to Prime to double Prime Sigma
+00:23:08.559 Sigma
+00:23:10.679 Prime now the fun starts let's see if we
+00:23:15.039 can
+00:23:16.919 find let's see what the composition of
+00:23:19.279 these things looks like in particular
+00:23:20.960 let's see if this group is uh
+00:23:24.159 commutative so let us compute C Sigma
+00:23:28.880 and let us then compute Sigma
+00:23:31.400 to now how do you compute T Sigma well
+00:23:34.039 you have to figure out what it is as a
+00:23:35.919 permutation of the set of three elements
+00:23:37.640 so the first thing I'd want to know is
+00:23:39.440 what does it do to the element
+00:23:42.240 one well let's figure that out this says
+00:23:45.080 first now this notation means first
+00:23:47.960 apply Sigma to one and then apply to to
+00:23:50.520 what Sigma takes one to so this becomes
+00:23:53.799 to of Sigma of one Sigma of one is by
+00:23:59.080 definition
+00:24:02.120 two right and to of two is one so this
+00:24:07.840 becomes to of two which becomes one so
+00:24:12.600 this permutation whatever it does it
+00:24:15.880 fixes
+00:24:17.440 one it fixes the element one now I can
+00:24:20.559 tell you right away what it is there are
+00:24:22.760 only two of these six permutations that
+00:24:25.799 fix the element one what are they
+00:24:29.919 it could be
+00:24:31.840 e
+00:24:33.760 so so T Sigma is
+00:24:38.240 either e
+00:24:41.200 or t Prime now I claim that it is an e
+00:24:46.799 that I can tell you right away without
+00:24:48.760 even thinking about it by pure thought
+00:24:51.159 that it is an e without Computing what
+00:24:52.760 it does to two now I could check by just
+00:24:55.919 seeing what it did to two let's do that
+00:24:58.720 that's the that's the computational
+00:25:00.399 approach proof T Sigma of two well we
+00:25:05.399 first compute Sigma of two that's three
+00:25:07.880 it's to of three and to of three happens
+00:25:11.159 to be
+00:25:15.360 three so it's beginning to look much
+00:25:17.960 more like to Prime because it fixed one
+00:25:21.080 and it took two to three now that says
+00:25:23.200 it has to take three to what whatever is
+00:25:24.919 left because it's a bje so that that
+00:25:27.760 immediately implies that t Sigma is
+00:25:30.960 equal to T
+00:25:33.760 Prime that's the that's our
+00:25:35.559 multiplication table we're starting to
+00:25:37.200 work out but if I wanted to do it by
+00:25:39.480 pure thought without ever Computing what
+00:25:41.559 it did to two how do you think I could
+00:25:43.600 eliminate the fact that t Sigma could
+00:25:45.880 not be equal to e given the fact that
+00:25:47.840 this is a group yeah go
+00:25:51.640 ahead ah they're clearly not inverses of
+00:25:55.440 each other what is the inversee to too
+00:25:59.200 to that's all you have to say the
+00:26:01.240 inverses are unique the only possible
+00:26:03.320 thing that when you multiply by too you
+00:26:05.360 get back to the identity is
+00:26:07.440 too Sigma doesn't look like to so but
+00:26:12.120 you could also
+00:26:13.559 argue very
+00:26:15.919 good that the
+00:26:20.360 inverse of
+00:26:22.200 to is equal to to by the way what's the
+00:26:25.080 inverse of
+00:26:26.600 Sigma can anyone tell me what the
+00:26:28.600 inverse of Sigma is what ah very good
+00:26:32.440 Sigma inverse is equal to Sigma Prime if
+00:26:35.760 you look at it if you want to get this
+00:26:37.880 back to where you started you have to
+00:26:39.159 take two to one you have to take 1 to
+00:26:42.720 three and you have to take three to two
+00:26:45.440 that's what Sigma Prime
+00:26:47.279 is so with these six elements this is
+00:26:50.640 just the fun you know now you can start
+00:26:52.399 taking products and inverses but in any
+00:26:54.840 case we've computed that t Sigma is to
+00:26:58.000 Prime
+00:26:59.000 Prime we've got that let's now compute
+00:27:01.399 what Sigma is well we'll compute Sigma
+00:27:04.760 by Computing it on
+00:27:07.039 one okay we start off by to of one is
+00:27:09.840 two so this is Sigma of
+00:27:12.960 two and sigma of two is
+00:27:16.720 three so Sigma tow of one is
+00:27:20.919 three interesting so there are two
+00:27:23.600 possibilities for it it could
+00:27:26.720 be it could be t double
+00:27:29.600 prime or it could be Sigma Prime we're
+00:27:33.320 again down to two possibilities well
+00:27:35.840 let's compute Sigma to of two just to
+00:27:38.640 find to to to kill the suspense of it
+00:27:40.880 all to of two is one so this becomes
+00:27:43.240 Sigma of one Sigma of one is two so it
+00:27:47.840 fixes two and therefore it's equal
+00:27:51.200 to to double Prime right so therefore
+00:27:54.760 Sigma TOA is equal to to double Prime
+00:27:59.799 here fixes two takes one to
+00:28:02.720 three and therefore Sigma to is not
+00:28:06.240 equal to T
+00:28:11.279 Sigma so already in this incredibly
+00:28:14.320 simple permutation group on three
+00:28:16.679 elements it's non
+00:28:19.600 ailion okay corollary let's let's push
+00:28:23.000 our
+00:28:24.039 luck
+00:28:26.519 carer the group
+00:28:29.919 SN the symmetric group on N letters is
+00:28:32.480 non
+00:28:35.799 bilion for
+00:28:38.080 all and larger than or equal to
+00:28:41.760 three so once we permute more than three
+00:28:44.480 elements we have a non-ab bilan
+00:28:47.120 group well what are we going to do are
+00:28:48.960 we going to write down all the N
+00:28:50.480 factorial things and find two things
+00:28:52.240 that don't commute let's think for a
+00:28:54.360 second let's think for a
+00:28:56.760 second did you you want to say
+00:28:59.039 simply how can we exhibit how can we
+00:29:02.399 prove this corollary just from this
+00:29:05.240 stupid computation go
+00:29:09.440 ahead Bravo excellent
+00:29:13.799 proof S3 is a subgroup of SN
+00:29:19.720 fixing the the uh the
+00:29:24.039 letters four five six up to n namely if
+00:29:29.559 I take inside of the permutation group
+00:29:32.600 the subset of permutations that fix all
+00:29:35.559 the letters after three then that is the
+00:29:38.799 permutation group on three letters
+00:29:40.559 because all I have left is to arrange
+00:29:42.080 how I permute the first three letters
+00:29:44.279 around right and that's a subgroup of s
+00:29:47.760 because if I compose two permutations
+00:29:50.000 that fix all these letters they still
+00:29:51.799 fix it if I take the inverse of
+00:29:54.039 something that fixes these letters it
+00:29:55.559 still fixes it and the identity element
+00:29:57.519 fixes them so this is a
+00:30:00.399 subgroup once n is bigger than or equal
+00:30:02.720 to three S3 is a subgroup of SN I have
+00:30:05.399 two elements in S3 that don't commute
+00:30:08.039 namely Sigma to and those give me
+00:30:10.039 elements in s that don't commute namely
+00:30:12.039 just take these poor permutations Sigma
+00:30:14.039 Tow and extend them to permutations of
+00:30:16.159 the whole set that fix 4 5 6 7 8 9 10 up
+00:30:19.559 to
+00:30:21.000 n so you already see that subgroups are
+00:30:23.480 very good if you can find a subgroup of
+00:30:25.200 a group that's non ailion the group is
+00:30:27.240 non ailion because all you have to do is
+00:30:28.919 find two elements in the group that
+00:30:30.240 don't commute and if you can find two
+00:30:32.320 elements in the subgroup that don't
+00:30:33.600 commute they certainly don't commute in
+00:30:34.960 the
+00:30:35.840 group because their products are
+00:30:37.679 different elements of the subgroup so
+00:30:39.080 they're different elements in the
+00:30:41.399 group
+00:30:43.399 okay EXC please sorry I think I sort of
+00:30:47.399 missed something second talking second
+00:30:51.480 how to argue that Sigma to to Sigma is
+00:30:54.960 not equal to the identity okay if it
+00:30:57.639 work equal to the identity then Sigma
+00:31:00.559 would be an inverse to to because the
+00:31:03.080 inverse is the unique element in the
+00:31:05.000 group that the product hits the identity
+00:31:07.600 if it were the identity that would say
+00:31:09.159 Sigma is to inverse but looking at them
+00:31:11.120 they're not inverses of each other
+00:31:13.039 because the inverse to a transposition
+00:31:14.960 is itself if you have a transposition
+00:31:17.639 then you find T is equal to T inverse
+00:31:20.639 for all transpositions you have that
+00:31:22.480 property whereas here we didn't find
+00:31:24.960 Sigma was equal to Sigma inverse its
+00:31:26.960 inverse with Sigma
+00:31:29.200 Prime I'll do one more example of a
+00:31:31.559 subgroup for you so here we saw we got a
+00:31:35.120 subgroup by asking that it permuted
+00:31:37.639 something but it fixed something inside
+00:31:40.120 of that set that's a very good way of
+00:31:42.000 getting subgroups for example I claim
+00:31:46.399 that for
+00:31:49.039 any
+00:31:51.320 for K less than or equal to n SK is a
+00:31:56.399 subgroup of SN
+00:31:59.399 same argument it fixes all the letters
+00:32:02.080 past
+00:32:05.279 K
+00:32:07.159 permutations
+00:32:09.080 fixing k + 1 k + 2 up to
+00:32:15.440 n so you very frequently get subgroups
+00:32:18.159 by insisting that they fix something and
+00:32:20.200 then when you compose two symmetries
+00:32:22.440 that fix something it fixes something
+00:32:24.279 Etc let's do that inside of gln so what
+00:32:27.480 is the
+00:32:34.159 subgroup of GL2
+00:32:38.399 R which
+00:32:43.480 fixes the
+00:32:45.240 line if I if I view GL2 r as acting on
+00:32:48.600 R2 what about the subgroup of linear
+00:32:50.960 Transformations that fix this
+00:32:54.240 line so of a line uh where y equals 0
+00:33:01.039 what is the subgroup that fixes that
+00:33:02.559 line well let's think about it in Matrix
+00:33:07.720 form now you can see right away that
+00:33:09.919 that has to be a subgroup regardless of
+00:33:11.519 what the matrices in it look like
+00:33:13.639 because these are linear maps of R2 to
+00:33:17.760 itself which are BS if they fix this
+00:33:20.399 line and you compose two BS fixing this
+00:33:22.760 line it fixes the line fixing the line
+00:33:25.240 means by the way just keeping the line
+00:33:27.000 on itself it might it might move a
+00:33:29.600 vector here to a vector here or
+00:33:31.120 something but it but at least it
+00:33:32.639 stabilizes the line maybe I should use
+00:33:35.399 that expression so that we don't get we
+00:33:37.760 don't think it fixes every Vector on the
+00:33:39.559 way
+00:33:41.440 stabilizing that's clearly a subgroup
+00:33:43.559 because composition of two things that
+00:33:45.120 stabilize this line stabilizes the line
+00:33:47.399 if a map stabilizes this line so does
+00:33:49.360 its inverse the identity certainly
+00:33:51.080 stabilizes this
+00:33:52.799 line so there is some subgroup what does
+00:33:55.399 it look like metrically
+00:33:58.360 so if you have a
+00:33:59.799 matrix a b c d which is invertible what
+00:34:04.880 does it mean that it fixes the first
+00:34:06.880 basis Vector it means that the entry B
+00:34:09.679 in The Matrix is
+00:34:11.960 zero right because this column
+00:34:14.800 represents the transformation on the
+00:34:17.239 first basis vector and this column
+00:34:19.199 represents the transformation on the
+00:34:20.719 second basis vector and to say that the
+00:34:22.800 linear transformation fixes this line
+00:34:25.239 says it takes the first basis Vector
+00:34:27.079 into some mult multiple of the first
+00:34:28.599 basis Vector right so the coefficient of
+00:34:31.520 the second basis Vector in The Matrix
+00:34:33.239 would be Zero by the way we represent
+00:34:35.760 linear Transformations by
+00:34:37.599 matrices so a matrix will fix this line
+00:34:41.918 if and only if the B entry is zero and
+00:34:44.440 then we want it to be
+00:34:46.239 invertible so that just means that its
+00:34:49.000 determinant is non zero so a is not
+00:34:51.719 equal to
+00:34:52.839 zero that's the subgroup of 2x two
+00:34:56.239 matrices that fix the line and then we
+00:34:58.800 better check that it's closed under
+00:35:00.200 multiplication huh I mean we might have
+00:35:02.680 gotten it wrong so we better check that
+00:35:04.599 if we multiply two matrices that look
+00:35:06.480 like
+00:35:10.320 this we get another Matrix that looks
+00:35:12.920 like this well you believe it we just
+00:35:17.240 have to check that this bottom entry is
+00:35:18.880 zero so there's only one thing to check
+00:35:20.839 so we have to go across this row and
+00:35:23.440 down this column and verify that the
+00:35:25.480 product is zero and you get 0 * a prime
+00:35:28.720 plus d * 0 so the entry here is zero
+00:35:31.599 it's sort of irrelevant what goes up
+00:35:33.119 here so that shows that those matrices
+00:35:35.320 are closed under
+00:35:36.800 product
+00:35:41.000 yes very good point but we know that
+00:35:44.240 because the product of two matrices with
+00:35:46.720 nonzero determinant have non-zero
+00:35:48.599 determinant that's already the fact that
+00:35:50.520 it's a subset of
+00:35:52.599 GL2 this condition will be but you're
+00:35:55.160 you're absolutely right in fact why
+00:35:56.200 don't we check and see what the corners
+00:35:57.480 are just to just to verify that for
+00:35:59.520 ourselves so this corner is a a
+00:36:03.599 prime and this corner happens to be d d
+00:36:07.680 Prime and this thing is much more
+00:36:09.880 complicated and certainly if a * d and a
+00:36:13.319 prime D Prime are nonzero so is a a
+00:36:16.359 prime time DB Prime but good
+00:36:19.359 question good
+00:36:21.400 question all set with this so start to
+00:36:24.480 recognize subgroups that's a that's a
+00:36:26.480 really big point now arton has a very
+00:36:28.800 nice exercise where he shows you what
+00:36:31.440 the subgroups are of the additive group
+00:36:33.400 of the integers let's do that sometimes
+00:36:36.000 it's possible in a group very rarely but
+00:36:39.240 sometimes it's possible to identify all
+00:36:41.119 the
+00:36:43.760 subgroups so here's a proposition I'll
+00:36:46.079 prove for you
+00:36:48.720 proposition The
+00:36:50.880 Collection the
+00:36:53.090 [Applause]
+00:36:54.480 subgroups of the integers under a
+00:36:58.680 that's an aelion group are
+00:37:06.920 precisely
+00:37:08.520 um are precisely given
+00:37:13.400 by
+00:37:16.119 bz or multiples of a fixed integer under
+00:37:19.680 addition
+00:37:29.760 so uh all even integers are all integers
+00:37:32.319 divisible by three are all integers
+00:37:34.160 divisible by five so we're going to
+00:37:36.640 check that that form is a subgroup and
+00:37:37.920 then we're going to prove that every
+00:37:38.800 subgroup has that form by the way I
+00:37:42.319 should have said in the definition of a
+00:37:43.760 subgroup a mathem mathematician gives
+00:37:45.560 you a definition he should always follow
+00:37:48.040 it by the trivial examples right
+00:37:51.000 sometimes there no more examples then it
+00:37:53.040 was a stupid definition so who can give
+00:37:56.359 me two completely trivial subgroups of
+00:37:59.119 any group
+00:38:02.720 yeah perfect so anytime you have a group
+00:38:06.560 it forms a subgroup of itself you didn't
+00:38:08.920 really need the notation to tell you
+00:38:10.400 that but it's cely closed under addition
+00:38:12.400 identity Etc and that's the biggest
+00:38:14.560 subgroup you can have and the smallest
+00:38:16.560 subgroup you can have is when you have
+00:38:18.720 just the identity element because it
+00:38:20.079 must contain the identity element and
+00:38:21.839 then the subgroup is like the group with
+00:38:23.319 one element closed under in okay so you
+00:38:26.480 always have those two subgroups
+00:38:27.960 now where are those two subgroups here
+00:38:29.960 which subgroup here is the identity
+00:38:31.720 element and which subgroup is the full
+00:38:34.160 group yeah let's follow up go
+00:38:36.880 ahead
+00:38:38.760 good good b equals z gives the
+00:38:44.920 group zero under addition which is just
+00:38:48.079 the El the one element group and b equal
+00:38:51.680 1
+00:38:53.480 gives H equal G because if you just take
+00:38:56.520 multiples of one but the the others are
+00:38:57.800 non-trivial subgroups even integers
+00:39:00.200 integers divisible by three integers
+00:39:01.800 divisible by 17 integers divisible by 21
+00:39:05.960 okay
+00:39:08.920 proof
+00:39:11.000 first these are all
+00:39:18.200 subgroups that's more or less clear if
+00:39:20.400 you add two integers divisible by B
+00:39:22.400 that's just things like this b u m plus
+00:39:26.000 BN is to B * m +
+00:39:29.599 n right the negative of b m is B * - M
+00:39:36.160 and 0 is equal to 0 * is equal to B * 0
+00:39:41.400 so that shows that the zero element is
+00:39:43.280 in the group this shows that we have
+00:39:45.200 inverses in the group and this shows
+00:39:47.359 that the group is closed under
+00:39:50.720 addition okay so anything all integers
+00:39:54.359 divisible by something give a subgroup
+00:39:56.160 of all integers under addition
+00:39:57.839 we just have to show that these are the
+00:39:59.640 only possible
+00:40:04.760 subgroups so to show that these are the
+00:40:07.640 only possible ones we're going to use a
+00:40:10.119 trick that goes back to book five in uid
+00:40:13.079 so we to
+00:40:16.000 show these exhaust the
+00:40:21.480 subgroups exhaust the
+00:40:25.720 subgroups let
+00:40:28.000 H be a subgroup of Z and let let B be
+00:40:34.440 equal to the
+00:40:36.880 smallest
+00:40:39.920 integer uh well there are two
+00:40:45.400 cases case one H is equal to
+00:40:49.760 zero so it's the zero subgroup well
+00:40:52.640 that's one of these cases with b equals
+00:40:54.760 z so that's
+00:40:56.240 okay in case two H is not equal to the
+00:41:00.880 zero group so it contains something
+00:41:03.000 other than the identity in it now by
+00:41:06.040 taking inverses we see that it has to
+00:41:08.400 contain something positive in it so
+00:41:13.119 contains an m not equal to zero
+00:41:18.839 taking M or minus m in h we
+00:41:24.960 see it contains
+00:41:29.359 some integer M which is strictly greater
+00:41:32.119 than
+00:41:33.680 zero because it's closed under
+00:41:36.640 inverses so if if you found it contained
+00:41:39.280 minus three it would also have to
+00:41:41.040 contain
+00:41:43.520 three okay and then the trick of the
+00:41:46.839 ukian algorithm is to let B be the
+00:41:49.640 smallest possible integer B greater than
+00:41:52.560 zero be the
+00:41:56.240 smallest
+00:41:58.720 positive
+00:42:01.319 integer contained in
+00:42:07.520 h so since it contains positive integers
+00:42:10.400 it contains the smallest
+00:42:12.480 one okay then the first observation is
+00:42:16.359 then H contains all multiples of
+00:42:20.680 B because once it has B in it it has B
+00:42:23.520 plus b which is 2 B and then it has B
+00:42:25.440 plus b plus b which is 3B
+00:42:27.839 right and then it has minus B which is
+00:42:29.960 the inverse of B then it has minus 2B
+00:42:32.440 which is the inverse of 2 B everyone
+00:42:34.480 agree to that so once we find the
+00:42:36.760 smallest Poss positive integer in it it
+00:42:39.520 has to contain all multiples of this by
+00:42:43.880 closure
+00:42:45.680 under addition and
+00:42:52.000 inversion now Suppose there was
+00:42:54.240 something else in h suppose
+00:42:58.920 H is in
+00:43:01.400 h and write H as some multiple of B plus
+00:43:06.640 a remainder term with 0 less than or
+00:43:10.640 equal to R less than b we can do that by
+00:43:14.760 the ukian algorithm you can always
+00:43:16.640 subtract off some multiple of B from
+00:43:18.640 your integer that's in the group that
+00:43:21.359 makes the remainder less than b if you
+00:43:23.119 think of the elements in the group on
+00:43:24.960 the real line here's zero here's our
+00:43:26.760 small element B which is in h here's
+00:43:29.680 some other element H which is in h we
+00:43:32.200 just go marching off here in multiples
+00:43:34.760 of
+00:43:37.839 B until H is squeezed between two
+00:43:40.680 multiples of B which means that if we
+00:43:42.760 subtract that multiple of B from H the
+00:43:44.880 remainder is less than
+00:43:47.000 b okay now I claim that R is equal to
+00:43:51.880 zero
+00:43:57.720 which will show that H is actually a
+00:43:59.640 multiple of B so that this exhausts the
+00:44:02.359 subgroup and the proof is if
+00:44:06.200 not
+00:44:08.160 why
+00:44:10.200 because R is actually an element in
+00:44:15.559 h b is an H so the multiple of B is an H
+00:44:19.640 H is an H so if I take H and I add to it
+00:44:23.440 the inverse of this I get something in h
+00:44:26.400 h plus minus MB is in h by the fact that
+00:44:31.680 H is closed under inversion and addition
+00:44:34.599 but h plus minus MB is
+00:44:37.319 r r was assumed to be a positive number
+00:44:40.359 less than
+00:44:41.599 b b was assumed to be the smallest
+00:44:44.359 positive number in h so the only way
+00:44:46.960 this can be the case is that the
+00:44:48.800 remainder is
+00:44:50.720 zero so
+00:44:52.720 and R is less than b so R is equal to Z
+00:44:57.079 Z which says that everything in h is a
+00:44:59.079 multiple of B so this is a nice
+00:45:01.760 application of the ukian algorithm which
+00:45:03.720 is used to prove the existence of
+00:45:06.000 greatest common divisors and unique
+00:45:07.880 prime factorization in uid but it also
+00:45:10.599 establishes art and shows you a slightly
+00:45:12.680 more sophisticated algebraic fact that
+00:45:14.880 it allows you to identify all subgroups
+00:45:16.960 of Z with the multiples of a fixed
+00:45:18.599 number and any multiple of a fixed
+00:45:20.480 number gives you a
+00:45:22.280 subgroup good so there are an infinite
+00:45:25.200 number of subgroups of Z and uh there
+00:45:27.760 they
+00:45:28.400 are let me just end with one more
+00:45:30.880 definition and then Peter will pick up
+00:45:33.160 with this on Friday so you get to see
+00:45:35.880 him lecture before you commit yourself
+00:45:38.319 irrevocably to this
+00:45:41.079 course
+00:45:46.839 okay so I want to talk about a certain
+00:45:50.599 type of subgroup that you get so if you
+00:45:52.800 have any Group
+00:45:54.079 G any
+00:45:55.920 group and you have an element G and
+00:45:59.760 G there's a natural subgroup that I'll
+00:46:02.359 denote by H which I'll write like this
+00:46:06.319 which is sometimes called a cyclic
+00:46:11.480 subgroup generated by
+00:46:16.119 Z which is consists of
+00:46:19.040 all products of G with itself it's the
+00:46:21.720 smallest subgroup that can could contain
+00:46:23.760 this element
+00:46:36.119 so it consists of things like e g since
+00:46:39.559 it has g in it it has to have G inverse
+00:46:41.400 in it then it has to have G squared in
+00:46:43.319 it then it has to have G the minus 2 so
+00:46:45.480 it consists of all powers of
+00:46:52.520 G where the zeroth power is defined to
+00:46:55.200 be the identity because if you if you
+00:46:57.319 have the element g in it you certainly
+00:46:58.800 have to have all powers of g in it if
+00:47:01.000 it's closed under multiplication and
+00:47:03.240 inversion moreover once you get all
+00:47:05.760 powers of g in it then um that's serly
+00:47:09.559 closed under multiplication you multiply
+00:47:11.319 two powers of G you get another I mean
+00:47:13.079 the power law Works in a group just like
+00:47:15.400 it does in normal
+00:47:18.200 arithmetic because this just means the
+00:47:20.200 product of G with itself M times and
+00:47:22.040 this means the product of G with itself
+00:47:23.480 n times so when you take the whole
+00:47:24.920 product you have the product of G with
+00:47:26.200 itself m plus n * the inverse of G the
+00:47:30.720 m is G the minus M and that's contained
+00:47:34.359 in
+00:47:35.240 here so this is certainly closed under
+00:47:37.720 addition and an inversion and contains
+00:47:39.760 the identity element so there it is
+00:47:41.480 there's the cyclic subp however and it's
+00:47:43.960 a big caveat don't necessarily think
+00:47:46.480 that those powers are
+00:47:48.960 distinct and there's could be a point
+00:47:51.800 where you take the power and you get
+00:47:53.040 back to the identity element we saw that
+00:47:55.359 in the symmetric group in the in
+00:47:57.559 three we had this element to with the
+00:48:00.559 property that to^ squ was the identity
+00:48:03.000 element so if we took the cyclic
+00:48:05.079 subgroup generated by too in
+00:48:07.760 S3 it would just be the group E too it
+00:48:11.880 would be that subgroup of order
+00:48:15.000 two so that's a big question namely what
+00:48:18.559 do you get to a power of G where becomes
+00:48:21.200 the identity element or not so
+00:48:24.520 if G to the m is equal to the identity
+00:48:28.760 and M is the smallest
+00:48:37.440 power we
+00:48:39.319 say m is the
+00:48:44.079 order of G in
+00:48:47.319 G and if if no
+00:48:51.680 power G to the m equals the identity
+00:48:55.640 small is positive
+00:48:57.839 such power for M greater than zero we
+00:49:02.440 say G has infinite
+00:49:08.920 order so the elements in Z all have
+00:49:12.400 infinite order on once you get to an
+00:49:14.440 element which is except for zero which
+00:49:16.160 has order one once you get to a positive
+00:49:18.440 integer no matter how many times you add
+00:49:19.920 it to itself you never get back to the
+00:49:21.880 identity because you keep marching
+00:49:23.920 out but in the symmetric group on three
+00:49:27.440 letters we find that this tow has order
+00:49:31.400 two someone has a phone call and then we
+00:49:34.319 find that Sigma if you Cube it you get
+00:49:36.720 to the identity has order
+00:49:42.000 three does that signify the class is
+00:49:44.200 over all right we're going to find a big
+00:49:46.400 theorem big theorem was coming up is
+00:49:48.599 that in a finite group every element has
+00:49:51.000 finite order and the order divides the
+00:49:54.200 order of the group so here we got order
+00:49:57.040 two and three huh they both divide
+00:50:00.280 six big theorem in an in an infinite
+00:50:03.319 group elements can either have finite or
+00:50:05.160 infinite order Peter I'll give you
+00:50:06.680 examples of that next time okay

@@ -1,0 +1,1125 @@
+# tactiq.io free youtube transcript
+# Lec 4 | Abstract Algebra
+# https://www.youtube.com/watch/9DId0iMTN6o
+
+00:00:12.240 orphism we're going to do a lot of
+00:00:13.679 different homomorphisms today it's in
+00:00:15.799 some sense the most important Concept in
+00:00:17.600 group Theory so a homomorphism is
+00:00:20.000 something that goes from one group to
+00:00:28.119 another and it's a map of sets which has
+00:00:31.400 the property that it takes one
+00:00:33.200 multiplication into the other so F of G
+00:00:36.719 * H is f of G time F of
+00:00:41.680 H where this multiplication takes place
+00:00:44.399 in
+00:00:46.520 G and this multiplication takes place in
+00:00:49.360 G
+00:00:50.840 Prime so it's analogy is like a linear
+00:00:53.960 map between Vector spaces it it takes
+00:00:56.320 the addition in one vector space to
+00:00:57.920 another it takes scalar multiplication
+00:00:59.519 to another other now some simple
+00:01:02.039 properties of homomorphisms which you
+00:01:03.960 establish in the homework is that it
+00:01:06.479 always takes the identity to the
+00:01:09.280 identity and if you apply
+00:01:12.159 it to the inverse map G inverse that
+00:01:15.840 happens to be the inverse of f of G so
+00:01:19.759 once you have this property this is the
+00:01:21.560 only thing you you need assume I mean
+00:01:23.720 you'd want all of these properties if
+00:01:25.520 you preserve the group structure but
+00:01:27.520 once you assume the the property that it
+00:01:29.640 takes one multiplication into the other
+00:01:31.799 it immediately follows that it takes the
+00:01:33.840 identity into the identity it and it
+00:01:36.119 takes inverses into inverses to prove
+00:01:39.200 that it takes the identity into the
+00:01:40.799 identity you use the fact that in a
+00:01:43.479 group E * e is e e is the only element
+00:01:48.719 which has that property no other element
+00:01:50.759 has the property that a * a is
+00:01:54.320 a okay this is unique element with that
+00:01:57.159 property because you could cancel E from
+00:01:59.680 by multiply by E inverse so if you take
+00:02:02.159 that and you apply F to it you get F of
+00:02:04.200 e * F of e be using this property that's
+00:02:07.880 F of e so maybe I should have written
+00:02:09.800 that down F of e which is f of e time F
+00:02:12.720 of e is equal to F of e applying F to
+00:02:16.080 both sides of this identity and then
+00:02:18.360 using the homomorphism property and then
+00:02:20.720 we see that F of e has that property in
+00:02:22.760 the group G Prime so multiplying by F of
+00:02:25.560 e inverse you see that F of e is e
+00:02:28.640 Prime okay you guys did all this for
+00:02:30.879 homework same thing I'll let you do the
+00:02:32.640 inverse one yourself it's from the
+00:02:34.800 unique property of inverses now uh some
+00:02:38.879 important things about homomorphisms is
+00:02:41.000 that if we
+00:02:42.200 have we could have another
+00:02:45.239 homomorphism to gble Prime and the
+00:02:51.519 composition h of f of two
+00:02:57.360 homomorphisms is a third
+00:03:00.680 and we're going to see that a lot today
+00:03:02.239 that when we compose two because if you
+00:03:04.360 have this property for f and you have
+00:03:06.000 this property for H you'll see that you
+00:03:07.599 have this property for the composition
+00:03:09.239 of
+00:03:11.280 two and uh some
+00:03:14.920 important subgroups that are associated
+00:03:17.319 to a homomorphism you have the
+00:03:20.120 image Peter defined last time so that's
+00:03:23.080 the set of elements of G Prime which are
+00:03:25.720 equal to F of
+00:03:27.080 G in G Prime so the they're the things
+00:03:29.959 that are hit by the homomorphism and
+00:03:32.360 that's a subset of G Prime and you have
+00:03:35.200 What's called the kernel and for those
+00:03:37.200 of you who've done Vector spaces you
+00:03:38.879 know this sort of thing that's the set
+00:03:40.680 of G such that F of
+00:03:43.439 G is the identity element in G
+00:03:46.840 Prime and uh that's a subgroup that's a
+00:03:50.159 subset of G just like you have the
+00:03:52.879 kernel and image of a homomorphism of
+00:03:54.959 vector spaces and if both of these are
+00:03:57.599 the trivial element so if the image is
+00:04:01.599 so
+00:04:03.079 if
+00:04:05.239 image is equal to G Prime and the
+00:04:09.239 kernel is equal to the set e which is
+00:04:12.360 always in the kernel the image is always
+00:04:15.079 the image always contains e Prime by the
+00:04:18.478 fact that F of e is e Prime and the
+00:04:20.120 kernel always contains
+00:04:22.320 e uh so if the image is G Prime and the
+00:04:25.240 kernel is z we
+00:04:27.160 say f is and
+00:04:34.400 isomorphism and if in if it Beyond being
+00:04:37.720 an isomorphism if G is equal to G Prime
+00:04:42.000 and F is an
+00:04:45.520 isomorphism we
+00:04:47.880 say f is an
+00:04:51.600 automorphism an isomorphism from G to
+00:04:55.960 itself we'll give some examples of that
+00:05:00.560 now I think in homework you showed that
+00:05:03.000 these are both subgroups of a group is
+00:05:04.919 that right uh both
+00:05:10.160 subgroups and on the other hand the
+00:05:12.360 kernel is a special kind of subgroup
+00:05:15.240 which will we usually use this symbol to
+00:05:17.880 denote not just subset but
+00:05:19.960 subgroup but the kernel is a special
+00:05:22.319 type of
+00:05:23.440 subgroup which is called a normal
+00:05:28.639 subgroup a normal subgroup H in a group
+00:05:32.319 and it's denoted this way not just by
+00:05:34.840 the contain sign but a little triangle
+00:05:37.240 so that means it's better than just a
+00:05:38.759 subgroup it has a nice property has the
+00:05:41.440 property that if you take any G and
+00:05:44.360 G for all G and G if you take the
+00:05:48.039 conjugates of H well GH G inverse let's
+00:05:51.560 do it that
+00:05:54.720 way that's another subgroup of G you can
+00:05:57.639 easily see that that's closed under mul
+00:05:59.600 multiplication because if you if you
+00:06:01.360 multiply GH G
+00:06:03.800 inverse by g h Prime G
+00:06:07.960 inverse then these two G's cancel and
+00:06:11.000 you get
+00:06:12.160 G * HH Prime G inverse so this set all
+00:06:19.759 elements of the form G an element in h
+00:06:22.479 time G inverse is closed under
+00:06:24.319 multiplication so it's another subgroup
+00:06:26.440 of g a normal subgroup is one where this
+00:06:29.800 is always equal to
+00:06:32.520 H so we might say if we call this if we
+00:06:37.080 we call this multiplication on the right
+00:06:38.880 by G and on the left by G inverse
+00:06:42.160 conjugation because that's what it is
+00:06:44.479 then we might say the normal subgroups
+00:06:46.319 are closed under
+00:06:55.199 conjugation by all elements G and G it's
+00:06:59.240 clear it's closed under conjugation by
+00:07:01.319 elements in h if you multiply an element
+00:07:04.560 in the H an element in the subgroup H on
+00:07:07.360 the left by H and on the right by H
+00:07:09.400 inverse that's still an H but this is
+00:07:12.000 amazing that it's closed under
+00:07:13.240 conjugation by
+00:07:14.800 G and that's true of a kernel but not of
+00:07:17.520 an arbitrary subgroup that's a really
+00:07:19.599 important distinction it was first noted
+00:07:21.440 by galwa who I told you developed group
+00:07:23.720 Theory so let's check that the kernel is
+00:07:26.319 a normal subgroup it's easy so if we
+00:07:29.039 have an El g in it well let's yeah let's
+00:07:31.479 say let's say h is in the
+00:07:34.759 kernel we have to check the ghg
+00:07:37.960 inverse is also in the
+00:07:40.400 kernel so we apply F to it f of ghg
+00:07:46.159 inverse using the homomorphism property
+00:07:48.919 is f of
+00:07:51.520 g f of h f of G
+00:07:55.919 inverse now the fact that H is in the
+00:07:58.159 kernel means that F of H is the identity
+00:08:00.319 element so this becomes F of
+00:08:02.720 gtimes the identity element times an F
+00:08:06.680 of G inverse is the inverse of f of
+00:08:11.599 G which is just the identity element so
+00:08:15.639 that's why the kernel is closed
+00:08:17.680 under now if you want to see an example
+00:08:20.080 of a subgroup that's not
+00:08:21.919 normal not normal subgroup take the
+00:08:25.240 following
+00:08:26.319 subgroup so this is just an observation
+00:08:29.800 when you make a mathematical
+00:08:31.640 definition you should always see whether
+00:08:33.958 it actually Narrows the field or not
+00:08:36.039 maybe all subgroups are normal maybe
+00:08:38.120 this property is held by everything so
+00:08:40.240 you have to actually to see that this is
+00:08:41.839 a distinguished character of subgroups
+00:08:44.720 you have to exhibit a non-normal
+00:08:46.920 subgroup now you can't do that in an
+00:08:49.160 aelan group in an ailan group this is
+00:08:52.080 obvious because G commutes with h so you
+00:08:55.080 can move the G over to this side and
+00:08:56.640 cancel the G inverse so you have to go
+00:08:58.920 to a non non ailan group to get a
+00:09:00.680 counter example to a normal
+00:09:02.680 subgroup can someone suggest a simple
+00:09:05.240 nonabelian group to work with S3 S3 so
+00:09:08.880 let's take a look at
+00:09:12.680 S3 and let's take a simple subgroup to
+00:09:15.240 work with let's take the identity
+00:09:17.640 element and our transposition toao where
+00:09:21.079 toao sends
+00:09:25.480 one 1: two 2: one and fixes
+00:09:30.800 three okay now I claim this is not
+00:09:41.040 normal so you have to find an element in
+00:09:44.440 the group that takes this subgroup
+00:09:46.440 outside of itself well let's try
+00:09:49.360 something let's try
+00:09:53.070 [Applause]
+00:09:56.600 conjugation by to Prime where to Prime
+00:09:59.800 is the
+00:10:04.600 element that switches two and three and
+00:10:07.160 fixes
+00:10:09.480 one so T Prime clearly takes e to itself
+00:10:12.800 when you conjugate but what is to Prime
+00:10:15.399 to to Prime
+00:10:19.519 inverse well to Prime inverse is the
+00:10:21.920 same as to Prime so we're calculating to
+00:10:24.120 Prime to to
+00:10:26.440 Prime well let's see if it's this
+00:10:29.440 element it we'll be able to tell by just
+00:10:32.079 evaluating it on three because this is
+00:10:34.640 the unique element in the group other
+00:10:36.279 than the identity that fixes three so
+00:10:39.399 let's see if it's to or not so we'll
+00:10:41.760 apply it to the element three to Prime
+00:10:44.480 of three is two so this is to Prime of
+00:10:48.639 to of
+00:10:50.560 two to of two is one so this is T Prime
+00:10:55.040 of
+00:10:55.959 one and T Prime of one is equal to one
+00:11:02.320 so this
+00:11:04.079 element this element does not fix three
+00:11:07.600 it takes three to
+00:11:09.480 one so in particular it's not equal to
+00:11:12.399 the element
+00:11:16.440 to in particular in in fact it's the
+00:11:19.839 other transposition it's in fact equal
+00:11:21.800 to to double prime one can figure that
+00:11:24.240 out pretty easily it has to we'll see
+00:11:26.959 later well I mean this has to be
+00:11:28.720 conjugated into a subgroup and uh
+00:11:31.399 there's only there are only three
+00:11:32.639 subgroups of order two in this group
+00:11:35.200 generated by E and too generated by e in
+00:11:37.560 to Prime and generated by E and to
+00:11:39.360 double Prime and t double Prime is the
+00:11:41.680 unique one of these things that takes uh
+00:11:45.279 3 to
+00:11:46.880 one okay so in fact we find here that to
+00:11:51.800 H to inverse is the subgroup E Cal
+00:11:56.079 double Prime and so there's a non-normal
+00:11:58.240 subgroup for you so in particular that
+00:12:00.760 subgroup is not the kernel of a
+00:12:02.839 homomorphism that subgroup is not the
+00:12:04.959 kernel of a
+00:12:06.760 homomorphism okay so now let me give you
+00:12:09.560 some examples of kernels and images yeah
+00:12:12.440 is uh that an if and only if like is a
+00:12:16.199 if come go say it so if you have a
+00:12:19.079 normal sub is it necessarily the Cal of
+00:12:21.880 yes but that's a theorem we have to
+00:12:23.920 prove that right now all we know is if
+00:12:26.040 we have a homomorphism it's kernel is
+00:12:28.600 normal
+00:12:29.800 one of the big observations we're going
+00:12:31.279 to get to is if we have any normal
+00:12:33.480 subgroup there's a homomorphism which
+00:12:36.000 has it as a
+00:12:38.160 kernel okay that's big but we haven't
+00:12:41.079 gotten there yet but good
+00:12:43.360 anticipation
+00:12:48.279 others let's see some homomorphism and
+00:12:51.120 figure out what their kernels are
+00:12:56.519 Etc by the way homomorphisms are much
+00:12:59.399 more important in group Theory than
+00:13:00.720 groups it's a general phenomenon when
+00:13:03.720 when you study a little bit more math
+00:13:05.199 you'll study things called categories so
+00:13:07.480 categories have two things in them they
+00:13:08.920 have objects and morphisms so category
+00:13:12.120 of vector spaces the objects are vector
+00:13:14.120 spaces the morphisms between Vector
+00:13:16.240 spaces are called linear Maps category
+00:13:18.839 of groups the objects are groups the
+00:13:21.240 morphisms between them are called
+00:13:22.880 morphisms category of topological spaces
+00:13:26.160 the the objects are topological spaces
+00:13:28.639 and the more isms are homomorphisms in
+00:13:30.720 the category of you know you know
+00:13:33.320 category of differentiable manifolds the
+00:13:35.519 objects are manifolds and the um
+00:13:38.040 morphisms are differentiable maps so
+00:13:40.240 it's a very it's a sort of metam mical
+00:13:42.199 concept now when you study categories
+00:13:44.199 the objects are relevant everything is
+00:13:46.160 about the morphisms so you're going to
+00:13:48.040 see that in group Theory to everything's
+00:13:49.720 about the
+00:13:51.040 homomorphisms we're going to encapsulate
+00:13:53.079 everything about groups in homomorphism
+00:13:54.800 so here's one so if you take the group G
+00:13:57.160 is glnr
+00:14:00.959 and we have a homomorphism f to the
+00:14:04.120 group G Prime which
+00:14:08.440 uh Peter called RAR which you could also
+00:14:11.480 call GL one of R invertible 1X one
+00:14:15.079 matrices over R which takes F of a
+00:14:18.800 matrix a is the determinant of
+00:14:23.560 a and that's because the determinant of
+00:14:26.040 a b is the determinant of a times the
+00:14:28.399 determinant of B so it takes so the the
+00:14:30.720 key rule is the determinant of a is the
+00:14:34.680 determinant of a Time the determinant of
+00:14:37.560 B and this is multiplication in our
+00:14:39.800 original group glnr and this is
+00:14:41.920 multiplication in our group
+00:14:45.360 g1r now if you you should review why
+00:14:48.079 this is true there's an elaborate
+00:14:49.519 description of this in chapter one which
+00:14:51.160 I'm not going to go into it's because
+00:14:53.639 the determinant is a unique map of a
+00:14:55.639 certain type and then you check that
+00:14:57.880 when you apply it to the product the two
+00:14:59.320 matrices the only way it could be unique
+00:15:01.079 is if it works out this way that's the
+00:15:03.360 right way to prove it take a look at the
+00:15:05.079 material in chapter one to review that
+00:15:07.759 this map has
+00:15:11.959 image all of you can get down a matrix
+00:15:16.000 with any determinant so you have to
+00:15:17.959 prove that if I want to hit some real
+00:15:20.720 number can someone give me a matrix
+00:15:22.800 which has that
+00:15:24.440 determinant yeah you want to try um you
+00:15:27.320 could take the identity with the first
+00:15:30.040 Upp exactly if I want to make an element
+00:15:32.440 with determinant
+00:15:34.680 Lambda I take this Matrix and the
+00:15:37.160 determinant of this Matrix is the
+00:15:39.319 product of the diagonal entries which is
+00:15:41.759 Lambda okay good so that's the the proof
+00:15:45.720 of the image the
+00:15:47.839 kernel of f is not all of glnr because
+00:15:51.680 things have arbitrary determinant it's
+00:15:53.279 the matrices which have determinant one
+00:15:55.880 because the identity of this group is
+00:15:57.920 one so it's
+00:16:00.680 a such that the determinant of a is
+00:16:04.079 equal to one and that's a subgroup
+00:16:06.680 because of this property and it's a
+00:16:09.040 normal subgroup if you conjugate a
+00:16:10.959 matrix with determinant one by an
+00:16:12.639 arbitrary Matrix you still have
+00:16:14.680 something of determinant
+00:16:16.759 one and this this group is a very famous
+00:16:19.560 group in math it's called
+00:16:21.480 slnr the speci this is called the
+00:16:24.079 general linear group of Dimension n this
+00:16:26.759 is called the special linear group of
+00:16:28.519 dimension
+00:16:30.959 n okay could you repeat that point about
+00:16:34.000 conjugating yes if you take a matrix a
+00:16:37.839 such the determinant of a is equal to 1
+00:16:41.000 and you calculate the determinant of the
+00:16:42.959 Matrix b a b
+00:16:46.160 inverse for any invertible Matrix B
+00:16:50.000 that's what I mean by conjugating by an
+00:16:52.079 element in the group we're checking that
+00:16:53.800 it's a normal subgroup then this becomes
+00:16:56.519 the determinant of B time the
+00:16:59.399 determinant of
+00:17:00.759 a times the determinant of
+00:17:03.959 B
+00:17:06.880 inverse right but the determinant sorry
+00:17:09.839 determinant of the quantity B inverse
+00:17:13.160 but this is the same as the determinant
+00:17:14.760 of B inverse and this multiplication
+00:17:18.559 takes place in a commutative
+00:17:21.400 group so this is actually the same as
+00:17:23.839 the determinant of
+00:17:25.880 a because the determinant of B commutes
+00:17:28.359 with the deter it's it's in it's in a
+00:17:30.320 group where the multiplication law is
+00:17:31.880 commutative so in this case it's even
+00:17:34.160 stronger not only are the things of
+00:17:36.200 determinant one stable under conjugation
+00:17:39.160 which would be true in any case but the
+00:17:41.240 things of a fixed determinant are stable
+00:17:43.160 under
+00:17:44.240 conjugation that shows that this
+00:17:46.240 subgroup is a normal subgroup so I would
+00:17:49.039 denote it like
+00:17:54.799 this okay now let's do a little bit more
+00:17:58.360 serious homomorphism this is an
+00:18:00.840 extremely important homomorphism in
+00:18:03.840 group
+00:18:05.280 Theory we have two general groups that
+00:18:07.799 we know about gln and SN so we should
+00:18:10.280 have a homomorphism between them so I
+00:18:12.640 claim there's another homomorphism from
+00:18:14.360 the symmetric group on N letters to the
+00:18:16.880 group
+00:18:20.960 glnr which takes a permutation
+00:18:27.400 Sigma to a Matrix a sigma which is
+00:18:31.400 called the
+00:18:34.880 permutation Matrix and I have to Define
+00:18:37.799 it for you
+00:18:40.440 Associated to Sigma and it's an unusual
+00:18:44.760 Matrix and it looks like this all the
+00:18:47.240 entries of this permutation Matrix are
+00:18:49.320 zeros and
+00:18:53.159 ones and in the jth
+00:18:57.400 column of this
+00:18:59.280 Matrix notice this n is the same as this
+00:19:02.320 n so in the J column of this Matrix you
+00:19:05.159 have you have an entry which is got all
+00:19:07.240 zeros and it has one one in
+00:19:10.559 it and the one
+00:19:13.480 occurs in the place that Sigma takes J
+00:19:17.600 to so this occurs in
+00:19:20.240 the sigma of
+00:19:22.840 J
+00:19:24.840 place in this
+00:19:27.039 Vector so each column is all zeros and
+00:19:30.440 one one and the one tells you where the
+00:19:33.480 permutation takes J I'm going to do an
+00:19:36.159 example so you see this because in this
+00:19:38.320 notation it can be a little confusing so
+00:19:41.320 let us take a permutation in the
+00:19:44.240 symmetric group on three letters and
+00:19:46.120 write down its permutation
+00:19:53.960 Matrix
+00:19:56.600 example G is equal to s three and sigma
+00:20:00.919 is the thing that Cycles the things
+00:20:04.640 around one goes to two two goes to three
+00:20:07.440 three goes to one that's a good
+00:20:09.400 permutation its permutation Matrix
+00:20:11.760 according to this definition as follows
+00:20:13.640 in the First Column you see where you
+00:20:16.240 take one it takes it to two so the First
+00:20:18.600 Column looks like this one occurs in the
+00:20:21.559 second place in the second column you
+00:20:24.400 see where it takes two it takes two to
+00:20:26.080 three so you put a one in the third
+00:20:29.440 place and in the third column you see it
+00:20:31.840 where it takes three takes it to one so
+00:20:34.159 it looks like
+00:20:37.280 this so not only does every column have
+00:20:40.840 just one in it and rest zeros every row
+00:20:43.880 has just a one in it and the rest zeros
+00:20:46.120 because it has to go to somewhere and
+00:20:48.559 it's a it's a permutation so this would
+00:20:50.799 be the
+00:20:51.840 Matrix a
+00:20:56.000 sigma now one thing you can you have to
+00:20:59.200 check that this is a homomorphism so
+00:21:01.440 that you have to check that F when you
+00:21:03.360 apply F to the permutation Sigma to you
+00:21:05.960 get a sigma time a to where this is
+00:21:09.280 composition of
+00:21:16.360 permutations and this is matrix
+00:21:18.559 multiplication because that's the
+00:21:20.120 multiplication law
+00:21:23.559 there and that's a simple check about
+00:21:26.480 multiplying two matrices of this
+00:21:28.120 incredible simple form so I'll let you
+00:21:30.720 do that the book checks it too and if I
+00:21:32.960 got it right they'll multiply correctly
+00:21:34.760 and not their transposes multiply
+00:21:38.039 correctly okay so that's this is a
+00:21:40.720 critical homomorphism for us it and
+00:21:43.600 let's see what it's its image is clearly
+00:21:46.120 not everything in here so the image is
+00:21:48.159 what exactly is what called permutation
+00:21:50.080 matrices it's the matrices that have
+00:21:52.080 exactly one one in each column and one
+00:21:54.240 one in each row because if I had such a
+00:21:56.520 matrix like this right I could associate
+00:21:59.799 to it a
+00:22:00.960 permutation right it would be the one
+00:22:02.720 that took one to two and two to three
+00:22:06.159 and 3 to one and the sitting up of one
+00:22:09.720 one in each row and column exactly says
+00:22:11.840 that that's an invertible map from the
+00:22:13.720 set of n elements to itself so the image
+00:22:17.000 is the permutation
+00:22:21.200 [Applause]
+00:22:23.080 matrices it's and the
+00:22:27.520 kernel
+00:22:29.440 is just the identity
+00:22:31.200 matrix it's the simplest kernel because
+00:22:33.640 the only Matrix that goes to the
+00:22:35.200 identity along the diagonal is the one
+00:22:37.679 which is the trivial permutation takes
+00:22:39.559 one to one 2 to two 3 to three
+00:22:43.200 okay so I'll ask you to check and the
+00:22:45.679 proof is given in arton in the first
+00:22:47.400 chapter that this rule holds that that's
+00:22:50.240 the way I've set up permutation
+00:22:52.440 matrices and this gives us a very
+00:22:55.120 interesting
+00:22:56.960 subgroup of uh
+00:22:59.520 of the uh symmetric group because I
+00:23:02.840 claim that the determinant of any
+00:23:05.159 permutation
+00:23:09.159 Matrix is equal to plus or minus
+00:23:16.400 one the determinant of a permutation
+00:23:18.840 Matrix is plus or minus one well if you
+00:23:20.440 know the horrible formula for a
+00:23:21.840 determinant where you you sum up n
+00:23:24.000 factorial things there's only one of
+00:23:26.880 those things that's going to be nonzero
+00:23:28.760 it's going to be a one because it's
+00:23:30.720 going to be a product of the entries and
+00:23:33.320 it's going to come with a plus or minus
+00:23:34.880 sign so the determinant is plus or minus
+00:23:38.360 one and if we can show by the way the
+00:23:41.080 determinant can be minus one if you take
+00:23:43.679 a transposition which say takes one to
+00:23:48.240 two and fixes everything
+00:23:53.240 [Applause]
+00:23:54.720 else so that's our simplest elements in
+00:23:57.600 the symmetric group that that move
+00:23:58.880 anything then as a matrix that looks
+00:24:01.000 like
+00:24:05.640 this and then it has ones the rest of
+00:24:08.360 the way down the
+00:24:10.720 diagonal so the only off diagonal
+00:24:13.080 entries are these first two and if you
+00:24:15.600 know how to take determinants of a
+00:24:17.039 matrix like this you can take a
+00:24:18.320 determinant of this block and multiply
+00:24:20.080 it by the determinant of this block
+00:24:22.080 right when you have a matrix that's in
+00:24:24.080 blocks you can take the determinant that
+00:24:25.799 way the determinant of this block is
+00:24:27.559 clearly the identity
+00:24:28.919 and the determinant of this 2x2 matrix
+00:24:30.880 is
+00:24:33.120 minus1 so um and it both
+00:24:38.440 occur because for example the
+00:24:41.520 determinant of f of
+00:24:44.039 e is the determinant of the identity
+00:24:47.399 Matrix which is one but the determinant
+00:24:50.320 we've just seen of f of
+00:24:52.360 to is equal to minus one so permutation
+00:24:56.880 matrices have both determinants plus one
+00:24:58.880 and minus one which gives us another
+00:25:04.559 homomorphism
+00:25:06.279 namely if we take this homomorphism and
+00:25:10.039 we compose it with this homomorphism and
+00:25:13.039 we're allowed to do that right the
+00:25:14.440 composition of two homomorphisms is a
+00:25:16.480 third we get a very interesting
+00:25:18.679 homomorphism which looks like
+00:25:23.520 this let's call this thing
+00:25:26.240 two and this one one
+00:25:34.120 the
+00:25:37.279 composition of one and
+00:25:40.640 two looks like this first you take the
+00:25:43.200 symmetric group by
+00:25:45.880 F into the general linear
+00:25:49.600 group and then you compose this with the
+00:25:52.000 determinant homomorphism to our
+00:25:55.640 star now what's the image in the kernel
+00:25:58.760 the
+00:26:01.520 image is not all of our star because the
+00:26:04.840 image of f was not all the matrices here
+00:26:07.159 it was just the permutation
+00:26:09.080 matrices and we saw that the determinant
+00:26:11.279 of a permutation Matrix is plus or minus
+00:26:13.320 one so the image is the subgroup plus or
+00:26:16.279 minus one inside of
+00:26:21.440 RAR and the kernel now we have a kernel
+00:26:24.559 see the original map here had no kernel
+00:26:26.919 at all but now we have a
+00:26:31.600 kernel which is consists of the sigma
+00:26:34.840 such that the determinant of f of Sigma
+00:26:38.480 is equal to + one those are sometimes
+00:26:41.679 called the even
+00:26:47.080 permutations they're not everything
+00:26:49.679 because PO is not an even permutation
+00:26:52.480 this little transposition is not even
+00:26:54.840 but that's a normal
+00:26:57.240 subgroup
+00:27:03.480 of SN non-trivial normal subgroup and
+00:27:07.080 it's called the alternating group on N
+00:27:11.919 letters we're going to see pretty soon
+00:27:14.720 that its order is half the order of SN
+00:27:18.080 so its order is going to be n factorial
+00:27:20.480 / 2 at least when n is bigger than equal
+00:27:23.480 to
+00:27:27.159 two
+00:27:29.960 the order of a n we're going to prove
+00:27:32.360 that pretty soon yeah I just want the
+00:27:35.520 notion of the sign of peration arise
+00:27:37.399 from this or this is like good so yeah
+00:27:39.320 yeah this is very good this because
+00:27:40.760 there's a potentially Circ circular
+00:27:42.600 argument here if we've already used the
+00:27:44.240 sign of a permutation to define the
+00:27:45.799 determinant that's a little illegal so
+00:27:48.240 no you have to define the determinant
+00:27:50.360 independent of the formula for it namely
+00:27:53.320 you have to define the determin as the
+00:27:54.720 unique map which takes this to this
+00:27:58.159 multilinear Etc all right then no no no
+00:28:02.120 it's a good point it's a good point then
+00:28:03.559 you have to prove to yourself that the
+00:28:05.600 determinant of a permutation Matrix is
+00:28:07.880 plus or minus one and then you have the
+00:28:09.720 notion of the sign of a permutation
+00:28:11.720 that's the right way to define a sign of
+00:28:13.519 a permutation the other ways of doing it
+00:28:16.320 people you can find in algebra books the
+00:28:19.000 definition of a sign of a permutation
+00:28:21.279 the sign of the permutation by the way
+00:28:22.720 is the sign of this determinant this is
+00:28:25.240 called the
+00:28:27.120 sign
+00:28:28.960 of the permutation
+00:28:33.519 Sigma so for example this transposition
+00:28:36.519 has sign minus one and the identity
+00:28:38.320 element has sign + one the another way
+00:28:41.399 of doing the sign of the permutation
+00:28:43.000 which is completely independent of
+00:28:44.399 matrices and determinants is to prove
+00:28:46.960 that any permutation can be written as a
+00:28:48.720 product of
+00:28:49.640 transpositions and that the number of
+00:28:52.159 transpositions is not unique but whether
+00:28:54.480 they're an even or an odd number of them
+00:28:56.480 is unique and that allows you to define
+00:28:58.840 the sign I wanted to do it this way so
+00:29:01.159 that you could see that composing two
+00:29:03.679 homomorphisms gives us another
+00:29:05.399 homomorphism whereas this had no kernel
+00:29:07.679 now we have a kernel whereas this one
+00:29:09.760 was subjective and had a all of the
+00:29:12.519 group as the image now we have a
+00:29:13.919 non-trivial
+00:29:15.120 image but a good point I mean one could
+00:29:17.440 get caught up in the circularity of this
+00:29:19.679 I assure you you can do it
+00:29:21.919 without okay let's just work out in the
+00:29:24.240 alternating in the symmetric group on
+00:29:26.080 three letters what's the kernel what's
+00:29:36.519 not in
+00:29:39.039 S3 the identity element Sigma and sigma
+00:29:42.760 Prime this is the cir these are the the
+00:29:45.440 the cycles that go around in
+00:29:47.320 three 1 one 2 2 3 3 this is Sigma and
+00:29:53.919 sigma Prime which is its Square are even
+00:29:57.039 permutations
+00:30:03.240 so are
+00:30:04.559 in the subgroup that I called
+00:30:07.279 A3 and to to Prime and to double Prime
+00:30:12.200 are odd
+00:30:16.120 permutations and you can check that by
+00:30:18.480 writing down the permutation matrices
+00:30:20.519 and taking their
+00:30:22.600 determinants so here this group had
+00:30:24.919 order
+00:30:26.960 six
+00:30:29.080 we see that the alternating group has
+00:30:30.919 order
+00:30:34.039 three okay we'll do a lot more on the
+00:30:36.960 symmetric group and the alternating
+00:30:38.440 group Etc now let me just tell you about
+00:30:41.480 another important homomorphism but first
+00:30:43.320 let me Define a notion of a a rather
+00:30:45.640 natural normal subgroup of a
+00:30:47.880 group here's the
+00:30:50.440 definition so if you have any Group G
+00:30:53.840 the group that's denoted Z of G which is
+00:30:56.360 called the center of G
+00:31:00.279 consists of the elements Z in
+00:31:03.039 G that commute with
+00:31:11.679 everything we
+00:31:14.720 commute with
+00:31:19.279 everything in
+00:31:21.159 G so the center can go all the way from
+00:31:23.679 G to the identity this is a
+00:31:26.919 subgroup
+00:31:28.519 in fact a normal
+00:31:33.559 subgroup as you can check by
+00:31:35.399 multiplication and by conjugation I
+00:31:37.600 won't do that for you these kind of
+00:31:39.480 things you should start checking
+00:31:40.679 yourself it's a normal subgroup of the
+00:31:42.399 group we're going to exhibit it pretty
+00:31:43.760 soon as the kernel of a homomorphism
+00:31:46.200 which will validate your hope that every
+00:31:48.279 normal subgroup is a
+00:31:50.399 kernel all right the center can go all
+00:31:53.240 the way from E to G for
+00:31:56.840 example if G is Aion what's the
+00:32:00.279 center if G is Aon the center is
+00:32:03.080 everything the Aion means the group
+00:32:05.600 elements always commute so G is equal to
+00:32:10.200 zg if and only if G is a
+00:32:16.159 bilion if G is equal to the symmetric
+00:32:18.639 group on N letters we're going to see
+00:32:21.039 that Z of G is the identity element
+00:32:24.760 there is no element that commutes with
+00:32:26.519 all permutations except for the
+00:32:28.919 identity that's not obvious it's a good
+00:32:31.799 exercise to show that no matter what
+00:32:33.279 permutation you write down you can find
+00:32:35.279 something that doesn't commute with it
+00:32:37.279 we'll learn how to do that when we get
+00:32:38.720 into permutations have a better notation
+00:32:41.240 Etc if G is the general linear group and
+00:32:45.960 I think Peter ended with this the center
+00:32:48.399 of G is consists of the diagonal
+00:32:54.000 matrices that's a famous Lambda is in
+00:32:56.880 our star
+00:32:59.519 that's a famous result in linear algebra
+00:33:01.600 that if you have a non-diagonal
+00:33:04.039 matrix and by diagonal I mean the same
+00:33:06.639 entry on the diagonal if you have a
+00:33:08.880 non-diagonal matrix you can find
+00:33:10.600 something that doesn't commute with
+00:33:13.440 it so this is a very useful notion to
+00:33:16.799 any group is assigned a canonical normal
+00:33:19.279 subgroup quite frequently
+00:33:22.519 trivial which is its Center the center
+00:33:25.080 is an ailion group because if it
+00:33:27.279 commutes with everything in G it
+00:33:29.000 commutes with itself so it's a normal
+00:33:32.399 subgroup which is a
+00:33:34.480 billion there are plenty of groups like
+00:33:36.799 The symmetric group which have no a
+00:33:38.639 bilon normal
+00:33:40.600 subgroups so uh they going to be many
+00:33:43.279 cases where we get a trivial center now
+00:33:46.399 I said that I would tell you a natural
+00:33:48.760 homomorphism of which the center was the
+00:33:50.840 kernel so here's a natural
+00:33:55.880 homomorphism and this is our fourth
+00:33:58.399 example of a
+00:33:59.600 homomorphism rather critical there is
+00:34:02.039 always a natural homomorphism from G to
+00:34:05.279 the new group which are the automorphism
+00:34:07.919 group of
+00:34:09.119 G now let's remember what this is this
+00:34:12.560 is
+00:34:13.440 all
+00:34:18.960 isomorphisms let's call the isomorphism
+00:34:22.040 H from g to
+00:34:26.719 g under
+00:34:30.399 composition namely the group law is
+00:34:32.440 composition of
+00:34:36.359 isomorphisms so Associated to an element
+00:34:38.918 in G you have to give an isomorphism
+00:34:41.560 from G to
+00:34:43.918 itself let's think about that for a
+00:34:46.040 minute so this is a absolutely critical
+00:34:48.719 map for any group you have this
+00:34:50.440 homomorphism let's give us a chance to
+00:34:53.480 think so I have to assign F of G should
+00:34:58.280 be some
+00:35:00.480 isomorphism from g to
+00:35:02.880 [Applause]
+00:35:05.280 g any
+00:35:11.440 suggestions theism that
+00:35:14.280 takes some element G Prim G by g g g
+00:35:19.839 that's a good
+00:35:21.160 idea that's but that is not a group
+00:35:25.520 isomorphism so the suggestion is and
+00:35:27.280 that's the first suggestion and it's a
+00:35:28.680 good one we could try the thing that
+00:35:31.400 takes F of G so he's suggesting the
+00:35:34.400 following F of G of an element H in G
+00:35:38.440 should be GH left multiplication by G
+00:35:42.119 that is certainly an isomorphism of
+00:35:45.359 sets right because it's one to one and
+00:35:48.119 it's bjective if two elements GH is
+00:35:50.319 equal to GH Prime H is equal to H Prime
+00:35:52.800 that kind of stuff but the problem is we
+00:35:55.839 have to check if F of of g g Prime is
+00:36:00.240 that equal to F of G * F of G Prime
+00:36:04.839 composed with f of G Prime well let's
+00:36:06.480 see what this does this takes an element
+00:36:09.280 H to g g Prime *
+00:36:13.800 H right that's the definition under this
+00:36:17.280 this takes an element H so what does
+00:36:20.160 this take an element H to First it
+00:36:22.960 says you multiply
+00:36:26.560 by
+00:36:31.000 this isn't what I
+00:36:32.480 want is this honestly an isomorphism of
+00:36:40.800 groups yeah of course I want
+00:36:43.880 that yeah yeah I know what I want to
+00:36:46.160 have but I mean is this actually an
+00:36:47.599 isomorphism of
+00:36:56.119 groups all right so see F of G Prime of
+00:36:59.079 H is G Prime * H
+00:37:04.640 correct then then this I have to apply
+00:37:07.359 to this element isn't that just
+00:37:09.440 Multiplied on the left by
+00:37:11.680 G
+00:37:13.680 G
+00:37:16.079 is why that's what I want to know why is
+00:37:20.040 why is this not a group
+00:37:23.480 ah ah thank you thank you namely this is
+00:37:26.920 not the problem problem thank you excuse
+00:37:29.079 me so there's a problem here I apologize
+00:37:32.040 for being so confused
+00:37:34.160 problem this map that takes H to GH is
+00:37:38.359 not an isomorphism of groups it's an
+00:37:40.800 isomorphism of sets namely if I apply
+00:37:44.400 this F of G I did it the wrong way to HH
+00:37:48.400 Prime there we go that has to be F of G
+00:37:51.839 of H time F of G of H
+00:37:54.880 Prime got it right thank you
+00:37:58.040 and this is by definition G * HH Prime
+00:38:03.200 whereas F of G of
+00:38:06.240 H times composed with f of G of H Prime
+00:38:12.480 is on the other hand GH time g h Prime
+00:38:17.000 and there's no reason that that's equal
+00:38:18.400 to
+00:38:19.920 that so it is
+00:38:25.280 not an isomorphism
+00:38:29.040 of G as a
+00:38:32.680 group it's a nice set theoretic map that
+00:38:36.319 takes g to g but it doesn't commute with
+00:38:38.240 the multiplication in G so we're going
+00:38:40.680 to modify it I'm going to do this or
+00:38:42.160 else I'll dig myself a grave here we're
+00:38:44.520 going to modify
+00:38:49.960 it
+00:38:54.079 modification
+00:38:55.640 try F of G
+00:38:59.119 of H is multiply by G but then multiply
+00:39:03.119 on the right by G
+00:39:05.119 inverse
+00:39:06.839 conjugation by
+00:39:10.440 G now again this isn't the first thing
+00:39:13.200 that would have suggested itself to you
+00:39:14.960 what you suggested was the first thing
+00:39:16.440 why not just try left multiplication by
+00:39:18.240 G but the problem is that doesn't give
+00:39:19.920 an isomorphism of the group I claim this
+00:39:22.920 gives an isomorphism of the group so
+00:39:25.319 let's check first of all this
+00:39:27.920 this is in or G that was the problem
+00:39:32.560 with the first one it's an actual
+00:39:34.720 automorphism of G because if I apply
+00:39:37.640 it to HH
+00:39:40.480 Prime I get G * HH Prime G inverse which
+00:39:46.720 I can rewrite as G HG
+00:39:49.839 inverse times g h Prime G
+00:39:54.520 inverse because these two G and G Prime
+00:39:57.400 inverse cancel and then this becomes F
+00:40:00.640 of G of H * F of G of H
+00:40:08.040 Prime so at least this this thing wasn't
+00:40:11.240 an automorphism of
+00:40:13.720 G this thing is at least an automorphism
+00:40:17.319 of G now I have to check and that's the
+00:40:19.920 second thing you have to check that it's
+00:40:21.720 a homomorphism of
+00:40:26.319 groups
+00:40:28.480 so at least I have a method of assigning
+00:40:30.760 to each element in the group an
+00:40:33.640 automorphism yeah um you're coning that
+00:40:36.839 it's an automorphism by checking that
+00:40:38.800 it's a homomorphism don't need to show
+00:40:40.640 projectivity also ah good point so it it
+00:40:43.359 it's at least sorry this is this shows
+00:40:45.280 it's a
+00:40:49.079 homomorphism to show it's an
+00:40:51.240 automorphism we have to show it's one to
+00:40:53.520 one and onto okay so first of all we
+00:40:56.560 have to show that every element in the
+00:40:58.359 group can be written in this
+00:41:01.160 way and then we have to show that if ghg
+00:41:04.240 inverse is equal to GH Prime G inverse
+00:41:07.160 that H is equal to H
+00:41:09.000 Prime you willing to believe me on those
+00:41:11.280 two or do you want me to do it but
+00:41:13.319 you're right those have to be checked Al
+00:41:15.480 can exhibit an inverse we could exhibit
+00:41:18.119 an inverse very good namely if we're
+00:41:21.040 able to show that there's a way to get
+00:41:23.480 back to H from this
+00:41:25.920 element and what would be the inverse of
+00:41:29.640 this conjugation by right by G inverse
+00:41:33.760 very good that would be even a better
+00:41:35.480 way to do it
+00:41:37.880 thanks good good good it's a
+00:41:40.240 homomorphism with
+00:41:42.880 inverse and the inverse is
+00:41:45.720 conjugation by G Prime by G
+00:41:49.880 inverse and now let's check that f is a
+00:41:56.240 homomorphism
+00:41:59.319 and there we have to check that F of g g
+00:42:02.599 Prime is equal to F of g f of G Prime
+00:42:07.800 where this is multiplication in G and
+00:42:10.079 this is composition of
+00:42:12.319 automorphisms well this is by definition
+00:42:15.359 F of GG
+00:42:17.720 Prime on an element H is conjugation by
+00:42:21.240 GG Prime so it looks like
+00:42:26.119 this
+00:42:30.440 which if I wrote it all brutally out
+00:42:32.200 would look like g g Prime h g Prime
+00:42:37.079 inverse G inverse you should get used to
+00:42:40.720 the fact that when you invert a product
+00:42:42.400 you get the product of the inverses in
+00:42:44.359 the opposite order because this element
+00:42:47.240 has the fact property that when you
+00:42:48.720 multiply it by this you get the
+00:42:52.040 identity okay on the other hand how
+00:42:54.599 about if we take F of G of F of G Prime
+00:42:59.440 of H first thing is conjugate by G Prime
+00:43:05.839 so that would be F of G on the element G
+00:43:09.640 Prime h g Prime
+00:43:13.079 inverse and this automorphism is
+00:43:15.880 conjugate by G so I get G of G Prime h g
+00:43:21.160 Prime
+00:43:22.160 inverse G
+00:43:24.400 inverse and if you look at what this
+00:43:26.760 does to H and what this does to H they
+00:43:29.240 do the same thing for every
+00:43:31.640 H therefore they are the same
+00:43:34.800 automorphism so this is equality in the
+00:43:37.520 automorphism group of
+00:43:39.920 G and that's why this map is a
+00:43:44.240 homomorphism so this is really quite
+00:43:46.520 cute um and remember this
+00:43:52.280 definition what is the kernel of
+00:43:55.000 f what is the kernel of
+00:43:58.599 f let's go somewhere where we have
+00:44:01.800 uh uh
+00:44:03.839 room
+00:44:12.720 here well it's the elements of G such
+00:44:16.520 that when you conjugate by them you get
+00:44:18.839 the trivial
+00:44:20.960 automorphism what does it mean that this
+00:44:23.720 element is equal to H for all h
+00:44:29.240 that's what I would have if I had the
+00:44:30.599 trivial automorphism namely it would
+00:44:32.559 take every element in the group to
+00:44:34.280 itself so I'm looking for the elements
+00:44:36.920 in G such that this is equal to H for
+00:44:39.880 all H that would be the quantity of
+00:44:42.280 being in the Cur that would be the
+00:44:43.559 character of being in the kernel of this
+00:44:45.480 map
+00:44:46.960 yeah back
+00:44:48.880 there exactly it's exactly the center of
+00:44:52.720 G because if ghg inverse is equal to H
+00:44:57.359 for all H that says the G commutes with
+00:44:59.880 h for all
+00:45:01.800 H which is exactly what we call the
+00:45:04.559 center of G so you remember we said the
+00:45:07.440 center was a normal subgroup I've just
+00:45:09.680 exhibited as the kernel of a
+00:45:12.920 homomorphism what's the image do I get
+00:45:15.680 every automorphism by this kind of
+00:45:18.160 conjugation
+00:45:20.200 business well let's take a look at a
+00:45:22.319 simple type of group and see whether we
+00:45:25.079 get all the automorphisms
+00:45:30.680 let's
+00:45:31.640 take a nice
+00:45:34.160 group like the Klein four
+00:45:40.880 Group which Peter exhibited to you as
+00:45:44.119 the set of matrices in 2x two matrices
+00:45:46.599 that have plus or minus ones on the
+00:45:51.319 diagonal now that group has four
+00:45:53.559 elements in it it there's the identity
+00:45:55.920 element there's a matrix of order two
+00:45:58.800 then there are three different
+00:46:00.599 things of order two so this could be the
+00:46:04.440 Matrix -1 1 and this could be the Matrix
+00:46:08.960 1 -1 and this could be the Matrix -1
+00:46:13.599 minus one and they have the property
+00:46:16.520 that if you take the product of any two
+00:46:18.119 you get the third so you have to check
+00:46:20.599 that but that's not so hard so for
+00:46:22.400 example TW to Prime is TW double Prime
+00:46:25.920 Etc
+00:46:28.359 okay what
+00:46:30.800 is the
+00:46:34.000 image of f in or
+00:46:39.680 G in this
+00:46:43.800 case well what do I get when I conjugate
+00:46:46.440 by an
+00:46:47.359 element in this
+00:46:53.680 group what kind of automorphism will I
+00:46:56.240 get do I get in this group if I
+00:46:57.800 conjugate by one of these
+00:47:05.520 matrices well is this group a bilon it
+00:47:08.400 is so we get it's an a bilon group right
+00:47:11.319 the M products don't make any difference
+00:47:13.040 what order you take them they're
+00:47:14.119 diagonal matrices so this is a bilon of
+00:47:16.800 order
+00:47:20.960 four in particular G is equal to its own
+00:47:24.400 Center conjugation by anything is a
+00:47:27.720 trivial uh automorphism so the image of
+00:47:30.599 f in the automorphism gree is
+00:47:33.000 just the identity element the identity
+00:47:39.640 automorphism so for this group we get
+00:47:42.480 very little of interest in the
+00:47:44.440 automorphism group by conjugation by
+00:47:47.480 elements in
+00:47:48.839 G on the other
+00:47:51.000 hand I claim that this group has a
+00:47:54.319 non-trivial automorphism group in
+00:48:03.559 fact in fact and this is a nice exercise
+00:48:07.520 the automorphism group of
+00:48:10.000 G is isomorphic to the symmetric group
+00:48:13.160 on three
+00:48:16.839 letters well how could that possibly be
+00:48:20.040 I wean what how could I associate to an
+00:48:22.160 automorphism a permutation of three
+00:48:25.760 objects
+00:48:28.839 do I have three natural objects in this
+00:48:34.960 group no yes it looks like the three
+00:48:38.480 natural objects would just be t t Prime
+00:48:40.760 and the non-identity elements in this
+00:48:43.040 group must be permuted by an
+00:48:46.040 automorphism am I right because you
+00:48:49.119 can't take them to the identity in an
+00:48:51.000 automorphism so
+00:48:52.960 if if I have some map G to from g to g
+00:48:57.240 and
+00:49:02.400 automorphism then I can associate to
+00:49:09.520 G maybe I'll call these things to one
+00:49:13.000 sorry to two and to three so T to 1 * to
+00:49:17.480 2 is to 3 Etc can associate
+00:49:21.319 to this a maybe I'll call a an
+00:49:23.880 automorphism so we don't get confused to
+00:49:26.040 a a
+00:49:30.400 permutation of the set to 1 to 2 to
+00:49:35.160 three which in sub which gives me an
+00:49:37.559 element in the symmetric group on three
+00:49:39.319 letters very good and if I know that
+00:49:42.839 element in the symmetric group on three
+00:49:44.400 letters I certainly know the
+00:49:45.640 automorphism of the group because I know
+00:49:47.440 where it sends to one to two to three
+00:49:49.359 and I certainly know where it sends the
+00:49:51.040 identity so that gives me a homomorphism
+00:49:54.720 from the automorphism group of G
+00:49:57.359 to the symmetric group on three
+00:50:01.240 letters and that Association gives a a
+00:50:04.319 homomorphism group with trivial
+00:50:09.680 kernel because if I go to the trivial
+00:50:12.319 permutation then that means that the
+00:50:14.480 automorphism takes to one to to one to
+00:50:16.799 two to to two and to three to to
+00:50:19.119 three okay and my assertion is that this
+00:50:25.280 has full image the image is a symmetric
+00:50:27.799 group on three letters no matter what
+00:50:29.680 permutation you write down of to 1 to 2
+00:50:32.000 to 3 that is an automorphism of the
+00:50:35.480 group that's not obvious that's not
+00:50:38.440 obvious that if I switch to one and to
+00:50:40.960 two and keep to three the same that
+00:50:43.920 gives me an automorphism but in fact it
+00:50:45.880 is I want you to check that that's a
+00:50:47.640 little
+00:50:48.599 laborious so this is Trivial kernal and
+00:50:51.160 full
+00:50:52.640 image so here we have a
+00:50:55.040 group The clein four group where the
+00:50:58.680 image in a g is Trivial but the
+00:51:00.960 automorphism group is large so that this
+00:51:03.720 map need not be either an injection or a
+00:51:08.040 surjection and the image are called the
+00:51:10.359 in
+00:51:11.599 automorphisms image of f are called the
+00:51:15.720 inner automorphism group of G it gets
+00:51:17.760 its own name those are all the
+00:51:20.000 automorphisms that have the form a of H
+00:51:23.280 is equal to ghg
+00:51:25.160 inverse for
+00:51:28.400 G and
+00:51:29.680 G it's an interesting subgroup of the
+00:51:33.079 automorphism group of G and for the
+00:51:35.480 Klein four group the inner automorphism
+00:51:37.480 group is Trivial and the full
+00:51:39.119 automorphism group is the symmetric
+00:51:40.799 group on three letters well I hope this
+00:51:43.559 lecture just gives you an idea of how
+00:51:45.359 flexible this notion of homomorphism is
+00:51:49.359 it's a way of seeing which groups are
+00:51:51.280 related to others this already is pretty
+00:51:53.599 sophisticated here that we start with
+00:51:55.200 the Kine four group and that there's a
+00:51:57.160 map between its automorphism group and
+00:51:58.880 the symmetric group on three
+00:52:02.359 letters another way to see this by the
+00:52:04.720 way for those of you who like how many
+00:52:06.839 of you seen finite
+00:52:09.160 Fields forget it we'll do it later we'll
+00:52:11.680 do it later not to preview anything
+00:52:13.359 that'll just confuse people there's
+00:52:14.799 enough that's confusing already so try
+00:52:17.720 to get with this language we're going to
+00:52:20.000 have homework on the web we're going to
+00:52:22.839 have section this week two thank you no
+00:52:25.960 drinking in class sounded like an open
+00:52:28.599 container to me um I have to worry about
+00:52:30.880 these things now is Dean um who is doing
+00:52:33.559 the section on Tuesday Liz and uh Jace
+00:52:37.079 is doing the section for the um
+00:52:39.720 extension school people none of whom
+00:52:41.480 should be in this room when Tuesday also
+00:52:44.599 Tuesday at 7:30 Tuesday at 7:30 that's
+00:52:47.200 posted on the E web page and you guys
+00:52:49.240 shouldn't go to that because Jay has
+00:52:50.799 enough to do with the extension school
+00:52:52.200 people so Liz will be holding forth this
+00:52:54.400 Tuesday if you have any questions about
+00:52:56.200 the web page Etc please speak to Peter
+00:52:58.720 about it by this point I hope everyone's
+00:53:00.599 signed up for the course and ready to go
+00:53:02.599 okay see you
+00:53:05.480 Wednesday sure

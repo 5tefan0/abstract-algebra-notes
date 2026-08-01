@@ -1,0 +1,1064 @@
+# tactiq.io free youtube transcript
+# Lec 8 | Abstract Algebra
+# https://www.youtube.com/watch/bkZQ2drFHN4
+
+00:00:13.120 So let me just finish one thing I should
+00:00:15.040 have said about this uh isomorphism
+00:00:17.680 theorem or the quotient group. So last
+00:00:19.760 time we showed that if you had a a group
+00:00:21.840 G and you had a normal subgroup H
+00:00:30.000 that there is a new group that one can
+00:00:32.320 construct G mod H
+00:00:35.440 quotient group
+00:00:40.000 of cosets
+00:00:44.640 of H. So the elements of this group are
+00:00:47.039 the co-sets of H. that this comes with a
+00:00:49.760 natural subjective map
+00:00:52.960 F that takes an element in G into its H
+00:00:57.039 coset. That's a group homorphism and the
+00:01:00.480 kernel of it is H. That's what we showed
+00:01:02.640 last time. So any normal subgroup gives
+00:01:04.879 rise to a diagram like this of groups.
+00:01:08.880 Now let's make a little observation
+00:01:12.400 which is quite useful. namely suppose
+00:01:15.040 that between G and H we have another
+00:01:18.320 group
+00:01:20.640 uh called K.
+00:01:23.119 So K is a subgroup of G that contains
+00:01:26.960 the normal subgroup H. We'll have
+00:01:29.360 examples of this. All right. Then the
+00:01:32.400 claim is
+00:01:34.479 first
+00:01:36.320 that H is normal in K.
+00:01:43.680 That's easy because to say H is normal
+00:01:46.399 in G means that for any G and G, GH G
+00:01:49.840 inverse is equal to H for all
+00:01:54.960 G and G.
+00:01:56.880 Now if if this is is true for all G and
+00:01:59.600 G, it's certainly true for all G in the
+00:02:01.840 subgroup K, which is the statement that
+00:02:04.960 H is normal in K. That's easy.
+00:02:08.399 So therefore we can construct the
+00:02:10.800 quotient group. So have group
+00:02:18.239 kh
+00:02:22.720 which can be thought of as a subset of
+00:02:25.680 gh. These are precisely the h cosets
+00:02:30.080 that have contain elements in k.
+00:02:36.000 So here's the picture. If we take G and
+00:02:39.200 we divide it up into the distinct co-ets
+00:02:41.599 for H, a certain number of them will
+00:02:44.640 form the subgroup K
+00:02:48.560 because K itself is a union of H co-etss
+00:02:53.280 and a certain number of them give you K
+00:02:55.120 and the rest of them give you G. So you
+00:02:57.200 get a group which is a subset of this
+00:02:59.680 group. All right, first statement, it's
+00:03:03.120 a subgroup.
+00:03:12.720 of G mod H
+00:03:16.319 because K is a subgroup of G. In other
+00:03:18.640 words, if I take two different co-etss
+00:03:21.280 that lie in K, H A and HB, and I
+00:03:26.480 multiply them, that co-set also lies in
+00:03:29.599 K. So it's so this subset of co-ets that
+00:03:33.680 lie in K is closed under multiplication.
+00:03:37.360 Why? Because if I take two elements in K
+00:03:40.239 A and B and I multiply them, I get a new
+00:03:42.799 element in K. That's because K is a
+00:03:45.840 subgroup.
+00:03:49.680 The co-etss
+00:03:51.840 contained in K are stable
+00:03:56.159 under multiplication
+00:03:59.599 as K is stable under multiplication.
+00:04:07.120 Okay. So if I have a group contained
+00:04:11.200 containing K H then in the quotient
+00:04:14.159 group G mod H I get the subgroup K mod
+00:04:17.519 H.
+00:04:20.320 Okay.
+00:04:22.079 Conversely, and this is very powerful,
+00:04:31.199 any
+00:04:32.800 subgroup
+00:04:35.600 of
+00:04:37.199 uh G containing H
+00:04:43.600 corresponds
+00:04:47.520 to a subgroup
+00:04:51.360 of G mod H in this manner.
+00:04:58.160 What do I mean by that? Well, if I have
+00:05:00.400 a subgroup of G mod H, let's can say
+00:05:04.080 that the subgroup consists of the
+00:05:06.240 co-sets a H
+00:05:12.080 a sub a subset of the co-sets of G mod H
+00:05:15.280 and then I just take the union of all
+00:05:17.600 those co-ets. I claim that gives me a
+00:05:20.000 subgroup of G
+00:05:28.400 corresponding
+00:05:29.919 to the subgroup.
+00:05:32.400 So you have to check that that gives a
+00:05:34.000 subgroup of G containing H and that
+00:05:36.160 every subgroup of G containing H arises
+00:05:38.639 in that manner. So in other words,
+00:05:40.320 there's a bjection between the subgroups
+00:05:42.800 of G containing a normal subgroup and
+00:05:45.919 the subgroups of this quotient group.
+00:05:50.240 Okay,
+00:05:52.800 so that's an important so I'll give you
+00:05:54.560 an example of this
+00:05:57.280 which we'll use later on.
+00:06:02.639 Start with the group G is equal to Z.
+00:06:06.000 Under addition, everything's normal.
+00:06:09.919 Okay. Now suppose I asked you and let P
+00:06:14.800 be a prime number
+00:06:21.360 and consider the subgroup H which is
+00:06:24.240 multiples of P.
+00:06:29.360 So I claim
+00:06:32.560 here's the claim.
+00:06:36.880 If we have a subgroup of Z
+00:06:41.360 which lies between Z and PZ
+00:06:47.280 is a subgroup.
+00:06:51.520 then
+00:06:53.280 either
+00:06:55.039 K is equal to the integers or K is equal
+00:06:59.440 to PZ.
+00:07:01.280 In other words, there's nothing properly
+00:07:03.360 in between those two subgroups.
+00:07:08.800 And the proof
+00:07:13.759 such a K
+00:07:16.400 gives
+00:07:18.080 a subgroup
+00:07:21.759 of the cyclic group
+00:07:26.400 quotient group
+00:07:31.840 Z mod PZ
+00:07:35.759 we showed that a group of prime order
+00:07:38.400 had no non-trivial subgroups
+00:07:41.840 right because the order of a subgroup
+00:07:44.240 divides the order of the group so
+00:07:48.240 uh gives either
+00:07:52.240 the zero subgroup or the entire group.
+00:07:57.680 That was by our result about groups of
+00:07:59.680 prime order. They had no non-trivial
+00:08:01.599 subgroups.
+00:08:03.199 And if the subgroup of this quotient
+00:08:05.440 group is zero, that means that K
+00:08:07.919 corresponds to PZ because it's given by
+00:08:10.800 the union of cosets in that subgroup and
+00:08:12.879 the only co-et in that subgroup is is H.
+00:08:15.360 So you get PZ. And on the other hand, if
+00:08:19.199 the subgroup of this cyclic group is the
+00:08:21.280 entire group, then the subgroup H K is
+00:08:24.319 the union of all the co-ets of H, namely
+00:08:26.639 it's this group.
+00:08:28.879 So we might say, so we might restate
+00:08:32.559 this claim as the statement that this is
+00:08:36.240 a maximal subgroup
+00:08:43.360 of G.
+00:08:45.600 Maximal meaning anything larger than it
+00:08:47.680 is the entire group. You can't get any
+00:08:49.680 bigger.
+00:08:51.600 Okay. So that's some the kind of way
+00:08:53.920 we're going to use this quotient
+00:08:55.120 theorem. We're going to use it to pick
+00:08:57.200 out sub you get a wonderful thing from
+00:08:59.600 this uh this picture. Namely any
+00:09:02.640 subgroup of G containing H maps to a
+00:09:05.360 subgroup here. And any subgroup of GDH
+00:09:08.399 if we take the inverse image under this
+00:09:10.399 map. That's all this is by the way. This
+00:09:12.560 is the inverse image
+00:09:14.959 of the subgroup
+00:09:18.160 of G mod H in G. This the set of all
+00:09:23.519 things mapping to the subgroup that
+00:09:25.760 gives us a subgroup K and G that
+00:09:27.600 corresponds bjectively to the subgroup
+00:09:29.440 of G mod H. And so if we can say
+00:09:31.519 something about the quotient group like
+00:09:33.440 we can in this case that it has no
+00:09:35.279 non-trivial subgroups, we know that
+00:09:37.200 there's nothing squeezed between Z and
+00:09:39.600 PZ. Okay.
+00:09:43.600 Cool. Good. This is the end of what I'm
+00:09:45.600 going to say about groups for a while.
+00:09:47.440 And now we're going to go into theory of
+00:09:49.040 abstract vector spaces. Peter, you have
+00:09:50.800 something for me. You even have the
+00:09:53.200 homework. You mean the basic operations?
+00:09:55.600 You mean what I'm supposed to be talking
+00:09:56.959 about? Okay. It's all up here. It's all
+00:09:59.600 up here. Um you know uh there's a great
+00:10:03.600 line in Amadeus which actually seems to
+00:10:06.480 have been an actual quote of of Mozart's
+00:10:10.880 uh Mozart used to write his symphony
+00:10:12.959 sometimes in the in the carriage once he
+00:10:16.399 took a trip from Vienna to Prague and
+00:10:19.200 wrote an entire symphony in the carriage
+00:10:21.360 then just got off and wrote it down on
+00:10:23.279 the paper. And in Amadeus uh the uh the
+00:10:28.800 man who commissioned the magic flute
+00:10:30.640 which was really a popular opera and not
+00:10:32.640 a serious opera in ma in Mozart's time
+00:10:35.920 paid Mozart a considerable advance to
+00:10:37.839 write the magic flute uh was harassing
+00:10:40.880 him uh about when he was actually going
+00:10:44.000 to produce
+00:10:45.760 the opera. He goes they were going to go
+00:10:47.360 into production in a week and Mozart
+00:10:49.680 said it's all up here. The rest is
+00:10:51.760 scribbling.
+00:10:53.680 So okay. So the rest is scribbling. So
+00:10:56.800 now we're going to go to the operation
+00:10:58.480 on vector spaces.
+00:11:01.040 So vector spaces are something you've
+00:11:02.880 seen already in your courses on linear
+00:11:04.800 algebra. And usually people study vector
+00:11:07.360 spaces in linear algebra over the real
+00:11:10.000 numbers.
+00:11:11.600 reals or complex numbers
+00:11:19.279 because that's our geometric intuition
+00:11:21.120 of what a vector space looks like. And a
+00:11:22.880 vector space V I'll always denote V for
+00:11:26.000 a vector space over R
+00:11:30.079 consists of first
+00:11:33.680 an aelion group.
+00:11:37.360 So that means you can add vectors with
+00:11:40.160 operation
+00:11:44.000 plus an identity element
+00:11:48.560 what's called the zero vector or
+00:11:50.640 sometimes just zero an inverse element
+00:11:55.279 sometimes called minus b. So the this is
+00:11:58.640 the operation of the billion group in a
+00:12:00.560 vector space is written additively like
+00:12:02.240 it is for the integers. Now this would
+00:12:04.880 be a perfectly good example of this
+00:12:06.320 would be the integers but the integers
+00:12:07.839 are in a vector space. And the second
+00:12:09.839 thing you need is you need a scalar
+00:12:12.240 multiplication
+00:12:16.399 by elements C in your
+00:12:19.839 real numbers for example. So in other
+00:12:22.399 words a billion group the elements of
+00:12:26.000 the group are usually denoted little V.
+00:12:28.160 So associ the operation plus means that
+00:12:30.720 you can take two elements of V and add
+00:12:32.560 it and get a V plus W that sort of
+00:12:34.720 thing. So you can also take an element
+00:12:37.120 in this aelion group and you're allowed
+00:12:38.720 to multiply it by a scaler. So there
+00:12:40.399 should be some operation that takes V to
+00:12:43.040 C * V where C is a real number.
+00:12:48.480 So it's a little more than an aelion
+00:12:50.079 group. it has this scalar multiplication
+00:12:52.720 and um that scalar multiplication has to
+00:12:56.320 also satisfy some identities. For
+00:12:58.639 example, if you multiply by the zero
+00:13:01.519 scaler times any vector, you have to get
+00:13:03.920 the zero vector.
+00:13:06.160 And if you multiply by the one scaler
+00:13:08.800 times any vector, you have to get the
+00:13:10.720 vector itself,
+00:13:13.440 right? And if you do um there's various
+00:13:16.880 associative laws. So if you multiply two
+00:13:18.959 scalers a * b and then you scale or
+00:13:21.760 multiply that by a vector that's a of b
+00:13:24.880 * a vector. So here's the first scalar
+00:13:26.800 multiplication of a vector. Here's the
+00:13:28.320 second scalar multiplication of a
+00:13:29.839 vector. Then there's distributive laws
+00:13:32.560 um that relate these two operations. So
+00:13:36.560 this is something I think you're
+00:13:37.760 familiar with at least I hope and and
+00:13:40.079 geometrically one's supposed to uh view
+00:13:43.920 vector addition for example in the plane
+00:13:46.320 which is this is an example of a vector
+00:13:48.720 space V is equal to sometimes called R.
+00:13:51.120 So sorry. So examples of vector spaces
+00:13:55.760 the simplest example is zero. The vector
+00:13:59.839 space consisting of one element zero.
+00:14:02.399 You can have right you can have a group
+00:14:03.920 of one element. You can have a vector
+00:14:05.839 space with one element. It's kind of
+00:14:08.160 stupid. Here it is. There's the zero
+00:14:11.040 dimensional vector space.
+00:14:13.519 Then you can have a vector space which
+00:14:15.760 is slightly more non-trivial consisting
+00:14:17.760 of all real numbers where you add them
+00:14:21.120 just using the addition law in the real
+00:14:23.360 numbers and you scale and multiply by
+00:14:25.279 scaler multiplying real numbers. That
+00:14:27.440 vector space we frequently denote by the
+00:14:29.440 real line like this. Here's the zero
+00:14:31.199 vector, here's the one vector, etc.
+00:14:35.920 And of course you go on and you define
+00:14:38.959 more complicated vector spaces.
+00:14:42.240 For example, r to the n, which is what
+00:14:44.560 one usually experiences first in in
+00:14:47.600 linear algebra. And this vector space, a
+00:14:50.160 vector consists of n real numbers
+00:14:53.199 component-wise
+00:14:58.320 where the ai are reals
+00:15:01.680 and you add them by adding component
+00:15:03.760 vectors. So V + W where W has the
+00:15:07.519 entries B would be A1 + B1
+00:15:10.959 A2 + B2
+00:15:14.720 A N + BN
+00:15:17.360 where W is the vector B1 through BN and
+00:15:20.639 if you want to multiply by a scaler you
+00:15:22.639 multiply the scaler times each ve basis
+00:15:25.279 vector
+00:15:29.040 and that satisfies the axioms of a
+00:15:30.959 vector space and if I wanted to draw a
+00:15:33.839 picture of R2 which one frequently does.
+00:15:36.720 The vectors in R2 would be the
+00:15:41.360 would have coordinates A1 A2 where this
+00:15:45.199 would be A1 in this direction and A2 in
+00:15:48.639 this direction. And when you add
+00:15:50.480 vectors, as you've probably learned, you
+00:15:53.279 do it by the parallelogram law. If I can
+00:15:56.720 draw it,
+00:15:58.560 this would be the vector up here,
+00:16:02.240 V plus W.
+00:16:04.639 And when you scale or multiply vectors,
+00:16:06.399 you just scale them up and down the line
+00:16:08.000 that they're on. So it's very good when
+00:16:10.240 you're when you're thinking about real
+00:16:11.440 vector spaces to have this geometric
+00:16:13.199 intuition in mind. That's where they
+00:16:14.800 came from. They were formalizing
+00:16:16.240 geometric operations. Of course, in this
+00:16:18.560 vector space because it's over the real
+00:16:20.800 numbers, we have other we have other um
+00:16:24.160 properties beyond just addition and
+00:16:26.800 scaler multiplication. So for example,
+00:16:28.160 we have the notion of the length of a
+00:16:30.240 vector
+00:16:32.480 in Rn
+00:16:35.120 can define
+00:16:37.199 there things like inner products v do w
+00:16:40.000 you can define the length of a vector
+00:16:42.240 things like that this is this is given
+00:16:44.560 by the summation of ai bi it's a funny
+00:16:47.759 product operation this is the square
+00:16:50.079 root of the sum of the ai squares
+00:16:53.839 gives the uklitian length of a vector so
+00:16:56.240 there are many many things one can do in
+00:16:58.560 this vector space that are very useful
+00:17:00.320 for calculus like you want to say when
+00:17:02.000 two vectors are close to each other the
+00:17:04.000 length of their difference should be
+00:17:05.359 small but you can't do in a general
+00:17:07.599 vector space so so remember that the
+00:17:09.679 dotproducts and the the absolute value
+00:17:12.000 of a vector that's something we're not
+00:17:13.679 doing here this is just abstract spaces
+00:17:16.799 now when we do linear algebra we're
+00:17:20.000 going to do the same things for vector
+00:17:21.760 spaces but not necessarily where you can
+00:17:24.319 scale or multiply by the real numbers
+00:17:26.959 We're going to study now the theory of
+00:17:29.360 vector spaces
+00:17:33.760 over
+00:17:36.160 a field
+00:17:38.320 f. So before I tell you what a vector
+00:17:41.360 space over a field f is, I have to tell
+00:17:43.039 you what a field is. So a field is going
+00:17:44.880 to be something that abstracts what the
+00:17:46.559 real numbers are, what the complex
+00:17:48.640 numbers are, and it's going to be
+00:17:50.480 exactly the right setting so that the
+00:17:53.280 basic results that we're familiar with
+00:17:54.960 in linear algebra like vector spaces
+00:17:58.000 have a dimension and there's a basis for
+00:18:00.960 a vector space. It has the number of
+00:18:02.640 elements which is the dimension of a
+00:18:04.320 space. All that kind of stuff works. So
+00:18:07.280 people once they understood the sort of
+00:18:09.360 basic properties of this, they said,
+00:18:10.799 &quot;Well, why do we need our geometric
+00:18:12.240 intuition anymore? Maybe we can
+00:18:14.080 formulate the right mathematical notion
+00:18:16.240 to capture all the notions of dimension
+00:18:18.480 and bases and linear independence and
+00:18:20.559 span um and all the techniques of linear
+00:18:23.520 algebra matrices and solutions of linear
+00:18:25.840 equations over an arbitrary field. So
+00:18:28.720 what do you need to have a field? So a
+00:18:31.679 field is defined as following. It's on
+00:18:36.160 the one hand it's an aelion group
+00:18:42.880 under
+00:18:44.960 addition. So it's a set which forms an
+00:18:46.960 ailion group under addition with the
+00:18:48.799 identity element zero with the inverse
+00:18:52.400 identity
+00:18:54.480 element and inverse is minus a.
+00:18:59.840 So that's the first condition. the
+00:19:02.320 second condition
+00:19:04.400 which is that there's always a
+00:19:05.600 multiplication law and every so if you
+00:19:09.520 take f minus the zero element which is a
+00:19:12.720 distinguished element in this aelion
+00:19:14.640 group and you call that f star
+00:19:19.360 so that set
+00:19:21.679 forms
+00:19:23.919 an aelion group
+00:19:29.280 under
+00:19:30.799 multiplication
+00:19:32.480 with identity element
+00:19:36.320 the element we call one that's another
+00:19:38.240 distinguished element in the field and
+00:19:40.720 inverse element
+00:19:43.520 denoted by a inverse or 1 / a.
+00:19:48.720 So you have to have two a billion groups
+00:19:50.320 to get yourself a field. An addition
+00:19:52.160 group which is easy and then the
+00:19:53.679 multiplication group which has to work
+00:19:55.360 for every nonzero element. So in other
+00:19:58.080 words every nonzero element has an
+00:20:00.160 inverse. that's critical
+00:20:07.840 has a multiplicative
+00:20:11.280 inverse. So for example, the integers
+00:20:15.120 which form a very nice ailion group
+00:20:17.280 which have a very nice multiplication
+00:20:19.280 law. Everything is good about them
+00:20:21.120 except that you can't invert two because
+00:20:24.000 if you tried to invert two you'd find
+00:20:25.520 the number 1/2 which is not an integer.
+00:20:28.400 So uh here you have to be able to invert
+00:20:31.360 everything and of course the addition
+00:20:33.120 law and the multiplication law have to
+00:20:34.960 be compatible and that there's a
+00:20:36.320 distributive law etc which you can find
+00:20:39.120 in the book. So for example the real
+00:20:42.400 numbers form a field because everything
+00:20:44.240 nonzero is invertible. Same thing with
+00:20:46.159 the complex numbers. The rational
+00:20:48.400 numbers form a field
+00:20:51.200 set of all quotients a over b not equal
+00:20:53.679 to zero looks simple but you have to
+00:20:56.159 remember that a over b is equal to a
+00:20:58.480 prime over b prime if a b prime is equal
+00:21:02.000 to b a prime I mean there are various
+00:21:04.080 identifications of rational numbers like
+00:21:05.840 2/3 is the same as 46s
+00:21:08.960 so uh but but everyone has some pretty
+00:21:11.360 good idea of what the rational numbers
+00:21:12.880 are the integers are not a field.
+00:21:22.159 Now you can talk about sub fields of a
+00:21:24.320 field. That makes a lot of sense. So if
+00:21:26.159 you have one field and you have a subset
+00:21:28.720 of it,
+00:21:32.240 you'd say it's a sub field
+00:21:35.360 if closed
+00:21:37.919 under
+00:21:39.520 plus and times and closed under
+00:21:46.080 under
+00:21:48.159 uh inverses in both
+00:21:51.600 in both groups. So it's a subgroup under
+00:21:54.240 addition and the the nonzero elements
+00:21:56.480 form a subgroup under multiplication.
+00:21:59.120 So you might notice that in this case Q
+00:22:02.080 is a sub field of R. It's closed under
+00:22:04.880 addition and multiplication and R is a
+00:22:07.360 sub field of the complex numbers. And
+00:22:10.559 there are a lot of things in between.
+00:22:12.159 Believe me there is not here but between
+00:22:14.559 here and here there are a lot of
+00:22:15.760 interesting fields.
+00:22:18.240 And you might ask and people started out
+00:22:20.400 with the notion of whether these were
+00:22:22.240 the only fields namely was every field
+00:22:24.240 some considered a subfield of the
+00:22:26.080 complex numbers. Could we construct
+00:22:27.600 anything else that was completely
+00:22:29.440 different than the complex numbers or
+00:22:32.080 the real numbers? Because if if if there
+00:22:34.880 were no other interesting fields, we
+00:22:36.480 wouldn't have any other interesting
+00:22:37.600 theory of vector spaces.
+00:22:40.640 Okay?
+00:22:42.720 So we might try to construct a field by
+00:22:45.679 hand.
+00:22:47.600 Why not? Now, as I said, whenever you
+00:22:50.720 define an object mathematically, you
+00:22:52.559 should look for the simplest possible
+00:22:54.480 example. Now, the simplest example of a
+00:22:57.520 group or a vector space has one element
+00:23:01.120 in it. Here it is. It's got to have the
+00:23:03.840 identity element. Now the simplest
+00:23:05.679 element of a field the example of a
+00:23:07.280 field has to have more than one element
+00:23:09.600 because you insist in the definitions
+00:23:12.559 that the identity element for addition
+00:23:14.559 and the identity element for
+00:23:16.000 multiplication are distinct elements
+00:23:19.120 in that's part of the definition. So
+00:23:21.200 there must be at least two elements. So
+00:23:23.679 any field no matter how it's constructed
+00:23:27.120 has to contain the identity element for
+00:23:29.280 addition and the identity element for
+00:23:31.280 multiplication.
+00:23:34.080 Okay. So, if we're going to make the
+00:23:36.240 stupidest possible field, we should try
+00:23:38.799 to make it out of those two elements.
+00:23:42.960 Can we do it? So, in fact, yes. The
+00:23:46.960 simplest field
+00:23:54.000 has two elements.
+00:23:58.720 Okay? I have to give you the addition
+00:24:00.320 law and the multiplication law. Here's
+00:24:02.400 the addition law.
+00:24:08.960 When you add zero to anything, you have
+00:24:10.880 to get itself. That's part of 0 is the
+00:24:13.360 identity element for addition, right? So
+00:24:15.840 0 + 0 is 0. 0 + 1 is 1. 0 + 1 is 1. All
+00:24:20.640 I have to tell you is what 1 + 1 is.
+00:24:23.760 We'll call 1 plus 1 0.
+00:24:27.039 That's my definition of what 1 plus 1
+00:24:28.960 is. And now I have to give you the
+00:24:30.799 multiplication law.
+00:24:35.600 It turns out that 0 times anything in a
+00:24:37.679 field part of things that Artton will
+00:24:39.919 show you is zero.
+00:24:42.640 And one the identity element times
+00:24:44.480 itself has to be the identity element.
+00:24:46.159 So multiplication is more or less
+00:24:47.600 forced.
+00:24:49.120 If you take this addition, you get a
+00:24:51.360 group under addition. And in fact, this
+00:24:53.039 group is the group that I would call the
+00:24:54.559 cyclic group of order two.
+00:25:02.080 And then if you impose this
+00:25:03.520 multiplication on it, it turns out to be
+00:25:05.279 a field with identity element, the
+00:25:07.919 non-trivial element of this group.
+00:25:10.720 Okay,
+00:25:12.320 there's there's the first example of a
+00:25:14.000 field. Yeah,
+00:25:14.559 if you were to find one,
+00:25:17.520 you'd get into trouble with the
+00:25:18.880 distributive laws, etc. And also you
+00:25:21.760 wouldn't get a group because um yeah I
+00:25:24.240 mean 1 plus 1 is one won't do for a
+00:25:26.559 group because then there's a unique
+00:25:28.240 identity element in a group. So so 1 + 1
+00:25:33.039 equals 1 would imply that 1 is equal to
+00:25:36.000 the additive
+00:25:38.559 identity which is equal to zero which is
+00:25:41.760 a contradiction because in the field one
+00:25:43.600 was not supposed to be equal to zero.
+00:25:45.760 Okay.
+00:25:48.400 So this is forced on us. this is forced
+00:25:50.799 on us. Either this works or it doesn't.
+00:25:52.559 It turns out to work.
+00:25:55.360 More generally,
+00:26:03.919 if P is a prime number,
+00:26:11.279 then Z mod PZ
+00:26:15.919 with the multiplication
+00:26:20.000 inherited
+00:26:23.039 from Z. In other words, A times B A bar
+00:26:28.480 time B bar is congruent to A B bar mod
+00:26:32.960 P. Namely, you represent the classes by
+00:26:36.080 integers. You multiply them and you take
+00:26:37.760 the remainder after division by P. The
+00:26:40.159 way Peter described the multiplication
+00:26:41.840 table to you on Z mod NZ
+00:26:45.520 is a field.
+00:26:51.279 So that's a remarkable example. We saw
+00:26:54.159 that this was not just an ailion group,
+00:26:55.760 but it had a multiplication on it. And
+00:26:57.760 the claim is that that multiplication
+00:27:00.320 has the property that every nonzero
+00:27:02.880 element is invertible.
+00:27:06.480 However, and this is a little warning
+00:27:08.159 sign, by the way, that was invented by
+00:27:10.400 Warbachi.
+00:27:13.360 It means take care. You know, it's like
+00:27:16.080 in the game um
+00:27:19.919 meal born where you know you put out the
+00:27:22.480 rule rule and you know and then all at
+00:27:24.720 once it's you know
+00:27:27.200 atonto
+00:27:30.240 Z mod NZ
+00:27:32.799 is not a field
+00:27:36.880 if N is composite.
+00:27:41.840 So we're not going to get any more
+00:27:43.120 fields this way. It's only when n is a
+00:27:45.360 prime that this aelion group with its
+00:27:48.960 natural multiplication is a a field.
+00:27:52.799 Okay. Now I have to prove it for you.
+00:27:57.200 This by the way is p equal 2. You see if
+00:28:00.320 you think of this product law this is
+00:28:02.159 multiplication of even and odd numbers.
+00:28:04.960 Right? If you multiply an even number by
+00:28:06.799 an even number you get an even number.
+00:28:08.320 An even number by an odd number you get
+00:28:10.159 an even number. An even number by an odd
+00:28:12.080 number you get an even number. an odd
+00:28:13.840 number by an odd number you get an odd
+00:28:15.840 number. That's multiplication in Z mod
+00:28:18.399 2.
+00:28:20.480 Okay, let's prove this.
+00:28:26.960 So this is this is non-trivial.
+00:28:30.559 Okay
+00:28:32.880 to prove this
+00:28:37.120 we must show
+00:28:41.279 that
+00:28:42.799 if
+00:28:47.520 a is not congrent to zero mod p
+00:28:52.399 so that's a nonzero element of this
+00:28:55.679 aelion group that's an element in fstar
+00:28:58.799 Then
+00:29:00.399 there is an integer B
+00:29:05.360 such that A * B is congruent to 1 mod B.
+00:29:17.760 We did. You did it already.
+00:29:20.640 Oh, it's so shocking. I was going to do
+00:29:22.799 this brilliantly with my All right.
+00:29:24.720 Well, I'm going to do it better. I'm
+00:29:26.399 going to do it better.
+00:29:28.399 Maybe you get it this way. Let's see if
+00:29:30.320 Peter is as genius as I am.
+00:29:32.799 You see that would be then then then B
+00:29:35.679 then B would be congruent to A inverse
+00:29:38.880 mod P.
+00:29:41.760 But there are many ways to slice this
+00:29:43.279 this lemon. All right, here we go. So
+00:29:45.279 the proof goes like this. Recall
+00:29:50.480 from 30 minutes ago
+00:29:56.559 that
+00:29:58.320 PZ
+00:30:00.080 in Z is a maximal subgroup.
+00:30:05.840 See Peter maybe he had that but he
+00:30:08.880 hadn't done it by the isomorphism
+00:30:10.720 theorem right because we showed there
+00:30:12.399 were no groups between Z and PZ. All
+00:30:14.640 right. Now if
+00:30:17.120 a is not congruent to zero mod p
+00:30:22.559 then a is not an element of the subgroup
+00:30:26.960 pz.
+00:30:35.039 Okay
+00:30:36.559 we agree on that? That's our hypothesis.
+00:30:38.399 We have a nonzero element mod p means
+00:30:40.480 it's not divisible by p. So it's not in
+00:30:42.320 here. Hence
+00:30:48.960 if we adjoin A to this subgroup we have
+00:30:52.399 to get the entire group Z. PZ
+00:30:56.320 plus A Z is equal to Z because
+00:31:01.279 this means all integer multiples of P
+00:31:03.520 plus all integer multiples of A because
+00:31:06.000 this is a subgroup as this is a subgroup
+00:31:14.480 of Z containing
+00:31:19.440 PZ but not equal to PZ because it
+00:31:22.240 contains the element A which is not in
+00:31:24.480 PZ. So once it's bigger than PZ has to
+00:31:27.120 be the whole thing.
+00:31:29.679 Agreed? So it's Z. So that means if I
+00:31:33.679 take any element in Z, I can write it as
+00:31:35.760 a multiple of P plus a multiple of A. So
+00:31:38.559 write the element one as some multiple
+00:31:40.960 of P plus some multiple of A.
+00:31:46.640 Since one is an element in Z,
+00:31:50.640 I can write it as a multiple of P plus a
+00:31:52.799 multiple of A.
+00:31:54.720 And now look at this identity mod p that
+00:31:57.600 says that one is congruent to ba
+00:32:00.960 mod p because this is divisible by p
+00:32:05.679 and there is my inverse b
+00:32:09.440 similar to what you did Peter you did
+00:32:11.440 the ukitian algorithm okay it's the same
+00:32:14.399 thing it's the same thing but I got a I
+00:32:16.320 was a little fancier because I did this
+00:32:17.840 business about subgroups of z containing
+00:32:20.320 pz a little earlier Okay, so there's my
+00:32:24.480 inverse. It's true for every nonzero
+00:32:26.960 element of the set. So there's my field.
+00:32:30.559 Now notice that this field is way
+00:32:33.440 different than the complex numbers.
+00:32:35.919 Let's see what's so different about this
+00:32:37.919 field and the complex numbers.
+00:32:43.360 It couldn't be a sub field for example
+00:32:45.279 of the complex numbers. Namely, first of
+00:32:47.919 all, it has a finite number of elements.
+00:32:49.760 It's a field with P elements.
+00:32:57.440 Okay. Now, uh, Z mod PZ
+00:33:02.000 is not
+00:33:04.159 a sub field
+00:33:07.039 of C.
+00:33:09.840 And the reason is very simple. In any
+00:33:11.840 field, you have the element one,
+00:33:17.200 right? A field has to have a
+00:33:18.480 multiplicative identity, one. And since
+00:33:21.360 you can you can add one to itself
+00:33:24.480 any number of times. So you can add it
+00:33:26.960 to itself n times
+00:33:31.120 and you get a new element in the field.
+00:33:34.559 Okay
+00:33:38.559 for every integer n.
+00:33:45.760 Okay. Now in the complex numbers when
+00:33:48.720 you keep adding one to itself you just
+00:33:51.200 keep marching out in the complex plane.
+00:33:53.840 Here's one. Here's two. Here's three.
+00:33:56.080 Here's four. Here's five. You got a
+00:33:58.399 bunch of distinct elements.
+00:34:02.320 Okay. So these are all distinct
+00:34:09.359 in sub fields of C
+00:34:14.239 because any subfield of C contains the
+00:34:16.159 element one and and it's closed under
+00:34:17.918 addition so it contains two and then it
+00:34:19.520 contains three and then it contains four
+00:34:21.119 etc. However, in this field, when you
+00:34:24.800 take the element one and you add it to
+00:34:26.800 itself p times, you get back to the
+00:34:29.119 origin
+00:34:31.040 because 1 + 1 + 1 + 1
+00:34:36.159 p *
+00:34:38.320 is equal to zero in z mod pz.
+00:34:42.800 That's a huge difference.
+00:34:45.359 And so you could never put this field
+00:34:47.760 inside of this one because one would
+00:34:49.520 have to go to one if you had a proper
+00:34:51.280 embedding of fields and then two would
+00:34:52.800 have to go to two and and in here all
+00:34:54.879 those numbers are non zero and here when
+00:34:56.800 you do it p times you get to zero.
+00:35:01.040 Okay.
+00:35:04.079 And that's a big um distinction of
+00:35:06.079 fields. Uh how many times you have to
+00:35:08.320 add one to itself to get zero. If you
+00:35:10.880 never get zero uh then you're like the
+00:35:13.839 complex numbers. And if I should say by
+00:35:16.480 the way that GAWA made a Gwa our friend
+00:35:19.280 who did group theory made a big
+00:35:22.079 discovery about fields and in some sense
+00:35:24.800 after they understood that this was a
+00:35:27.760 field GAWA asked himself the question
+00:35:35.440 what
+00:35:37.200 are the finite fields
+00:35:43.440 beyond on
+00:35:46.000 Z mod PZ
+00:35:48.240 namely the finite groups that's a really
+00:35:50.160 interesting question we don't even know
+00:35:51.440 the the final answer to that but finite
+00:35:53.440 fields Gow realized he could make a list
+00:35:55.680 of them well you have one for each prime
+00:35:57.920 P so the first thing is you might want
+00:36:01.119 to know
+00:36:04.640 what
+00:36:06.160 is the order
+00:36:09.680 of f for a finite field.
+00:36:14.160 Can you have a finite field? Here's a
+00:36:15.680 finite field of order two and three. Is
+00:36:18.320 there a finite field of order four? Is
+00:36:20.240 there a finite field of order five? Yes.
+00:36:22.160 Is there finite field of order six? We
+00:36:23.920 don't know. So what Gwa proved is the
+00:36:27.520 answer to this is p to the n
+00:36:31.280 for a prime p
+00:36:34.720 and an integer n bigger than equal to
+00:36:36.400 one.
+00:36:38.000 So you don't have a finite field of
+00:36:39.440 order six. No matter how hard you try,
+00:36:41.599 you can't construct something which has
+00:36:43.200 order six and has all the axioms of a
+00:36:45.119 field. But um and he also proved that
+00:36:49.839 for
+00:36:51.440 each P and N
+00:36:55.599 there is a unique
+00:36:59.920 such field
+00:37:02.320 up to isomorphism.
+00:37:04.800 We're going to do that later. That'll be
+00:37:07.520 one of the crowning joys of this course.
+00:37:09.520 Gowas classification of finite fields.
+00:37:12.079 So there this is the only field which
+00:37:14.880 has P elements and there's a field which
+00:37:17.920 has four elements and there's a field
+00:37:20.720 that has eight elements which we haven't
+00:37:22.400 seen yet. There's a field with 16
+00:37:23.839 elements. There's a field with 27
+00:37:25.280 elements. There's no field with 28
+00:37:27.040 elements. So that's one thing we're
+00:37:29.119 going to get to. But at least we have a
+00:37:31.200 large supply of finite fields looking at
+00:37:33.119 us that we can work with. Now having
+00:37:35.839 defined what a field is, I can tell you
+00:37:38.079 what a vector space is over a field.
+00:37:45.359 And that's going to be the setting for
+00:37:46.800 the linear algebra we're going to pursue
+00:37:48.320 in the next couple of lectures.
+00:37:50.720 Okay. So a vector space over a field is
+00:37:53.760 a set V.
+00:37:57.680 That's a set of vectors
+00:38:02.960 with the following properties. One, V is
+00:38:07.119 an aelion group
+00:38:12.640 under addition with identity element
+00:38:16.160 zero V just like it was for the real
+00:38:18.079 numbers etc etc. And the second and
+00:38:21.359 here's where the field comes in. There's
+00:38:23.920 an operation
+00:38:30.800 called the scalar product
+00:38:36.480 from V cross F into V
+00:38:40.720 that takes a vector and a scalar in the
+00:38:43.760 field F to the vector C * V and it has
+00:38:49.280 to obey various rules with respect to
+00:38:51.760 the addition and the associative rule
+00:38:54.320 and we have to have that 0 * any vector
+00:38:58.079 is 0 V where this is the zero element of
+00:39:00.640 the field and 1 * any vector is V where
+00:39:05.280 one is the one element of the field.
+00:39:08.800 So uh and the associative law as usual a
+00:39:12.160 b * a vector is a * b of a vector the
+00:39:16.400 distributive law a * b + c b + w etc is
+00:39:21.520 a v plus a w. So exactly the laws that
+00:39:25.119 we had for vector spaces over the real
+00:39:27.359 numbers. But now we allow ourselves to
+00:39:29.359 multiply by scalers.
+00:39:33.200 And I should give you some examples of
+00:39:36.000 vector spaces because we already saw
+00:39:39.200 some examples of real vector spaces and
+00:39:41.760 they work just as well for examples of
+00:39:44.079 vector spaces over fields
+00:39:50.240 of v over an abstract field f. The first
+00:39:54.640 example is the zero vector space works
+00:39:58.640 just as well. The second example is the
+00:40:02.079 field itself. It forms a vector space
+00:40:05.200 over the field. Can multiply by scalers.
+00:40:08.000 The third example why not is uh
+00:40:13.680 n tupils of elements in the field. So
+00:40:16.320 this consists of all tupils a1
+00:40:20.000 a n such that the ai are elements in f.
+00:40:24.320 You add them componentwise using the
+00:40:26.800 addition law of the field. you scale or
+00:40:29.040 multiply in each component using the
+00:40:31.200 multiplication law in the field.
+00:40:34.480 All that works fine. Those are kind of
+00:40:37.280 boring examples of vector spaces, but
+00:40:39.839 we're going to see that uh vector spaces
+00:40:42.160 all look kind of like that, at least if
+00:40:44.240 they have a finite dimensional basis. A
+00:40:47.200 more interesting example of vector
+00:40:48.880 space.
+00:40:51.040 Here's a here's a one that we're going
+00:40:52.800 to study a lot later. I'll denote it
+00:40:54.480 like this.
+00:40:56.240 f brackets x that's the vector space of
+00:40:59.920 all polomials
+00:41:05.599 p of x with coefficients
+00:41:10.319 in our field f
+00:41:13.200 that's a much more interesting vector
+00:41:14.800 space
+00:41:17.680 you can multiply in that vector space
+00:41:19.440 because you can multiply polomials but
+00:41:21.200 forgetting the multiplication of
+00:41:22.400 polinomials we can certainly add two
+00:41:24.480 polomials and we can certainly multiply
+00:41:26.560 a polinomial by a scalar and if we just
+00:41:29.359 keep that structure we get the
+00:41:31.520 polomials.
+00:41:35.119 Okay,
+00:41:37.520 questions on the the definition or the
+00:41:39.760 definition of a field or the examples of
+00:41:41.680 fields we've got so far?
+00:41:44.160 This pretty familiar material. Yeah,
+00:41:46.079 this is I c I gather a little bit of
+00:41:47.839 review, but we have to we have to do
+00:41:50.000 this material if we're going to get
+00:41:51.520 seriously involved in uh the linear
+00:41:54.240 algebra groups later.
+00:41:58.960 Do I need the other distributive
+00:42:00.800 property? Yes. A + V * V is AV. Thank
+00:42:06.880 you. BV you have
+00:42:11.119 never mind. Um those exercises are
+00:42:14.160 pointless. um that this remember that
+00:42:17.040 these things are taking place in
+00:42:18.480 different things. Namely, here you add
+00:42:19.920 the two scalers and then you scaler
+00:42:21.680 multiply by V. And here you scaler
+00:42:24.000 multiply by A on this vector. You scale
+00:42:26.960 multiply by V on this vector and then
+00:42:28.640 you add the two vectors. Each one of
+00:42:30.319 these laws okay.
+00:42:33.760 All right. Now, um just as we did for
+00:42:36.560 groups, we're going to have all kinds of
+00:42:38.160 concepts when we have subobjects
+00:42:40.640 homorphism. So we say W in V is a vector
+00:42:45.440 subspace
+00:42:50.000 if it's a subgroup
+00:42:53.440 under plus contains zero.
+00:42:59.200 Of course that mean that's what it means
+00:43:00.640 to be a subgroup under plus and uh and
+00:43:04.160 is stable
+00:43:06.640 under
+00:43:08.400 scalar
+00:43:10.319 multiplication
+00:43:12.319 by f.
+00:43:14.880 So an example
+00:43:17.119 if we took the vector space f which is
+00:43:20.800 f2
+00:43:22.560 and we took w to be the set of all
+00:43:25.599 vectors a1 a2
+00:43:28.960 such that uh
+00:43:32.240 a1 was equal to uh
+00:43:36.319 c a2 where c is in f
+00:43:40.960 that would form a subspace
+00:43:48.240 You can check that.
+00:43:49.599 Yeah.
+00:43:51.760 Closed. Yeah. I'm sorry.
+00:43:57.599 Okay. So you just preserve all the
+00:43:59.599 properties and you stay in the subset.
+00:44:02.400 So for groups the property was addition
+00:44:04.640 and inversion and the identity. You have
+00:44:06.560 to have all that and you also have to
+00:44:08.160 have this property of stable under
+00:44:09.599 multiplication.
+00:44:11.839 All right. Another thing we had for
+00:44:13.280 groups was the notion of a homamorphism.
+00:44:15.680 What's the notion of a homamorphism?
+00:44:19.200 Yes.
+00:44:24.160 If you're stable under addition, you
+00:44:25.839 have you have the stable under
+00:44:27.200 multiplication.
+00:44:28.000 No.
+00:44:34.640 If it's stable under addition,
+00:44:45.040 Yeah, you have to you have to find your
+00:44:46.640 element.
+00:44:50.800 Yeah. And of course, you have to ask
+00:44:52.240 yourself what is minus one. Like in the
+00:44:54.800 field of two elements, minus1 is the
+00:44:56.640 same as one. One shouldn't really think
+00:44:58.480 of minus one. But yes, but any case all
+00:45:02.079 these things that there when I was
+00:45:04.000 giving Peter a hard time, I was doing it
+00:45:05.520 for the following reason. One can always
+00:45:07.280 try to write down these this sort of
+00:45:09.040 minimal set from which you can derive
+00:45:11.280 these a couple of other associivities
+00:45:13.839 etc. And that's an interesting exercise
+00:45:15.920 but that rarely is what's involved in
+00:45:17.760 mathematics. You just want to know what
+00:45:19.920 are the conditions that are compatible
+00:45:21.920 between the two operations that give you
+00:45:23.839 a vector space. Likewise here in any
+00:45:26.240 case you're going to when you're going
+00:45:27.599 to check for a subspace you're going to
+00:45:28.960 check the closure under addition and
+00:45:31.359 containing the identity and you're going
+00:45:33.040 to check closure under scale and
+00:45:34.319 multiplication. This is not enough of
+00:45:36.240 course because I could have the real
+00:45:38.560 line
+00:45:40.560 that's a nice vector space over R
+00:45:44.000 and I could have inside it the integers
+00:45:50.240 which is a nice subgroup
+00:45:53.440 closed under addition but of course not
+00:45:55.359 under scalar multiplication because if I
+00:45:57.359 took one and I multiplied it by square
+00:45:59.040 root of two it wouldn't be in here.
+00:46:01.760 Okay. And also the notion of a
+00:46:04.319 homorphism is the notion of a linear
+00:46:06.880 map. So if I have a map between two
+00:46:10.800 vector spaces, we say it's a homorphism
+00:46:18.160 or a linear transformation. In the old
+00:46:26.240 is a homamorphism provided.
+00:46:30.560 First of all, it's a group homorphism. T
+00:46:32.880 of V plus W is T of V plus T of W.
+00:46:38.400 Group home takes the additive identity
+00:46:41.359 to the additive identity takes inverses
+00:46:43.440 to inverses and it commutes with S
+00:46:46.640 scalar multiplication
+00:46:50.240 where this scalar multiplication takes
+00:46:52.160 place in V and this scalar
+00:46:54.560 multiplication takes place in W.
+00:46:57.920 So just like a group homorphism.
+00:47:01.280 Okay. If you have a if it's a group
+00:47:04.400 homor if it's a linear transformation
+00:47:06.400 which is bjective we say it's an
+00:47:08.560 isomorphism just like we did for groups
+00:47:15.520 homorphism is equal to an isomorphism.
+00:47:19.599 Moreover,
+00:47:21.599 we find that the kernel of t
+00:47:26.480 which are the subgroup of vectors such
+00:47:28.560 that p of v is equal to zero is a
+00:47:31.920 subspace
+00:47:36.880 of v.
+00:47:39.200 That's because
+00:47:41.119 if you take t of cv, it's c of t of v.
+00:47:47.520 And it's we know it's a subgroup because
+00:47:50.400 of group theory. But we have to check
+00:47:52.720 it's stable under scalar multiplication.
+00:47:55.040 If you take this you get C * T of V
+00:47:57.119 which is C * the zero vector. And
+00:47:59.200 anything times the zero vector is the
+00:48:01.280 zero vector. This is the zero vector in
+00:48:03.200 W. Sorry.
+00:48:07.520 So the kernel and the image of T
+00:48:11.520 which are all things of the form T of V
+00:48:14.160 inside of W is a subspace
+00:48:18.400 of W. So once I have a homorphism that
+00:48:23.040 preserves scalar multiplication its
+00:48:25.200 kernel and its image are subspaces. One
+00:48:27.440 more thing and I'll take a question.
+00:48:29.359 Finally, we might as well keep pushing
+00:48:31.359 our group theory. Why don't we define
+00:48:34.960 uh if I have a subspace
+00:48:39.040 W and V, I can define
+00:48:42.480 the quotient space V mod W. It's a set
+00:48:45.839 of co-ets of W and V, which is an aelion
+00:48:49.680 group. You check that that has a scalar
+00:48:52.240 multiplication
+00:48:53.760 has the structure
+00:48:57.280 of a vector space over f and the natural
+00:49:02.480 map which is a group homamorphism to
+00:49:05.440 from v to v mod w is a linear
+00:49:08.240 transformation
+00:49:11.440 with kernel
+00:49:14.240 w. So all of our notions from group
+00:49:16.880 theory and here you don't even have to
+00:49:18.720 worry about normal subgroup because the
+00:49:20.640 group involved is an aelion group. All
+00:49:22.960 our notions from group theory go over
+00:49:25.200 into the theory of vector spaces once we
+00:49:28.319 assume the additional things that the
+00:49:30.559 subgroup is stable under multiplication
+00:49:33.280 or that the group homorphism commutes
+00:49:36.079 with scalar multiplication.
+00:49:39.359 Okay. So in some sense by doing vector
+00:49:41.839 spaces you had already done a lot of the
+00:49:43.440 theory of a billion groups but you had
+00:49:45.359 thrown in this extra scaler
+00:49:46.640 multiplication that you didn't really
+00:49:48.000 need. Now we need it.
+00:49:51.440 Okay. So this is uh I should point out
+00:49:54.640 that next time you should read section
+00:49:56.800 3.3
+00:49:59.119 and the homework. So you should read
+00:50:03.119 3.3 for Friday.
+00:50:06.160 We're going to get into some more
+00:50:07.359 serious linear algebra today. It's just
+00:50:09.119 definitions and you're going to do
+00:50:11.440 exercises 3.1.1
+00:50:14.640 3.15
+00:50:17.680 3.2.1
+00:50:20.079 3.2.7
+00:50:22.720 3.2.15
+00:50:30.720 and I promise you this will get a lot
+00:50:32.480 more interesting once we get along. Yes,
+00:50:36.079 we'll take I'll take the questions
+00:50:37.359 first. this question.
+00:50:42.480 Oh, always. Yeah. I'm I'm sorry. Thank
+00:50:46.160 you. Um, when one does vector spaces,
+00:50:49.359 it's always in the context of a fixed
+00:50:51.359 field. There's one field fixed once and
+00:50:53.119 for all. So, in other words, this
+00:50:55.119 wouldn't make any sense if if you had
+00:50:57.599 scalers on W that were different than
+00:50:59.359 scalers on V. So, the the field is fixed
+00:51:02.000 once and for all. It's complex numbers
+00:51:03.520 or Z mod 2 or something like that. But
+00:51:06.160 the beautiful thing is that much of the
+00:51:07.520 theory of vector spaces is independent
+00:51:09.280 of what field you're over. That's what
+00:51:11.119 we're going to develop in this chapter.
+00:51:12.400 What can we say if we don't even know
+00:51:13.760 what f is,
+00:51:16.160 Liz?
+00:51:26.960 Where is Peter?
+00:51:30.559 Okay, we'll figure out a way to get them
+00:51:32.400 back to you.
+00:51:35.359 Is someone doing office hour? Is someone
+00:51:37.040 doing a section on Thursday?
+00:51:39.839 Okay, he'll bring them to the section
+00:51:41.200 Thursday if you don't get them today.
