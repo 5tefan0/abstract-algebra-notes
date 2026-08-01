@@ -91,7 +91,7 @@ so linear independence gives $a_i=b_i$ for every $i$.
 
 The scalars form the coordinate vector
 
-$$[v]_{\mathcal B}=egin{pmatrix}a_1\\ \vdots\\ a_n\end{pmatrix}\in F^n.$$
+$$[v]_{\mathcal B}=\begin{pmatrix}a_1\\ \vdots\\ a_n\end{pmatrix}\in F^n.$$
 
 The coordinate map
 

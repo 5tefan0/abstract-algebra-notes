@@ -81,7 +81,7 @@ $$T(e_1)=e_1,\qquad T(e_2)=e_1+e_2.$$
 
 Its matrix is
 
-$$A=egin{pmatrix}1&1\\0&1\end{pmatrix}.$$
+$$A=\begin{pmatrix}1&1\\0&1\end{pmatrix}.$$
 
 The line $Fe_1$ is invariant. If $v=ae_1+be_2$ is an eigenvector with eigenvalue $\lambda$, then
 

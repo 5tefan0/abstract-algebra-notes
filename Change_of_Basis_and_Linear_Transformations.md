@@ -1,360 +1,367 @@
-# Change of Basis Matrices and Matrix Representations of Linear Transformations
+# Change-of-Basis Matrices and Linear Transformations
 
 ## Summary
 
-A **change of basis matrix** converts the coordinates of a vector from
-one basis to another. More generally, if you have a linear
-transformation
+A **change-of-basis matrix** converts the coordinate column of a vector from one ordered basis to another.
 
-\[ T:V`\to `{=tex}W, \]
+More generally, if
 
-its matrix depends on **two choices of bases**: one for the domain (V)
-and one for the codomain (W). Changing either basis changes the matrix
-representation, even though the underlying linear map stays the same.
+$$T:V\longrightarrow W$$
 
-------------------------------------------------------------------------
+is linear, its matrix depends on two choices: a basis of the domain $V$ and a basis of the codomain $W$. Changing either basis changes the matrix representation, even though the underlying linear transformation stays the same.
 
-# 1. Coordinates Depend on the Basis
+Throughout, all vector spaces are over a fixed field $F$.
 
-Suppose (V) is an (n)-dimensional vector space.
+## 1. Coordinates Depend on the Basis
 
-Choose a basis
+Let $V$ be $n$-dimensional, and choose an ordered basis
 
-\[ `\mathcal `{=tex}B=(v_1,`\dots`{=tex},v_n). \]
+$$\mathcal B=(v_1,\ldots,v_n).$$
 
-Every vector (v`\in `{=tex}V) can be written uniquely as
+Every $v\in V$ can be written uniquely as
 
-\[ v=a_1v_1+`\cdots`{=tex}+a_nv_n. \]
+$$v=a_1v_1+\cdots+a_nv_n.$$
 
-Its coordinate vector is
+Its coordinate column relative to $\mathcal B$ is
 
-\[ \[v\]\_{`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
+$$
+[v]_{\mathcal B}
+=
+\begin{pmatrix}
 a_1\\
 \vdots\\
 a_n
-\end{bmatrix}
-```
-. \]
+\end{pmatrix}.
+$$
 
-The coordinate vector is **not** the vector itself---it simply records
-the coefficients relative to the chosen basis.
+The coordinate column is not the vector itself. It records the coefficients of the vector relative to a particular basis.
 
-------------------------------------------------------------------------
-
-# 2. Two Different Bases
-
-Suppose we also have another basis
-
-\[ `\mathcal `{=tex}C=(w_1,`\dots`{=tex},w_n). \]
-
-The same vector has coordinates
-
-\[ \[v\]\_{`\mathcal `{=tex}C}. \]
-
-There exists a unique matrix
-
-\[ P\_{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B} \]
-
-such that
-
-\[ \[v\]*{`\mathcal `{=tex}C} =
-P*{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B}
-\[v\]\_{`\mathcal `{=tex}B}. \]
-
-This matrix is called the **change of basis matrix**.
-
-------------------------------------------------------------------------
-
-# 3. Constructing the Change of Basis Matrix
-
-To build
-
-\[ P\_{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B}, \]
-
-express every basis vector of (`\mathcal `{=tex}B) in terms of the basis
-(`\mathcal `{=tex}C).
-
-The coordinate vectors become the columns:
-
-\[ P\_{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
-[v_1]_{\mathcal C}&
-[v_2]_{\mathcal C}&
-\cdots&
-[v_n]_{\mathcal C}
-\end{bmatrix}
-```
-. \]
-
-## Why This Works
-
-If
-
-\[ v=a_1v_1+`\cdots`{=tex}+a_nv_n, \]
-
-then
-
-\[ \[v\]\_{`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
-a_1\\
-\vdots\\
-a_n
-\end{bmatrix}
-```
-. \]
-
-Multiplying,
-
-\[
-P\_{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B}\[v\]*{`\mathcal `{=tex}B}
-= a_1\[v_1\]*{`\mathcal `{=tex}C} +`\cdots`{=tex}
-+a_n\[v_n\]\_{`\mathcal `{=tex}C}, \]
-
-which is exactly
-
-\[ \[v\]\_{`\mathcal `{=tex}C}. \]
-
-------------------------------------------------------------------------
-
-# Example
-
-Take
-
-\[ `\mathcal `{=tex}B= `\left`{=tex}{
-```{=tex}
-\begin{bmatrix}1\\0\end{bmatrix}
-```
-,
-```{=tex}
-\begin{bmatrix}0\\1\end{bmatrix}
-```
-`\right`{=tex}}, \]
-
-and
-
-\[ `\mathcal `{=tex}C= `\left`{=tex}{
-```{=tex}
-\begin{bmatrix}1\\1\end{bmatrix}
-```
-,
-```{=tex}
-\begin{bmatrix}1\\-1\end{bmatrix}
-```
-`\right`{=tex}}. \]
-
-Expressing the standard basis vectors in basis (`\mathcal `{=tex}C),
-
-\[ \[e_1\]\_{`\mathcal `{=tex}C} =
-```{=tex}
-\begin{bmatrix}
-1/2\\
-1/2
-\end{bmatrix}
-```
-, `\qquad
-[e_2]`{=tex}\_{`\mathcal `{=tex}C} =
-```{=tex}
-\begin{bmatrix}
-1/2\\
--1/2
-\end{bmatrix}
-```
-. \]
-
-Hence
-
-\[ P\_{`\mathcal `{=tex}C`\leftarrow`{=tex}`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
-1/2&1/2\\
-1/2&-1/2
-\end{bmatrix}
-```
-. \]
-
-------------------------------------------------------------------------
-
-# 4. Matrix Representation of a Linear Transformation
-
-Suppose
-
-\[ T:V`\to `{=tex}W. \]
-
-Choose
-
--   a basis (`\mathcal `{=tex}B) for (V),
--   a basis (`\mathcal `{=tex}D) for (W).
-
-The matrix representation is
-
-\[ \[T\]\_{`\mathcal `{=tex}D`\leftarrow`{=tex}`\mathcal `{=tex}B}, \]
-
-defined by
-
-\[ \[T(v)\]*{`\mathcal `{=tex}D} =
-\[T\]*{`\mathcal `{=tex}D`\leftarrow`{=tex}`\mathcal `{=tex}B}
-\[v\]\_{`\mathcal `{=tex}B}. \]
-
-## How to Compute It
-
-Take each basis vector of the domain,
-
-\[ v_1,`\ldots`{=tex},v_n, \]
-
-compute
-
-\[ T(v_i), \]
-
-express each image in the codomain basis, and use those coordinate
-vectors as columns:
-
-\[ \[T\]\_{`\mathcal `{=tex}D`\leftarrow`{=tex}`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
-[T(v_1)]_{\mathcal D}&
-[T(v_2)]_{\mathcal D}&
-\cdots&
-[T(v_n)]_{\mathcal D}
-\end{bmatrix}
-```
-. \]
-
-------------------------------------------------------------------------
-
-# Example
+## 2. Two Different Bases
 
 Let
 
-\[ T(x,y)=(x+y,;2x-y). \]
+$$\mathcal C=(w_1,\ldots,w_n)$$
 
-Choose
+be another ordered basis of $V$. The same vector has a second coordinate column, $[v]_{\mathcal C}$.
 
-\[ `\mathcal `{=tex}B= `\left`{=tex}{
-```{=tex}
-\begin{bmatrix}1\\1\end{bmatrix}
-```
-,
-```{=tex}
-\begin{bmatrix}1\\-1\end{bmatrix}
-```
-`\right`{=tex}}, `\qquad`{=tex} `\mathcal `{=tex}D= `\left`{=tex}{
-```{=tex}
-\begin{bmatrix}1\\0\end{bmatrix}
-```
-,
-```{=tex}
-\begin{bmatrix}1\\1\end{bmatrix}
-```
-`\right`{=tex}}. \]
+There is a unique invertible matrix
 
-Then
+$$P_{\mathcal C\leftarrow\mathcal B}$$
 
-\[ T(1,1)=(2,1), \]
+such that
 
-whose coordinates in (`\mathcal `{=tex}D) are
+$$
+[v]_{\mathcal C}
+=P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
+$$
 
-\[
-```{=tex}
-\begin{bmatrix}
-1\\
-1
-\end{bmatrix}
-```
-, \]
+for every $v\in V$. It is the change-of-coordinate matrix **from $\mathcal B$-coordinates to $\mathcal C$-coordinates**.
 
-and
+The arrow in the subscript records the direction:
 
-\[ T(1,-1)=(0,3), \]
+$$
+\mathcal B\text{-coordinates}
+\xrightarrow{\;P_{\mathcal C\leftarrow\mathcal B}\;}
+\mathcal C\text{-coordinates}.
+$$
 
-whose coordinates are
+## 3. Constructing the Matrix
 
-\[
-```{=tex}
-\begin{bmatrix}
--3\\
-3
-\end{bmatrix}
-```
-. \]
+To construct $P_{\mathcal C\leftarrow\mathcal B}$, express each vector of $\mathcal B$ in the basis $\mathcal C$. These coordinate columns become the columns of the matrix:
 
-Therefore
+$$
+P_{\mathcal C\leftarrow\mathcal B}
+=
+\begin{pmatrix}
+|&&|\\
+[v_1]_{\mathcal C}&\cdots&[v_n]_{\mathcal C}\\
+|&&|
+\end{pmatrix}.
+$$
 
-\[ \[T\]\_{`\mathcal `{=tex}D`\leftarrow`{=tex}`\mathcal `{=tex}B} =
-```{=tex}
-\begin{bmatrix}
-1&-3\\
-1&3
-\end{bmatrix}
-```
-. \]
+Why does this work? If
 
-------------------------------------------------------------------------
+$$v=a_1v_1+\cdots+a_nv_n,$$
 
-# 5. Changing the Bases
+then
 
-Suppose the matrix of (T) is known with respect to bases
+$$
+\begin{aligned}
+P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
+&=
+P_{\mathcal C\leftarrow\mathcal B}
+\begin{pmatrix}
+a_1\\
+\vdots\\
+a_n
+\end{pmatrix}\\
+&=
+a_1[v_1]_{\mathcal C}
++\cdots+
+a_n[v_n]_{\mathcal C}\\
+&=[v]_{\mathcal C}.
+\end{aligned}
+$$
 
-\[ (`\mathcal `{=tex}B,`\mathcal `{=tex}D), \]
+The reverse change is the inverse matrix:
 
-and we switch to new bases
+$$
+P_{\mathcal B\leftarrow\mathcal C}
+=P_{\mathcal C\leftarrow\mathcal B}^{-1}.
+$$
 
--   (`\mathcal `{=tex}B') for (V),
--   (`\mathcal `{=tex}D') for (W).
+## 4. Example: Changing Coordinates
 
-Then
+In $\mathbb R^2$, let
 
-\[ \[T\]*{`\mathcal `{=tex}D'`\leftarrow`{=tex}`\mathcal `{=tex}B'} =
-P*{`\mathcal `{=tex}D'`\leftarrow`{=tex}`\mathcal `{=tex}D}
-\[T\]*{`\mathcal `{=tex}D`\leftarrow`{=tex}`\mathcal `{=tex}B}
-P*{`\mathcal `{=tex}B`\leftarrow`{=tex}`\mathcal `{=tex}B'}. \]
+$$
+\mathcal B=
+\left(
+\begin{pmatrix}1\\0\end{pmatrix},
+\begin{pmatrix}0\\1\end{pmatrix}
+\right)
+$$
 
-Interpretation:
+be the standard basis, and let
 
--   Left multiplication changes the **output (codomain) coordinates**.
--   Right multiplication changes the **input (domain) coordinates**.
-
-------------------------------------------------------------------------
-
-# Special Case: (V=W)
-
-If (T:V`\to `{=tex}V), then
-
-\[ \[T\]*{`\mathcal `{=tex}B'} =
-P*{`\mathcal `{=tex}B'`\leftarrow`{=tex}`\mathcal `{=tex}B}
-\[T\]*{`\mathcal `{=tex}B}
-P*{`\mathcal `{=tex}B`\leftarrow`{=tex}`\mathcal `{=tex}B'}. \]
+$$
+\mathcal C=
+\left(
+\begin{pmatrix}1\\1\end{pmatrix},
+\begin{pmatrix}1\\-1\end{pmatrix}
+\right).
+$$
 
 Since
 
-\[ P\_{`\mathcal `{=tex}B`\leftarrow`{=tex}`\mathcal `{=tex}B'} =
-P\_{`\mathcal `{=tex}B'`\leftarrow`{=tex}`\mathcal `{=tex}B}\^{-1}, \]
+$$
+\begin{pmatrix}1\\0\end{pmatrix}
+=
+\frac12
+\begin{pmatrix}1\\1\end{pmatrix}
++
+\frac12
+\begin{pmatrix}1\\-1\end{pmatrix},
+$$
 
-this becomes the familiar similarity transformation
+and
 
-\[ \[T\]*{`\mathcal `{=tex}B'} = P\^{-1}\[T\]*{`\mathcal `{=tex}B}P, \]
+$$
+\begin{pmatrix}0\\1\end{pmatrix}
+=
+\frac12
+\begin{pmatrix}1\\1\end{pmatrix}
+-
+\frac12
+\begin{pmatrix}1\\-1\end{pmatrix},
+$$
 
-or equivalently
+we have
 
-\[ P\[T\]\_{`\mathcal `{=tex}B}P\^{-1}, \]
+$$
+[e_1]_{\mathcal C}
+=
+\begin{pmatrix}\tfrac12\\\tfrac12\end{pmatrix},
+\qquad
+[e_2]_{\mathcal C}
+=
+\begin{pmatrix}\tfrac12\\-\tfrac12\end{pmatrix}.
+$$
 
-depending on the convention used for the direction of the
-change-of-basis matrix.
+Therefore
 
-------------------------------------------------------------------------
+$$
+P_{\mathcal C\leftarrow\mathcal B}
+=
+\begin{pmatrix}
+\tfrac12&\tfrac12\\
+\tfrac12&-\tfrac12
+\end{pmatrix}.
+$$
 
-# Conceptual Picture
+For example, if $v=(4,2)$, then
 
-The coordinate maps and the matrix representation fit together as
+$$
+[v]_{\mathcal C}
+=
+P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
+=
+\begin{pmatrix}
+\tfrac12&\tfrac12\\
+\tfrac12&-\tfrac12
+\end{pmatrix}
+\begin{pmatrix}4\\2\end{pmatrix}
+=
+\begin{pmatrix}3\\1\end{pmatrix}.
+$$
 
-\[ V `\xrightarrow{\text{coordinates in }\mathcal B}`{=tex}
-`\mathbb `{=tex}R\^n
-`\xrightarrow{[T]_{\mathcal D\leftarrow\mathcal B}}`{=tex}
-`\mathbb `{=tex}R\^m
-`\xrightarrow{\text{interpret in }\mathcal D}`{=tex} W. \]
+Indeed,
 
-The linear transformation itself never changes. Only its matrix
-representation changes when different bases are chosen.
+$$
+(4,2)=3(1,1)+1(1,-1).
+$$
+
+## 5. Matrix of a Linear Transformation
+
+Let
+
+$$T:V\longrightarrow W,$$
+
+and choose ordered bases
+
+$$\mathcal B=(v_1,\ldots,v_n)\quad\text{of }V,$$
+
+$$\mathcal D=(w_1,\ldots,w_m)\quad\text{of }W.$$
+
+The matrix representation is denoted
+
+$$[T]_{\mathcal D\leftarrow\mathcal B}.$$
+
+It is characterized by
+
+$$
+[T(v)]_{\mathcal D}
+=[T]_{\mathcal D\leftarrow\mathcal B}[v]_{\mathcal B}
+$$
+
+for every $v\in V$.
+
+To compute it, write each image $T(v_j)$ in the basis $\mathcal D$:
+
+$$
+[T]_{\mathcal D\leftarrow\mathcal B}
+=
+\begin{pmatrix}
+|&&|\\
+[T(v_1)]_{\mathcal D}&\cdots&[T(v_n)]_{\mathcal D}\\
+|&&|
+\end{pmatrix}.
+$$
+
+The domain basis determines the columns to which $T$ is applied; the codomain basis determines how those image vectors are recorded.
+
+## 6. Example: A Nonstandard Domain and Codomain Basis
+
+Define
+
+$$T:\mathbb R^2\longrightarrow\mathbb R^2,\qquad
+T(x,y)=(x+y,\,2x-y).$$
+
+Choose
+
+$$
+\mathcal B=\bigl((1,1),(1,-1)\bigr)
+$$
+
+for the domain and
+
+$$
+\mathcal D=\bigl((1,0),(1,1)\bigr)
+$$
+
+for the codomain.
+
+First,
+
+$$T(1,1)=(2,1)=1(1,0)+1(1,1),$$
+
+so
+
+$$
+[T(1,1)]_{\mathcal D}
+=
+\begin{pmatrix}1\\1\end{pmatrix}.
+$$
+
+Next,
+
+$$T(1,-1)=(0,3)=-3(1,0)+3(1,1),$$
+
+so
+
+$$
+[T(1,-1)]_{\mathcal D}
+=
+\begin{pmatrix}-3\\3\end{pmatrix}.
+$$
+
+Therefore
+
+$$
+[T]_{\mathcal D\leftarrow\mathcal B}
+=
+\begin{pmatrix}
+1&-3\\
+1&3
+\end{pmatrix}.
+$$
+
+## 7. Changing Both Bases
+
+Suppose $[T]_{\mathcal D\leftarrow\mathcal B}$ is known, and we switch to
+
+- a new domain basis $\mathcal B'$;
+- a new codomain basis $\mathcal D'$.
+
+The new matrix is
+
+$$
+[T]_{\mathcal D'\leftarrow\mathcal B'}
+=
+P_{\mathcal D'\leftarrow\mathcal D}
+[T]_{\mathcal D\leftarrow\mathcal B}
+P_{\mathcal B\leftarrow\mathcal B'}.
+$$
+
+Reading from right to left:
+
+1. $P_{\mathcal B\leftarrow\mathcal B'}$ converts new input coordinates to old input coordinates;
+2. $[T]_{\mathcal D\leftarrow\mathcal B}$ applies $T$ in the old coordinates;
+3. $P_{\mathcal D'\leftarrow\mathcal D}$ converts old output coordinates to new output coordinates.
+
+Thus:
+
+- changing the domain basis acts on the right;
+- changing the codomain basis acts on the left.
+
+## 8. Endomorphisms and Similarity
+
+If $T:V\to V$, use one basis for both the domain and codomain. Let
+
+$$A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.$$
+
+If
+
+$$P=P_{\mathcal B\leftarrow\mathcal B'},$$
+
+then
+
+$$A'=P^{-1}AP.$$
+
+The matrices $A$ and $A'$ are **similar**. They describe the same linear operator in different bases.
+
+If a source defines $P$ in the reverse direction, its formula will appear as $A'=PAP^{-1}$. Always determine what coordinate conversion $P$ performs before using a memorized formula.
+
+## 9. Conceptual Picture
+
+The complete process is
+
+$$
+V
+\xrightarrow{\;\text{coordinates in }\mathcal B\;}
+F^n
+\xrightarrow{\;[T]_{\mathcal D\leftarrow\mathcal B}\;}
+F^m
+\xrightarrow{\;\text{interpret in }\mathcal D\;}
+W.
+$$
+
+The abstract vector spaces and the transformation do not change. Only their coordinate descriptions depend on the selected bases.
+
+## Key Takeaways
+
+1. Coordinates depend on an ordered basis.
+2. The columns of a change-of-basis matrix are basis vectors expressed in the target coordinate system.
+3. The columns of a transformation matrix are images of domain basis vectors expressed in the codomain basis.
+4. Change-of-basis directions determine where inverses appear.
+5. Similar matrices represent the same endomorphism in different bases.

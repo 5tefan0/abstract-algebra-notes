@@ -323,7 +323,7 @@ Define $\bar{a} \cdot \bar{b} = \overline{ab}$ (well-defined since $ab - a'b' = 
 
 ## 4. Units: The Group $(\mathbb{Z}/n\mathbb{Z})^\times$
 
-**Definition.** $(\mathbb{Z}/n\mathbb{Z})^\times = \{\bar{a} : \exists\, \bar{c}$ with $\bar{a}\bar{c} = \bar{1}\}$.
+**Definition.** $(\mathbb{Z}/n\mathbb{Z})^\times = \{\bar{a} : \exists\, \bar{c}\text{ with }\bar{a}\bar{c} = \bar{1}\}$.
 
 **GCD and Bézout.** $m\mathbb{Z} + n\mathbb{Z} = \gcd(m,n)\mathbb{Z}$, so $\gcd(m,n) = mr + ns$ for some $r, s \in \mathbb{Z}$.
 

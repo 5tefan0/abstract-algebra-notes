@@ -140,4 +140,4 @@ In the first sequence, $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ (cyclic of order 3) an
 
 In the second sequence, the kernel $\langle \bar{2} \rangle = \{\bar{0}, \bar{2}, \bar{4}\} \cong \mathbb{Z}/3\mathbb{Z}$ and the quotient is $\mathbb{Z}/2\mathbb{Z}$.
 
-Both sequences have isomorphic ends $(\mathbb{Z}/3\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z})$, yet the groups in the middle are non-isomorphic: $\mathbb{Z}/6\mathbb{Z}$ is abelian of order 6, while $S_3$ is non-abelian of order 6. The extra data required to specify $G$ from $H$ and $G'$ — how $G'$ acts on $H$ via conjugation — is the **extension problem**, a central topic in group theory.
+Both sequences have isomorphic ends—$\mathbb{Z}/3\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z}$—yet the groups in the middle are non-isomorphic: $\mathbb{Z}/6\mathbb{Z}$ is abelian of order 6, while $S_3$ is non-abelian of order 6. The extra data required to specify $G$ from $H$ and $G'$—how $G'$ acts on $H$ via conjugation—is the **extension problem**, a central topic in group theory.
