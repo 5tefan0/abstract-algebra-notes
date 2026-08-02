@@ -36,7 +36,7 @@ The repository currently contains notes for Lectures 1–12.
 | Lecture | Topic | Notes |
 |---:|---|---|
 | 1 | Introduction to groups via matrices | [Lecture 1](lecture_01.md) |
-| 2 | Subgroups, $S_3$, and cyclic subgroups | [Lecture 2](lecture_02.md) |
+| 2 | Subgroups, $`S_3`$, and cyclic subgroups | [Lecture 2](lecture_02.md) |
 | 3 | Isomorphisms and homomorphisms | [Lecture 3](lecture_03.md) |
 | 4 | Kernels and normal subgroups | [Lecture 4](lecture_04.md) |
 | 5 | Cosets, Lagrange's theorem, and simple groups | [Lecture 5](lecture_05.md) |
@@ -58,9 +58,9 @@ For continuous reading, see **[Complete Notes: Lectures 1–12](all_lectures.md)
 ## Conventions
 
 - Groups are written multiplicatively unless an additive operation is more natural.
-- $H\leq G$ means that $H$ is a subgroup of $G$.
-- $H\trianglelefteq G$ means that $H$ is a normal subgroup of $G$.
-- $\mathbb{F}_p$ denotes the field with $p$ elements for prime $p$.
+- $`H\leq G`$ means that $`H`$ is a subgroup of $`G`$.
+- $`H\trianglelefteq G`$ means that $`H`$ is a normal subgroup of $`G`$.
+- $`\mathbb{F}_p`$ denotes the field with $`p`$ elements for prime $`p`$.
 - Displayed mathematics uses LaTeX syntax supported by GitHub Markdown.
 
 Corrections and improvements are welcome.

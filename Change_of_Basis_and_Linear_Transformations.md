@@ -10,25 +10,25 @@ More generally, if
 T:V\longrightarrow W
 ```
 
-is linear, its matrix depends on two choices: a basis of the domain $V$ and a basis of the codomain $W$. Changing either basis changes the matrix representation, even though the underlying linear transformation stays the same.
+is linear, its matrix depends on two choices: a basis of the domain $`V`$ and a basis of the codomain $`W`$. Changing either basis changes the matrix representation, even though the underlying linear transformation stays the same.
 
-Throughout, all vector spaces are over a fixed field $F$.
+Throughout, all vector spaces are over a fixed field $`F`$.
 
 ## 1. Coordinates Depend on the Basis
 
-Let $V$ be $n$-dimensional, and choose an ordered basis
+Let $`V`$ be $`n`$-dimensional, and choose an ordered basis
 
 ```math
 \mathcal B=(v_1,\ldots,v_n).
 ```
 
-Every $v\in V$ can be written uniquely as
+Every $`v\in V`$ can be written uniquely as
 
 ```math
 v=a_1v_1+\cdots+a_nv_n.
 ```
 
-Its coordinate column relative to $\mathcal B$ is
+Its coordinate column relative to $`\mathcal B`$ is
 
 ```math
 [v]_{\mathcal B}
@@ -50,7 +50,7 @@ Let
 \mathcal C=(w_1,\ldots,w_n)
 ```
 
-be another ordered basis of $V$. The same vector has a second coordinate column, $[v]_{\mathcal C}$.
+be another ordered basis of $`V`$. The same vector has a second coordinate column, $`[v]_{\mathcal C}`$.
 
 There is a unique invertible matrix
 
@@ -65,7 +65,7 @@ such that
 =P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
 ```
 
-for every $v\in V$. It is the change-of-coordinate matrix **from $\mathcal B$-coordinates to $\mathcal C$-coordinates**.
+for every $`v\in V`$. It is the change-of-coordinate matrix **from $`\mathcal B`$-coordinates to $`\mathcal C`$-coordinates**.
 
 The arrow in the subscript records the direction:
 
@@ -77,7 +77,7 @@ The arrow in the subscript records the direction:
 
 ## 3. Constructing the Matrix
 
-To construct $P_{\mathcal C\leftarrow\mathcal B}$, express each vector of $\mathcal B$ in the basis $\mathcal C$. These coordinate columns become the columns of the matrix:
+To construct $`P_{\mathcal C\leftarrow\mathcal B}`$, express each vector of $`\mathcal B`$ in the basis $`\mathcal C`$. These coordinate columns become the columns of the matrix:
 
 ```math
 P_{\mathcal C\leftarrow\mathcal B}
@@ -122,7 +122,7 @@ P_{\mathcal B\leftarrow\mathcal C}
 
 ## 4. Example: Changing Coordinates
 
-In $\mathbb R^2$, let
+In $`\mathbb R^2`$, let
 
 ```math
 \mathcal B=
@@ -189,7 +189,7 @@ P_{\mathcal C\leftarrow\mathcal B}
 \end{pmatrix}.
 ```
 
-For example, if $v=(4,2)$, then
+For example, if $`v=(4,2)`$, then
 
 ```math
 [v]_{\mathcal C}
@@ -242,9 +242,9 @@ It is characterized by
 =[T]_{\mathcal D\leftarrow\mathcal B}[v]_{\mathcal B}
 ```
 
-for every $v\in V$.
+for every $`v\in V`$.
 
-To compute it, write each image $T(v_j)$ in the basis $\mathcal D$:
+To compute it, write each image $`T(v_j)`$ in the basis $`\mathcal D`$:
 
 ```math
 [T]_{\mathcal D\leftarrow\mathcal B}
@@ -254,7 +254,7 @@ To compute it, write each image $T(v_j)$ in the basis $\mathcal D$:
 \end{bmatrix}.
 ```
 
-The domain basis determines the columns to which $T$ is applied; the codomain basis determines how those image vectors are recorded.
+The domain basis determines the columns to which $`T`$ is applied; the codomain basis determines how those image vectors are recorded.
 
 ## 6. Example: A Nonstandard Domain and Codomain Basis
 
@@ -320,10 +320,10 @@ Therefore
 
 ## 7. Changing Both Bases
 
-Suppose $[T]_{\mathcal D\leftarrow\mathcal B}$ is known, and we switch to
+Suppose $`[T]_{\mathcal D\leftarrow\mathcal B}`$ is known, and we switch to
 
-- a new domain basis $\mathcal B'$;
-- a new codomain basis $\mathcal D'$.
+- a new domain basis $`\mathcal B'`$;
+- a new codomain basis $`\mathcal D'`$.
 
 The new matrix is
 
@@ -337,9 +337,9 @@ P_{\mathcal B\leftarrow\mathcal B'}.
 
 Reading from right to left:
 
-1. $P_{\mathcal B\leftarrow\mathcal B'}$ converts new input coordinates to old input coordinates;
-2. $[T]_{\mathcal D\leftarrow\mathcal B}$ applies $T$ in the old coordinates;
-3. $P_{\mathcal D'\leftarrow\mathcal D}$ converts old output coordinates to new output coordinates.
+1. $`P_{\mathcal B\leftarrow\mathcal B'}`$ converts new input coordinates to old input coordinates;
+2. $`[T]_{\mathcal D\leftarrow\mathcal B}`$ applies $`T`$ in the old coordinates;
+3. $`P_{\mathcal D'\leftarrow\mathcal D}`$ converts old output coordinates to new output coordinates.
 
 Thus:
 
@@ -348,7 +348,7 @@ Thus:
 
 ## 8. Endomorphisms and Similarity
 
-If $T:V\to V$, use one basis for both the domain and codomain. Let
+If $`T:V\to V`$, use one basis for both the domain and codomain. Let
 
 ```math
 A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.
@@ -366,9 +366,9 @@ then
 A'=P^{-1}AP.
 ```
 
-The matrices $A$ and $A'$ are **similar**. They describe the same linear operator in different bases.
+The matrices $`A`$ and $`A'`$ are **similar**. They describe the same linear operator in different bases.
 
-If a source defines $P$ in the reverse direction, its formula will appear as $A'=PAP^{-1}$. Always determine what coordinate conversion $P$ performs before using a memorized formula.
+If a source defines $`P`$ in the reverse direction, its formula will appear as $`A'=PAP^{-1}`$. Always determine what coordinate conversion $`P`$ performs before using a memorized formula.
 
 ## 9. Conceptual Picture
 

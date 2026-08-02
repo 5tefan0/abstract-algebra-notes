@@ -2,7 +2,7 @@
 
 ## 1. Subgroups Above a Normal Subgroup
 
-Let $H \trianglelefteq G$, and let
+Let $`H \trianglelefteq G`$, and let
 
 ```math
 \pi:G\longrightarrow G/H,\qquad g\longmapsto gH
@@ -14,23 +14,23 @@ be the natural quotient homomorphism. Suppose that
 H\leq K\leq G.
 ```
 
-Because $H$ is normal in $G$, it is automatically normal in $K$: for every $k\in K$,
+Because $`H`$ is normal in $`G`$, it is automatically normal in $`K`$: for every $`k\in K`$,
 
 ```math
 kHk^{-1}=H.
 ```
 
-Thus the quotient $K/H$ is defined. Its elements are precisely the $H$-cosets represented by elements of $K$, so
+Thus the quotient $`K/H`$ is defined. Its elements are precisely the $`H`$-cosets represented by elements of $`K`$, so
 
 ```math
 K/H=\pi(K)\leq G/H.
 ```
 
-This constructs a subgroup of $G/H$ from every subgroup of $G$ containing $H$.
+This constructs a subgroup of $`G/H`$ from every subgroup of $`G`$ containing $`H`$.
 
 ## 2. The Subgroup Correspondence Theorem
 
-**Theorem (Correspondence Theorem).** If $H\trianglelefteq G$, then there is a bijection
+**Theorem (Correspondence Theorem).** If $`H\trianglelefteq G`$, then there is a bijection
 
 ```math
 \left\{K\leq G:H\leq K\right\}
@@ -44,19 +44,19 @@ given by
 K\longmapsto K/H=\pi(K),\qquad L\longmapsto \pi^{-1}(L).
 ```
 
-**Why the inverse image is a subgroup.** If $L\leq G/H$, then
+**Why the inverse image is a subgroup.** If $`L\leq G/H`$, then
 
 ```math
 \pi^{-1}(L)=\{g\in G:gH\in L\}
 ```
 
-contains $H=\ker\pi$. If $a,b\in\pi^{-1}(L)$, then
+contains $`H=\ker\pi`$. If $`a,b\in\pi^{-1}(L)`$, then
 
 ```math
 \pi(ab^{-1})=\pi(a)\pi(b)^{-1}\in L,
 ```
 
-so $ab^{-1}\in\pi^{-1}(L)$. Hence the subgroup test shows that $\pi^{-1}(L)\leq G$.
+so $`ab^{-1}\in\pi^{-1}(L)`$. Hence the subgroup test shows that $`\pi^{-1}(L)\leq G`$.
 
 The two constructions are inverse because
 
@@ -71,29 +71,29 @@ The correspondence preserves inclusion. It also preserves normality:
 K\trianglelefteq G\iff K/H\trianglelefteq G/H.
 ```
 
-This is one way that quotient groups simplify structural questions about $G$.
+This is one way that quotient groups simplify structural questions about $`G`$.
 
-### Example: $p\mathbb Z$ Is Maximal in $\mathbb Z$
+### Example: $`p\mathbb Z`$ Is Maximal in $`\mathbb Z`$
 
-Let $p$ be prime. If
+Let $`p`$ be prime. If
 
 ```math
 p\mathbb Z\leq K\leq\mathbb Z,
 ```
 
-then $K/p\mathbb Z$ is a subgroup of $\mathbb Z/p\mathbb Z$. Since the quotient has prime order, its only subgroups are $\{\bar 0\}$ and the entire group. Therefore
+then $`K/p\mathbb Z`$ is a subgroup of $`\mathbb Z/p\mathbb Z`$. Since the quotient has prime order, its only subgroups are $`\{\bar 0\}`$ and the entire group. Therefore
 
 ```math
 K=p\mathbb Z\quad\text{or}\quad K=\mathbb Z.
 ```
 
-Thus $p\mathbb Z$ is a **maximal proper subgroup** of $\mathbb Z$: no proper subgroup lies strictly between $p\mathbb Z$ and $\mathbb Z$.
+Thus $`p\mathbb Z`$ is a **maximal proper subgroup** of $`\mathbb Z`$: no proper subgroup lies strictly between $`p\mathbb Z`$ and $`\mathbb Z`$.
 
 ## 3. From Abelian Groups to Vector Spaces
 
-A real vector space is first of all an abelian group $(V,+)$, with identity $0_V$ and inverse $-v$. It also has scalar multiplication by real numbers. The abstract theory retains only addition and scalar multiplication; geometric structures such as a dot product, length, angle, or topology are extra data.
+A real vector space is first of all an abelian group $`(V,+)`$, with identity $`0_V`$ and inverse $`-v`$. It also has scalar multiplication by real numbers. The abstract theory retains only addition and scalar multiplication; geometric structures such as a dot product, length, angle, or topology are extra data.
 
-For example, $\mathbb R^n$ is a real vector space under componentwise operations:
+For example, $`\mathbb R^n`$ is a real vector space under componentwise operations:
 
 ```math
 (a_1,\ldots,a_n)+(b_1,\ldots,b_n)
@@ -104,14 +104,14 @@ For example, $\mathbb R^n$ is a real vector space under componentwise operations
 c(a_1,\ldots,a_n)=(ca_1,\ldots,ca_n).
 ```
 
-To develop the same theory over scalars other than $\mathbb R$ or $\mathbb C$, we first isolate the algebraic properties that scalars must satisfy.
+To develop the same theory over scalars other than $`\mathbb R`$ or $`\mathbb C`$, we first isolate the algebraic properties that scalars must satisfy.
 
 ## 4. Fields
 
-**Definition.** A **field** $F$ is a set with addition and multiplication such that:
+**Definition.** A **field** $`F`$ is a set with addition and multiplication such that:
 
-1. $(F,+)$ is an abelian group with identity $0$.
-2. $(F\setminus\{0\},\cdot)$ is an abelian group with identity $1$, where $1\neq0$.
+1. $`(F,+)`$ is an abelian group with identity $`0`$.
+2. $`(F\setminus\{0\},\cdot)`$ is an abelian group with identity $`1`$, where $`1\neq0`$.
 3. Multiplication distributes over addition:
 
    ```math
@@ -120,9 +120,9 @@ To develop the same theory over scalars other than $\mathbb R$ or $\mathbb C$, w
 
 Thus every nonzero scalar has a multiplicative inverse. This is the decisive property that allows division by a nonzero coefficient in linear algebra.
 
-**Examples.** $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields. The integers $\mathbb Z$ are not a field because, for example, $2^{-1}\notin\mathbb Z$.
+**Examples.** $`\mathbb Q`$, $`\mathbb R`$, and $`\mathbb C`$ are fields. The integers $`\mathbb Z`$ are not a field because, for example, $`2^{-1}\notin\mathbb Z`$.
 
-**Definition.** A subset $E\subseteq F$ is a **subfield** if it contains $0$ and $1$ and is closed under addition, additive inverses, multiplication, and inverses of nonzero elements. For example,
+**Definition.** A subset $`E\subseteq F`$ is a **subfield** if it contains $`0`$ and $`1`$ and is closed under addition, additive inverses, multiplication, and inverses of nonzero elements. For example,
 
 ```math
 \mathbb Q\subseteq\mathbb R\subseteq\mathbb C
@@ -130,7 +130,7 @@ Thus every nonzero scalar has a multiplicative inverse. This is the decisive pro
 
 are subfield inclusions.
 
-## 5. Prime Fields $\mathbb{F}_p$
+## 5. Prime Fields $`\mathbb{F}_p`$
 
 The smallest possible field has two elements:
 
@@ -138,29 +138,29 @@ The smallest possible field has two elements:
 \mathbb{F}_2=\{\bar0,\bar1\},\qquad \bar1+\bar1=\bar0.
 ```
 
-More generally, if $p$ is prime, then
+More generally, if $`p`$ is prime, then
 
 ```math
 \mathbb{F}_p=\mathbb Z/p\mathbb Z
 ```
 
-is a field under addition and multiplication modulo $p$.
+is a field under addition and multiplication modulo $`p`$.
 
-**Proof of multiplicative inverses.** Let $\bar a\neq\bar0$, so $p\nmid a$. Since $p\mathbb Z$ is maximal and $a\notin p\mathbb Z$, the subgroup generated by $p$ and $a$ is all of $\mathbb Z$:
+**Proof of multiplicative inverses.** Let $`\bar a\neq\bar0`$, so $`p\nmid a`$. Since $`p\mathbb Z`$ is maximal and $`a\notin p\mathbb Z`$, the subgroup generated by $`p`$ and $`a`$ is all of $`\mathbb Z`$:
 
 ```math
 p\mathbb Z+a\mathbb Z=\mathbb Z.
 ```
 
-Hence there are integers $r,s$ with
+Hence there are integers $`r,s`$ with
 
 ```math
 rp+sa=1.
 ```
 
-Reducing modulo $p$ gives $\bar s\bar a=\bar1$, so $\bar s=\bar a^{-1}$. This is Bézout's identity viewed through the subgroup correspondence. $\square$
+Reducing modulo $`p`$ gives $`\bar s\bar a=\bar1`$, so $`\bar s=\bar a^{-1}`$. This is Bézout's identity viewed through the subgroup correspondence. $`\square`$
 
-If $n$ is composite, $\mathbb Z/n\mathbb Z$ is not a field. If $n=ab$ with $1<a,b<n$, then
+If $`n`$ is composite, $`\mathbb Z/n\mathbb Z`$ is not a field. If $`n=ab`$ with $`1<a,b<n`$, then
 
 ```math
 \bar a\bar b=\bar0
@@ -170,61 +170,61 @@ although neither factor is zero. Such nonzero **zero divisors** cannot occur in 
 
 ## 6. Characteristic and Finite Fields
 
-In every field one can repeatedly add $1$:
+In every field one can repeatedly add $`1`$:
 
 ```math
 1,\quad 1+1,\quad 1+1+1,\quad\ldots
 ```
 
-In a subfield of $\mathbb C$, these sums never return to $0$. In $\mathbb{F}_p$, however,
+In a subfield of $`\mathbb C`$, these sums never return to $`0`$. In $`\mathbb{F}_p`$, however,
 
 ```math
 \underbrace{1+\cdots+1}_{p\text{ times}}=0.
 ```
 
-**Definition.** The **characteristic** of a field $F$ is the smallest positive integer $n$ such that $n\cdot1_F=0$, if such an integer exists; otherwise it is $0$.
+**Definition.** The **characteristic** of a field $`F`$ is the smallest positive integer $`n`$ such that $`n\cdot1_F=0`$, if such an integer exists; otherwise it is $`0`$.
 
-The characteristic of a field is either $0$ or a prime. Thus $\operatorname{char}(\mathbb Q)=\operatorname{char}(\mathbb R)=\operatorname{char}(\mathbb C)=0$, while $\operatorname{char}(\mathbb{F}_p)=p$.
+The characteristic of a field is either $`0`$ or a prime. Thus $`\operatorname{char}(\mathbb Q)=\operatorname{char}(\mathbb R)=\operatorname{char}(\mathbb C)=0`$, while $`\operatorname{char}(\mathbb{F}_p)=p`$.
 
 The finite-field classification, to be proved later in the course, says:
 
-- Every finite field has $p^n$ elements for some prime $p$ and $n\geq1$.
-- For every prime power $p^n$, there exists a field with $p^n$ elements.
-- It is unique up to isomorphism and is denoted $\mathbb{F}_{p^n}$.
+- Every finite field has $`p^n`$ elements for some prime $`p`$ and $`n\geq1`$.
+- For every prime power $`p^n`$, there exists a field with $`p^n`$ elements.
+- It is unique up to isomorphism and is denoted $`\mathbb{F}_{p^n}`$.
 
 ## 7. Vector Spaces over an Arbitrary Field
 
-**Definition.** A **vector space over $F$** is an abelian group $(V,+)$ equipped with scalar multiplication
+**Definition.** A **vector space over $`F`$** is an abelian group $`(V,+)`$ equipped with scalar multiplication
 
 ```math
 F\times V\longrightarrow V,\qquad (a,v)\longmapsto av,
 ```
 
-satisfying, for $a,b\in F$ and $v,w\in V$,
+satisfying, for $`a,b\in F`$ and $`v,w\in V`$,
 
 ```math
 1v=v,\qquad (ab)v=a(bv),\qquad
 a(v+w)=av+aw,\qquad (a+b)v=av+bv.
 ```
 
-These axioms imply $0_Fv=0_V$ and $a0_V=0_V$.
+These axioms imply $`0_Fv=0_V`$ and $`a0_V=0_V`$.
 
-**Examples.** For any field $F$:
+**Examples.** For any field $`F`$:
 
-- The zero space $\{0\}$ is an $F$-vector space.
-- $F$ is a one-dimensional vector space over itself.
-- $F^n$ is a vector space under componentwise operations.
-- $F[x]$, the set of polynomials with coefficients in $F$, is an $F$-vector space under polynomial addition and scalar multiplication.
+- The zero space $`\{0\}`$ is an $`F`$-vector space.
+- $`F`$ is a one-dimensional vector space over itself.
+- $`F^n`$ is a vector space under componentwise operations.
+- $`F[x]`$, the set of polynomials with coefficients in $`F`$, is an $`F`$-vector space under polynomial addition and scalar multiplication.
 
-The same set can have different vector-space structures over different fields. For instance, $\mathbb C$ is one-dimensional over $\mathbb C$ but two-dimensional over $\mathbb R$.
+The same set can have different vector-space structures over different fields. For instance, $`\mathbb C`$ is one-dimensional over $`\mathbb C`$ but two-dimensional over $`\mathbb R`$.
 
 ## 8. Subspaces, Linear Maps, Kernels, and Images
 
-**Definition.** A subset $W\subseteq V$ is an $F$-**subspace** if it contains $0$ and is closed under addition and scalar multiplication. Equivalently, $aw+bw'\in W$ whenever $w,w'\in W$ and $a,b\in F$.
+**Definition.** A subset $`W\subseteq V`$ is an $`F`$-**subspace** if it contains $`0`$ and is closed under addition and scalar multiplication. Equivalently, $`aw+bw'\in W`$ whenever $`w,w'\in W`$ and $`a,b\in F`$.
 
-Being an additive subgroup is not enough. For example, $\mathbb Z$ is an additive subgroup of the real vector space $\mathbb R$, but it is not an $\mathbb R$-subspace because $\sqrt2\cdot1\notin\mathbb Z$.
+Being an additive subgroup is not enough. For example, $`\mathbb Z`$ is an additive subgroup of the real vector space $`\mathbb R`$, but it is not an $`\mathbb R`$-subspace because $`\sqrt2\cdot1\notin\mathbb Z`$.
 
-**Definition.** A map $T:V\to W$ between vector spaces over the same field $F$ is **linear** if
+**Definition.** A map $`T:V\to W`$ between vector spaces over the same field $`F`$ is **linear** if
 
 ```math
 T(v+v')=T(v)+T(v'),\qquad T(av)=aT(v).
@@ -243,11 +243,11 @@ Its kernel and image are
 \operatorname{Im}T=\{T(v):v\in V\}.
 ```
 
-They are subspaces of $V$ and $W$, respectively. A bijective linear map is a vector-space **isomorphism**.
+They are subspaces of $`V`$ and $`W`$, respectively. A bijective linear map is a vector-space **isomorphism**.
 
 ## 9. Quotient Vector Spaces
 
-If $W\leq V$ is a subspace, the additive group of $V$ is abelian, so $W$ is normal. The quotient group $V/W$ becomes an $F$-vector space by
+If $`W\leq V`$ is a subspace, the additive group of $`V`$ is abelian, so $`W`$ is normal. The quotient group $`V/W`$ becomes an $`F`$-vector space by
 
 ```math
 (v+W)+(v'+W)=(v+v')+W,
@@ -255,13 +255,13 @@ If $W\leq V$ is a subspace, the additive group of $V$ is abelian, so $W$ is norm
 a(v+W)=av+W.
 ```
 
-The scalar multiplication is well-defined because $v-v'\in W$ implies $a(v-v')\in W$. The natural projection
+The scalar multiplication is well-defined because $`v-v'\in W`$ implies $`a(v-v')\in W`$. The natural projection
 
 ```math
 \pi:V\to V/W,\qquad v\mapsto v+W
 ```
 
-is linear, surjective, and has kernel $W$.
+is linear, surjective, and has kernel $`W`$.
 
 Thus the group-theoretic pattern continues unchanged:
 
