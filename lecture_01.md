@@ -13,7 +13,9 @@ As a real vector space, $M_n(\mathbb{R})$ has dimension $n^2$. The two vector-sp
 
 Unlike arbitrary rectangular matrices, square matrices support **multiplication**. Given $A, B \in M_n(\mathbb{R})$, their product $C = AB$ is defined by
 
-$$C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.$$
+```math
+C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.
+```
 
 **Interpretation.** Matrices represent linear operators on $\mathbb{R}^n$. If $A$ represents the linear transformation $T$ and $B$ represents $S$, then $AB$ represents the composition $T \circ S$ (first apply $S$, then $T$).
 
@@ -26,9 +28,13 @@ $$C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.$$
 
 **Example of non-commutativity (2×2):**
 
-$$A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}.$$
+```math
+A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}.
+```
 
-$$AB = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qquad BA = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}.$$
+```math
+AB = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qquad BA = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}.
+```
 
 So $AB \neq BA$.
 
@@ -36,20 +42,28 @@ So $AB \neq BA$.
 
 **Definition.** A matrix $A \in M_n(\mathbb{R})$ is **invertible** if there exists a matrix $B \in M_n(\mathbb{R})$ such that
 
-$$AB = BA = I_n.$$
+```math
+AB = BA = I_n.
+```
 
 Such a $B$ is called the **inverse** of $A$ and is denoted $A^{-1}$.
 
 **Uniqueness of inverses.** If $AB = I$ and $AC = I$, then $B = C$. *Proof:* From $AB = AC = I$, multiply on the left by $B$:
 
-$$B(AB) = B(AC) \implies (BA)B = (BA)C \implies IB = IC \implies B = C.$$
+```math
+B(AB) = B(AC) \implies (BA)B = (BA)C \implies IB = IC \implies B = C.
+```
 
 **2×2 case.** For $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $A$ is invertible if and only if $\det(A) = ad - bc \neq 0$, and
 
-$$A^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.$$
+```math
+A^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.
+```
 
 *Verification:*
-$$A \cdot \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \begin{pmatrix} ad - bc & 0 \\ 0 & ad - bc \end{pmatrix} = (ad-bc)\, I.$$
+```math
+A \cdot \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \begin{pmatrix} ad - bc & 0 \\ 0 & ad - bc \end{pmatrix} = (ad-bc)\, I.
+```
 
 Dividing by $ad - bc \neq 0$ gives $A^{-1}$.
 
@@ -67,7 +81,9 @@ The formula $\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n A_
 
 **Definition.**
 
-$$\mathrm{GL}_n(\mathbb{R}) = \{ A \in M_n(\mathbb{R}) : \det(A) \neq 0 \} = \{ A \in M_n(\mathbb{R}) : A \text{ is invertible} \}.$$
+```math
+\mathrm{GL}_n(\mathbb{R}) = \{ A \in M_n(\mathbb{R}) : \det(A) \neq 0 \} = \{ A \in M_n(\mathbb{R}) : A \text{ is invertible} \}.
+```
 
 **Properties of $\mathrm{GL}_n(\mathbb{R})$:**
 
@@ -87,7 +103,9 @@ $$\mathrm{GL}_n(\mathbb{R}) = \{ A \in M_n(\mathbb{R}) : \det(A) \neq 0 \} = \{ 
 
 **Definition.** A **group** is a set $G$ together with a binary operation (called **multiplication** or the **group law**)
 
-$$G \times G \to G, \quad (g, h) \mapsto g \cdot h,$$
+```math
+G \times G \to G, \quad (g, h) \mapsto g \cdot h,
+```
 
 satisfying the following four axioms:
 
@@ -113,7 +131,9 @@ A group $G$ is **abelian** (or **commutative**) if $g \cdot h = h \cdot g$ for a
 
 Let $T = \{1, 2, \ldots, n\}$. The **symmetric group** $S_n$ is the group of all bijections $T \to T$ (permutations) under composition.
 
-$$|S_n| = n!$$
+```math
+|S_n| = n!
+```
 
 because there are $n$ choices for where to send $1$, then $n-1$ choices for $2$, etc.
 

@@ -51,13 +51,17 @@ The **Klein four-group** is a group of order 4 with every non-identity element h
 
 **Realization 1 (in $S_4$):** Let
 
-$$\tau_1 = (1\,2)(3\,4), \quad \tau_2 = (1\,3)(2\,4), \quad \tau_3 = \tau_1 \tau_2 = (1\,4)(2\,3).$$
+```math
+\tau_1 = (1\,2)(3\,4), \quad \tau_2 = (1\,3)(2\,4), \quad \tau_3 = \tau_1 \tau_2 = (1\,4)(2\,3).
+```
 
 Then $V_4 = \{e, \tau_1, \tau_2, \tau_3\}$ with multiplication: $\tau_i^2 = e$ and any two distinct $\tau_i, \tau_j$ multiply to give the third.
 
 **Realization 2 (in $\mathrm{GL}_2(\mathbb{R})$):**
 
-$$V_4 = \left\{ \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}, \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \right\}.$$
+```math
+V_4 = \left\{ \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}, \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \right\}.
+```
 
 Both realizations have the same multiplication table, so they are isomorphic.
 
@@ -78,7 +82,9 @@ These are **necessary** but not always **sufficient** conditions.
 
 The set of all automorphisms of $G$ forms a group:
 
-$$\mathrm{Aut}(G) = \{ f: G \xrightarrow{\sim} G \mid f \text{ is an isomorphism} \}$$
+```math
+\mathrm{Aut}(G) = \{ f: G \xrightarrow{\sim} G \mid f \text{ is an isomorphism} \}
+```
 
 under composition. One must verify:
 - Composition of isomorphisms is an isomorphism. ✓
@@ -91,7 +97,9 @@ Isomorphisms require bijectivity. We can relax this:
 
 **Definition.** A **homomorphism** from group $G_1$ to group $G_2$ is a map $f: G_1 \to G_2$ satisfying
 
-$$f(x \cdot y) = f(x) \cdot f(y) \quad \text{for all } x, y \in G_1.$$
+```math
+f(x \cdot y) = f(x) \cdot f(y) \quad \text{for all } x, y \in G_1.
+```
 
 Every isomorphism is a homomorphism; the converse is false in general.
 
@@ -105,14 +113,18 @@ Every isomorphism is a homomorphism; the converse is false in general.
 3. **Inclusion:** The embedding $S_k \hookrightarrow S_n$ (extending permutations by fixing extra letters) is an injective homomorphism that is not surjective (for $k < n$).
 
 4. **Parity map:** $f: \mathbb{Z} \to S_2 = \{e, \tau\}$ defined by
-   $$f(n) = \begin{cases} e & \text{if } n \text{ is even} \\ \tau & \text{if } n \text{ is odd}\end{cases}$$
+   ```math
+   f(n) = \begin{cases} e & \text{if } n \text{ is even} \\ \tau & \text{if } n \text{ is odd}\end{cases}
+   ```
    is a homomorphism: even + even = even, odd + odd = even, even + odd = odd. ✓
 
 ## 7. The Image of a Homomorphism
 
 **Definition.** For a homomorphism $f: G_1 \to G_2$, the **image** is
 
-$$\mathrm{Im}(f) = \{ f(x) : x \in G_1 \} \subseteq G_2.$$
+```math
+\mathrm{Im}(f) = \{ f(x) : x \in G_1 \} \subseteq G_2.
+```
 
 The image is a **subgroup** of $G_2$. (It is closed under multiplication, contains $e_{G_2} = f(e_{G_1})$, and contains inverses $f(g)^{-1} = f(g^{-1})$.)
 

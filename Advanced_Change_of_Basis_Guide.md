@@ -8,13 +8,17 @@ This distinction explains why one linear map can have many different matrices an
 
 Throughout, let $V$ and $W$ be finite-dimensional vector spaces over a field $F$, with
 
-$$\dim_F V=n,\qquad \dim_F W=m.$$
+```math
+\dim_F V=n,\qquad \dim_F W=m.
+```
 
 ## 1. The Abstract Picture
 
 Suppose
 
-$$T:V\longrightarrow W$$
+```math
+T:V\longrightarrow W
+```
 
 is linear. There are three separate kinds of objects:
 
@@ -28,17 +32,23 @@ The spaces and the map exist independently of coordinates. A basis makes them co
 
 Choose ordered bases
 
-$$\mathcal B=(v_1,\ldots,v_n)\quad\text{of }V,$$
+```math
+\mathcal B=(v_1,\ldots,v_n)\quad\text{of }V,
+```
 
-$$\mathcal D=(w_1,\ldots,w_m)\quad\text{of }W.$$
+```math
+\mathcal D=(w_1,\ldots,w_m)\quad\text{of }W.
+```
 
 Every $v\in V$ has a unique expression
 
-$$v=a_1v_1+\cdots+a_nv_n.$$
+```math
+v=a_1v_1+\cdots+a_nv_n.
+```
 
 Its coordinate column is
 
-$$
+```math
 [v]_{\mathcal B}
 =
 \begin{pmatrix}
@@ -47,16 +57,20 @@ a_1\\
 a_n
 \end{pmatrix}
 \in F^n.
-$$
+```
 
 The coordinate map
 
-$$\phi_{\mathcal B}:V\longrightarrow F^n,\qquad
-\phi_{\mathcal B}(v)=[v]_{\mathcal B}$$
+```math
+\phi_{\mathcal B}:V\longrightarrow F^n,\qquad
+\phi_{\mathcal B}(v)=[v]_{\mathcal B}
+```
 
 is a linear isomorphism. Similarly,
 
-$$\phi_{\mathcal D}:W\longrightarrow F^m$$
+```math
+\phi_{\mathcal D}:W\longrightarrow F^m
+```
 
 is a linear isomorphism.
 
@@ -78,17 +92,17 @@ The abstract map and its matrix fit into the diagram
 
 The matrix in these coordinates is
 
-$$
+```math
 A=[T]_{\mathcal D\leftarrow\mathcal B}
 =\phi_{\mathcal D}\circ T\circ\phi_{\mathcal B}^{-1}.
-$$
+```
 
 Equivalently, for every $v\in V$,
 
-$$
+```math
 [T(v)]_{\mathcal D}
 =[T]_{\mathcal D\leftarrow\mathcal B}[v]_{\mathcal B}.
-$$
+```
 
 This identity is the fundamental definition of a matrix representation.
 
@@ -96,20 +110,20 @@ This identity is the fundamental definition of a matrix representation.
 
 For each basis vector $v_j\in\mathcal B$, write
 
-$$T(v_j)=\sum_{i=1}^m a_{ij}w_i.$$
+```math
+T(v_j)=\sum_{i=1}^m a_{ij}w_i.
+```
 
 Then
 
-$$
+```math
 [T]_{\mathcal D\leftarrow\mathcal B}
 =
-\begin{pmatrix}
-|&&|\\
-[T(v_1)]_{\mathcal D}&\cdots&[T(v_n)]_{\mathcal D}\\
-|&&|
-\end{pmatrix}
+\begin{bmatrix}
+[T(v_1)]_{\mathcal D}&\cdots&[T(v_n)]_{\mathcal D}
+\end{bmatrix}
 =(a_{ij}).
-$$
+```
 
 Thus the $j$th column is the $\mathcal D$-coordinate vector of $T(v_j)$.
 
@@ -117,20 +131,26 @@ Thus the $j$th column is the $\mathcal D$-coordinate vector of $T(v_j)$.
 
 Consider
 
-$$T:\mathbb R^3\longrightarrow\mathbb R^2,\qquad
-T(x,y,z)=(x+z,\,2y-z).$$
+```math
+T:\mathbb R^3\longrightarrow\mathbb R^2,\qquad
+T(x,y,z)=(x+z,\,2y-z).
+```
 
 Use the standard basis
 
-$$\mathcal B=(e_1,e_2,e_3)$$
+```math
+\mathcal B=(e_1,e_2,e_3)
+```
 
 of $\mathbb R^3$ and the basis
 
-$$\mathcal D=\bigl((1,1),(1,-1)\bigr)$$
+```math
+\mathcal D=\bigl((1,1),(1,-1)\bigr)
+```
 
 of $\mathbb R^2$. We compute
 
-$$
+```math
 T(e_1)=(1,0),\qquad
 [T(e_1)]_{\mathcal D}
 =
@@ -138,9 +158,9 @@ T(e_1)=(1,0),\qquad
 \tfrac12\\
 \tfrac12
 \end{pmatrix},
-$$
+```
 
-$$
+```math
 T(e_2)=(0,2),\qquad
 [T(e_2)]_{\mathcal D}
 =
@@ -148,11 +168,11 @@ T(e_2)=(0,2),\qquad
 1\\
 -1
 \end{pmatrix},
-$$
+```
 
 and
 
-$$
+```math
 T(e_3)=(1,-1),\qquad
 [T(e_3)]_{\mathcal D}
 =
@@ -160,18 +180,18 @@ T(e_3)=(1,-1),\qquad
 0\\
 1
 \end{pmatrix}.
-$$
+```
 
 Therefore
 
-$$
+```math
 [T]_{\mathcal D\leftarrow\mathcal B}
 =
 \begin{pmatrix}
 \tfrac12&1&0\\
 \tfrac12&-1&1
 \end{pmatrix}.
-$$
+```
 
 Nothing requires the domain and codomain to have the same dimension. The matrix has $m$ rows and $n$ columns because $T:F^n\to F^m$ after coordinates are chosen.
 
@@ -179,36 +199,34 @@ Nothing requires the domain and codomain to have the same dimension. The matrix 
 
 Let $\mathcal B$ and $\mathcal B'$ be ordered bases of $V$. Define
 
-$$
+```math
 P_{\mathcal B\leftarrow\mathcal B'}
 =\phi_{\mathcal B}\circ\phi_{\mathcal B'}^{-1}.
-$$
+```
 
 It converts $\mathcal B'$-coordinates into $\mathcal B$-coordinates:
 
-$$
+```math
 [v]_{\mathcal B}
 =P_{\mathcal B\leftarrow\mathcal B'}[v]_{\mathcal B'}.
-$$
+```
 
 Its columns are
 
-$$
+```math
 P_{\mathcal B\leftarrow\mathcal B'}
 =
-\begin{pmatrix}
-|&&|\\
-[v_1']_{\mathcal B}&\cdots&[v_n']_{\mathcal B}\\
-|&&|
-\end{pmatrix}.
-$$
+\begin{bmatrix}
+[v_1']_{\mathcal B}&\cdots&[v_n']_{\mathcal B}
+\end{bmatrix}.
+```
 
 Reversing the direction gives the inverse matrix:
 
-$$
+```math
 P_{\mathcal B'\leftarrow\mathcal B}
 =P_{\mathcal B\leftarrow\mathcal B'}^{-1}.
-$$
+```
 
 Writing the direction in the subscript prevents the most common inverse error.
 
@@ -227,13 +245,13 @@ Starting with $[v]_{\mathcal B'}$:
 
 Therefore
 
-$$
+```math
 [T]_{\mathcal D'\leftarrow\mathcal B'}
 =
 P_{\mathcal D'\leftarrow\mathcal D}
 [T]_{\mathcal D\leftarrow\mathcal B}
 P_{\mathcal B\leftarrow\mathcal B'}.
-$$
+```
 
 The order is forced by function composition: the rightmost matrix acts first.
 
@@ -241,15 +259,21 @@ The order is forced by function composition: the rightmost matrix acts first.
 
 Now suppose $T:V\to V$, and use the same basis in the domain and codomain. Let
 
-$$A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.$$
+```math
+A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.
+```
 
 Set
 
-$$P=P_{\mathcal B\leftarrow\mathcal B'}.$$
+```math
+P=P_{\mathcal B\leftarrow\mathcal B'}.
+```
 
 The general formula becomes
 
-$$A'=P^{-1}AP.$$
+```math
+A'=P^{-1}AP.
+```
 
 Thus $A$ and $A'$ are similar, or conjugate, matrices. They represent the same abstract endomorphism in different coordinate systems.
 
@@ -309,12 +333,12 @@ When solving a change-of-basis problem:
 
 The general identity
 
-$$
+```math
 [T]_{\mathcal D'\leftarrow\mathcal B'}
 =
 P_{\mathcal D'\leftarrow\mathcal D}
 [T]_{\mathcal D\leftarrow\mathcal B}
 P_{\mathcal B\leftarrow\mathcal B'}
-$$
+```
 
 contains the usual change-of-basis and similarity formulas as special cases.

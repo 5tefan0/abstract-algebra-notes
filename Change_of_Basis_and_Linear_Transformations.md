@@ -6,7 +6,9 @@ A **change-of-basis matrix** converts the coordinate column of a vector from one
 
 More generally, if
 
-$$T:V\longrightarrow W$$
+```math
+T:V\longrightarrow W
+```
 
 is linear, its matrix depends on two choices: a basis of the domain $V$ and a basis of the codomain $W$. Changing either basis changes the matrix representation, even though the underlying linear transformation stays the same.
 
@@ -16,15 +18,19 @@ Throughout, all vector spaces are over a fixed field $F$.
 
 Let $V$ be $n$-dimensional, and choose an ordered basis
 
-$$\mathcal B=(v_1,\ldots,v_n).$$
+```math
+\mathcal B=(v_1,\ldots,v_n).
+```
 
 Every $v\in V$ can be written uniquely as
 
-$$v=a_1v_1+\cdots+a_nv_n.$$
+```math
+v=a_1v_1+\cdots+a_nv_n.
+```
 
 Its coordinate column relative to $\mathcal B$ is
 
-$$
+```math
 [v]_{\mathcal B}
 =
 \begin{pmatrix}
@@ -32,7 +38,7 @@ a_1\\
 \vdots\\
 a_n
 \end{pmatrix}.
-$$
+```
 
 The coordinate column is not the vector itself. It records the coefficients of the vector relative to a particular basis.
 
@@ -40,52 +46,56 @@ The coordinate column is not the vector itself. It records the coefficients of t
 
 Let
 
-$$\mathcal C=(w_1,\ldots,w_n)$$
+```math
+\mathcal C=(w_1,\ldots,w_n)
+```
 
 be another ordered basis of $V$. The same vector has a second coordinate column, $[v]_{\mathcal C}$.
 
 There is a unique invertible matrix
 
-$$P_{\mathcal C\leftarrow\mathcal B}$$
+```math
+P_{\mathcal C\leftarrow\mathcal B}
+```
 
 such that
 
-$$
+```math
 [v]_{\mathcal C}
 =P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
-$$
+```
 
 for every $v\in V$. It is the change-of-coordinate matrix **from $\mathcal B$-coordinates to $\mathcal C$-coordinates**.
 
 The arrow in the subscript records the direction:
 
-$$
+```math
 \mathcal B\text{-coordinates}
 \xrightarrow{\;P_{\mathcal C\leftarrow\mathcal B}\;}
 \mathcal C\text{-coordinates}.
-$$
+```
 
 ## 3. Constructing the Matrix
 
 To construct $P_{\mathcal C\leftarrow\mathcal B}$, express each vector of $\mathcal B$ in the basis $\mathcal C$. These coordinate columns become the columns of the matrix:
 
-$$
+```math
 P_{\mathcal C\leftarrow\mathcal B}
 =
-\begin{pmatrix}
-|&&|\\
-[v_1]_{\mathcal C}&\cdots&[v_n]_{\mathcal C}\\
-|&&|
-\end{pmatrix}.
-$$
+\begin{bmatrix}
+[v_1]_{\mathcal C}&\cdots&[v_n]_{\mathcal C}
+\end{bmatrix}.
+```
 
 Why does this work? If
 
-$$v=a_1v_1+\cdots+a_nv_n,$$
+```math
+v=a_1v_1+\cdots+a_nv_n,
+```
 
 then
 
-$$
+```math
 \begin{aligned}
 P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
 &=
@@ -101,40 +111,40 @@ a_1[v_1]_{\mathcal C}
 a_n[v_n]_{\mathcal C}\\
 &=[v]_{\mathcal C}.
 \end{aligned}
-$$
+```
 
 The reverse change is the inverse matrix:
 
-$$
+```math
 P_{\mathcal B\leftarrow\mathcal C}
 =P_{\mathcal C\leftarrow\mathcal B}^{-1}.
-$$
+```
 
 ## 4. Example: Changing Coordinates
 
 In $\mathbb R^2$, let
 
-$$
+```math
 \mathcal B=
 \left(
 \begin{pmatrix}1\\0\end{pmatrix},
 \begin{pmatrix}0\\1\end{pmatrix}
 \right)
-$$
+```
 
 be the standard basis, and let
 
-$$
+```math
 \mathcal C=
 \left(
 \begin{pmatrix}1\\1\end{pmatrix},
 \begin{pmatrix}1\\-1\end{pmatrix}
 \right).
-$$
+```
 
 Since
 
-$$
+```math
 \begin{pmatrix}1\\0\end{pmatrix}
 =
 \frac12
@@ -142,11 +152,11 @@ $$
 +
 \frac12
 \begin{pmatrix}1\\-1\end{pmatrix},
-$$
+```
 
 and
 
-$$
+```math
 \begin{pmatrix}0\\1\end{pmatrix}
 =
 \frac12
@@ -154,11 +164,11 @@ $$
 -
 \frac12
 \begin{pmatrix}1\\-1\end{pmatrix},
-$$
+```
 
 we have
 
-$$
+```math
 [e_1]_{\mathcal C}
 =
 \begin{pmatrix}\tfrac12\\\tfrac12\end{pmatrix},
@@ -166,22 +176,22 @@ $$
 [e_2]_{\mathcal C}
 =
 \begin{pmatrix}\tfrac12\\-\tfrac12\end{pmatrix}.
-$$
+```
 
 Therefore
 
-$$
+```math
 P_{\mathcal C\leftarrow\mathcal B}
 =
 \begin{pmatrix}
 \tfrac12&\tfrac12\\
 \tfrac12&-\tfrac12
 \end{pmatrix}.
-$$
+```
 
 For example, if $v=(4,2)$, then
 
-$$
+```math
 [v]_{\mathcal C}
 =
 P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
@@ -193,50 +203,56 @@ P_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}
 \begin{pmatrix}4\\2\end{pmatrix}
 =
 \begin{pmatrix}3\\1\end{pmatrix}.
-$$
+```
 
 Indeed,
 
-$$
+```math
 (4,2)=3(1,1)+1(1,-1).
-$$
+```
 
 ## 5. Matrix of a Linear Transformation
 
 Let
 
-$$T:V\longrightarrow W,$$
+```math
+T:V\longrightarrow W,
+```
 
 and choose ordered bases
 
-$$\mathcal B=(v_1,\ldots,v_n)\quad\text{of }V,$$
+```math
+\mathcal B=(v_1,\ldots,v_n)\quad\text{of }V,
+```
 
-$$\mathcal D=(w_1,\ldots,w_m)\quad\text{of }W.$$
+```math
+\mathcal D=(w_1,\ldots,w_m)\quad\text{of }W.
+```
 
 The matrix representation is denoted
 
-$$[T]_{\mathcal D\leftarrow\mathcal B}.$$
+```math
+[T]_{\mathcal D\leftarrow\mathcal B}.
+```
 
 It is characterized by
 
-$$
+```math
 [T(v)]_{\mathcal D}
 =[T]_{\mathcal D\leftarrow\mathcal B}[v]_{\mathcal B}
-$$
+```
 
 for every $v\in V$.
 
 To compute it, write each image $T(v_j)$ in the basis $\mathcal D$:
 
-$$
+```math
 [T]_{\mathcal D\leftarrow\mathcal B}
 =
-\begin{pmatrix}
-|&&|\\
-[T(v_1)]_{\mathcal D}&\cdots&[T(v_n)]_{\mathcal D}\\
-|&&|
-\end{pmatrix}.
-$$
+\begin{bmatrix}
+[T(v_1)]_{\mathcal D}&\cdots&[T(v_n)]_{\mathcal D}
+\end{bmatrix}.
+```
 
 The domain basis determines the columns to which $T$ is applied; the codomain basis determines how those image vectors are recorded.
 
@@ -244,57 +260,63 @@ The domain basis determines the columns to which $T$ is applied; the codomain ba
 
 Define
 
-$$T:\mathbb R^2\longrightarrow\mathbb R^2,\qquad
-T(x,y)=(x+y,\,2x-y).$$
+```math
+T:\mathbb R^2\longrightarrow\mathbb R^2,\qquad
+T(x,y)=(x+y,\,2x-y).
+```
 
 Choose
 
-$$
+```math
 \mathcal B=\bigl((1,1),(1,-1)\bigr)
-$$
+```
 
 for the domain and
 
-$$
+```math
 \mathcal D=\bigl((1,0),(1,1)\bigr)
-$$
+```
 
 for the codomain.
 
 First,
 
-$$T(1,1)=(2,1)=1(1,0)+1(1,1),$$
+```math
+T(1,1)=(2,1)=1(1,0)+1(1,1),
+```
 
 so
 
-$$
+```math
 [T(1,1)]_{\mathcal D}
 =
 \begin{pmatrix}1\\1\end{pmatrix}.
-$$
+```
 
 Next,
 
-$$T(1,-1)=(0,3)=-3(1,0)+3(1,1),$$
+```math
+T(1,-1)=(0,3)=-3(1,0)+3(1,1),
+```
 
 so
 
-$$
+```math
 [T(1,-1)]_{\mathcal D}
 =
 \begin{pmatrix}-3\\3\end{pmatrix}.
-$$
+```
 
 Therefore
 
-$$
+```math
 [T]_{\mathcal D\leftarrow\mathcal B}
 =
 \begin{pmatrix}
 1&-3\\
 1&3
 \end{pmatrix}.
-$$
+```
 
 ## 7. Changing Both Bases
 
@@ -305,13 +327,13 @@ Suppose $[T]_{\mathcal D\leftarrow\mathcal B}$ is known, and we switch to
 
 The new matrix is
 
-$$
+```math
 [T]_{\mathcal D'\leftarrow\mathcal B'}
 =
 P_{\mathcal D'\leftarrow\mathcal D}
 [T]_{\mathcal D\leftarrow\mathcal B}
 P_{\mathcal B\leftarrow\mathcal B'}.
-$$
+```
 
 Reading from right to left:
 
@@ -328,15 +350,21 @@ Thus:
 
 If $T:V\to V$, use one basis for both the domain and codomain. Let
 
-$$A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.$$
+```math
+A=[T]_{\mathcal B},\qquad A'=[T]_{\mathcal B'}.
+```
 
 If
 
-$$P=P_{\mathcal B\leftarrow\mathcal B'},$$
+```math
+P=P_{\mathcal B\leftarrow\mathcal B'},
+```
 
 then
 
-$$A'=P^{-1}AP.$$
+```math
+A'=P^{-1}AP.
+```
 
 The matrices $A$ and $A'$ are **similar**. They describe the same linear operator in different bases.
 
@@ -346,7 +374,7 @@ If a source defines $P$ in the reverse direction, its formula will appear as $A'
 
 The complete process is
 
-$$
+```math
 V
 \xrightarrow{\;\text{coordinates in }\mathcal B\;}
 F^n
@@ -354,7 +382,7 @@ F^n
 F^m
 \xrightarrow{\;\text{interpret in }\mathcal D\;}
 W.
-$$
+```
 
 The abstract vector spaces and the transformation do not change. Only their coordinate descriptions depend on the selected bases.
 

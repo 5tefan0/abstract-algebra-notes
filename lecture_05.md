@@ -10,7 +10,9 @@
 An equivalence relation partitions $S$ into disjoint **equivalence classes**: subsets $[a] = \{b \in S : b \sim a\}$ whose union is all of $S$.
 
 **Conversely**, any map $f: S \to T$ induces an equivalence relation on $S$:
-$$a \sim b \iff f(a) = f(b).$$
+```math
+a \sim b \iff f(a) = f(b).
+```
 The equivalence classes are the **fibers** $f^{-1}(t) = \{s \in S : f(s) = t\}$ for $t \in \mathrm{Im}(f)$.
 
 **Example.** The map $f: \mathbb{R} \to S^1$ defined by $f(t) = e^{2\pi i t}$ is a group homomorphism from $(\mathbb{R}, +)$ to the unit circle $(S^1, \times)$. Its fibers are $f^{-1}(e^{2\pi i t_0}) = \{t_0 + n : n \in \mathbb{Z}\}$, i.e., cosets of $\mathbb{Z}$ in $\mathbb{R}$.
@@ -19,7 +21,9 @@ The equivalence classes are the **fibers** $f^{-1}(t) = \{s \in S : f(s) = t\}$ 
 
 **Definition.** Let $H \leq G$ and $a \in G$. The **left coset** of $H$ containing $a$ is
 
-$$aH = \{ ah : h \in H \}.$$
+```math
+aH = \{ ah : h \in H \}.
+```
 
 **Proposition.** The equivalence classes of the relation $a \sim b \iff a^{-1}b \in H$ are exactly the left cosets of $H$.
 
@@ -46,7 +50,9 @@ In particular, $|aH| = |H|$ for all $a$.
 
 **Theorem (Lagrange's Theorem).** For any subgroup $H \leq G$ with $G$ finite,
 
-$$|G| = |H| \cdot [G : H].$$
+```math
+|G| = |H| \cdot [G : H].
+```
 
 *Proof.* The cosets partition $G$ into $[G:H]$ pairwise-disjoint subsets, each of size $|H|$. $\square$
 
@@ -62,11 +68,15 @@ $$|G| = |H| \cdot [G : H].$$
 
 Lagrange's theorem for groups is analogous to the **rank-nullity theorem** for linear maps:
 
-$$\dim V = \dim(\ker T) + \dim(\mathrm{Im}\, T)$$
+```math
+\dim V = \dim(\ker T) + \dim(\mathrm{Im}\, T)
+```
 
 corresponds to
 
-$$|G| = |\ker(f)| \cdot |\mathrm{Im}(f)|$$
+```math
+|G| = |\ker(f)| \cdot |\mathrm{Im}(f)|
+```
 
 (when $G$ is finite and $f: G \to G'$ is a homomorphism).
 
@@ -76,7 +86,9 @@ $$|G| = |\ker(f)| \cdot |\mathrm{Im}(f)|$$
 
 *Proof.* The sign homomorphism $\mathrm{sgn}: S_n \to \{+1, -1\}$ is surjective (the identity is even; any transposition is odd) with $\ker(\mathrm{sgn}) = A_n$. By Lagrange:
 
-$$|S_n| = |A_n| \cdot |\mathrm{Im}(\mathrm{sgn})| \implies n! = |A_n| \cdot 2 \implies |A_n| = n!/2. \quad \square$$
+```math
+|S_n| = |A_n| \cdot |\mathrm{Im}(\mathrm{sgn})| \implies n! = |A_n| \cdot 2 \implies |A_n| = n!/2. \quad \square
+```
 
 **Examples:** $|A_3| = 3$, $|A_4| = 12$, $|A_5| = 60$.
 
@@ -110,10 +122,14 @@ This deep theorem shows that odd-order groups are never simple (unless cyclic of
 
 Given $H \leq G$ and a homomorphism $f: G \to G'$ with $\ker(f) = H$:
 
-$$G = \bigsqcup_{a \in \text{coset reps}} aH, \quad |aH| = |H| \text{ for all } a.$$
+```math
+G = \bigsqcup_{a \in \text{coset reps}} aH, \quad |aH| = |H| \text{ for all } a.
+```
 
 The equivalence classes of $a \sim b \iff f(a) = f(b)$ are the cosets $\{aH\}$. The set of cosets bijects with $\mathrm{Im}(f)$. This gives:
 
-$$|G| = |H| \cdot |\mathrm{Im}(f)|$$
+```math
+|G| = |H| \cdot |\mathrm{Im}(f)|
+```
 
 when $G$ is finite — a fundamental count underlying all of finite group theory.

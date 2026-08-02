@@ -6,32 +6,44 @@ Let $V$ be a finite-dimensional vector space over a field $F$.
 
 Start with a linearly independent list $v_1,\ldots,v_n$ and extend it to a basis
 
-$$v_1,\ldots,v_n,v_{n+1},\ldots,v_m$$
+```math
+v_1,\ldots,v_n,v_{n+1},\ldots,v_m
+```
 
 of $V$. Define
 
-$$W=\operatorname{span}(v_1,\ldots,v_n),\qquad
-W'=\operatorname{span}(v_{n+1},\ldots,v_m).$$
+```math
+W=\operatorname{span}(v_1,\ldots,v_n),\qquad
+W'=\operatorname{span}(v_{n+1},\ldots,v_m).
+```
 
 Then
 
-$$W\cap W'=\{0\}.$$
+```math
+W\cap W'=\{0\}.
+```
 
 Indeed, if $w=w'$ with $w\in W$ and $w'\in W'$, subtracting their basis expansions gives a linear relation among the full basis. Every coefficient must therefore be zero.
 
 Every vector in $V$ is a sum of an element of $W$ and an element of $W'$, because the full list spans $V$. The expression is unique because the intersection is zero. Hence
 
-$$V=W\oplus W'.$$
+```math
+V=W\oplus W'.
+```
 
 Equivalently, the map
 
-$$W\times W'\longrightarrow V,\qquad (w,w')\longmapsto w+w'$$
+```math
+W\times W'\longrightarrow V,\qquad (w,w')\longmapsto w+w'
+```
 
 is a linear isomorphism.
 
 **Definition.** $V=W\oplus W'$ means both
 
-$$V=W+W'\qquad\text{and}\qquad W\cap W'=\{0\}.$$
+```math
+V=W+W'\qquad\text{and}\qquad W\cap W'=\{0\}.
+```
 
 The first condition gives existence of a decomposition; the second gives uniqueness.
 
@@ -39,25 +51,35 @@ The first condition gives existence of a decomposition; the second gives uniquen
 
 Let $W\leq V$. Choose a basis $v_1,\ldots,v_n$ of $W$ and extend it to a basis
 
-$$v_1,\ldots,v_n,v_{n+1},\ldots,v_m$$
+```math
+v_1,\ldots,v_n,v_{n+1},\ldots,v_m
+```
 
 of $V$. Then
 
-$$W'=\operatorname{span}(v_{n+1},\ldots,v_m)$$
+```math
+W'=\operatorname{span}(v_{n+1},\ldots,v_m)
+```
 
 is a complement and $V=W\oplus W'$.
 
 If $\pi:V\to V/W$ is the quotient map, its restriction
 
-$$\pi|_{W'}:W'\xrightarrow{\sim}V/W$$
+```math
+\pi|_{W'}:W'\xrightarrow{\sim}V/W
+```
 
 is an isomorphism. Consequently,
 
-$$V\cong W\oplus(V/W)$$
+```math
+V\cong W\oplus(V/W)
+```
 
 and
 
-$$\dim V=\dim W+\dim(V/W).$$
+```math
+\dim V=\dim W+\dim(V/W).
+```
 
 The complement $W'$ is usually not canonical: a different extension of the basis of $W$ can produce a different complement.
 
@@ -65,23 +87,33 @@ The complement $W'$ is usually not canonical: a different extension of the basis
 
 Let $T:V\to U$ be linear. The First Isomorphism Theorem gives
 
-$$V/\ker T\cong\operatorname{Im}T.$$
+```math
+V/\ker T\cong\operatorname{Im}T.
+```
 
 Choose a complement $C$ of $\ker T$:
 
-$$V=\ker T\oplus C.$$
+```math
+V=\ker T\oplus C.
+```
 
 Then the restriction
 
-$$T|_C:C\xrightarrow{\sim}\operatorname{Im}T$$
+```math
+T|_C:C\xrightarrow{\sim}\operatorname{Im}T
+```
 
 is an isomorphism. Therefore, noncanonically,
 
-$$V\cong\ker T\oplus\operatorname{Im}T$$
+```math
+V\cong\ker T\oplus\operatorname{Im}T
+```
 
 and
 
-$$\dim V=\dim\ker T+\dim\operatorname{Im}T.$$
+```math
+\dim V=\dim\ker T+\dim\operatorname{Im}T.
+```
 
 The dimension identity is the **rank–nullity theorem**. The splitting itself depends on a choice of complement.
 
@@ -91,13 +123,17 @@ This is much stronger than the corresponding statement for arbitrary groups. A s
 
 Let $\mathcal B=(v_1,\ldots,v_n)$ be an ordered basis of $V$. Define
 
-$$\rho_{\mathcal B}:F^n\longrightarrow V,\qquad
+```math
+\rho_{\mathcal B}:F^n\longrightarrow V,\qquad
 \begin{pmatrix}a_1\\ \vdots\\ a_n\end{pmatrix}
-\longmapsto \sum_{i=1}^n a_iv_i.$$
+\longmapsto \sum_{i=1}^n a_iv_i.
+```
 
 This is a linear isomorphism. Conversely, any isomorphism $\rho:F^n\to V$ determines the ordered basis
 
-$$\bigl(\rho(e_1),\ldots,\rho(e_n)\bigr),$$
+```math
+\bigl(\rho(e_1),\ldots,\rho(e_n)\bigr),
+```
 
 where $e_1,\ldots,e_n$ is the standard basis of $F^n$. Thus ordered bases of $V$ correspond bijectively to isomorphisms $F^n\to V$.
 
@@ -109,19 +145,27 @@ Linear maps $F^n\to F^m$ correspond bijectively to $m\times n$ matrices over $F$
 
 If $S:F^n\to F^m$ is linear, its matrix is
 
-$$[S]=\begin{pmatrix}|&&|\\S(e_1)&\cdots&S(e_n)\\|&&|\end{pmatrix}.$$
+```math
+[S]=\begin{bmatrix}S(e_1)&\cdots&S(e_n)\end{bmatrix}.
+```
 
 The $j$th column is $S(e_j)$. Conversely, a matrix $A\in M_{m\times n}(F)$ defines the map
 
-$$x\longmapsto Ax.$$
+```math
+x\longmapsto Ax.
+```
 
 The correspondence respects the algebraic operations:
 
-$$[aS+bT]=a[S]+b[T],$$
+```math
+[aS+bT]=a[S]+b[T],
+```
 
 and, whenever the composition is defined,
 
-$$[S\circ T]=[S][T].$$
+```math
+[S\circ T]=[S][T].
+```
 
 Matrix multiplication is therefore the coordinate expression of composition of linear maps. Its associativity reflects the associativity of composition.
 
@@ -129,26 +173,36 @@ Matrix multiplication is therefore the coordinate expression of composition of l
 
 Let $T:V\to W$, with ordered bases
 
-$$\mathcal B=(v_1,\ldots,v_n),\qquad
-\mathcal C=(w_1,\ldots,w_m).$$
+```math
+\mathcal B=(v_1,\ldots,v_n),\qquad
+\mathcal C=(w_1,\ldots,w_m).
+```
 
 The matrix of $T$ with respect to these bases is
 
-$$[T]_{\mathcal C\leftarrow\mathcal B}
-=\rho_{\mathcal C}^{-1}\,T\,\rho_{\mathcal B}\in M_{m\times n}(F).$$
+```math
+[T]_{\mathcal C\leftarrow\mathcal B}
+=\rho_{\mathcal C}^{-1}\,T\,\rho_{\mathcal B}\in M_{m\times n}(F).
+```
 
 If
 
-$$T(v_j)=\sum_{i=1}^m a_{ij}w_i,$$
+```math
+T(v_j)=\sum_{i=1}^m a_{ij}w_i,
+```
 
 then
 
-$$[T]_{\mathcal C\leftarrow\mathcal B}=(a_{ij}).$$
+```math
+[T]_{\mathcal C\leftarrow\mathcal B}=(a_{ij}).
+```
 
 Thus the $j$th column contains the $\mathcal C$-coordinates of $T(v_j)$. For every $v\in V$,
 
-$$[T(v)]_{\mathcal C}
-=[T]_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}.$$
+```math
+[T(v)]_{\mathcal C}
+=[T]_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}.
+```
 
 After bases are fixed, the vector space $\operatorname{Hom}_F(V,W)$ is identified with $M_{m\times n}(F)$.
 
@@ -156,13 +210,17 @@ After bases are fixed, the vector space $\operatorname{Hom}_F(V,W)$ is identifie
 
 Suppose
 
-$$V\xrightarrow{T}W\xrightarrow{S}X$$
+```math
+V\xrightarrow{T}W\xrightarrow{S}X
+```
 
 and choose bases $\mathcal B,\mathcal C,\mathcal D$ of the three spaces. Then
 
-$$[S\circ T]_{\mathcal D\leftarrow\mathcal B}
+```math
+[S\circ T]_{\mathcal D\leftarrow\mathcal B}
 =[S]_{\mathcal D\leftarrow\mathcal C}
-[T]_{\mathcal C\leftarrow\mathcal B}.$$
+[T]_{\mathcal C\leftarrow\mathcal B}.
+```
 
 The order matters: $T$ acts first, so its matrix appears on the right.
 
@@ -178,22 +236,30 @@ This turns structural questions about linear maps into explicit algorithms.
 
 Let $\mathcal B$ and $\mathcal B'$ be bases of $V$. Define
 
-$$P=\rho_{\mathcal B}^{-1}\rho_{\mathcal B'}.$$
+```math
+P=\rho_{\mathcal B}^{-1}\rho_{\mathcal B'}.
+```
 
 Then $P$ converts $\mathcal B'$-coordinates to $\mathcal B$-coordinates:
 
-$$[v]_{\mathcal B}=P[v]_{\mathcal B'}.$$
+```math
+[v]_{\mathcal B}=P[v]_{\mathcal B'}.
+```
 
 Its $j$th column is $[v'_j]_{\mathcal B}$.
 
 Similarly, for bases $\mathcal C,\mathcal C'$ of $W$, let
 
-$$Q=\rho_{\mathcal C}^{-1}\rho_{\mathcal C'}.$$
+```math
+Q=\rho_{\mathcal C}^{-1}\rho_{\mathcal C'}.
+```
 
 For $T:V\to W$,
 
-$$[T]_{\mathcal C'\leftarrow\mathcal B'}
-=Q^{-1}[T]_{\mathcal C\leftarrow\mathcal B}P.$$
+```math
+[T]_{\mathcal C'\leftarrow\mathcal B'}
+=Q^{-1}[T]_{\mathcal C\leftarrow\mathcal B}P.
+```
 
 The precise placement of inverses depends on the convention used to define a change-of-basis matrix; defining $P$ and $Q$ first removes the ambiguity.
 
@@ -201,7 +267,9 @@ The precise placement of inverses depends on the convention used to define a cha
 
 For an endomorphism $T:V\to V$, use the same basis in the domain and codomain. If $A=[T]_{\mathcal B}$ and $A'=[T]_{\mathcal B'}$, then
 
-$$A'=P^{-1}AP.$$
+```math
+A'=P^{-1}AP.
+```
 
 Thus two matrices represent the same abstract endomorphism in different bases exactly when they are **similar**, or equivalently conjugate in $\mathrm{GL}_n(F)$.
 
@@ -211,10 +279,14 @@ This connects linear algebra directly to group theory: choosing a convenient bas
 
 Define
 
-$$\mathrm{GL}(V)=\{T:V\to V:T\text{ is a linear isomorphism}\}.$$
+```math
+\mathrm{GL}(V)=\{T:V\to V:T\text{ is a linear isomorphism}\}.
+```
 
 It is a group under composition. If $\dim V=n$ and a basis $\mathcal B$ is chosen, the matrix map gives a group isomorphism
 
-$$\mathrm{GL}(V)\xrightarrow{\sim}\mathrm{GL}_n(F).$$
+```math
+\mathrm{GL}(V)\xrightarrow{\sim}\mathrm{GL}_n(F).
+```
 
 The abstract group $\mathrm{GL}(V)$ does not require a basis. The coordinate group $\mathrm{GL}_n(F)$ appears after a basis is chosen, and changing that basis conjugates all representing matrices simultaneously.

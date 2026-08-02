@@ -17,7 +17,9 @@ As a real vector space, $M_n(\mathbb{R})$ has dimension $n^2$. The two vector-sp
 
 Given $A, B \in M_n(\mathbb{R})$, their product $C = AB$ is defined by
 
-$$C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.$$
+```math
+C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.
+```
 
 **Interpretation.** Matrices represent linear operators on $\mathbb{R}^n$. If $A$ represents $T$ and $B$ represents $S$, then $AB$ represents $T \circ S$ (first apply $S$, then $T$).
 
@@ -28,14 +30,18 @@ $$C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}.$$
 
 **Example of non-commutativity (2×2):**
 
-$$A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}: \qquad AB = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \quad BA = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}.$$
+```math
+A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}: \qquad AB = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \quad BA = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}.
+```
 
 ## 3. Invertible Matrices
 
 **Definition.** $A \in M_n(\mathbb{R})$ is **invertible** if there exists $B$ with $AB = BA = I_n$. Such $B$ is unique and denoted $A^{-1}$.
 
 **2×2 formula.** For $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $A$ is invertible iff $\det(A) = ad - bc \neq 0$, and
-$$A^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.$$
+```math
+A^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}.
+```
 
 ### The Determinant
 
@@ -46,7 +52,9 @@ There is a function $\det: M_n(\mathbb{R}) \to \mathbb{R}$ with:
 
 ## 4. The General Linear Group $\mathrm{GL}_n(\mathbb{R})$
 
-$$\mathrm{GL}_n(\mathbb{R}) = \{ A \in M_n(\mathbb{R}) : \det(A) \neq 0 \}.$$
+```math
+\mathrm{GL}_n(\mathbb{R}) = \{ A \in M_n(\mathbb{R}) : \det(A) \neq 0 \}.
+```
 
 This set is closed under multiplication (since $\det(AB) = \det(A)\det(B) \neq 0$), contains $I_n$, and every element has an inverse. It is not closed under addition.
 
@@ -84,7 +92,9 @@ $\mathrm{GL}_n(\mathbb{R})$ is the subgroup of $\mathrm{Sym}(\mathbb{R}^n)$ cons
 
 Let $T$ be any set. The **automorphism group** of $T$ is
 
-$$\mathrm{Aut}(T) = \{ f : T \xrightarrow{\sim} T \mid f \text{ is a bijection} \}$$
+```math
+\mathrm{Aut}(T) = \{ f : T \xrightarrow{\sim} T \mid f \text{ is a bijection} \}
+```
 
 under composition. $\mathrm{GL}_n(\mathbb{R})$ is the subgroup of $\mathrm{Aut}(\mathbb{R}^n)$ consisting of linear bijections.
 
@@ -191,7 +201,9 @@ Let $f: G \to G'$ be a homomorphism. Then:
 
 ## 2. The Kernel
 
-$$\ker(f) = \{ g \in G : f(g) = e' \}.$$
+```math
+\ker(f) = \{ g \in G : f(g) = e' \}.
+```
 
 $\ker(f)$ is a subgroup of $G$. An isomorphism has $\ker(f) = \{e\}$ and $\mathrm{Im}(f) = G'$.
 
@@ -219,19 +231,25 @@ Composing $S_n \to \mathrm{GL}_n(\mathbb{R}) \xrightarrow{\det} \mathbb{R}^*$ gi
 - Transpositions are odd ($\mathrm{sgn} = -1$); identity is even.
 - Any permutation decomposes into transpositions; parity is an invariant.
 
-$$A_n = \ker(\mathrm{sgn}) = \{\sigma \in S_n : \mathrm{sgn}(\sigma) = +1\} \trianglelefteq S_n.$$
+```math
+A_n = \ker(\mathrm{sgn}) = \{\sigma \in S_n : \mathrm{sgn}(\sigma) = +1\} \trianglelefteq S_n.
+```
 
 $A_3 = \{e, (1\,2\,3), (1\,3\,2)\}$ (cyclic of order 3).
 
 ## 6. The Center
 
-$$Z(G) = \{z \in G : zg = gz\ \forall\, g \in G\} \trianglelefteq G.$$
+```math
+Z(G) = \{z \in G : zg = gz\ \forall\, g \in G\} \trianglelefteq G.
+```
 
 $G$ is abelian $\iff$ $Z(G) = G$. For $n \geq 3$: $Z(S_n) = \{e\}$; $Z(\mathrm{GL}_n(\mathbb{R})) = \{\lambda I : \lambda \neq 0\}$.
 
 ## 7. The Conjugation Homomorphism
 
-$$\Phi: G \to \mathrm{Aut}(G), \quad \Phi(g) = \varphi_g, \quad \varphi_g(h) = ghg^{-1}.$$
+```math
+\Phi: G \to \mathrm{Aut}(G), \quad \Phi(g) = \varphi_g, \quad \varphi_g(h) = ghg^{-1}.
+```
 
 $\varphi_g$ is an automorphism; $\Phi$ is a homomorphism with $\ker(\Phi) = Z(G)$. The image $\Phi(G)$ consists of the **inner automorphisms** of $G$.
 
@@ -258,7 +276,9 @@ An **equivalence relation** on $S$ satisfies reflexivity, symmetry, and transiti
 **Definition.** The **index** $[G:H]$ is the number of distinct left cosets.
 
 **Theorem (Lagrange).** For finite $G$ and $H \leq G$:
-$$|G| = |H| \cdot [G : H].$$
+```math
+|G| = |H| \cdot [G : H].
+```
 
 **Corollaries:**
 1. $|H| \mid |G|$.
@@ -301,7 +321,9 @@ For a homomorphism $f: G \to G'$: $|G| = |\ker(f)| \cdot |\mathrm{Im}(f)|$ (anal
 
 This is an equivalence relation (reflexive, symmetric, transitive). The equivalence class of $a$ is
 
-$$\bar{a} = a + n\mathbb{Z} = \{a + kn : k \in \mathbb{Z}\},$$
+```math
+\bar{a} = a + n\mathbb{Z} = \{a + kn : k \in \mathbb{Z}\},
+```
 
 the left coset of $n\mathbb{Z}$ containing $a$.
 
@@ -309,7 +331,9 @@ the left coset of $n\mathbb{Z}$ containing $a$.
 
 ## 2. The Group $\mathbb{Z}/n\mathbb{Z}$
 
-$$\mathbb{Z}/n\mathbb{Z} = \{\bar{0}, \bar{1}, \ldots, \overline{n-1}\}, \quad \bar{a} + \bar{b} = \overline{a+b}.$$
+```math
+\mathbb{Z}/n\mathbb{Z} = \{\bar{0}, \bar{1}, \ldots, \overline{n-1}\}, \quad \bar{a} + \bar{b} = \overline{a+b}.
+```
 
 **Well-defined:** $n \mid (a-a')$ and $n \mid (b-b') \implies n \mid ((a+b)-(a'+b'))$.
 
@@ -351,7 +375,9 @@ The residue classes modulo $n$ are the cosets of $n\mathbb{Z}$ in $\mathbb{Z}$. 
 
 Given $H \leq G$, we ask: when is the **naive multiplication**
 
-$$(aH)(bH) \stackrel{?}{=} (ab)H$$
+```math
+(aH)(bH) \stackrel{?}{=} (ab)H
+```
 
 on the set $G/H = \{aH : a \in G\}$ well-defined?
 
@@ -369,7 +395,9 @@ If $aHa^{-1} \not\subseteq H$ for some $a$, there exists $h \in H$ with $aha^{-1
 
 **Proof.** Compute the set of all products $\{ah \cdot bh' : h, h' \in H\}$:
 
-$$aH \cdot bH = a(Hb)H = a(bH)H = (ab)(HH) = (ab)H,$$
+```math
+aH \cdot bH = a(Hb)H = a(bH)H = (ab)(HH) = (ab)H,
+```
 
 using $Hb = bH$ (normality) and $HH = H$ ($H$ is a subgroup). $\square$
 
@@ -383,7 +411,9 @@ using $Hb = bH$ (normality) and $HH = H$ ($H$ is a subgroup). $\square$
 
 When $H \trianglelefteq G$, there is a natural surjective group homomorphism
 
-$$\pi: G \to G/H, \quad a \mapsto aH, \quad \ker(\pi) = H.$$
+```math
+\pi: G \to G/H, \quad a \mapsto aH, \quad \ker(\pi) = H.
+```
 
 **Corollary.** $H \trianglelefteq G \iff H$ is the kernel of some group homomorphism from $G$.
 
@@ -393,7 +423,9 @@ This completes the circle: kernels are always normal (Lecture 4), and every norm
 
 **Theorem.** Let $f: G \twoheadrightarrow G'$ be a surjective homomorphism with $\ker(f) = H$. Then $f$ induces an isomorphism
 
-$$\bar{f}: G/H \xrightarrow{\;\sim\;} G', \quad \bar{f}(aH) = f(a).$$
+```math
+\bar{f}: G/H \xrightarrow{\;\sim\;} G', \quad \bar{f}(aH) = f(a).
+```
 
 **Proof sketch:**
 - **Well-defined:** $aH = a'H \implies f(a) = f(a')$ (since $a'^{-1}a \in H = \ker f$).
@@ -403,13 +435,17 @@ $$\bar{f}: G/H \xrightarrow{\;\sim\;} G', \quad \bar{f}(aH) = f(a).$$
 
 **Factorization.** Any homomorphism $f: G \to G'$ factors as
 
-$$G \xrightarrow{\;\pi\;} G/\ker(f) \xrightarrow{\;\sim\;} \mathrm{Im}(f) \hookrightarrow G'.$$
+```math
+G \xrightarrow{\;\pi\;} G/\ker(f) \xrightarrow{\;\sim\;} \mathrm{Im}(f) \hookrightarrow G'.
+```
 
 ## 5. Short Exact Sequences
 
 A **short exact sequence** is a diagram of group homomorphisms
 
-$$1 \to H \xrightarrow{\;g\;} G \xrightarrow{\;f\;} G' \to 1$$
+```math
+1 \to H \xrightarrow{\;g\;} G \xrightarrow{\;f\;} G' \to 1
+```
 
 where $g$ is injective, $f$ is surjective, and $\mathrm{Im}(g) = \ker(f)$. This says $G$ is an extension of $G'$ by $H$: the First Isomorphism Theorem gives $G' \cong G/H$.
 
@@ -419,8 +455,12 @@ Knowing $H$ and $G' \cong G/H$ does **not** determine $G$.
 
 **Example.** Both $S_3$ and $\mathbb{Z}/6\mathbb{Z}$ appear in short exact sequences with kernel $\cong \mathbb{Z}/3\mathbb{Z}$ and quotient $\cong \mathbb{Z}/2\mathbb{Z}$:
 
-$$1 \to A_3 \to S_3 \xrightarrow{\mathrm{sgn}} \mathbb{Z}/2\mathbb{Z} \to 1,$$
-$$1 \to \{\bar{0},\bar{2},\bar{4}\} \to \mathbb{Z}/6\mathbb{Z} \xrightarrow{a \bmod 2} \mathbb{Z}/2\mathbb{Z} \to 1.$$
+```math
+1 \to A_3 \to S_3 \xrightarrow{\mathrm{sgn}} \mathbb{Z}/2\mathbb{Z} \to 1,
+```
+```math
+1 \to \{\bar{0},\bar{2},\bar{4}\} \to \mathbb{Z}/6\mathbb{Z} \xrightarrow{a \bmod 2} \mathbb{Z}/2\mathbb{Z} \to 1.
+```
 
 Yet $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ ($S_3$ is non-abelian, $\mathbb{Z}/6\mathbb{Z}$ is abelian). The extra data needed to reconstruct $G$ from $H$ and $G/H$ — how $G/H$ acts on $H$ by conjugation — is the **group extension problem**.
 
@@ -432,15 +472,21 @@ Yet $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ ($S_3$ is non-abelian, $\mathbb{Z}/6\
 
 Let $H\trianglelefteq G$ and let $\pi:G\to G/H$ be the quotient map. There is an inclusion-preserving bijection
 
-$$\{K\leq G:H\leq K\}\longleftrightarrow\{L\leq G/H\}$$
+```math
+\{K\leq G:H\leq K\}\longleftrightarrow\{L\leq G/H\}
+```
 
 given by
 
-$$K\mapsto K/H=\pi(K),\qquad L\mapsto\pi^{-1}(L).$$
+```math
+K\mapsto K/H=\pi(K),\qquad L\mapsto\pi^{-1}(L).
+```
 
 Normality is also preserved:
 
-$$K\trianglelefteq G\iff K/H\trianglelefteq G/H.$$
+```math
+K\trianglelefteq G\iff K/H\trianglelefteq G/H.
+```
 
 **Example.** If $p$ is prime and $p\mathbb Z\leq K\leq\mathbb Z$, then $K/p\mathbb Z$ is a subgroup of the prime-order group $\mathbb Z/p\mathbb Z$. Hence $K=p\mathbb Z$ or $K=\mathbb Z$, so $p\mathbb Z$ is maximal in $\mathbb Z$.
 
@@ -450,7 +496,9 @@ A **field** $F$ is an abelian group under addition, its nonzero elements form an
 
 $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields; $\mathbb Z$ is not. For every prime $p$,
 
-$$\mathbb{F}_p=\mathbb Z/p\mathbb Z$$
+```math
+\mathbb{F}_p=\mathbb Z/p\mathbb Z
+```
 
 is a field. If $\bar a\neq0$, maximality gives $p\mathbb Z+a\mathbb Z=\mathbb Z$, so $rp+sa=1$ for some integers $r,s$; modulo $p$, $\bar s\bar a=\bar1$.
 
@@ -462,21 +510,29 @@ The **characteristic** of $F$ is the least $n>0$ with $n\cdot1_F=0$, or $0$ if n
 
 An $F$-vector space is an abelian group $(V,+)$ with scalar multiplication satisfying
 
-$$1v=v,\quad (ab)v=a(bv),\quad a(v+w)=av+aw,\quad(a+b)v=av+bv.$$
+```math
+1v=v,\quad (ab)v=a(bv),\quad a(v+w)=av+aw,\quad(a+b)v=av+bv.
+```
 
 Examples include $\{0\}$, $F$, $F^n$, and $F[x]$.
 
 A subspace is an additive subgroup stable under scalar multiplication. A map $T:V\to W$ is linear if
 
-$$T(av+bv')=aT(v)+bT(v').$$
+```math
+T(av+bv')=aT(v)+bT(v').
+```
 
 Its kernel and image are subspaces. If $U\leq V$, then $V/U$ is a vector space with
 
-$$a(v+U)=av+U,$$
+```math
+a(v+U)=av+U,
+```
 
 and the projection $V\to V/U$ is linear with kernel $U$. Thus
 
-$$V/\ker T\cong\operatorname{Im}T$$
+```math
+V/\ker T\cong\operatorname{Im}T
+```
 
 as vector spaces.
 
@@ -488,7 +544,9 @@ as vector spaces.
 
 For $S=\{v_1,\ldots,v_n\}$,
 
-$$\operatorname{span}(S)=\left\{\sum_{i=1}^n a_iv_i:a_i\in F\right\},$$
+```math
+\operatorname{span}(S)=\left\{\sum_{i=1}^n a_iv_i:a_i\in F\right\},
+```
 
 the smallest subspace containing $S$. By convention, $\operatorname{span}(\varnothing)=\{0\}$.
 
@@ -498,11 +556,15 @@ $V$ is **finite-dimensional** if some finite set spans it. The standard vectors 
 
 $\{v_1,\ldots,v_n\}$ is **linearly independent** if
 
-$$\sum a_iv_i=0\implies a_1=\cdots=a_n=0.$$
+```math
+\sum a_iv_i=0\implies a_1=\cdots=a_n=0.
+```
 
 An ordered list $\mathcal B=(v_1,\ldots,v_n)$ is a **basis** if it spans and is linearly independent. Equivalently, each $v\in V$ has a unique expansion
 
-$$v=a_1v_1+\cdots+a_nv_n.$$
+```math
+v=a_1v_1+\cdots+a_nv_n.
+```
 
 The coordinate map $v\mapsto(a_1,\ldots,a_n)$ is a linear isomorphism $V\cong F^n$.
 
@@ -520,15 +582,21 @@ Consequently, spanning sets have at least $\dim V$ elements, independent sets ha
 
 If $w_1,\ldots,w_m$ is a basis of $W\leq V$, extend it to
 
-$$w_1,\ldots,w_m,v_{m+1},\ldots,v_n$$
+```math
+w_1,\ldots,w_m,v_{m+1},\ldots,v_n
+```
 
 as a basis of $V$. Then the cosets of $v_{m+1},\ldots,v_n$ form a basis of $V/W$, so
 
-$$\dim V=\dim W+\dim(V/W).$$
+```math
+\dim V=\dim W+\dim(V/W).
+```
 
 With $W'=\operatorname{span}(v_{m+1},\ldots,v_n)$,
 
-$$V=W\oplus W',\qquad W'\cong V/W.$$
+```math
+V=W\oplus W',\qquad W'\cong V/W.
+```
 
 Every finite-dimensional subspace has a complement, although the complement is not canonical. This splitting need not occur for arbitrary group extensions.
 
@@ -540,41 +608,57 @@ Every finite-dimensional subspace has a complement, although the complement is n
 
 $V=W\oplus W'$ means
 
-$$V=W+W',\qquad W\cap W'=\{0\}.$$
+```math
+V=W+W',\qquad W\cap W'=\{0\}.
+```
 
 Equivalently, every $v\in V$ is uniquely $w+w'$. The map $W\times W'\to V$, $(w,w')\mapsto w+w'$, is then an isomorphism.
 
 For a linear map $T:V\to U$, choose a complement $C$ to $\ker T$. The restriction
 
-$$T|_C:C\xrightarrow{\sim}\operatorname{Im}T$$
+```math
+T|_C:C\xrightarrow{\sim}\operatorname{Im}T
+```
 
 gives the noncanonical splitting
 
-$$V\cong\ker T\oplus\operatorname{Im}T$$
+```math
+V\cong\ker T\oplus\operatorname{Im}T
+```
 
 and the rank–nullity formula
 
-$$\dim V=\dim\ker T+\dim\operatorname{Im}T.$$
+```math
+\dim V=\dim\ker T+\dim\operatorname{Im}T.
+```
 
 ## 2. Bases and Matrix Coordinates
 
 An ordered basis $\mathcal B=(v_1,\ldots,v_n)$ gives an isomorphism
 
-$$\rho_{\mathcal B}:F^n\to V,\qquad(a_i)\mapsto\sum a_iv_i.$$
+```math
+\rho_{\mathcal B}:F^n\to V,\qquad(a_i)\mapsto\sum a_iv_i.
+```
 
 For $T:V\to W$ and a basis $\mathcal C$ of $W$,
 
-$$[T]_{\mathcal C\leftarrow\mathcal B}
-=\rho_{\mathcal C}^{-1}T\rho_{\mathcal B}.$$
+```math
+[T]_{\mathcal C\leftarrow\mathcal B}
+=\rho_{\mathcal C}^{-1}T\rho_{\mathcal B}.
+```
 
 If $T(v_j)=\sum_i a_{ij}w_i$, its matrix is $(a_{ij})$: the $j$th column is the coordinate vector of $T(v_j)$. Hence
 
-$$[T(v)]_{\mathcal C}=[T]_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}.$$
+```math
+[T(v)]_{\mathcal C}=[T]_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}.
+```
 
 For composable maps,
 
-$$[S\circ T]_{\mathcal D\leftarrow\mathcal B}
-=[S]_{\mathcal D\leftarrow\mathcal C}[T]_{\mathcal C\leftarrow\mathcal B}.$$
+```math
+[S\circ T]_{\mathcal D\leftarrow\mathcal B}
+=[S]_{\mathcal D\leftarrow\mathcal C}[T]_{\mathcal C\leftarrow\mathcal B}.
+```
 
 Thus matrix multiplication is composition in coordinates. Kernels become nullspaces, images become column spaces, and row reduction becomes a structural tool.
 
@@ -582,22 +666,30 @@ Thus matrix multiplication is composition in coordinates. Kernels become nullspa
 
 If $P=\rho_{\mathcal B}^{-1}\rho_{\mathcal B'}$, then
 
-$$[v]_{\mathcal B}=P[v]_{\mathcal B'}.$$
+```math
+[v]_{\mathcal B}=P[v]_{\mathcal B'}.
+```
 
 If $Q=\rho_{\mathcal C}^{-1}\rho_{\mathcal C'}$, then
 
-$$[T]_{\mathcal C'\leftarrow\mathcal B'}
-=Q^{-1}[T]_{\mathcal C\leftarrow\mathcal B}P.$$
+```math
+[T]_{\mathcal C'\leftarrow\mathcal B'}
+=Q^{-1}[T]_{\mathcal C\leftarrow\mathcal B}P.
+```
 
 For an endomorphism using one basis in domain and codomain,
 
-$$[T]_{\mathcal B'}=P^{-1}[T]_{\mathcal B}P.$$
+```math
+[T]_{\mathcal B'}=P^{-1}[T]_{\mathcal B}P.
+```
 
 Similar matrices are therefore conjugate representatives of the same abstract operator.
 
 The group of linear automorphisms is
 
-$$\mathrm{GL}(V)=\operatorname{Aut}_F(V),$$
+```math
+\mathrm{GL}(V)=\operatorname{Aut}_F(V),
+```
 
 and a choice of basis identifies it with $\mathrm{GL}_n(F)$.
 
@@ -609,11 +701,15 @@ and a choice of basis identifies it with $\mathrm{GL}_n(F)$.
 
 Formal differentiation is a linear map
 
-$$D:F[x]_{\leq n}\to F[x]_{\leq n-1}.$$
+```math
+D:F[x]_{\leq n}\to F[x]_{\leq n-1}.
+```
 
 In characteristic $0$, it is surjective with kernel the constants. In characteristic $p$, however,
 
-$$D(x^p)=px^{p-1}=0,$$
+```math
+D(x^p)=px^{p-1}=0,
+```
 
 so the kernel grows and $x^{p-1}$ is absent from the image. Linear algebra works over every field, but the field's characteristic affects examples.
 
@@ -621,12 +717,16 @@ so the kernel grows and $x^{p-1}$ is absent from the image. Linear algebra works
 
 Choose a basis $v_1,\ldots,v_k$ of $\ker T$ and extend it to a basis $v_1,\ldots,v_n$ of $V$. Then
 
-$$T(v_{k+1}),\ldots,T(v_n)$$
+```math
+T(v_{k+1}),\ldots,T(v_n)
+```
 
 is a basis of $\operatorname{Im}T$. Therefore
 
-$$\dim V=\underbrace{\dim\ker T}_{\text{nullity}}
-+\underbrace{\dim\operatorname{Im}T}_{\text{rank}}.$$
+```math
+\dim V=\underbrace{\dim\ker T}_{\text{nullity}}
++\underbrace{\dim\operatorname{Im}T}_{\text{rank}}.
+```
 
 If $T:V\to W$ and $\dim V=\dim W$, injectivity, surjectivity, and invertibility are equivalent.
 
@@ -634,27 +734,33 @@ If $T:V\to W$ and $\dim V=\dim W$, injectivity, surjectivity, and invertibility 
 
 For an endomorphism $T:V\to V$ with matrix $A$, the following are equivalent:
 
-$$
+```math
 T\text{ is an automorphism}
 \iff\ker T=0
 \iff\operatorname{Im}T=V
 \iff A\text{ is invertible}
 \iff\det A\neq0.
-$$
+```
 
 **Example.** $\mathbb{F}_2^2$ has three nonzero vectors. Every element of $\mathrm{GL}_2(\mathbb{F}_2)$ permutes them, giving
 
-$$\mathrm{GL}_2(\mathbb{F}_2)\cong S_3.$$
+```math
+\mathrm{GL}_2(\mathbb{F}_2)\cong S_3.
+```
 
 Indeed,
 
-$$|\mathrm{GL}_2(\mathbb{F}_2)|=(4-1)(4-2)=6.$$
+```math
+|\mathrm{GL}_2(\mathbb{F}_2)|=(4-1)(4-2)=6.
+```
 
 ## 4. Adapted Bases and Rank Normal Form
 
 If $r=\operatorname{rank}T$, independent choices of bases in the domain and codomain put $T$ into the form
 
-$$[T]=\begin{pmatrix}I_r&0\\0&0\end{pmatrix}.$$
+```math
+[T]=\begin{pmatrix}I_r&0\\0&0\end{pmatrix}.
+```
 
 This classifies linear maps up to independent changes of bases by rank. For an endomorphism, the same basis must be used on both sides, so only conjugation is allowed. The search for simple representatives under conjugation leads to invariant subspaces and eigenvectors.
 
@@ -666,19 +772,25 @@ This classifies linear maps up to independent changes of bases by rank. For an e
 
 $W\leq V$ is **$T$-invariant** if $T(W)\subseteq W$. A basis beginning with a basis of $W$ gives
 
-$$[T]=\begin{pmatrix}A&B\\0&D\end{pmatrix}.$$
+```math
+[T]=\begin{pmatrix}A&B\\0&D\end{pmatrix}.
+```
 
 If $W$ has an invariant complement, the matrix is block diagonal.
 
 A nonzero $v$ is an eigenvector with eigenvalue $\lambda$ if
 
-$$T(v)=\lambda v.$$
+```math
+T(v)=\lambda v.
+```
 
 The eigenspace is $E_\lambda(T)=\ker(T-\lambda I)$. A basis of eigenvectors makes $[T]$ diagonal; equivalently, $V$ is the direct sum of its eigenspaces.
 
 Diagonalization can fail because a polynomial has no roots in $F$ (a nontrivial real rotation), or because the eigenspaces are too small. For
 
-$$A=\begin{pmatrix}1&1\\0&1\end{pmatrix},$$
+```math
+A=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+```
 
 the only eigenspace is $E_1=Fe_1$, so $A$ is not diagonalizable.
 
@@ -686,23 +798,31 @@ the only eigenspace is $E_1=Fe_1$, so $A$ is not diagonalizable.
 
 For a matrix $A$ of $T$, define
 
-$$\chi_T(t)=\det(tI-A).$$
+```math
+\chi_T(t)=\det(tI-A).
+```
 
 Since
 
-$$\lambda\text{ is an eigenvalue}
+```math
+\lambda\text{ is an eigenvalue}
 \iff T-\lambda I\text{ is singular}
-\iff\chi_T(\lambda)=0,$$
+\iff\chi_T(\lambda)=0,
+```
 
 the roots in $F$ are precisely the eigenvalues.
 
 The polynomial is basis-independent: if $A'=P^{-1}AP$, then
 
-$$\det(tI-A')=\det\bigl(P^{-1}(tI-A)P\bigr)=\det(tI-A).$$
+```math
+\det(tI-A')=\det\bigl(P^{-1}(tI-A)P\bigr)=\det(tI-A).
+```
 
 For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,
 
-$$\chi_A(t)=t^2-(a+d)t+(ad-bc).$$
+```math
+\chi_A(t)=t^2-(a+d)t+(ad-bc).
+```
 
 Thus trace and determinant are similarity invariants.
 
@@ -712,13 +832,17 @@ A nonzero degree-$n$ polynomial over a field has at most $n$ distinct roots. Hen
 
 Eigenvectors with distinct eigenvalues are linearly independent. Therefore, if
 
-$$\chi_T(t)=\prod_{i=1}^n(t-\lambda_i)$$
+```math
+\chi_T(t)=\prod_{i=1}^n(t-\lambda_i)
+```
 
 with all $\lambda_i\in F$ distinct, then $T$ has an eigenbasis and is diagonalizable. The converse in this form is false: diagonalizable operators may have repeated eigenvalues.
 
 For a rotation through $\theta$,
 
-$$\chi(t)=t^2-2\cos\theta\,t+1,$$
+```math
+\chi(t)=t^2-2\cos\theta\,t+1,
+```
 
 which has no real roots when $\theta\not\equiv0,\pi$. For $\begin{pmatrix}1&1\\0&1\end{pmatrix}$, $\chi(t)=(t-1)^2$ but the eigenspace is only one-dimensional.
 
@@ -726,10 +850,14 @@ which has no real roots when $\theta\not\equiv0,\pi$. For $\begin{pmatrix}1&1\\0
 
 Every linear operator satisfies its own characteristic polynomial:
 
-$$\chi_T(T)=0.$$
+```math
+\chi_T(T)=0.
+```
 
 For a $2\times2$ matrix,
 
-$$A^2-\operatorname{tr}(A)A+\det(A)I=0.$$
+```math
+A^2-\operatorname{tr}(A)A+\det(A)I=0.
+```
 
 Polynomial evaluation here occurs in $\operatorname{End}_F(V)$, where multiplication is composition. Cayley–Hamilton begins the connection between polynomial factorization and canonical forms for linear operators.
