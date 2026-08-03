@@ -531,7 +531,7 @@ a(v+U)=av+U,
 and the projection $`V\to V/U`$ is linear with kernel $`U`$. Thus
 
 ```math
-V/\ker T\cong\operatorname{Im}T
+V/\ker T\cong\mathrm{Im}T
 ```
 
 as vector spaces.
@@ -545,10 +545,10 @@ as vector spaces.
 For $`S=\{v_1,\ldots,v_n\}`$,
 
 ```math
-\operatorname{span}(S)=\left\{\sum_{i=1}^n a_iv_i:a_i\in F\right\},
+\mathrm{span}(S)=\left\{\sum_{i=1}^n a_iv_i:a_i\in F\right\},
 ```
 
-the smallest subspace containing $`S`$. By convention, $`\operatorname{span}(\varnothing)=\{0\}`$.
+the smallest subspace containing $`S`$. By convention, $`\mathrm{span}(\varnothing)=\{0\}`$.
 
 $`V`$ is **finite-dimensional** if some finite set spans it. The standard vectors span $`F^n`$. The space $`F[x]`$ is infinite-dimensional because a finite set of polynomials has bounded degree and cannot span polynomials of arbitrarily high degree.
 
@@ -592,7 +592,7 @@ as a basis of $`V`$. Then the cosets of $`v_{m+1},\ldots,v_n`$ form a basis of $
 \dim V=\dim W+\dim(V/W).
 ```
 
-With $`W'=\operatorname{span}(v_{m+1},\ldots,v_n)`$,
+With $`W'=\mathrm{span}(v_{m+1},\ldots,v_n)`$,
 
 ```math
 V=W\oplus W',\qquad W'\cong V/W.
@@ -617,19 +617,19 @@ Equivalently, every $`v\in V`$ is uniquely $`w+w'`$. The map $`W\times W'\to V`$
 For a linear map $`T:V\to U`$, choose a complement $`C`$ to $`\ker T`$. The restriction
 
 ```math
-T|_C:C\xrightarrow{\sim}\operatorname{Im}T
+T|_C:C\xrightarrow{\sim}\mathrm{Im}T
 ```
 
 gives the noncanonical splitting
 
 ```math
-V\cong\ker T\oplus\operatorname{Im}T
+V\cong\ker T\oplus\mathrm{Im}T
 ```
 
 and the rank–nullity formula
 
 ```math
-\dim V=\dim\ker T+\dim\operatorname{Im}T.
+\dim V=\dim\ker T+\dim\mathrm{Im}T.
 ```
 
 ## 2. Bases and Matrix Coordinates
@@ -688,7 +688,7 @@ Similar matrices are therefore conjugate representatives of the same abstract op
 The group of linear automorphisms is
 
 ```math
-\mathrm{GL}(V)=\operatorname{Aut}_F(V),
+\mathrm{GL}(V)=\mathrm{Aut}_F(V),
 ```
 
 and a choice of basis identifies it with $`\mathrm{GL}_n(F)`$.
@@ -721,11 +721,11 @@ Choose a basis $`v_1,\ldots,v_k`$ of $`\ker T`$ and extend it to a basis $`v_1,\
 T(v_{k+1}),\ldots,T(v_n)
 ```
 
-is a basis of $`\operatorname{Im}T`$. Therefore
+is a basis of $`\mathrm{Im}T`$. Therefore
 
 ```math
 \dim V=\underbrace{\dim\ker T}_{\text{nullity}}
-+\underbrace{\dim\operatorname{Im}T}_{\text{rank}}.
++\underbrace{\dim\mathrm{Im}T}_{\text{rank}}.
 ```
 
 If $`T:V\to W`$ and $`\dim V=\dim W`$, injectivity, surjectivity, and invertibility are equivalent.
@@ -737,7 +737,7 @@ For an endomorphism $`T:V\to V`$ with matrix $`A`$, the following are equivalent
 ```math
 T\text{ is an automorphism}
 \iff\ker T=0
-\iff\operatorname{Im}T=V
+\iff\mathrm{Im}T=V
 \iff A\text{ is invertible}
 \iff\det A\neq0.
 ```
@@ -756,7 +756,7 @@ Indeed,
 
 ## 4. Adapted Bases and Rank Normal Form
 
-If $`r=\operatorname{rank}T`$, independent choices of bases in the domain and codomain put $`T`$ into the form
+If $`r=\mathrm{rank}T`$, independent choices of bases in the domain and codomain put $`T`$ into the form
 
 ```math
 [T]=\begin{pmatrix}I_r&0\\0&0\end{pmatrix}.
@@ -857,7 +857,7 @@ Every linear operator satisfies its own characteristic polynomial:
 For a $`2\times2`$ matrix,
 
 ```math
-A^2-\operatorname{tr}(A)A+\det(A)I=0.
+A^2-\mathrm{tr}(A)A+\det(A)I=0.
 ```
 
-Polynomial evaluation here occurs in $`\operatorname{End}_F(V)`$, where multiplication is composition. Cayley–Hamilton begins the connection between polynomial factorization and canonical forms for linear operators.
+Polynomial evaluation here occurs in $`\mathrm{End}_F(V)`$, where multiplication is composition. Cayley–Hamilton begins the connection between polynomial factorization and canonical forms for linear operators.

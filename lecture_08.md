@@ -184,7 +184,7 @@ In a subfield of $`\mathbb C`$, these sums never return to $`0`$. In $`\mathbb{F
 
 **Definition.** The **characteristic** of a field $`F`$ is the smallest positive integer $`n`$ such that $`n\cdot1_F=0`$, if such an integer exists; otherwise it is $`0`$.
 
-The characteristic of a field is either $`0`$ or a prime. Thus $`\operatorname{char}(\mathbb Q)=\operatorname{char}(\mathbb R)=\operatorname{char}(\mathbb C)=0`$, while $`\operatorname{char}(\mathbb{F}_p)=p`$.
+The characteristic of a field is either $`0`$ or a prime. Thus $`\mathrm{char}(\mathbb Q)=\mathrm{char}(\mathbb R)=\mathrm{char}(\mathbb C)=0`$, while $`\mathrm{char}(\mathbb{F}_p)=p`$.
 
 The finite-field classification, to be proved later in the course, says:
 
@@ -240,7 +240,7 @@ Its kernel and image are
 
 ```math
 \ker T=\{v\in V:T(v)=0\},\qquad
-\operatorname{Im}T=\{T(v):v\in V\}.
+\mathrm{Im}T=\{T(v):v\in V\}.
 ```
 
 They are subspaces of $`V`$ and $`W`$, respectively. A bijective linear map is a vector-space **isomorphism**.
@@ -266,7 +266,7 @@ is linear, surjective, and has kernel $`W`$.
 Thus the group-theoretic pattern continues unchanged:
 
 ```math
-V/\ker T\cong\operatorname{Im}T,
+V/\ker T\cong\mathrm{Im}T,
 ```
 
 now as vector spaces, not merely as abelian groups.

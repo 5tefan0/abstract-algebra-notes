@@ -13,18 +13,18 @@ a_1v_1+\cdots+a_nv_n,\qquad a_i\in F.
 For a finite set $`S=\{v_1,\ldots,v_n\}`$, its **span** is
 
 ```math
-\operatorname{span}(S)
+\mathrm{span}(S)
 =\left\{\sum_{i=1}^n a_iv_i:a_i\in F\right\}.
 ```
 
 The order of the vectors does not affect the span. It is a subspace because sums and scalar multiples of linear combinations are again linear combinations.
 
-More conceptually, $`\operatorname{span}(S)`$ is the **smallest subspace of $`V`$ containing $`S`$**: every subspace containing the $`v_i`$ must contain all their linear combinations.
+More conceptually, $`\mathrm{span}(S)`$ is the **smallest subspace of $`V`$ containing $`S`$**: every subspace containing the $`v_i`$ must contain all their linear combinations.
 
 By convention,
 
 ```math
-\operatorname{span}(\varnothing)=\{0\}.
+\mathrm{span}(\varnothing)=\{0\}.
 ```
 
 This makes statements about spans and bases valid even for the zero vector space.
@@ -80,7 +80,7 @@ v_1=(1,0,0),\qquad v_2=(1,1,0),\qquad v_3=(1,2,3).
 Then
 
 ```math
-\operatorname{span}(v_1,v_2)=\{(a,b,0):a,b\in\mathbb R\}.
+\mathrm{span}(v_1,v_2)=\{(a,b,0):a,b\in\mathbb R\}.
 ```
 
 The three vectors are linearly independent. Indeed, the third coordinate of
@@ -155,13 +155,13 @@ This is the **pruning principle**: remove redundant vectors from a spanning set.
 
 **Theorem.** Every finite linearly independent set in a finite-dimensional vector space can be extended to a basis.
 
-**Proof.** Let $`L`$ be linearly independent. If it spans $`V`$, it is already a basis. Otherwise choose $`v\notin\operatorname{span}(L)`$. Then $`L\cup\{v\}`$ is linearly independent: in a relation
+**Proof.** Let $`L`$ be linearly independent. If it spans $`V`$, it is already a basis. Otherwise choose $`v\notin\mathrm{span}(L)`$. Then $`L\cup\{v\}`$ is linearly independent: in a relation
 
 ```math
 a_1w_1+\cdots+a_mw_m+bv=0,
 ```
 
-if $`b\neq0`$, then $`v`$ would lie in $`\operatorname{span}(L)`$; hence $`b=0`$, and then every $`a_i=0`$ by independence of $`L`$.
+if $`b\neq0`$, then $`v`$ would lie in $`\mathrm{span}(L)`$; hence $`b=0`$, and then every $`a_i=0`$ by independence of $`L`$.
 
 Choose the added vectors from a fixed finite spanning set of $`V`$. Repeating must eventually produce a spanning independent set. $`\square`$
 
@@ -230,7 +230,7 @@ form a basis of $`V/W`$. Therefore
 If
 
 ```math
-W'=\operatorname{span}(v_{m+1},\ldots,v_n),
+W'=\mathrm{span}(v_{m+1},\ldots,v_n),
 ```
 
 then $`W\cap W'=\{0\}`$ and every $`v\in V`$ has a unique expression $`v=w+w'`$ with $`w\in W`$ and $`w'\in W'`$. Thus

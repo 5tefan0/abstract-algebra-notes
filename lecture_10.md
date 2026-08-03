@@ -13,8 +13,8 @@ v_1,\ldots,v_n,v_{n+1},\ldots,v_m
 of $`V`$. Define
 
 ```math
-W=\operatorname{span}(v_1,\ldots,v_n),\qquad
-W'=\operatorname{span}(v_{n+1},\ldots,v_m).
+W=\mathrm{span}(v_1,\ldots,v_n),\qquad
+W'=\mathrm{span}(v_{n+1},\ldots,v_m).
 ```
 
 Then
@@ -58,7 +58,7 @@ v_1,\ldots,v_n,v_{n+1},\ldots,v_m
 of $`V`$. Then
 
 ```math
-W'=\operatorname{span}(v_{n+1},\ldots,v_m)
+W'=\mathrm{span}(v_{n+1},\ldots,v_m)
 ```
 
 is a complement and $`V=W\oplus W'`$.
@@ -88,7 +88,7 @@ The complement $`W'`$ is usually not canonical: a different extension of the bas
 Let $`T:V\to U`$ be linear. The First Isomorphism Theorem gives
 
 ```math
-V/\ker T\cong\operatorname{Im}T.
+V/\ker T\cong\mathrm{Im}T.
 ```
 
 Choose a complement $`C`$ of $`\ker T`$:
@@ -100,19 +100,19 @@ V=\ker T\oplus C.
 Then the restriction
 
 ```math
-T|_C:C\xrightarrow{\sim}\operatorname{Im}T
+T|_C:C\xrightarrow{\sim}\mathrm{Im}T
 ```
 
 is an isomorphism. Therefore, noncanonically,
 
 ```math
-V\cong\ker T\oplus\operatorname{Im}T
+V\cong\ker T\oplus\mathrm{Im}T
 ```
 
 and
 
 ```math
-\dim V=\dim\ker T+\dim\operatorname{Im}T.
+\dim V=\dim\ker T+\dim\mathrm{Im}T.
 ```
 
 The dimension identity is the **rank–nullity theorem**. The splitting itself depends on a choice of complement.
@@ -204,7 +204,7 @@ Thus the $`j`$th column contains the $`\mathcal C`$-coordinates of $`T(v_j)`$. F
 =[T]_{\mathcal C\leftarrow\mathcal B}[v]_{\mathcal B}.
 ```
 
-After bases are fixed, the vector space $`\operatorname{Hom}_F(V,W)`$ is identified with $`M_{m\times n}(F)`$.
+After bases are fixed, the vector space $`\mathrm{Hom}_F(V,W)`$ is identified with $`M_{m\times n}(F)`$.
 
 ## 7. Composition in Coordinates
 
@@ -227,7 +227,7 @@ The order matters: $`T`$ acts first, so its matrix appears on the right.
 Under the same dictionary:
 
 - $`\ker T`$ corresponds to the nullspace of the matrix.
-- $`\operatorname{Im}T`$ corresponds, in target coordinates, to the column space.
+- $`\mathrm{Im}T`$ corresponds, in target coordinates, to the column space.
 - Row reduction computes bases and dimensions for these spaces.
 
 This turns structural questions about linear maps into explicit algorithms.

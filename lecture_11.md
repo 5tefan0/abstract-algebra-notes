@@ -44,14 +44,14 @@ If $`n\geq p`$, the kernel therefore contains both $`1`$ and $`x^p`$, and $`x^{p
 **Theorem.** For every linear map $`T:V\to W`$,
 
 ```math
-\dim V=\dim\ker T+\dim\operatorname{Im}T.
+\dim V=\dim\ker T+\dim\mathrm{Im}T.
 ```
 
 The two terms on the right are called the **nullity** and **rank** of $`T`$:
 
 ```math
-\operatorname{nullity}(T)=\dim\ker T,\qquad
-\operatorname{rank}(T)=\dim\operatorname{Im}T.
+\mathrm{nullity}(T)=\dim\ker T,\qquad
+\mathrm{rank}(T)=\dim\mathrm{Im}T.
 ```
 
 ### Proof by an Adapted Basis
@@ -74,7 +74,7 @@ of $`V`$. We claim
 T(v_{k+1}),\ldots,T(v_n)
 ```
 
-is a basis of $`\operatorname{Im}T`$.
+is a basis of $`\mathrm{Im}T`$.
 
 **Spanning.** If $`y=T(v)`$, expand
 
@@ -98,7 +98,7 @@ because $`T(v_i)=0`$ for $`i\leq k`$.
 
 Then $`v_0=\sum_{i=k+1}^n b_iv_i`$ lies in $`\ker T`$, so it is also a linear combination of $`v_1,\ldots,v_k`$. Subtracting the two expansions gives a relation among the basis vectors of $`V`$, forcing every $`b_i=0`$.
 
-Thus $`\dim\ker T=k`$, $`\dim\operatorname{Im}T=n-k`$, and the formula follows. $`\square`$
+Thus $`\dim\ker T=k`$, $`\dim\mathrm{Im}T=n-k`$, and the formula follows. $`\square`$
 
 ## 3. Consequences of Rank–Nullity
 
@@ -107,7 +107,7 @@ If $`\dim V=\dim W<\infty`$, then the following are equivalent:
 - $`T`$ is injective.
 - $`\ker T=\{0\}`$.
 - $`T`$ is surjective.
-- $`\operatorname{Im}T=W`$.
+- $`\mathrm{Im}T=W`$.
 - $`T`$ is an isomorphism.
 
 For the quotient projection $`\pi:V\to V/U`$, rank–nullity gives
@@ -190,7 +190,7 @@ so $`T(v)=38w_1+32w_2`$.
 
 An **endomorphism** is a linear map $`T:V\to V`$. After choosing one basis $`\mathcal B`$ for both copies of $`V`$, it is represented by a square matrix $`[T]_{\mathcal B}`$.
 
-If $`S,T\in\operatorname{End}_F(V)`$, then
+If $`S,T\in\mathrm{End}_F(V)`$, then
 
 ```math
 [S\circ T]_{\mathcal B}=[S]_{\mathcal B}[T]_{\mathcal B}.
@@ -204,7 +204,7 @@ Let $`T:V\to V`$, where $`\dim V=n`$, and let $`A=[T]_{\mathcal B}`$. The follow
 
 1. $`T`$ is an automorphism.
 2. $`\ker T=\{0\}`$.
-3. $`\operatorname{Im}T=V`$.
+3. $`\mathrm{Im}T=V`$.
 4. $`A`$ is invertible.
 5. $`\det A\neq0`$ in $`F`$.
 
@@ -264,7 +264,7 @@ The point of changing basis is to find a conjugate matrix whose form makes the o
 
 ## 9. Rank Normal Form
 
-Let $`r=\operatorname{rank}T`$. There are bases of $`V`$ and $`W`$, chosen independently, for which
+Let $`r=\mathrm{rank}T`$. There are bases of $`V`$ and $`W`$, chosen independently, for which
 
 ```math
 [T]=

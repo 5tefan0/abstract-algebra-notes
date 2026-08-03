@@ -176,10 +176,10 @@ one obtains
 
 ```math
 \chi_A(t)=t^2-(a+d)t+(ad-bc)
-=t^2-\operatorname{tr}(A)t+\det(A).
+=t^2-\mathrm{tr}(A)t+\det(A).
 ```
 
-In general, the coefficient of $`t^{n-1}`$ is $`-\operatorname{tr}(A)`$ and the constant term is $`(-1)^n\det(A)`$.
+In general, the coefficient of $`t^{n-1}`$ is $`-\mathrm{tr}(A)`$ and the constant term is $`(-1)^n\det(A)`$.
 
 ## 6. Why the Characteristic Polynomial Is Basis-Independent
 
@@ -296,7 +296,7 @@ This is sufficient but not necessary: the identity operator is diagonalizable al
 
 ## 10. The Cayley–Hamilton Theorem
 
-The space $`\operatorname{End}_F(V)`$ has dimension $`n^2`$. Therefore the $`n^2+1`$ operators
+The space $`\mathrm{End}_F(V)`$ has dimension $`n^2`$. Therefore the $`n^2+1`$ operators
 
 ```math
 I,T,T^2,\ldots,T^{n^2}
@@ -312,12 +312,12 @@ The much stronger result is:
 \chi_T(T)=0.
 ```
 
-Here polynomial evaluation takes place in the algebra $`\operatorname{End}_F(V)`$: the scalar term is multiplied by $`I`$, multiplication is composition, and $`0`$ is the zero operator.
+Here polynomial evaluation takes place in the algebra $`\mathrm{End}_F(V)`$: the scalar term is multiplied by $`I`$, multiplication is composition, and $`0`$ is the zero operator.
 
 For a $`2\times2`$ matrix, Cayley–Hamilton reads
 
 ```math
-A^2-\operatorname{tr}(A)A+\det(A)I=0.
+A^2-\mathrm{tr}(A)A+\det(A)I=0.
 ```
 
 When $`\chi_T`$ has $`n`$ distinct roots, the theorem is easy to see in an eigenbasis: $`T`$ becomes diagonal, and substituting each diagonal entry $`\lambda_i`$ into $`\chi_T`$ gives zero. The general theorem remains true even when the polynomial has repeated roots or does not split over $`F`$.
