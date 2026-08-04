@@ -167,23 +167,9 @@ Given
 \varphi:G\to K,
 ```
 
-1. Compute
-
-   ```math
-   H=\ker(\varphi).
-   ```
-
-2. Since $`H`$ is normal, form
-
-   ```math
-   G/H.
-   ```
-
-3. By the First Isomorphism Theorem,
-
-   ```math
-   G/H\cong\mathrm{Im}(\varphi).
-   ```
+1. Compute $`H=\ker(\varphi)`$.
+2. Since $`H`$ is normal, form $`G/H`$.
+3. By the First Isomorphism Theorem, $`G/H\cong\mathrm{Im}(\varphi)`$.
 
 ---
 

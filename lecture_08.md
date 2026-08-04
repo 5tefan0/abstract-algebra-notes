@@ -112,11 +112,7 @@ To develop the same theory over scalars other than $`\mathbb R`$ or $`\mathbb C`
 
 1. $`(F,+)`$ is an abelian group with identity $`0`$.
 2. $`(F\setminus\{0\},\cdot)`$ is an abelian group with identity $`1`$, where $`1\neq0`$.
-3. Multiplication distributes over addition:
-
-   ```math
-   a(b+c)=ab+ac.
-   ```
+3. Multiplication distributes over addition: $`a(b+c)=ab+ac`$.
 
 Thus every nonzero scalar has a multiplicative inverse. This is the decisive property that allows division by a nonzero coefficient in linear algebra.
 

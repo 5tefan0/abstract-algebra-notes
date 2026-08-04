@@ -112,11 +112,13 @@ Every isomorphism is a homomorphism; the converse is false in general.
 
 3. **Inclusion:** The embedding $`S_k \hookrightarrow S_n`$ (extending permutations by fixing extra letters) is an injective homomorphism that is not surjective (for $`k < n`$).
 
-4. **Parity map:** $`f: \mathbb{Z} \to S_2 = \{e, \tau\}`$ defined by
-   ```math
-   f(n) = \begin{cases} e & \text{if } n \text{ is even} \\ \tau & \text{if } n \text{ is odd}\end{cases}
-   ```
-   is a homomorphism: even + even = even, odd + odd = even, even + odd = odd. ✓
+4. **Parity map:** $`f: \mathbb{Z} \to S_2 = \{e, \tau\}`$ is defined by the following rule:
+
+```math
+f(n) = \begin{cases} e & \text{if } n \text{ is even} \\ \tau & \text{if } n \text{ is odd}\end{cases}
+```
+
+It is a homomorphism: even + even = even, odd + odd = even, even + odd = odd. ✓
 
 ## 7. The Image of a Homomorphism
 
