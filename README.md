@@ -52,6 +52,7 @@ For continuous reading, see **[Complete Notes: Lectures 1–12](all_lectures.md)
 
 ## Supplemental Notes
 
+- [Quotient Groups, Normal Subgroups, and Kernels](Quotient_Groups_Normal_Subgroups_and_Kernels_Notes.md)
 - [Change of Basis and Linear Transformations](Change_of_Basis_and_Linear_Transformations.md)
 - [Advanced Change of Basis Guide](Advanced_Change_of_Basis_Guide.md)
 
